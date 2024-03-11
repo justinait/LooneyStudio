@@ -1,0 +1,81 @@
+.navbarLooney{
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 87px;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+.headerContainer{
+    background-color: black;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+}
+.initialHeader {
+    /* opacity: 0.5; */
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 0 3%;
+    justify-content: space-between;
+    
+}
+.projects {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: space-between;
+    width: 105%;
+}
+.projects img {
+    width: 13px;
+    height: 24px;
+}
+
+.burgerMenuIcon {
+    color: white;
+    /* height: 7vh !important;
+    width: 60px !important; */
+}
+.dropdownHeader {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    top: 9vh;
+    padding-left: 0;
+}
+.dropdownItemsContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* top: 854px;
+    left: 95px; */
+    
+}
+.dropdownItemsContainer a, .projects {
+    font-size: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-weight: 300;
+    line-height: 35px;
+}
+.nextSections{
+    font-size: 22px !important;
+}
+a:focus {
+    font-weight: 500;
+} 
+a:hover {
+    font-weight: 500;
+}
+.activeNavbar {
+    font-weight: 600;
+}

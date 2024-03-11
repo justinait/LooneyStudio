@@ -1,0 +1,8 @@
+.heroContainer {
+    /* background-image: url('/heroaux.png'); */
+}
+
+.heroImage {
+    object-fit: cover;
+    width: 100%;
+}
