@@ -23,7 +23,7 @@
     width: 110px;
     position: absolute;
     left: 48%;
-    top: 9%;
+    top: 7%;
 }
 .serviceItemTitle {
     font-size: 12px;
@@ -33,4 +33,5 @@
 }
 .seeMore {
     padding-right:4% ;
+    font-weight: 600;
 }

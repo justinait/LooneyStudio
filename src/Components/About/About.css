@@ -1,0 +1,56 @@
+.aboutContainer {
+    min-height: 90vh;
+}
+.aboutText {
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 0 3%;
+}
+.aboutText strong {
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Oswald";
+    line-height: 28px;
+}
+.designAbout {
+    position: relative;
+    left: 43%;
+}
+.aboutText .and {
+    position: relative;
+    left: 44%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.sprayAbout {
+    width: 120px;
+    position: absolute;
+    left: 40%;
+    top: 35%;
+} 
+.subtitleAbout {
+    font-family: "Oswald";
+    font-size: 18px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    padding: 0 3%;
+}
+.brandIconAbout {
+    width: 18%;
+}
+.brandsAboutContainer{
+    padding: 0 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto; 
+    justify-content: space-between;
+}
+.brandsSection {
+    margin-top: 20vh;
+}
