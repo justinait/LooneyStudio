@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './Header.css'
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
 import { Link, useNavigate } from 'react-router-dom';
+import MenuIcon from '/menuIcon.png'
+import CloseIcon from '/closeIcon.png'
 import arrow from '/arrow.png'
 import arrowback from '/arrowback.png'
 
@@ -47,7 +47,11 @@ function Header() {
     <div className='headerContainer'>
       <div className='initialHeader'>
         <Link to='/' className='navbarLooney'>THE LOONEY STUDIO</Link>
-        <MenuIcon onClick={handleOpen} className='burgerMenuIcon'/>
+        {openMenu ?
+        <img src={CloseIcon}  onClick={handleOpen} className='closeMenuIcon' alt="Menu" />:
+        <img src={MenuIcon}  onClick={handleOpen} className='burgerMenuIcon' alt="Menu" />
+        
+        }
       </div>
 
       {openMenu &&

@@ -36,10 +36,12 @@
     height: 24px;
 }
 
-.burgerMenuIcon {
-    color: white;
-    /* height: 7vh !important;
-    width: 60px !important; */
+.burgerMenuIcon { 
+    width: 30px;
+}
+.closeMenuIcon{
+    width: 20px;
+    height: 20px;
 }
 .dropdownHeader {
     position: fixed;
