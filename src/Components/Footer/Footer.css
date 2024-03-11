@@ -1,0 +1,29 @@
+.footerContainer {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: #EEEFF3;
+    padding: 0 3%;
+    font-size: 10px;
+}
+.footerLooney {
+    font-family: "Oswald";
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+.instagramIconFooter{
+    width: 20px;
+    height: 19px;
+    left: 45%;
+    position: absolute;
+}
+.emailFooter {
+    font-family: "Oswald";
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-transform: uppercase;
+}
