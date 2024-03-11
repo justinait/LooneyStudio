@@ -5,6 +5,7 @@ import MenuIcon from '/menuIcon.png'
 import CloseIcon from '/closeIcon.png'
 import arrow from '/arrow.png'
 import arrowback from '/arrowback.png'
+import ig from '/instagram.png'
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -71,6 +72,8 @@ function Header() {
             })}
             
           </div>
+          
+          <img src={ig} alt="Instagram" className='igIconNavbar'/>
         </div>
       }
       {openNextMenu &&

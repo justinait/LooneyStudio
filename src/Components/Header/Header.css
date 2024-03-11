@@ -44,9 +44,9 @@
     height: 20px;
 }
 .dropdownHeader {
-    position: fixed;
+    position: absolute;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 9vh;
     padding-left: 0;
@@ -80,4 +80,10 @@ a:hover {
 }
 .activeNavbar {
     font-weight: 600;
+}
+.igIconNavbar {
+    bottom: 5%;
+    left: 10%;
+    position: fixed;
+    width: 20px;
 }
