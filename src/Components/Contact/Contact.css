@@ -1,0 +1,49 @@
+.contactContainer {
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px white solid;
+}
+.contactUsContainer {
+    width: 100%;
+    border-bottom: none;
+    padding: 5% 0;
+}
+.contactUs {
+    color: white;
+    font-family: "Oswald";
+    
+    position: absolute;
+    font-size: 90px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 85px;
+    
+    width: 94%;
+    display: flex;
+    justify-content: center;
+}
+.sprayContact {
+    width: 110px;
+    position: relative;
+    left: 45%;
+    top: 42%;
+}
+.containerBox {
+    width: 50%;
+    border: 1px white solid;
+    border-left: none;
+    border-bottom: none;
+    padding: 5% 3%;
+}
+.contactContainer h3 {
+    font-family: "Oswald";
+}
+.locationText {
+    margin: 0;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+}

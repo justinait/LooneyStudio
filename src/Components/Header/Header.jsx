@@ -64,7 +64,8 @@ function Header() {
             {sections.map((e, i)=> {
               return (
               <Link 
-                key={i} to={`/${e.id}`} 
+                key={i} 
+                to={`/${e.id}`} 
                 onClick={()=>handleClose(e.id)} 
                 className={selectedCategory == e.id? 'activeNavbar': ''}>
                 {e.name}

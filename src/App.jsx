@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CheckScroll from './CheckScroll'
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
+import Contact from './Components/Contact/Contact';
 
 function App() {
 
@@ -15,11 +16,7 @@ function App() {
         <Routes>
           
           <Route path='/' element={< Home />} />
-          
-          {/* <Route path='/changes' element={< Changes />} />
-          <Route path='/login' element={< Login />} />
-          <Route path='/cart' element={< Cart />} />
-          <Route path='/checkout' element={< Checkout />} /> */}
+          <Route path='/contact' element={< Contact />} />
           
         </Routes>
         <Footer />
