@@ -9,8 +9,7 @@
 body {
   font-family: "Manrope";
   margin: 0;
-  display: flex;
-  place-items: center;
+  margin-top: 10vh;
   min-width: 320px;
   min-height: 100vh;
   background-color: black;
@@ -21,7 +20,22 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+h2 {
+  color: white;
+  font-family: "Oswald";
+  
+  position: relative;
+  font-size: 82px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 85px;
+  
+  margin: auto;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
 a, a:hover {
   color: white;
   text-decoration: none;

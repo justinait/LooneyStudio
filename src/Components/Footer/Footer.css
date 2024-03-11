@@ -8,7 +8,7 @@
     font-size: 10px;
     width: 100vw;
     bottom: 0;
-    position: absolute;
+    position: relative;
 }
 .footerLooney {
     font-family: "Oswald";
