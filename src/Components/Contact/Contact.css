@@ -38,9 +38,16 @@
     border-bottom: none;
     padding: 5% 3%;
 }
+.biggerBoxAbout{
+    padding: 0;
+}
+.instagramBox {
+    border-left: none;
+    border-bottom: none;
+    padding: 9% 6%;
+}
 .contactContainer h3 {
     font-family: "Oswald";
-    
     font-size: 20px;
 }
 .locationText {
@@ -69,4 +76,19 @@ input {
     background: none;
     border: none;
     padding: 0;
+    margin: 0;
+    text-align: right;
+    padding-top: 25%;
+}
+
+.mapBoxContainer {
+    border: 1px solid white;
+}
+
+.mapContainer {
+    width: 200px;
+    height: 200px;
+    
+    width: 100%;
+    height: 180px;
 }
