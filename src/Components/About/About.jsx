@@ -39,12 +39,12 @@ function About() {
 
                 <img className='brandIconAbout' src={Dazed} alt="" />
                 <img className='brandIconAbout' src={BBC} alt="" />
-                <img className='brandIconAbout' src={BB} alt="" />
+                <img className='brandIconAbout brandToBig' src={BB} alt="" />
                 <img className='brandIconAbout' src={Google} alt="" />
                 <img className='brandIconAbout' src={Essity} alt="" />
 
                 <img className='brandIconAbout' src={Gisou} alt="" />
-                <img className='brandIconAbout' src={hp} alt="" />
+                <img className='brandIconAbout brandToBig' src={hp} alt="" />
                 <img className='brandIconAbout' src={Warner} alt="" />
                 <img className='brandIconAbout' src={o2} alt="" />
                 <img className='brandIconAbout' src={Benefit} alt="" />

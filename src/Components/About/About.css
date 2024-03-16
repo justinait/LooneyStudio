@@ -4,7 +4,7 @@
 .aboutText {
     text-transform: uppercase;
     font-size: 17px;
-    padding: 0 3%;
+    padding: 13% 3% 0;
 }
 .aboutText strong {
     font-size: 38px;
@@ -27,7 +27,7 @@
     width: 120px;
     position: absolute;
     left: 40%;
-    top: 35%;
+    top: 44%;
 } 
 .subtitleAbout {
     font-family: "Oswald";
@@ -41,6 +41,12 @@
 }
 .brandIconAbout {
     width: 18%;
+    padding: 1.5%;
+    margin-bottom: 4%;
+}
+.brandToBig {
+    width: 12%;
+    margin: 0 3%;
 }
 .brandsAboutContainer{
     padding: 0 3%;

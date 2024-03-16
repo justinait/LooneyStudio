@@ -11,26 +11,28 @@ function Contact() {
         </div>
         <div className='containerBox'>
             <h3>LOCATION</h3>
-            <p className='locationText'>Brixton, <br />
-            Rathgar Rd, XXXX
+            <p className='locationText'>
+            Unit 2-5, 496 Rathgar Road<br /> SW9 7EP <strong>London</strong> 
             </p>
         </div>
         <div className='containerBox'>
             {/* empty */}
         </div>
         <div className='containerBox'>
-            Mapa
+            <div>
+                Mapa
+            </div>
+            <div >
+                <h3>INSTAGRAM</h3>
+                <p className='locationText'>@Thelooneystudio</p>
+            </div>
         </div>
         <div className='containerBox'>
             <h3>MAIL</h3>
-        </div>
-        <div className='containerBox'>
-            <h3>CALL</h3>
-            <p className='locationText'>(555) 555-5555</p>
-        </div>
-        <div className='containerBox'>
-            <h3>INSTAGRAM</h3>
-            <p className='locationText'>@Thelooneystudio</p>
+            <input type="text" placeholder='Full Name' />
+            <input type="text" placeholder='Mail' />
+            <input type="text" placeholder='Your Message' />
+            <button className='formButton'>Send</button>
         </div>
     </div>
   )
