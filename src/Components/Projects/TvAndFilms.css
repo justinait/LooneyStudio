@@ -1,0 +1,30 @@
+.headerProjects {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    position: relative;
+}
+.linksProjects {
+    font-size: 10px;
+    line-height: normal;
+    height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.linksTv {
+    color: #DAA6DA;
+    border-bottom: 1px solid #daa6da;
+}
+.selectedProject{
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    z-index: 10;
+}
+.sprayTv {
+    position: absolute;
+    width: 120px;
+    left: 33.5%;
+    top: 24px;
+} 

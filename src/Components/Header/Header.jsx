@@ -22,6 +22,7 @@ function Header() {
   
   const handleClose = (id) => {
     setOpenMenu(false);
+    setOpenNextMenu(false);
     if(id){
       setSelectedCategory(id);
     }
@@ -40,7 +41,7 @@ function Header() {
   ]
 
   const nextSections = [
-    { name: 'TV & FILMS', id: 'tv', className: '' },
+    { name: 'TV & FILMS', id: 'tvandfilms', className: '' },
     { name: 'EVENTS & INSTALLATIONS', id: 'events', className: ''},
     { name: 'SPATIAL DESIGN', id: 'spatialDesign', className: ''}
   ]
