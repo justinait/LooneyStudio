@@ -1,6 +1,6 @@
 import React from 'react'
 import hero from '/heroaux.png'
-import sprayHero from '/AssetsHero.png'
+import sprayHero from '/sprays/AssetsHero.png'
 import './Home.css'
 
 function Home() {

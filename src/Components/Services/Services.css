@@ -4,13 +4,13 @@
     width: 100vw;    
     padding: 20% 3% 0;
 }
-.serviceItem {
+.serviceItemName {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid white;
     padding: 2% 0 0 0;
 }
-.serviceItem p {
+.serviceItemName p {
     margin: 0;
 }
 .servicesContainer{
@@ -34,4 +34,11 @@
 .seeMore {
     padding-right:4% ;
     font-weight: 600;
+}
+
+.hideService {
+    display: none;
+}
+.imageServices {
+    width: 100%;
 }

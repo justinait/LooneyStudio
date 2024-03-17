@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Services.css'
-import spray from '/servicesSpray.png'
+import spray from '/sprays/servicesSpray.png'
 
 function Services() {
     const services = [
-        { name: 'CONCEPT DESIGN', video: 'url()', className: '' },
-        { name: 'PROJECT MANAGEMENT', video: 'url()', className: ''},
-        { name: 'CARPENTRY', video: 'url()', className: ''},
-        { name: 'METAL WORK', video: 'url()', className: ''},
-        { name: 'CNCING', video: 'url()', className: ''},
-        { name: 'FINISHING & SPRAYING', video: 'url()', className: ''},
-        { name: 'INSTALLATION', video: 'url()', className: ''},
-        { name: 'HIRE', video: 'url()', className: ''}
+        { name: 'CONCEPT DESIGN', image: '/services/conceptdesign.png', className: '' },
+        { name: 'PROJECT MANAGEMENT', image: '/services/projectmanagement.jpg', className: ''},
+        { name: 'CARPENTRY', image: '/services/carpentry.jpg', className: ''},
+        { name: 'METAL WORK', image: '/services/metalwork.jpg', className: ''},
+        { name: 'CNCING', image: '/services/metalwork.jpg', className: ''},
+        { name: 'FINISHING & SPRAYING', image: '/services/spraying.jpg', className: ''},
+        { name: 'INSTALLATION', image: '/services/installation.jpg', className: ''},
+        { name: 'HIRE', image: '/services/hire.jpg', className: ''}
     ]
+    const [open, setOpen] = useState(false);
+    const [service, setService] = useState(false);
+
+    const handleOpen = (e) => {
+        setOpen(!open);
+        setService(e.name)
+    }
 
   return (
     <div className='servicesContainer'>
@@ -26,8 +33,18 @@ function Services() {
                 services.map(e=>{
                     return (
                         <div className='serviceItem'>
-                            <p className='serviceItemTitle'>{e.name}</p>
-                            <p className='seeMore'>+</p>
+                            <div className='serviceItemName'>
+                                <p className='serviceItemTitle'>{e.name}</p>
+                                {
+                                    (!open && service !== e.name) ?
+                                    <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>:
+                                    <p className='seeMore' onClick={()=>handleOpen(e)}>-</p>
+                                }
+                            </div>
+                            {
+                                (open && service == e.name) &&
+                                <img src={e.image} alt={e.name} className='imageServices'/>
+                            }
                         </div>
                     )
                 })

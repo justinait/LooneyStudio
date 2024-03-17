@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-import spray from '/contactSpray.png'
+import spray from '/sprays/contactSpray.png'
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 

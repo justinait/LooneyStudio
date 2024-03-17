@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import spray from '/aboutSpray.png'
+import spray from '/sprays/aboutSpray.png'
 import Amazon from '/brands/Logo-Amazon.png'
 import Panasonic from '/brands/Logo-Panasonic.png'
 import Samsung from '/brands/Logo-Samsung.png'
