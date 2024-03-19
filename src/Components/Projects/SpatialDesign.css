@@ -9,6 +9,9 @@
     color: #BE27C3;
     border-bottom: 1px solid #BE27C3;
 }
+.linksSpatial:hover {
+    background-color: #BE27C3;
+}
 .projectsLeftLink {
     padding: 0 0 0 3%;
 }

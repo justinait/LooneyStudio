@@ -3,17 +3,22 @@
     justify-content: space-between;
     padding-top: 40px;
     position: relative;
+    align-items: flex-end;
 }
 .linksProjects {
     font-size: 10px;
     line-height: normal;
     height: 20px;
+    padding-top: 5px !important;
     font-weight: 400;
     letter-spacing: 0.1em;
 }
 .linksTv {
     color: #DAA6DA;
     border-bottom: 1px solid #daa6da;
+}
+.linksTv:hover {
+    background-color: #daa6da;
 }
 .selectedProject{
     color: black;
