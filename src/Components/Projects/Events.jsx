@@ -6,9 +6,9 @@ import spray from '/sprays/eventsSpray.png'
 function Events() {
   const events = [
     { name: 'WARNER 22', image: '/events/Warner22.png', detail: '/events/benefitdetail.png', className: '' },
-    { name: 'HUDA BEAUTY', image: '/events/molecules.jpg', detail: '', className: ''},
-    { name: 'PINK PANTHERESS', image: '/events/TOMDIXON.jpg', detail: '', className: ''},
-    { name: 'GISOU', image: '/events/elton.jpeg', detail: '', className: ''},
+    { name: 'MOLECULES', image: '/events/molecules.jpg', detail: '', className: ''},
+    { name: 'TOM DIXON', image: '/events/TOMDIXON.jpg', detail: '', className: ''},
+    { name: 'ELTON JHON', image: '/events/elton.jpeg', detail: '', className: ''},
     { name: 'WARNER 23', image: '/events/Warner23.jpg', detail: '', className: ''},
   ]
   return (
