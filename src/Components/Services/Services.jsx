@@ -14,11 +14,15 @@ function Services() {
         { name: 'HIRE', image: '/services/hire.jpg', className: ''}
     ]
     const [open, setOpen] = useState(false);
-    const [service, setService] = useState(false);
+    const [service, setService] = useState('');
 
     const handleOpen = (e) => {
-        setOpen(!open);
+        setOpen(true);
         setService(e.name)
+    }
+    const handleClose =(e)=>{
+        setOpen(false)
+        setService('')
     }
 
   return (
@@ -35,11 +39,12 @@ function Services() {
                         <div className='serviceItem'>
                             <div className='serviceItemName'>
                                 <p className='serviceItemTitle'>{e.name}</p>
-                                {
-                                    (!open && service !== e.name) ?
-                                    <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>:
-                                    <p className='seeMore' onClick={()=>handleOpen(e)}>-</p>
+
+                                {(open && service == e.name) ?
+                                <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
+                                <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
                                 }
+                                
                             </div>
                             {
                                 (open && service == e.name) &&

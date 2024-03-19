@@ -66,3 +66,8 @@
     letter-spacing: 0.1em;
     text-align: center;
 }
+
+.spatialDetail {
+    margin-top: 0;
+    height: 96vh;
+}

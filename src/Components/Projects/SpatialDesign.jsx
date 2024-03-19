@@ -1,17 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './SpatialDesign.css'
 import { Link } from 'react-router-dom'
 import spray from '/sprays/spatialSpray.png'
 
 function SpatialDesign() {
   const spatial = [
-    { name: 'BENEFIT', image: '/spatial/Benefit.png', className: '' },
-    { name: 'HUDA BEAUTY', image: '/spatial/Huda.jpeg', className: ''},
-    { name: 'PINK PANTHERESS', image: '/spatial/Gisou.jpg', className: ''},
-    { name: 'GISOU', image: '/spatial/Gisou.jpg', className: ''},
-    { name: 'WWE', image: '/spatial/WWE.jpg', className: ''},
-    { name: 'DESTREE', image: '/spatial/Destree.jpg', className: ''},
+    { name: 'BENEFIT', image: '/spatial/Benefit.png', detail: '/spatial/benefitdetail.png', className: '' },
+    { name: 'HUDA BEAUTY', image: '/spatial/Huda.jpeg', detail: '', className: ''},
+    { name: 'PINK PANTHERESS', image: '/spatial/Gisou.jpg', detail: '', className: ''},
+    { name: 'GISOU', image: '/spatial/Gisou.jpg', detail: '', className: ''},
+    { name: 'WWE', image: '/spatial/WWE.jpg', detail: '', className: ''},
+    { name: 'DESTREE', image: '/spatial/Destree.jpg', detail: '', className: ''},
   ]
+
+  const [open, setOpen] = useState(false)
+  const [service, setService] = useState(false);
+
+  const openDetail=(e)=> {
+    setOpen(true);
+    setService(e)
+  }
   return (
     <div>
       <div className='headerProjects'>
@@ -27,13 +35,22 @@ function SpatialDesign() {
         {
         spatial.map(e=>{
           return(
-            <div className='spatialItemBox'>
-              <img src={e.image} alt={e.name} className='spatialImage'/>
+            <div className='spatialItemBox' >
+              <img src={e.image} alt={e.name} className='spatialImage' onClick={()=>openDetail(e)}/>
               <div className='imageOverlay'></div>
               <p className='spatialText'>{e.name}</p>
+              {
+              (open && service == e.name) &&
+                <div className='spatialDetail'>
+                  <img src={e.detail} alt={e.name} />
+                </div>
+              }
             </div>
           )
         })
+          
+            
+        
         }
       </div>
     </div>

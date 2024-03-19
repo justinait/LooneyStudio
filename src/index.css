@@ -19,6 +19,7 @@ h2 {
   line-height: 76px;
   
   margin: auto;
+  margin-top: 2vh;
   width: 85%;
   display: flex;
   justify-content: center;
