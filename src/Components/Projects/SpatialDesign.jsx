@@ -13,13 +13,6 @@ function SpatialDesign() {
     { name: 'DESTREE', image: '/spatial/Destree.jpg', detail: '', className: ''},
   ]
 
-  const [open, setOpen] = useState(false)
-  const [service, setService] = useState(false);
-
-  const openDetail=(e)=> {
-    setOpen(true);
-    setService(e)
-  }
   return (
     <div>
       <div className='headerProjects'>
@@ -35,22 +28,14 @@ function SpatialDesign() {
         {
         spatial.map(e=>{
           return(
-            <div className='spatialItemBox' >
-              <img src={e.image} alt={e.name} className='spatialImage' onClick={()=>openDetail(e)}/>
+            <Link className='spatialItemBox' >
+              <img src={e.image} alt={e.name} className='spatialImage'/>
               <div className='imageOverlay'></div>
               <p className='spatialText'>{e.name}</p>
-              {
-              (open && service == e.name) &&
-                <div className='spatialDetail'>
-                  <img src={e.detail} alt={e.name} />
-                </div>
-              }
-            </div>
+            </Link>
           )
         })
           
-            
-        
         }
       </div>
     </div>
