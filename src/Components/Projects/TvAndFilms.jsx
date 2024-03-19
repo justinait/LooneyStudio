@@ -5,7 +5,7 @@ import './TvAndFilms.css'
 
 function TvAndFilms() {
   return (
-    <div>
+    <div className='spatialContainer'>
       <div className='headerProjects'>
         <Link to={'/spatialDesign'} className='linksTv linksProjects projectsLeftLink'>SPATIAL DESIGN</Link>
         <p className='selectedProject'>TV & FILMS</p>

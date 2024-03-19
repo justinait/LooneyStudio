@@ -1,3 +1,6 @@
+.spatialContainer {
+    min-height: 84vh;
+}
 .headerProjects {
     display: flex;
     justify-content: space-between;

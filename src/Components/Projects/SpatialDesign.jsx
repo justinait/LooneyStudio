@@ -14,7 +14,7 @@ function SpatialDesign() {
   ]
 
   return (
-    <div>
+    <div className='spatialContainer'>
       <div className='headerProjects'>
         <Link to={'/events'} className='linksSpatial linksProjects projectsLeftLink'>EVENTS & INSTALL</Link>
 

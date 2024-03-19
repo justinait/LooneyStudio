@@ -12,7 +12,7 @@ function Events() {
     { name: 'WARNER 23', image: '/events/Warner23.jpg', detail: '', className: ''},
   ]
   return (
-    <div>
+    <div className='spatialContainer'>
       <div className='headerProjects'>
         <Link to={'/tvAndFilms'} className='linksEvents linksProjects projectsLeftLink'>TV & FILMS</Link>
         <p className='selectedProject'>EVENTS & INSTALLATIONS</p>
