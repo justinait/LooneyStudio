@@ -1,8 +1,8 @@
 .headerProjects {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
     position: relative;
+    padding: 40px 0 20px;
 }
 .linksEvents {
     color: #FFCC00;
@@ -22,7 +22,7 @@
 .sprayEvents {
     position: absolute;
     width: 240px;
-    height: 100px;
+    height: 95px;
     left: 14.5%;
-    top: 7px;
+    top: 15px;
 } 
