@@ -28,7 +28,7 @@ function SpatialDesign() {
         {
         spatial.map(e=>{
           return(
-            <Link className='spatialItemBox' >
+            <Link to={'/benefit'} className='spatialItemBox' >
               <img src={e.image} alt={e.name} className='spatialImage'/>
               <div className='imageOverlay'></div>
               <p className='spatialText'>{e.name}</p>
