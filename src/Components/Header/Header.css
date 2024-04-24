@@ -93,6 +93,9 @@
 .nextSections{
     font-size: 22px !important;
 }
+.nextSections:hover {
+    color: var(--color-violet);
+}
 a:focus {
     font-weight: 500;
 } 

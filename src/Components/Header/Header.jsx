@@ -104,8 +104,8 @@ function Header() {
           
           <div className='dropdownItemsContainer'>
             <p  onClick={()=>handlePrevMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}> <img src={arrowback} alt="<" />            </p>
-          
             <img src={spray2} alt="" className='sprayDropdown2' />
+            
             {nextSections.map((e, i)=> {
               return (
               <Link 
