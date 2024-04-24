@@ -11,14 +11,6 @@
 .linksEvents:hover {
     background-color: #FFCC00;
 }
-.selectedProject{
-    color: black;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    z-index: 10;
-    margin: 0;
-}
 .sprayEvents {
     position: absolute;
     width: 250px;

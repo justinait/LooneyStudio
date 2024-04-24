@@ -20,13 +20,6 @@
 .linksTv:hover {
     background-color: #daa6da;
 }
-.selectedProject{
-    color: black;
-    font-size: 10px;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    z-index: 10;
-}
 .sprayTv {
     position: absolute;
     width: 120px;

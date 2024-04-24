@@ -5,12 +5,12 @@ import spray from '/sprays/spatialSpray.png'
 
 function SpatialDesign() {
   const spatial = [
-    { name: 'BENEFIT', image: '/spatial/Benefit.png', detail: '/spatial/benefitdetail.png', className: '' },
-    { name: 'HUDA BEAUTY', image: '/spatial/Huda.jpeg', detail: '', className: ''},
-    { name: 'PINK PANTHERESS', image: '/spatial/Gisou.jpg', detail: '', className: ''},
-    { name: 'GISOU', image: '/spatial/Gisou.jpg', detail: '', className: ''},
-    { name: 'WWE', image: '/spatial/WWE.jpg', detail: '', className: ''},
+    { name: '1664 Blanc - LND FASHION WEEK', image: '/spatial/1664.jpg', detail: '', className: ''},
     { name: 'DESTREE', image: '/spatial/Destree.jpg', detail: '', className: ''},
+    { name: 'PINK PANTHERESS- Heaven Knos Album', image: '/spatial/pink.png', detail: '', className: ''},
+    { name: 'BENEFIT - PORE WASH POP UP', image: '/spatial/Benefit.png', detail: '/spatial/benefitdetail.png', className: '' },
+    { name: 'GISOU - HOLIDAY POP UP', image: '/spatial/Gisou.jpg', detail: '', className: ''},
+    { name: 'HUDA BEAUTY - MERCURY RETROGADE', image: '/spatial/Huda.jpeg', detail: '', className: ''},
   ]
 
   return (

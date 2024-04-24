@@ -94,7 +94,7 @@
     font-size: 22px !important;
 }
 .nextSections:hover {
-    color: var(--color-violet);
+    color: var(--color-lila);
 }
 a:focus {
     font-weight: 500;
