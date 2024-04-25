@@ -5,13 +5,13 @@ import circle1 from '/spatial/circle1.png'
 import circle2 from '/spatial/circle2.png'
 import circle3 from '/spatial/circle3.png'
 import circle4 from '/spatial/circle4.png'
-import circle5 from '/spatial/circle5.png'
 import circle6 from '/spatial/circle6.png'
 import circle8 from '/spatial/circle8.png'
 import xSpray from '/spatial/xSpray.png'
-import image1 from '/spatial/16641.jpg'
-import image2 from '/spatial/16642.jpg'
-import image3 from '/spatial/16643.jpg'
+import image1 from '/spatial/pink1.png'
+import image2 from '/spatial/pink2.png'
+import image3 from '/spatial/pink3.png'
+import image4 from '/spatial/pink4.png'
 import { Link } from 'react-router-dom'
 
 function Pink() {
@@ -49,32 +49,70 @@ function Pink() {
             
         </div>
         <div className='colorSpace'>
-            <p className='titleSpatialDetail'>1664 BLANC - LND FASHION WEEK POP UP</p>
+            <p className='titleSpatialDetail'>PINK PANTHERESS - Heaven Knos Album Launch Pop Up</p>
             <div className='separatorSpatial'></div>
             <div className='infoContainerSpatialDetail'>
                 <div>
                     <p className='infoTitleSpatialDetail'>CLIENT</p>
-                    <p className='infoDataSpatialDetail'>1664 KRONENBERG</p>
-                </div>
-
-                <div>
-                    <p className='infoTitleSpatialDetail'>AGENCY</p>
-                    <p className='infoDataSpatialDetail'>GUNGA & <br />STUDIO STILTON</p>
+                    <p className='infoDataSpatialDetail'>Warner Music UK</p>
                 </div>
 
                 <div>
                     <p className='infoTitleSpatialDetail'>LOCATION</p>
-                    <p className='infoDataSpatialDetail'>SELFRIDGES</p>
+                    <p className='infoDataSpatialDetail'>Soho</p>
                 </div>
             </div>
-
+            <div className='infoSpatialDetailTextContainer'>
+                <p>Commissioned by Warner Music, we
+                    were tasked with designing a
+                    captivating pop-up experience for the
+                    launch of Pink Pantheress’s debut
+                    album. Drawing inspiration from her
+                    album cover, we embarked on a celestial
+                    journey within a three-floor Victorian
+                    building in the heart of Soho. Crafting
+                    an impactful ntrance was paramount
+                    to capturing aention. Upon entering,
+                    guests were greeted by a transparent
+                    purple installation on the first floor,
+                    oering a unique and artistic approach
+                    to merchandise display reminiscent of
+                    an art gallery exhibition.
+                    The second floor enticed visitors to explore Starface products playfully,
+                    with samples elegantly showcased on
+                    plinths and a bustling beauty corner
+                    where technicians pampered guests'
+                    nails. Ascending to the third floor, fans
+                    were invited to step into the surreal
+                    world of Pink Pantheress’s album cover,
+                </p>
+                <p>
+                    with mirror paper adorned surroundings
+                    and cameras ready to capture
+                    moments in this dreamlike seing.
+                    Meanwhile, the fourth floor was
+                    transformed into a cozy haven by NTS
+                    radio, streaming live during the event.
+                    Our bespoke tables and bean bags
+                    provided a comfortable retreat for
+                    guests to relax and enjoy the ambiance.
+                    The entire experience was a resounding
+                    success, from setup in just a day to a
+                    swift dismantling in a maer of hours,
+                    transforming the entire building into a
+                    gallery space reminiscent of Dover
+                    Street Market’s innovative ethos.
+                </p>
+            </div>
         </div>
         <div>
-            <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
-            <p className='spatialDetailImagesText'>Behind the scenes</p>
-            <div className='spatialDetailImages'>
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
+            <div className='spatialDetailImagesBox'>
+                <img className='spatialDetailImage1' src={image1} alt="" />
+                <img className='spatialDetailImage2' src={image2} alt="" />
+            </div>
+            <div className='spatialDetailImagesBox'>
+                <img className='spatialDetailImage1' src={image3} alt="" />
+                <img className='spatialDetailImage2' src={image4} alt="" />
             </div>
         </div>
     </div>

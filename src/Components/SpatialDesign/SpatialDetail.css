@@ -123,6 +123,7 @@
     font-size: 12px;
     font-weight: 600;
     margin: 0;
+    text-transform: uppercase;
 }
 .separatorSpatial{
     border-bottom: #EEEFF3 1px solid;
@@ -148,6 +149,7 @@
     font-weight: 500;
     letter-spacing: 0.06em;
     margin: 0;
+    text-transform: uppercase;
 }
 .image1SpatialDetail {
     width: 100%;
@@ -193,6 +195,22 @@
     letter-spacing: 0.06em;
     text-align: justify;
     width: 48%;
+}
+.spatialDetailImagesBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    margin-bottom: 1%;
+}
+
+.spatialDetailImage1{
+    width: 34.5%;
+    object-fit: cover;
+}
+.spatialDetailImage2{
+    object-fit: cover;
+    width: 64.5%;
 }
 @media (min-width: 376px) {
     .infoSpatialDetailTextContainer p {
