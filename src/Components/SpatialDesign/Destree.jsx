@@ -1,6 +1,6 @@
 import React from 'react'
 import hero from '/spatial/DestreeHero.jpg'
-import './Blanc.css'
+import './SpatialDetail.css'
 import circle1 from '/spatial/circle1.png'
 import circle2 from '/spatial/circle2.png'
 import circle3 from '/spatial/circle3.png'
