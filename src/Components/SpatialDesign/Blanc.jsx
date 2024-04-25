@@ -1,0 +1,78 @@
+import React from 'react'
+import hero from '/spatial/1664.jpg'
+import './Benefit.css'
+import circle1 from '/spatial/circle1.png'
+import circle2 from '/spatial/circle2.png'
+import circle3 from '/spatial/circle3.png'
+import circle4 from '/spatial/circle4.png'
+import circle5 from '/spatial/circle5.png'
+import circle6 from '/spatial/circle6.png'
+import circle7 from '/spatial/circle7.png'
+import xSpray from '/spatial/xSpray.png'
+
+
+function Blanc() {
+  return (
+    <div>
+        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <p className='xSpatialDetail'>X</p>
+        <img src={hero} alt="1664 Blanc" className='blancHero'/>
+        <div className='stackContainer'>
+            <div className='stackItem1'>
+                <img className='stackCircleImg' src={circle1} alt="" />
+                <p className='stackText'>CONCEPT DESIGN</p>
+            </div>
+            <div className='stackItem2'>
+                <img className='stackCircleImg' src={circle2} alt="" />
+                <p className='stackText'>PROJECT MANAGEMENT</p>
+            </div>
+            <div className='stackItem3'>
+                <img className='stackCircleImg' src={circle3} alt="" />
+                <p className='stackText'>CARPENTRY</p>
+            </div>
+            <div className='stackItem4'>
+                <img className='stackCircleImg' src={circle4} alt="" />
+                <p className='stackText'>POP UP</p>
+            </div>
+            <div className='stackItem1'>
+                <img className='stackCircleImg' src={circle5} alt="" />
+                <p className='stackText'>LIGHTNING DESIGN</p>
+            </div>
+            <div className='stackItem4'>
+                <img className='stackCircleImg' src={circle6} alt="" />
+                <p className='stackText'>INSTALLATION</p>
+            </div>
+            <div className='stackItem3'>
+                <img className='stackCircleImg' src={circle3} alt="" />
+                <p className='stackText'>METAL WORK</p>
+            </div>
+            <div className='stackItem2'>
+                <img className='stackCircleImg' src={circle7} alt="" />
+                <p className='stackText'>SPRYING & FINISHING</p>
+            </div>
+            
+        </div>
+        <div className='colorSpaceBlanc'>
+            <p>1664 BLANC - LND FASHION WEEK POP UP</p>
+            <div className='separatorSpatial'></div>
+            <div>
+                <p>CLIENT</p>
+                <p>1664 KRONENBERG</p>
+            </div>
+
+            <div>
+                <p>AGENCY</p>
+                <p>GUNGA & STUDIO STILTON</p>
+            </div>
+
+            <div>
+                <p>LOCATION</p>
+                <p>SELFRIDGES</p>
+            </div>
+
+        </div>
+    </div>
+  )
+}
+
+export default Blanc

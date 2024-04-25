@@ -8,8 +8,9 @@ import Contact from './Components/Contact/Contact';
 import Services from './Components/Services/Services';
 import About from './Components/About/About';
 import TvAndFilms from './Components/Projects/TvAndFilms';
-import SpatialDesign from './Components/Projects/SpatialDesign';
-import Events from './Components/Projects/Events';
+import SpatialDesign from './Components/SpatialDesign/SpatialDesign';
+import Events from './Components/Events/Events';
+import Blanc from './Components/SpatialDesign/Blanc';
 
 function App() {
 
@@ -26,9 +27,12 @@ function App() {
           <Route path='/about' element={< About />} />
 
           <Route path='/tvandfilms' element={< TvAndFilms />} />
-          <Route path='/spatialDesign' element={< SpatialDesign />} />
           <Route path='/events' element={< Events />} />
           
+          <Route path='/spatialDesign' element={< SpatialDesign />} />
+          <Route path='/blanc' element={< Blanc />} />
+          
+
         </Routes>
         <Footer />
       </BrowserRouter>

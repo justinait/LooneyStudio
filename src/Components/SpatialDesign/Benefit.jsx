@@ -5,7 +5,7 @@ import './Benefit.css'
 function Benefit() {
   return (
     <div>
-        <img src={benefit} className='benefitImage' />
+      <img src={benefit} className='benefitImage' />
     </div>
   )
 }

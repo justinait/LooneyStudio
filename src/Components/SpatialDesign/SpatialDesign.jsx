@@ -5,10 +5,10 @@ import spray from '/sprays/spatialSpray.png'
 
 function SpatialDesign() {
   const spatial = [
-    { name: '1664 Blanc - LND FASHION WEEK', image: '/spatial/1664.jpg', detail: '', className: ''},
+    { name: '1664 Blanc - LND FASHION WEEK', image: '/spatial/1664.jpg', detail: '/blanc', className: ''},
     { name: 'DESTREE', image: '/spatial/Destree.jpg', detail: '', className: ''},
     { name: 'PINK PANTHERESS- Heaven Knos Album', image: '/spatial/pink.png', detail: '', className: ''},
-    { name: 'BENEFIT - PORE WASH POP UP', image: '/spatial/Benefit.png', detail: '/spatial/benefitdetail.png', className: '' },
+    { name: 'BENEFIT - PORE WASH POP UP', image: '/spatial/Benefit.png', detail: '/benefit', className: '' },
     { name: 'GISOU - HOLIDAY POP UP', image: '/spatial/Gisou.jpg', detail: '', className: ''},
     { name: 'HUDA BEAUTY - MERCURY RETROGADE', image: '/spatial/Huda.jpeg', detail: '', className: ''},
   ]
@@ -28,7 +28,7 @@ function SpatialDesign() {
         {
         spatial.map(e=>{
           return(
-            <Link to={'/benefit'} className='spatialItemBox' >
+            <Link to={e.detail} className='spatialItemBox' >
               <img src={e.image} alt={e.name} className='spatialImage'/>
               <div className='imageOverlay'></div>
               <p className='spatialText'>{e.name}</p>

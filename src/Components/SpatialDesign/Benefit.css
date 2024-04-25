@@ -1,0 +1,75 @@
+.blancHero {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+}
+.xSpatialDetail {
+    font-family: 'oswald';
+    position: absolute;
+    top: 18.5vh;
+    left: 26px;
+    z-index: 5;
+    margin: 0;
+    color: #EEEFF3;
+    font-size: 14px;
+    font-weight: 600;
+}
+.xSpraySpatial {
+    width: 60px;
+    top: 16vh;
+    z-index: 5;
+    position: absolute;
+}
+.colorSpaceBlanc {
+    height: 150px;
+    background-color: var(--color-violet);    
+    color: white;
+}
+
+.stackContainer{
+    position: absolute;
+    color: white;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    text-align: center;
+    justify-content: space-between;
+}
+.stackItem1 {
+    width: 73px;
+    width: 26%;
+}
+.stackItem2 {
+    width: 95px;
+    width: 30%;
+}
+.stackItem3 {
+    width: 65px;
+    width: 17%;
+}
+.stackItem4 {
+    width: 75px;
+    width: 20%;
+}
+
+.stackCircleImg{
+    width: 100%;
+    height: 14px;
+}
+.stackText {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    bottom: 15px;
+    font-size: 6px;
+    margin: 0;
+    position: relative;
+}
+.benefitImage {
+    width: 100%;
+    height: 100vh;
+
+}
