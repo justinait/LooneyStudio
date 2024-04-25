@@ -9,6 +9,9 @@ import circle5 from '/spatial/circle5.png'
 import circle6 from '/spatial/circle6.png'
 import circle7 from '/spatial/circle7.png'
 import xSpray from '/spatial/xSpray.png'
+import image1 from '/spatial/16641.jpg'
+import image2 from '/spatial/16642.jpg'
+import image3 from '/spatial/16643.jpg'
 
 
 function Blanc() {
@@ -53,23 +56,33 @@ function Blanc() {
             
         </div>
         <div className='colorSpaceBlanc'>
-            <p>1664 BLANC - LND FASHION WEEK POP UP</p>
+            <p className='titleSpatialDetail'>1664 BLANC - LND FASHION WEEK POP UP</p>
             <div className='separatorSpatial'></div>
-            <div>
-                <p>CLIENT</p>
-                <p>1664 KRONENBERG</p>
+            <div className='infoContainerSpatialDetail'>
+                <div>
+                    <p className='infoTitleSpatialDetail'>CLIENT</p>
+                    <p className='infoDataSpatialDetail'>1664 KRONENBERG</p>
+                </div>
+
+                <div>
+                    <p className='infoTitleSpatialDetail'>AGENCY</p>
+                    <p className='infoDataSpatialDetail'>GUNGA & <br />STUDIO STILTON</p>
+                </div>
+
+                <div>
+                    <p className='infoTitleSpatialDetail'>LOCATION</p>
+                    <p className='infoDataSpatialDetail'>SELFRIDGES</p>
+                </div>
             </div>
 
-            <div>
-                <p>AGENCY</p>
-                <p>GUNGA & STUDIO STILTON</p>
+        </div>
+        <div>
+            <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
+            <p className='spatialDetailImagesText'>Behind the scenes</p>
+            <div className='spatialDetailImages'>
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
             </div>
-
-            <div>
-                <p>LOCATION</p>
-                <p>SELFRIDGES</p>
-            </div>
-
         </div>
     </div>
   )
