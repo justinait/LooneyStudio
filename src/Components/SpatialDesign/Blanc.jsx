@@ -1,6 +1,6 @@
 import React from 'react'
 import hero from '/spatial/1664.jpg'
-import './Benefit.css'
+import './Blanc.css'
 import circle1 from '/spatial/circle1.png'
 import circle2 from '/spatial/circle2.png'
 import circle3 from '/spatial/circle3.png'
@@ -12,13 +12,15 @@ import xSpray from '/spatial/xSpray.png'
 import image1 from '/spatial/16641.jpg'
 import image2 from '/spatial/16642.jpg'
 import image3 from '/spatial/16643.jpg'
+import { Link } from 'react-router-dom'
 
 
 function Blanc() {
   return (
     <div>
         <img src={xSpray} className='xSpraySpatial' alt="" />
-        <p className='xSpatialDetail'>X</p>
+        <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
+        
         <img src={hero} alt="1664 Blanc" className='blancHero'/>
         <div className='stackContainer'>
             <div className='stackItem1'>
@@ -55,7 +57,7 @@ function Blanc() {
             </div>
             
         </div>
-        <div className='colorSpaceBlanc'>
+        <div className='colorSpace'>
             <p className='titleSpatialDetail'>1664 BLANC - LND FASHION WEEK POP UP</p>
             <div className='separatorSpatial'></div>
             <div className='infoContainerSpatialDetail'>

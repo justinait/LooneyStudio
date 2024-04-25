@@ -11,6 +11,7 @@ import TvAndFilms from './Components/Projects/TvAndFilms';
 import SpatialDesign from './Components/SpatialDesign/SpatialDesign';
 import Events from './Components/Events/Events';
 import Blanc from './Components/SpatialDesign/Blanc';
+import Destree from './Components/SpatialDesign/Destree';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           
           <Route path='/spatialDesign' element={< SpatialDesign />} />
           <Route path='/blanc' element={< Blanc />} />
+          <Route path='/destree' element={< Destree />} />
           
 
         </Routes>

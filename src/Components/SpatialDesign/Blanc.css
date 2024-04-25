@@ -37,6 +37,9 @@
     justify-content: space-between;
     bottom: 65px;
 }
+.stackContainerDestree {
+    width: 57vw;
+}
 .stackItem1 {
     width: 27%;
     height: 20px;
@@ -57,6 +60,18 @@
     width: 100%;
     height: 14px;
 }
+.stackItemDestree1 {
+    width: 44%;
+    height: 20px;
+}
+.stackItemDestree2 {
+    width: 52%;
+    height: 20px;
+}
+.stackItemDestree3 {
+    width: 31%;
+    height: 20px;
+}
 .stackText {
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -65,9 +80,9 @@
     margin: 0;
     position: relative;
 }
-.colorSpaceBlanc {
+.colorSpace {
     font-size: 10px;
-    padding: 8% 5vw;
+    padding: 8% 5vw 0;
     background-color: var(--color-violet);    
     color: white;
 }
@@ -82,30 +97,35 @@
     border-bottom: #EEEFF3 1px solid;
     margin: 6% 0;
 }
-.colorSpaceBlanc p {
-    margin: 0;
-}
 .infoContainerSpatialDetail{
     display: flex;
+    padding-bottom: 6%;
 }
 .infoContainerSpatialDetail div{
-    width: 25%;
+    width: 23.5vw;
 }
  
 .infoTitleSpatialDetail {
     font-size: 8px;
     font-weight: 300;
     letter-spacing: 0.1em;
-
+    margin: 0;
 }
 .infoDataSpatialDetail{
     font-family: 'Oswald';
     font-size: 8px;
     font-weight: 500;
     letter-spacing: 0.06em;
+    margin: 0;
 }
 .image1SpatialDetail {
     width: 100%;
+}
+.image1SpatialDetailDestree{
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: 0 -75px;
 }
 .spatialDetailImages {
     display: flex;
@@ -114,8 +134,11 @@
 }
 .spatialDetailImages img {
     width: 48.8%;
-    height: 190px;
+    height: 200px;
     object-fit: cover;
+}
+.spatialDetailImagesDestree img {
+    height: 140px;
 }
 .spatialDetailImagesText{
     text-transform: uppercase;
@@ -128,5 +151,20 @@
     margin: 0;
     position: absolute;
     transform: translateY(100%);
-
+}
+.infoSpatialDetailTextContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.infoSpatialDetailTextContainer p{
+    font-size: 7px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-align: justify;
+    width: 48%;
+}
+@media (min-width: 376px) {
+    .infoSpatialDetailTextContainer p {
+        font-size: 7.8px; /* Tamaño de fuente para dispositivos de 376px a 414px de ancho */
+    }
 }
