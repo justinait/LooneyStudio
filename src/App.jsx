@@ -12,6 +12,7 @@ import SpatialDesign from './Components/SpatialDesign/SpatialDesign';
 import Events from './Components/Events/Events';
 import Blanc from './Components/SpatialDesign/Blanc';
 import Destree from './Components/SpatialDesign/Destree';
+import Pink from './Components/SpatialDesign/Pink';
 
 function App() {
 
@@ -33,6 +34,8 @@ function App() {
           <Route path='/spatialDesign' element={< SpatialDesign />} />
           <Route path='/blanc' element={< Blanc />} />
           <Route path='/destree' element={< Destree />} />
+          <Route path='/pink' element={< Pink />} />
+          
           
 
         </Routes>

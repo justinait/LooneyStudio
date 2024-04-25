@@ -35,25 +35,29 @@
     width: 87vw;
     text-align: center;
     justify-content: space-between;
+    justify-content: space-evenly;
     bottom: 65px;
 }
 .stackContainerDestree {
     width: 57vw;
 }
+.stackContainerPink {
+    width: 70vw;
+}
 .stackItem1 {
-    width: 27%;
+    width: 26%;
     height: 20px;
 }
 .stackItem2 {
-    width: 31%;
+    width: 30%;
     height: 20px;
 }
 .stackItem3 {
-    width: 18%;
+    width: 17%;
     height: 20px;
 }
 .stackItem4 {
-    width: 21%;
+    width: 20%;
     height: 20px;
 }
 .stackCircleImg{
@@ -70,6 +74,33 @@
 }
 .stackItemDestree3 {
     width: 31%;
+    height: 20px;
+}
+.stackItemPink4 {
+    width: 31%;
+    height: 20px;
+    margin-top: 5px;
+}
+.stackItemPink4 img {
+    height: 26px;
+    width: 70%;
+}
+.stackItemPink4 .stackText {
+    margin-top: -7.5px;
+}
+.stackItemPink1 {
+    width: 31%;
+    height: 20px;
+}
+.stackItemPink2 {
+    width: 39%;
+    height: 20px;
+}
+.stackItemPink2 img {
+    height: 16px;
+}
+.stackItemPink3 {
+    width: 23%;
     height: 20px;
 }
 .stackText {
