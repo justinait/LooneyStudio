@@ -220,6 +220,14 @@
     margin-bottom: 1%;
 }
 
+.spatialDetailImagesBoxHuda {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    margin: 1% 0 2% 0;
+}
+
 .spatialDetailImage1{
     width: 34.5%;
     object-fit: cover;
@@ -227,6 +235,16 @@
 .spatialDetailImage2{
     object-fit: cover;
     width: 64.5%;
+}
+.spatialDetailImage3{
+    width: 61.5%;
+    object-fit: cover;
+    height: 170px;
+}
+.spatialDetailImage4{
+    object-fit: cover;
+    width: 37.5%;
+    height: 170px;
 }
 .spatialDetailImagesBoxBenefit1 {
     width: 100%;

@@ -9,11 +9,11 @@ import circle6 from '/spatial/circle6.png'
 import circle8 from '/spatial/circle8.png'
 import circle9 from '/spatial/circle9.png'
 import xSpray from '/spatial/xSpray.png'
-import image1 from '/spatial/Gisou1.jpg'
-import image2 from '/spatial/Gisou2.jpg'
-import image3 from '/spatial/Gisou3.jpg'
-import image4 from '/spatial/Gisou4.jpg'
-import image5 from '/spatial/Gisou5.jpg'
+import image1 from '/spatial/huda1.jpg'
+import image2 from '/spatial/huda2.jpeg'
+import image3 from '/spatial/huda3.jpeg'
+import image4 from '/spatial/huda4.jpg'
+import image5 from '/spatial/huda5.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -52,54 +52,55 @@ function Huda() {
             </div>
             
         </div>
-      <div className='colorSpace'>
-        <p className='titleSpatialDetail'>HUDA - Mercury Retrograde launch</p>
-        <div className='separatorSpatial'></div>
-        <div className='infoContainerSpatialDetail'>
-          <div>
-            <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>Huda Beauty</p>
-          </div>
+        <div className='colorSpace'>
+            <p className='titleSpatialDetail'>HUDA - Mercury Retrograde launch</p>
+            <div className='separatorSpatial'></div>
+            <div className='infoContainerSpatialDetail'>
+            <div>
+                <p className='infoTitleSpatialDetail'>CLIENT</p>
+                <p className='infoDataSpatialDetail'>Huda Beauty</p>
+            </div>
 
-          <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
-            <p className='infoDataSpatialDetail'>POP UP MOB</p>
-          </div>
+            <div>
+                <p className='infoTitleSpatialDetail'>AGENCY</p>
+                <p className='infoDataSpatialDetail'>POP UP MOB</p>
+            </div>
 
-          <div>
-            <p className='infoTitleSpatialDetail'>LOCATION</p>
-            <p className='infoDataSpatialDetail'>Covent Garden</p>
-          </div>
+            <div>
+                <p className='infoTitleSpatialDetail'>LOCATION</p>
+                <p className='infoDataSpatialDetail'>Covent Garden</p>
+            </div>
+            </div>
+            <div className='infoSpatialDetailTextContainer'>
+            <p>Transforming Covent Garden's Piazza into a captivating space for a month, 
+                we crafted an 18 x 10ft pop-up from scratch that transported visitors to 
+                outer space. Drawing inspiration from the intricate facets of diamonds and 
+                reimagining life on Mercury, we curated a metallic palette and incorporated 
+                a mirror tunnel entrance, alongside a hidden mirror room that left
+            </p>
+            <p>
+            visitors awe-struck. This ambitious design project featured a stunning crystal 
+            facade constructed with bespoke welded metal frames, cutting-edge sound technology, 
+            and a vibrant interior. It became a must-visit destination during the Christmas period, 
+            offering passersby an immersive glimpse into the essence of Huda Beauty.
+            </p>
+            </div>
         </div>
-        <div className='infoSpatialDetailTextContainer'>
-          <p>Transforming Covent Garden's Piazza into a captivating space for a month, 
-            we crafted an 18 x 10ft pop-up from scratch that transported visitors to 
-            outer space. Drawing inspiration from the intricate facets of diamonds and 
-            reimagining life on Mercury, we curated a metallic palette and incorporated 
-            a mirror tunnel entrance, alongside a hidden mirror room that left
-          </p>
-          <p>
-          visitors awe-struck. This ambitious design project featured a stunning crystal 
-          facade constructed with bespoke welded metal frames, cutting-edge sound technology, 
-          and a vibrant interior. It became a must-visit destination during the Christmas period, 
-          offering passersby an immersive glimpse into the essence of Huda Beauty.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="benefit" className='' />
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
-        </div>
+        <div>
 
+            <img src={image1} alt="benefit" className='image1SpatialDetail' />
 
-        <p className='spatialDetailImagesText'>Behind the scenes</p>
-        <div className='spatialDetailImagesBenefit spatialDetailImagesGisou'>
-          <img src={image4} alt="" />
-          <img src={image5} alt="" />
+            <div className='spatialDetailImagesBoxHuda'>
+                <img className='spatialDetailImage2' src={image2} alt="" />
+                <img className='spatialDetailImage1' src={image3} alt="" />
+            </div>
+
+            <p className='spatialDetailImagesText'>Behind the scenes</p>
+            <div className='infoSpatialDetailTextContainer'>
+                <img className='spatialDetailImage3' src={image4} alt="" />
+                <img className='spatialDetailImage4' src={image5} alt="" />
+            </div>
         </div>
-      </div>
     </div>
   )
 }
