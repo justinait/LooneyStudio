@@ -7,6 +7,7 @@
     line-height: 87px;
     letter-spacing: -0.01em;
     text-align: center;
+    color: #EEEFF3;
 }
 .headerContainer{
     background: linear-gradient(to bottom, black, transparent);
