@@ -37,6 +37,7 @@
     justify-content: space-between;
     justify-content: space-evenly;
     bottom: 65px;
+    font-weight: 500;
 }
 .stackContainerDestree {
     width: 57vw;
@@ -46,6 +47,7 @@
 }
 .stackContainerBenefit {
     color: black;
+    width: 80vw;
 }
 .stackItem1 {
     width: 26%;
@@ -84,17 +86,22 @@
     height: 20px;
     margin-top: 5px;
 }
-.stackItemPink4 img {
+.stackItemSpecial {
+    margin-top: 5px;
+
+}
+.stackCircleImgBig {
     height: 26px;
     width: 70%;
 }
-.stackItemPink4 .stackText {
-    margin-top: -7.5px;
-}
+/* .stackItemSpecial .stackCircleImgBig{
+    margin-top: 5px;
+} */
 .stackItemPink1 {
-    width: 31%;
+    width: 36%;
     height: 20px;
 }
+
 .stackItemPink2 {
     width: 39%;
     height: 20px;
@@ -113,6 +120,12 @@
     font-size: 6.5px;
     margin: 0;
     position: relative;
+    /* margin: auto;
+    width: fit-content; */
+}
+
+.stackItemPink4 .stackText, .stackTextBig {
+    margin-top: -7.5px;
 }
 .colorSpace {
     font-size: 10px;
@@ -199,7 +212,7 @@
     text-align: justify;
     width: 48%;
 }
-.spatialDetailImagesBox {
+.spatialDetailImagesBoxPink {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -215,8 +228,35 @@
     object-fit: cover;
     width: 64.5%;
 }
+.spatialDetailImagesBoxBenefit1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.spatialDetailImagesBoxBenefit1 img {
+    width: 32.8%;
+    height: 150px;
+    object-fit: cover;
+}
+.spatialDetailImageBenefit{
+    width: 100%;
+    object-fit: cover;
+    margin: 1% 0;
+}
+.spatialDetailImagesBenefit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.spatialDetailImagesBenefit img {
+    height: 170px;
+    object-fit: cover;
+    width: 49.5%;
+    object-position: top;
+}
 @media (min-width: 376px) {
     .infoSpatialDetailTextContainer p {
-        font-size: 7.8px; /* Tamaño de fuente para dispositivos de 376px a 414px de ancho */
+        font-size: 7.8px;
     }
 }

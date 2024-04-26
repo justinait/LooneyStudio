@@ -22,7 +22,7 @@ function Pink() {
         
         <img src={hero} alt="PINK PANTHERESS" className='blancHero'/>
         <div className='stackContainer stackContainerPink'>
-            <div className='stackItemPink1'>
+            <div className='stackItemDestree3'>
                 <img className='stackCircleImg' src={circle1} alt="" />
                 <p className='stackText'>CONCEPT DESIGN</p>
             </div>
@@ -34,7 +34,7 @@ function Pink() {
                 <img className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>CARPENTRY</p>
             </div>
-            <div className='stackItemPink1'>
+            <div className='stackItemDestree3'>
                 <img className='stackCircleImg' src={circle4} alt="" />
                 <p className='stackText'>PROP MAKING</p>
             </div>
@@ -106,11 +106,11 @@ function Pink() {
             </div>
         </div>
         <div>
-            <div className='spatialDetailImagesBox'>
+            <div className='spatialDetailImagesBoxPink'>
                 <img className='spatialDetailImage1' src={image1} alt="" />
                 <img className='spatialDetailImage2' src={image2} alt="" />
             </div>
-            <div className='spatialDetailImagesBox'>
+            <div className='spatialDetailImagesBoxPink'>
                 <img className='spatialDetailImage1' src={image3} alt="" />
                 <img className='spatialDetailImage2' src={image4} alt="" />
             </div>

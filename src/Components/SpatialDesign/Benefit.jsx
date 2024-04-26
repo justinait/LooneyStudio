@@ -5,14 +5,18 @@ import circle1 from '/spatial/circle1.png'
 import circle2 from '/spatial/circle2.png'
 import circle3 from '/spatial/circle3.png'
 import circle4 from '/spatial/circle4.png'
-import circle5 from '/spatial/circle5.png'
 import circle6 from '/spatial/circle6.png'
-import circle7 from '/spatial/circle7.png'
-import circle8 from '/spatial/circle8.png'
+import circle9 from '/spatial/circle9.png'
 import xSpray from '/spatial/xSpray.png'
-import image1 from '/spatial/16641.jpg'
-import image2 from '/spatial/16642.jpg'
-import image3 from '/spatial/16643.jpg'
+import image1 from '/spatial/benefit1.png'
+import image2 from '/spatial/benefit2.png'
+import image3 from '/spatial/benefit3.png'
+import image4 from '/spatial/benefit4.png'
+import image5 from '/spatial/benefit9.jpeg'
+import image6 from '/spatial/benefit5.jpg'
+import image7 from '/spatial/benefit6.jpeg'
+import image8 from '/spatial/benefit7.jpg'
+import image9 from '/spatial/benefit8.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -24,16 +28,16 @@ function Benefit() {
       
       <img src={hero} alt="BENEFIT" className='blancHero'/>
       <div className='stackContainer stackContainerBenefit'>
-        <div className='stackItem1'>
-          <img className='stackCircleImg' src={circle1} alt="" />
-          <p className='stackText'>CONCEPT DESIGN</p>
-        </div>
         <div className='stackItem2'>
           <img className='stackCircleImg' src={circle2} alt="" />
+          <p className='stackText'>CONCEPT DESIGN</p>
+        </div>
+        <div className='stackItemPink1'>
+          <img className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>PROJECT MANAGEMENT</p>
         </div>
-        <div className='stackItem4'>
-          <img className='stackCircleImg' src={circle4} alt="" />
+        <div className='stackItemPink3'>
+          <img className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
 
@@ -42,19 +46,15 @@ function Benefit() {
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItem1'>
-          <img className='stackCircleImg' src={circle5} alt="" />
-          <p className='stackText'>LIGHTNING DESIGN</p>
+          <img className='stackCircleImg' src={circle1} alt="" />
+          <p className='stackText'>LIGHTING DESIGN</p>
         </div>
-          <div className='stackItemPink4'>
-            <img className='stackCircleImgBig' src={circle7} alt="" />
-            <p className='stackText'>FINISHING & <br />SPRYING</p>
-          </div>
-        <div className='stackItem2'>
-          <img className='stackCircleImg' src={circle8} alt="" />
-          <p className='stackText'>SPRYING & FINISHING</p>
+        <div className='stackItem1 stackItemSpecial'>
+          <img className='stackCircleImgBig' src={circle9} alt="" />
+          <p className='stackText stackTextBig'>FINISHING & <br />SPRYING</p>
         </div>
-        <div className='stackItem3'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+        <div className='stackItem4'>
+          <img className='stackCircleImg' src={circle4} alt="" />
           <p className='stackText'>CARPENTRY</p>
         </div>
           
@@ -95,12 +95,25 @@ function Benefit() {
         </div>
       </div>
       <div>
-          <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
-          <p className='spatialDetailImagesText'>Behind the scenes</p>
-          <div className='spatialDetailImages'>
-              <img src={image2} alt="" />
-              <img src={image3} alt="" />
-          </div>
+        <div className='spatialDetailImagesBoxBenefit1'>
+          <img src={image1} alt="benefit" className='' />
+          <img src={image2} alt="benefit" className='' />
+          <img src={image3} alt="benefit" className='' />
+        </div>
+
+        <img src={image4} className="spatialDetailImageBenefit" />
+
+        <div className='spatialDetailImagesBoxBenefit1'>
+          <img src={image5} alt="benefit" className='' />
+          <img src={image6} alt="benefit" className='' />
+          <img src={image7} alt="benefit" className='' />
+        </div>
+
+        <p className='spatialDetailImagesText'>Behind the scenes</p>
+        <div className='spatialDetailImagesBenefit'>
+          <img src={image8} alt="" />
+          <img src={image9} alt="" />
+        </div>
       </div>
     </div>
   )
