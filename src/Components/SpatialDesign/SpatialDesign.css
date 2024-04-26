@@ -66,17 +66,20 @@
 }
 .spatialText{
     position: relative;
-    top: -60%;
-    top: -57%;
+    top: -53%;
     z-index: 3;
     font-weight: 300;
     font-family: 'Manrope';
-    font-size: 7px;
-    line-height: 33px;
+    font-size: 8px;
+    line-height: inherit;
     letter-spacing: 0.1em;
     text-align: center;
     margin: 0;
     text-transform: uppercase;
+}
+.breakSpatialText {
+    width: 54%;
+    margin: auto;
 }
 
 .spatialDetail {

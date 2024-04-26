@@ -7,10 +7,10 @@ function SpatialDesign() {
   const spatial = [
     { name: '1664 Blanc - LND FASHION WEEK', image: '/spatial/1664.jpg', detail: '/blanc', className: ''},
     { name: 'DESTREE', image: '/spatial/Destree.jpg', detail: '/destree', className: ''},
-    { name: 'PINK PANTHERESS- Heaven Knos Album', image: '/spatial/pink.png', detail: '/pink', className: ''},
+    { name: 'PINK PANTHERESS - Heaven Knos Album', image: '/spatial/pink.png', detail: '/pink', className: 'breakSpatialText'},
     { name: 'BENEFIT - PORE WASH POP UP', image: '/spatial/Benefit.png', detail: '/benefit', className: '' },
     { name: 'GISOU - HOLIDAY POP UP', image: '/spatial/Gisou.jpg', detail: '/gisou', className: ''},
-    { name: 'HUDA BEAUTY - MERCURY RETROGADE', image: '/spatial/Huda.jpeg', detail: '/huda', className: ''},
+    { name: 'HUDA BEAUTY - MERCURY RETROGADE', image: '/spatial/Huda.jpeg', detail: '/huda', className: 'breakSpatialText'},
   ]
 
   return (
@@ -31,7 +31,7 @@ function SpatialDesign() {
             <Link to={e.detail} className='spatialItemBox' >
               <img src={e.image} alt={e.name} className='spatialImage'/>
               <div className='imageOverlay'></div>
-              <p className='spatialText'>{e.name}</p>
+              <p className={`spatialText ${e.className}`}>{e.name}</p>
             </Link>
           )
         })
