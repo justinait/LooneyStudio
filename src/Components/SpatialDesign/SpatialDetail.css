@@ -114,7 +114,7 @@
     height: 20px;
 }
 .stackText {
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.1em;
     bottom: 15px;
     font-size: 6.5px;
@@ -246,7 +246,7 @@
 .spatialDetailImagesBenefit {
     display: flex;
     justify-content: space-between;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
 .spatialDetailImagesBenefit img {
