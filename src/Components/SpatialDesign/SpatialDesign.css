@@ -2,12 +2,6 @@
     min-height: 84vh;
     margin-top: 10vh;
 }
-.headerProjects {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    position: relative;
-}
 
 .linksSpatial {
     color: var(--color-violet);
@@ -24,18 +18,22 @@
     padding: 0 3% 0 0;
 }
 .selectedProject{
-    color: white;
+    color: black;
     font-size: 10px;
     letter-spacing: 0.1em;
     z-index: 10;
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
+}
+.spatial {
+    color: white;
 }
 .spraySpatial {
     position: absolute;
     width: 175px;
-    left: 33.5%;
     top: 18px;
+    left: 56%;
+    transform: translateX(-50%);
 }
 .spatialImagesContainer{
     display: flex;

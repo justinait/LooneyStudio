@@ -3,6 +3,7 @@
     justify-content: space-between;
     position: relative;
     padding: 40px 0 20px;
+    align-items: flex-end;
 }
 .linksEvents {
     color: #FFCC00;
@@ -15,6 +16,7 @@
     position: absolute;
     width: 250px;
     height: 95px;
-    left: 15%;
     top: 15px;
+    left: 46%;
+    transform: translateX(-50%);
 } 

@@ -18,7 +18,7 @@ function SpatialDesign() {
       <div className='headerProjects'>
         <Link to={'/events'} className='linksSpatial linksProjects projectsLeftLink'>EVENTS & INSTALL</Link>
 
-        <p className='selectedProject'>SPATIAL DESIGN</p>
+        <p className='selectedProject spatial'>SPATIAL DESIGN</p>
         <img src={spray} alt="" className='spraySpatial' />
         
         <Link to={'/tvAndFilms'} className='linksSpatial linksProjects projectsRigthLink'>TV & FILMS</Link>
