@@ -6,11 +6,11 @@
     align-items: flex-end;
 }
 .linksEvents {
-    color: #FFCC00;
-    border-bottom: 1px solid #FFCC00;
+    color: var(--color-orange);
+    border-bottom: 1px solid var(--color-orange);
 }
 .linksEvents:hover {
-    background-color: #FFCC00;
+    background-color: var(--color-orange);
 }
 .sprayEvents {
     position: absolute;
@@ -20,3 +20,6 @@
     left: 46%;
     transform: translateX(-50%);
 } 
+.eventsImagesContainer {
+    padding: 20% 0 0 0;
+}

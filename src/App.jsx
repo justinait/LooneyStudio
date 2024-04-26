@@ -16,6 +16,7 @@ import Pink from './Components/SpatialDesign/Pink';
 import Benefit from './Components/SpatialDesign/Benefit';
 import Gisou from './Components/SpatialDesign/Gisou';
 import Huda from './Components/SpatialDesign/Huda';
+import Warner from './Components/Events/Warner';
 
 function App() {
 
@@ -32,7 +33,9 @@ function App() {
           <Route path='/about' element={< About />} />
 
           <Route path='/tvandfilms' element={< TvAndFilms />} />
+          
           <Route path='/events' element={< Events />} />
+          <Route path='/warner23' element={< Warner />} />
           
           <Route path='/spatialDesign' element={< SpatialDesign />} />
           <Route path='/blanc' element={< Blanc />} />
