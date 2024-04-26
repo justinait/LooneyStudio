@@ -41,7 +41,7 @@ function Blanc() {
             </div>
             <div className='stackItem1'>
                 <img className='stackCircleImg' src={circle5} alt="" />
-                <p className='stackText'>LIGHTNING DESIGN</p>
+                <p className='stackText'>LIGHTING DESIGN</p>
             </div>
             <div className='stackItem4'>
                 <img className='stackCircleImg' src={circle6} alt="" />

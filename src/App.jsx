@@ -15,6 +15,7 @@ import Destree from './Components/SpatialDesign/Destree';
 import Pink from './Components/SpatialDesign/Pink';
 import Benefit from './Components/SpatialDesign/Benefit';
 import Gisou from './Components/SpatialDesign/Gisou';
+import Huda from './Components/SpatialDesign/Huda';
 
 function App() {
 
@@ -39,7 +40,7 @@ function App() {
           <Route path='/pink' element={< Pink />} />
           <Route path='/benefit' element={< Benefit />} />
           <Route path='/gisou' element={< Gisou />} />
-          
+          <Route path='/huda' element={< Huda />} />
 
         </Routes>
         <Footer />
