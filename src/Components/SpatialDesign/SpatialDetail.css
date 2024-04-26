@@ -255,6 +255,9 @@
     width: 49.5%;
     object-position: top;
 }
+.spatialDetailImagesGisou img{
+    object-position: unset;
+}
 @media (min-width: 376px) {
     .infoSpatialDetailTextContainer p {
         font-size: 7.8px;

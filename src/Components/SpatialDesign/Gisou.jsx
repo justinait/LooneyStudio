@@ -53,12 +53,12 @@ function Gisou() {
             
         </div>
       <div className='colorSpace'>
-        <p className='titleSpatialDetail'>BENEFIT - Pore Wash Pop Up</p>
+        <p className='titleSpatialDetail'>Gisou Holiday Pop Up</p>
         <div className='separatorSpatial'></div>
         <div className='infoContainerSpatialDetail'>
           <div>
             <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>Benefit Cosmetics</p>
+            <p className='infoDataSpatialDetail'>Gisou</p>
           </div>
 
           <div>
@@ -68,22 +68,22 @@ function Gisou() {
 
           <div>
             <p className='infoTitleSpatialDetail'>LOCATION</p>
-            <p className='infoDataSpatialDetail'>Covent Garden</p>
+            <p className='infoDataSpatialDetail'>Picadilly Circus</p>
           </div>
         </div>
         <div className='infoSpatialDetailTextContainer'>
-          <p>Building upon Benefit’s successful pop-up in New York, 
-            which employed the same theme, we had just a month to 
-            meticulously craft all the necessary elements and a mere 
-            five days to bring the installation to life on site. 
-            With ingenuity and creativity at the forefront, we 
-            fashioned a fully functional car wash setup complete 
-            with spinning brushes, 
+          <p>Drawing inspiration from Gisou's golden hue and the 
+            powerful essence of Mirsalehi Honey products, we embraced 
+            the enchanting glow theme throughout the entire project. 
+            Despite the time constraints and the bustling holiday season, 
+            we undertook a remarkable transformation of the Victorian 
+            building at 189 Piccadilly. With meticulous 
           </p>
           <p>
-          mesmerizing floating bubbles, and fuel pumps that playfully 
-          dispensed foam. The result was an interactive and experiential 
-          journey that left a lasting impression on all who engaged with it.
+            attention to detail, we incorporated organic shapes and curated a 
+            bespoke color palette that harmoniously reflected the brand's 
+            honey-inspired identity. Every aspect of the pop-up was thoughtfully 
+            crafted to immerse visitors in an unforgettable Gisou experience.
           </p>
         </div>
       </div>
@@ -94,17 +94,10 @@ function Gisou() {
           <img src={image3} alt="benefit" className='' />
         </div>
 
-        <img src={image4} className="spatialDetailImageBenefit" />
-
-        <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image5} alt="benefit" className='' />
-          <img src={image5} alt="benefit" className='' />
-          <img src={image5} alt="benefit" className='' />
-        </div>
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
-        <div className='spatialDetailImagesBenefit'>
-          <img src={image5} alt="" />
+        <div className='spatialDetailImagesBenefit spatialDetailImagesGisou'>
+          <img src={image4} alt="" />
           <img src={image5} alt="" />
         </div>
       </div>
