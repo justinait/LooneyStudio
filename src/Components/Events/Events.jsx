@@ -6,14 +6,14 @@ import spray from '/sprays/eventsSpray.png'
 function Events() {
   const events = [
     { name: 'WARNER MUSIC CHRISTMAS PARTY 23', image: '/events/Warner23.jpg', detail: '/warner23', className: ''},
-    { name: 'SEZANE', image: '/events/sezane.jpg', detail: '', className: ''},
-    { name: 'WWE', image: '/events/WWE.jpg', detail: '', className: ''},
-    { name: 'PLACES + FACES', image: '/events/places.png', detail: '', className: ''},
-    { name: 'WARNER MUSIC CHRISTMAS PARTY 22', image: '/events/Warner22.png', detail: '', className: '' },
-    { name: 'ELTON JHON', image: '/events/elton.jpeg', detail: '', className: ''},
-    { name: 'MOLECULES', image: '/events/molecules.jpg', detail: '', className: ''},
-    { name: 'NOTHING X DAZED', image: '/events/dazed.jpeg', detail: '', className: ''},
-    { name: 'TOM DIXON', image: '/events/TOMDIXON.jpg', detail: '', className: ''},
+    { name: 'SEZANE', image: '/events/sezane.jpg', detail: '/sezane', className: ''},
+    { name: 'WWE', image: '/events/WWE.jpg', detail: '/wwe', className: ''},
+    { name: 'PLACES + FACES', image: '/events/places.png', detail: '/places', className: ''},
+    { name: 'WARNER MUSIC CHRISTMAS PARTY 22', image: '/events/Warner22.png', detail: '/warner22', className: '' },
+    { name: 'ELTON JHON', image: '/events/elton.jpeg', detail: '/elton', className: ''},
+    { name: 'MOLECULES', image: '/events/molecules.jpg', detail: '/molecules', className: ''},
+    { name: 'NOTHING X DAZED', image: '/events/dazed.jpeg', detail: '/dazed', className: ''},
+    { name: 'TOM DIXON', image: '/events/TOMDIXON.jpg', detail: '/dixon', className: ''},
   ]
   return (
     <div className='spatialContainer'>

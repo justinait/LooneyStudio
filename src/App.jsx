@@ -17,6 +17,7 @@ import Benefit from './Components/SpatialDesign/Benefit';
 import Gisou from './Components/SpatialDesign/Gisou';
 import Huda from './Components/SpatialDesign/Huda';
 import Warner from './Components/Events/Warner';
+import Sezane from './Components/Events/Sezane';
 
 function App() {
 
@@ -34,9 +35,6 @@ function App() {
 
           <Route path='/tvandfilms' element={< TvAndFilms />} />
           
-          <Route path='/events' element={< Events />} />
-          <Route path='/warner23' element={< Warner />} />
-          
           <Route path='/spatialDesign' element={< SpatialDesign />} />
           <Route path='/blanc' element={< Blanc />} />
           <Route path='/destree' element={< Destree />} />
@@ -44,6 +42,10 @@ function App() {
           <Route path='/benefit' element={< Benefit />} />
           <Route path='/gisou' element={< Gisou />} />
           <Route path='/huda' element={< Huda />} />
+          
+          <Route path='/events' element={< Events />} />
+          <Route path='/warner23' element={< Warner />} />
+          <Route path='/sezane' element={< Sezane />} />
 
         </Routes>
         <Footer />
