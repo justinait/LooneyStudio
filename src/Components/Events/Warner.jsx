@@ -7,7 +7,6 @@ import circle3 from '/events/circle3.png'
 import circle4 from '/events/circle4.png'
 import circle5 from '/events/circle5.png'
 import xSpray from '/events/xSpray.png'
-import image1 from '/events/Warner23-1.jpg'
 import image2 from '/events/Warner23-2.jpg'
 import image3 from '/events/Warner23-3.jpg'
 import image4 from '/events/Warner23-4.jpg'
@@ -72,7 +71,7 @@ function Warner() {
             entire space, a captivating ceiling
             installation stretched across the venue,
             seing the stage for an evening of
-            unparalleled excitement.
+            unparalleled excitement. <br />
             A striking 50-foot suspended
             installation guided guests into the heart
             of the dance 
@@ -80,7 +79,7 @@ function Warner() {
           <p>
             floor, where our bespoke DJ booth awaited, graced by acclaimed
             artists like Mike Skinner from The
-            Streets.
+            Streets. <br />
             Dominating the scene, a colossal floating W logo
             served as a beacon of aention, adding a touch of
             grandeur to the ambiance. Stealing the spotlight, a
@@ -99,17 +98,13 @@ function Warner() {
 
         <img src={image5} className="spatialDetailImageWarner" />
 
+        <p className='eventsDetailImagesText threeImages'>Behind the scenes</p>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image6} alt="benefit" className='' />
-          <img src={image7} alt="benefit" className='' />
-          <img src={image8} alt="benefit" className='' />
+          <img src={image6} alt="warner" className='objectFitUnset' />
+          <img src={image7} alt="warner" className='' />
+          <img src={image8} alt="warner" className='' />
         </div>
 
-        <p className='spatialDetailImagesText'>Behind the scenes</p>
-        <div className='spatialDetailImagesBenefit'>
-          <img src={image8} alt="" />
-          <img src={image8} alt="" />
-        </div>
       </div>
     </div>
   )

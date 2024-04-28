@@ -66,3 +66,22 @@
     width: 21%;
     height: 20px;
 }
+.eventsDetailImagesText {
+    text-transform: uppercase;
+    color: var(--color-orange);
+    font-family: 'Oswald';
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    padding: 0 5vw;
+    margin: 0;
+    position: absolute;
+    transform: translateY(100%);
+}
+.threeImages {
+    transform: translateY(30%);
+    padding: 0 3.5vw;
+}
+.objectFitUnset {
+    object-fit: unset !important;
+}
