@@ -4,7 +4,7 @@
     z-index: 5;
     position: absolute;
 }
-.xSpatialDetail {
+.xEventDetail {
     font-family: 'oswald';
     position: absolute;
     top: 126px;
@@ -14,4 +14,55 @@
     color: #EEEFF3;
     font-size: 14px;
     font-weight: 600;
+}
+.spatialDetailImageWarner {
+    width: 100%;
+    object-fit: cover;
+    margin: 1% 0;
+    height: 200px;
+}
+
+.colorSpaceEvents {
+    font-size: 10px;
+    padding: 8% 5vw 0;
+    background-color: var(--color-orange);    
+    color: #131313;
+}
+.separatorEvents{
+    
+    border-bottom: #131313 1px solid;
+    margin: 6% 0;
+}
+
+
+.stackContainerEvents{
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    width: 96vw;
+    text-align: center;
+    justify-content: space-between;
+    bottom: 65px;
+    font-weight: 500;
+} 
+
+.stackItemEvents {
+    width: 19%;
+    height: 20px;
+}
+.stackItemEventsLarge {
+    width: 29%;
+    height: 20px;
+}
+
+.stackItemEvents9 {
+    width: 9%;
+    height: 20px;
+}
+.stackItemEventsLarger {
+    width: 21%;
+    height: 20px;
 }

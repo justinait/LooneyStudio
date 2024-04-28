@@ -155,7 +155,7 @@
  
 .infoTitleSpatialDetail {
     font-size: 8px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.1em;
     margin: 0;
 }
@@ -207,7 +207,7 @@
 }
 .infoSpatialDetailTextContainer p{
     font-size: 7px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.06em;
     text-align: justify;
     width: 48%;
