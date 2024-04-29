@@ -130,3 +130,22 @@
     width: 49.5%;
     object-fit: cover;
 }
+.eltonDetailImage {
+    height: 135px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -50px;
+}
+.eltonDetailImagesBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.eltonDetailImage1 {
+    width: 27.5%;
+    height: 150px;
+}
+.eltonDetailImage2 {
+    height: 150px;
+    width: 71.5%;
+}
