@@ -8,9 +8,9 @@ import circle4 from '/events/circle4.png'
 import circle5 from '/events/circle5.png'
 import circle6 from '/events/circle6.png'
 import xSpray from '/events/xSpray.png'
-import image2 from '/events/Warner23-2.jpg'
-import image3 from '/events/Warner23-3.jpg'
-import image4 from '/events/Warner23-4.jpg'
+import image1 from '/events/places1.jpg'
+import image2 from '/events/places2.png'
+import image3 from '/events/places3.png'
 import image5 from '/events/Warner23-5.jpg'
 import image6 from '/events/Warner23-6.jpg'
 import image7 from '/events/Warner23-7.jpg'
@@ -46,64 +46,40 @@ function Places() {
           <img className='stackCircleImg circleImg16' src={circle5} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
-
-          
       </div>
+
       <div className='colorSpaceEvents'>
-        <p className='titleSpatialDetail'>WARNER MUSIC CHRISTMAS PARTY 23</p>
+        <p className='titleSpatialDetail'>PLACES + FACES - 10TH YEAR ANNIVERSARY EVENT</p>
         <div className='separatorEvents'></div>
         <div className='infoContainerSpatialDetail'>
           <div>
             <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>Warner Music</p>
+            <p className='infoDataSpatialDetail'>PLACES + FACES</p>
           </div>
 
           <div>
             <p className='infoTitleSpatialDetail'>AGENCY</p>
-            <p className='infoDataSpatialDetail'>The Standard Hotel</p>
+            <p className='infoDataSpatialDetail'>Shakespeare Globe</p>
           </div>
 
         </div>
         <div className='infoSpatialDetailTextContainer'>
-          <p>Inspired by the 70s essence of Decimo restaurant itself, we embarked on a
-            creative endeavor to elevate the atmosphere of the venue for the Warner
-            Music end-of-year party into an
-            unforgeable experience. Spanning the
-            entire space, a captivating ceiling
-            installation stretched across the venue,
-            seing the stage for an evening of
-            unparalleled excitement. <br />
-            A striking 50-foot suspended
-            installation guided guests into the heart
-            of the dance 
+          <p>As the London-based streetwear brand Places+Faces 
+            approachedits 10th anniversary in the fashion industry, we
           </p>
           <p>
-            floor, where our bespoke DJ booth awaited, graced by acclaimed
-            artists like Mike Skinner from The
-            Streets. <br />
-            Dominating the scene, a colossal floating W logo
-            served as a beacon of aention, adding a touch of
-            grandeur to the ambiance. Stealing the spotlight, a
-            magnificent 6-foot robot, meticulously crafted from
-            fiberglass, took center stage, captivating guests with its extraterrestrial allure, ensuring a night to
-            remember.
+            began our partnership
+            with Guess Jeans to design
+            photoshoot backdrops for the
+            occasion.
           </p>
         </div>
       </div>
       <div>
-        <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
-          <img src={image4} alt="benefit" className='' />
-        </div>
-
-        <img src={image5} className="spatialDetailImageWarner" />
-
-        <p className='eventsDetailImagesText threeImages'>Behind the scenes</p>
-        <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image6} alt="warner" className='objectFitUnset' />
-          <img src={image7} alt="warner" className='' />
-          <img src={image8} alt="warner" className='' />
+        <img src={image1} className="image1SpatialDetail" />
+        <div className='eventPlacesDetailImages'>
+            <img src={image2} alt="" className='sezaneImages'/>
+            <img src={image3} alt="" className='sezaneImages'/>
         </div>
 
       </div>

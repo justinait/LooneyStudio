@@ -81,7 +81,7 @@ function Sezane() {
           <div className='spatialDetailImages'>
             <img src={image2} alt="" className='sezaneImages'/>
             <img src={image3} alt="" className='sezaneImages'/>
-            </div>
+          </div>
         </div>
 
       </div>

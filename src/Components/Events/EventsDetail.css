@@ -121,3 +121,12 @@
 .sezaneImages{
     object-position: bottom;
 }
+.eventPlacesDetailImages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.eventPlacesDetailImages img{
+    width: 49%;
+    object-fit: cover;
+}
