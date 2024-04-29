@@ -120,6 +120,13 @@
 }
 .sezaneImages{
     object-position: bottom;
+    width: 49%;
+}
+
+.eventDetailImagesBoxSezane {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .eventPlacesDetailImages {
     display: flex;

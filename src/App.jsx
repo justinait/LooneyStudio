@@ -22,6 +22,7 @@ import WWE from './Components/Events/WWE';
 import Places from './Components/Events/Places';
 import WarnerTwo from './Components/Events/WarnerTwo';
 import Elton from './Components/Events/Elton';
+import Molecules from './Components/Events/Molecules';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
           <Route path='/places' element={< Places />} />
           <Route path='/warner22' element={< WarnerTwo />} />
           <Route path='/elton' element={< Elton />} />
+          <Route path='/molecules' element={< Molecules />} />
 
         </Routes>
         <Footer />
