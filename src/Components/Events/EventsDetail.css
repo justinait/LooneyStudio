@@ -47,7 +47,9 @@
     bottom: 65px;
     font-weight: 500;
 } 
-
+.stackContainerEventsSmaller{
+    width: 70vw;
+}
 .stackItemEvents {
     width: 19%;
     height: 20px;
@@ -63,6 +65,14 @@
 }
 .stackItemEventsLarger {
     width: 21%;
+    height: 20px;
+}
+.stackItemEventsLarger2 {
+    width: 25%;
+    height: 20px;
+}
+.stackItemEventsSmall2 {
+    width: 14%;
     height: 20px;
 }
 .eventsDetailImagesText {
@@ -83,4 +93,7 @@
 }
 .objectFitUnset {
     object-fit: unset !important;
+}
+.sezaneImages{
+    object-position: bottom;
 }

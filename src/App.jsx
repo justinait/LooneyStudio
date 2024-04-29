@@ -18,6 +18,7 @@ import Gisou from './Components/SpatialDesign/Gisou';
 import Huda from './Components/SpatialDesign/Huda';
 import Warner from './Components/Events/Warner';
 import Sezane from './Components/Events/Sezane';
+import WWE from './Components/Events/WWE';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           <Route path='/events' element={< Events />} />
           <Route path='/warner23' element={< Warner />} />
           <Route path='/sezane' element={< Sezane />} />
+          <Route path='/wwe' element={< WWE />} />
 
         </Routes>
         <Footer />
