@@ -19,6 +19,7 @@ import Huda from './Components/SpatialDesign/Huda';
 import Warner from './Components/Events/Warner';
 import Sezane from './Components/Events/Sezane';
 import WWE from './Components/Events/WWE';
+import Places from './Components/Events/Places';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path='/warner23' element={< Warner />} />
           <Route path='/sezane' element={< Sezane />} />
           <Route path='/wwe' element={< WWE />} />
+          <Route path='/places' element={< Places />} />
 
         </Routes>
         <Footer />
