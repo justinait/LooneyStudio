@@ -2,9 +2,10 @@ import React from 'react'
 import hero from '/events/WWEHero.jpg'
 import './EventsDetail.css'
 import circle1 from '/events/circle1.png'
+import circle2 from '/events/circle2.png'
 import circle3 from '/events/circle3.png'
 import circle4 from '/events/circle4.png'
-import circle5 from '/events/circle5.png'
+import circle6 from '/events/circle7.png'
 import xSpray from '/events/xSpray.png'
 import image2 from '/events/sezane1.jpg'
 import image3 from '/events/sezane2.jpg'
@@ -18,28 +19,28 @@ function WWE() {
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
       <img src={hero} alt="BENEFIT" className='blancHero'/>
-      <div className='stackContainerEvents stackContainerEventsSmaller'>
-        <div className='stackItemEventsLarge'>
-          <img className='stackCircleImg' src={circle1} alt="" />
-          <p className='stackText'>CONCEPT DESIGN</p>
-        </div>
+      <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItemEventsLarger2'>
           <img className='stackCircleImg' src={circle3} alt="" />
-          <p className='stackText'>INSTALLATION</p>
+          <p className='stackText'>CONCEPT DESIGN</p>
         </div>
-        <div className='stackItemEventsSmall2'>
-          <img className='stackCircleImg' src={circle4} alt="" />
-          <p className='stackText'>EVENT</p>
-        </div>
-        <div className='stackItemEventsLarger2'>
-          <img className='stackCircleImg' src={circle5} alt="" />
+        <div className='stackItemEventsLarger'>
+          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>PROP MAKING</p>
+        </div>
+        <div className='stackItemEventsLarger'>
+          <img className='stackCircleImg circleImg16' src={circle1} alt="" />
+          <p className='stackText'>METALWORK</p>
+        </div>
+        <div className='stackItemEventsLarger2 bigCircleItemEvents'>
+          <img className='stackCircleImgBig' src={circle6} alt="" />
+          <p className='stackText'>FINISHING & <br /> SPRAYING</p>
         </div>
 
           
       </div>
       <div className='colorSpaceEvents'>
-        <p className='titleSpatialDetail'>SEZANE - CHRISTMAS POP UP</p>
+        <p className='titleSpatialDetail'>02 - WWE Money In The Bank Live Event</p>
         <div className='separatorEvents'></div>
         <div className='infoContainerSpatialDetail'>
           <div>

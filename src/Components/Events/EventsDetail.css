@@ -50,6 +50,9 @@
 .stackContainerEventsSmaller{
     width: 70vw;
 }
+.stackContainerEventsSmall{
+    width: 80vw;
+}
 .stackItemEvents {
     width: 19%;
     height: 20px;
@@ -75,6 +78,21 @@
     width: 14%;
     height: 20px;
 }
+.circleImg16 {
+    height: 16px;
+}
+.bigCircleItemEvents .stackText{
+    margin-top: -7px;
+}
+.bigCircleItemEvents .stackCircleImgBig {
+    height: 26px;
+    width: 80%;
+    margin-top: 5px;
+}
+/* .stackItemEventsBig {
+    width: 25%;
+    height: 30px;
+} */
 .eventsDetailImagesText {
     text-transform: uppercase;
     color: var(--color-orange);
