@@ -72,6 +72,10 @@
     width: 11%;
     height: 20px;
 }
+.stackItemEvents16 {
+    width: 16%;
+    height: 20px;
+}
 .stackItemEventsLarger {
     width: 21%;
     height: 20px;
@@ -95,10 +99,6 @@
     width: 80%;
     margin-top: 5px;
 }
-/* .stackItemEventsBig {
-    width: 25%;
-    height: 30px;
-} */
 .eventsDetailImagesText {
     text-transform: uppercase;
     color: var(--color-orange);

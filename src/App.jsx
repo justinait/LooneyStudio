@@ -21,6 +21,7 @@ import Sezane from './Components/Events/Sezane';
 import WWE from './Components/Events/WWE';
 import Places from './Components/Events/Places';
 import WarnerTwo from './Components/Events/WarnerTwo';
+import Elton from './Components/Events/Elton';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
           <Route path='/wwe' element={< WWE />} />
           <Route path='/places' element={< Places />} />
           <Route path='/warner22' element={< WarnerTwo />} />
+          <Route path='/elton' element={< Elton />} />
 
         </Routes>
         <Footer />
