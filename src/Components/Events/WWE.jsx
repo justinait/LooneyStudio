@@ -81,8 +81,8 @@ function WWE() {
             <img src={image1} alt="" className='image1SpatialDetail' />
             <p className='eventsDetailImagesText'>Behind the scenes</p>
             <div className='spatialDetailImagesBenefit'>
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
+              <img src={image2} alt="" />
+              <img src={image3} alt="" />
             </div>
         </div>
 
