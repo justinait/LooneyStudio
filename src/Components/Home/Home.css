@@ -1,7 +1,7 @@
-.heroImage {
+.heroVideo {
     object-fit: cover;
     width: 100%;
-    height: 93vh;
+    height: 100vh;
 }
 .heroText {
     position: absolute;

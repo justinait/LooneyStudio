@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './SpatialDesign.css'
 import { Link } from 'react-router-dom'
 import spray from '/sprays/spatialSpray.png'
