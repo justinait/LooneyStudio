@@ -5,7 +5,7 @@ import './TvAndFilms.css'
 
 function TvAndFilms() {
   const tvandfilms = [
-    { name: 'WORLD OF TANKS - HOLIDAY', image: '/tvandfilms/WorldofTanks.gif', detail: '/', className: 'breakSpatialText'},
+    { name: 'WORLD OF TANKS - HOLIDAY', image: '/tvandfilms/WorldofTanks.gif', detail: '/tanks', className: 'breakSpatialText'},
     { name: 'HEADIE ONE - THE LAST ONE', image: '/tvandfilms/HeadieOne.gif', detail: '/', className: 'breakSpatialText'},
     { name: 'SKY SPORTS', image: '/tvandfilms/SkySports.gif', detail: '/', className: ''},
     { name: 'HEADIE ONE - MARTIN’S SOFA', image: '/tvandfilms/HeadieOne-martins.gif', detail: '/', className: '' },

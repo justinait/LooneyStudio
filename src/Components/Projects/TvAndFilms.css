@@ -7,11 +7,11 @@
     letter-spacing: 0.1em;
 }
 .linksTv {
-    color: #DAA6DA;
-    border-bottom: 1px solid #daa6da;
+    color: var(--color-lila);
+    border-bottom: 1px solid var(--color-lila);
 }
 .linksTv:hover {
-    background-color: #daa6da;
+    background-color: var(--color-lila);
 }
 .sprayTv {
     position: absolute;
