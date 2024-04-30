@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom'
 function Tanks() {
   return (
     <div>
-      <img src={xSpray} className='xSpraySpatial' alt="" />
-      <Link to={'/tvandfilms'}><p className='xSpatialDetail'>X</p></Link>
+        <img src={xSpray} className='xSprayTv' alt="" />
+        <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
       <div className='videoTvContainer'>
         <iframe
@@ -45,17 +45,27 @@ function Tanks() {
         <div className='infoContainerSpatialDetail'>
           <div>
             <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>Benefit Cosmetics</p>
+            <p className='infoDataSpatialDetail'>WORLD OF TANKS</p>
           </div>
 
           <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
-            <p className='infoDataSpatialDetail'>POP UP MOB</p>
+            <p className='infoTitleSpatialDetail'>DIRECTOR</p>
+            <p className='infoDataSpatialDetail'>Andzej Gavriss</p>
           </div>
 
           <div>
-            <p className='infoTitleSpatialDetail'>LOCATION</p>
-            <p className='infoDataSpatialDetail'>Covent Garden</p>
+            <p className='infoTitleSpatialDetail'>PROD. CO.</p>
+            <p className='infoDataSpatialDetail'>Halal Amsterdam</p>
+          </div>
+
+          <div>
+            <p className='infoTitleSpatialDetail'>DESIGNER</p>
+            <p className='infoDataSpatialDetail'>Julija Fricsone</p>
+          </div>
+
+          <div>
+            <p className='infoTitleSpatialDetail'>ART DIRECTOR</p>
+            <p className='infoDataSpatialDetail'>Finn Sullivan</p>
           </div>
         </div>
       </div>
