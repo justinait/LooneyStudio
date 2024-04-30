@@ -19,22 +19,22 @@ function Tanks() {
         <iframe
             title='YouTube Video'
             className='tvHero'
-            src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1'
+            src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&controls=0&loop=1'
             frameborder='0'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             allowfullscreen
         />
       </div>
       <div className='stackContainer stackContainerTv'>
-        <div className='stackItem2'>
-          <img className='stackCircleImg' src={circle2} alt="" />
+        <div className='stackItemPink1'>
+          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>SCENIC PAINTING</p>
         </div>
-        <div className='stackItemPink1'>
+        <div className='stackItemDestree3'>
           <img className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>COMMERCIAL</p>
         </div>
-        <div className='stackItemPink3'>
+        <div className='stackItem1'>
           <img className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>SET BULDING</p>
         </div>
