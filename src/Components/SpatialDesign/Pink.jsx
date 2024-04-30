@@ -77,7 +77,7 @@ function Pink() {
                     purple installation on the first floor,
                     oering a unique and artistic approach
                     to merchandise display reminiscent of
-                    an art gallery exhibition.
+                    an art gallery exhibition. <br />
                     The second floor enticed visitors to explore Starface products playfully,
                     with samples elegantly showcased on
                     plinths and a bustling beauty corner
@@ -95,7 +95,7 @@ function Pink() {
                     radio, streaming live during the event.
                     Our bespoke tables and bean bags
                     provided a comfortable retreat for
-                    guests to relax and enjoy the ambiance.
+                    guests to relax and enjoy the ambiance. <br />
                     The entire experience was a resounding
                     success, from setup in just a day to a
                     swift dismantling in a maer of hours,

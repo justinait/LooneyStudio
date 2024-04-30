@@ -204,13 +204,15 @@
 .infoSpatialDetailTextContainer{
     display: flex;
     justify-content: space-between;
+    margin: auto -5px;
 }
 .infoSpatialDetailTextContainer p{
     font-size: 7px;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-align: justify;
-    width: 48%;
+    flex: 1;
+    padding: 0 5px 0 5px;
 }
 .spatialDetailImagesBoxPink {
     width: 100%;

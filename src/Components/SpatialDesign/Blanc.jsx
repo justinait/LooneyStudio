@@ -11,7 +11,6 @@ import circle7 from '/spatial/circle7.png'
 import xSpray from '/spatial/xSpray.png'
 import image1 from '/spatial/16641.jpg'
 import image2 from '/spatial/1664-2.jpg'
-// import image2 from '/public/spatial/16642.jpg'
 import image3 from '/spatial/1664-3.jpg'
 import { Link } from 'react-router-dom'
 
