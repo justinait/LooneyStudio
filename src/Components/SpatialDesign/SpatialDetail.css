@@ -147,12 +147,13 @@
 }
 .infoContainerSpatialDetail{
     display: flex;
-    padding-bottom: 6%;
+    flex-wrap: wrap;
 }
 .infoContainerSpatialDetail div{
+    padding-bottom: 6%;
     width: 23.5vw;
 }
- 
+
 .infoTitleSpatialDetail {
     font-size: 8px;
     font-weight: 400;
