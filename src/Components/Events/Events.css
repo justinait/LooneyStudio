@@ -22,4 +22,8 @@
 } 
 .eventsImagesContainer {
     padding: 20% 0 0 0;
+    justify-content: flex-end;
+}
+.eventsImagesContainer .eventsLeftAligned {
+    margin-right: 2%;
 }
