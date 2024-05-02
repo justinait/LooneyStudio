@@ -1,10 +1,3 @@
-.headerProjects {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    padding: 40px 0 20px;
-    align-items: flex-end;
-}
 .linksEvents {
     color: var(--color-orange);
     border-bottom: 1px solid var(--color-orange);
@@ -28,7 +21,5 @@
     margin-right: 2%;
 }
 @media(min-width:700px){
-    .headerProjects{
-        padding: 40px 0 40px;
-    }
+    
 }

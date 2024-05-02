@@ -6,6 +6,13 @@
     font-weight: 400;
     letter-spacing: 0.1em;
 }
+.headerProjects {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 40px 0 20px;
+    align-items: flex-end;
+}
 .linksTv {
     color: var(--color-lila);
     border-bottom: 1px solid var(--color-lila);
@@ -35,6 +42,9 @@
         font-weight: 400;
         height: 25px;
         padding-top: unset !important;
+    }
+    .headerProjects{
+        padding: 40px 0 40px;
     }
     
 }
