@@ -37,6 +37,7 @@
     width: 13px;
     height: 24px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .burgerMenuIcon { 
@@ -149,5 +150,8 @@ a:hover {
     .closeMenuIcon {
         width: 32px;
         height: 32px;
+    }
+    .nextSections{
+        font-size: 55.14px !important;
     }
 }
