@@ -9,8 +9,7 @@ function Home() {
         className='heroVideo' 
         src={heroMobile}
         muted loop autoPlay >
-
-        </video>
+      </video>
       <p className='heroText'>DESIGN & BUILD</p>
       
     </div>

@@ -1,7 +1,7 @@
 .servicesItemsContainer {
     display: flex;
     flex-direction: column;
-    width: 100vw;    
+    width: 100%;    
     padding: 20% 3% 0;
 }
 .serviceItemName {

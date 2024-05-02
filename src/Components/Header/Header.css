@@ -112,3 +112,42 @@ a:hover {
     position: fixed;
     width: 20px;
 }
+
+@media(min-width:700px){
+
+    .navbarLooney{
+        font-size: 45.76px;
+        font-weight: 600;
+        line-height: 67.82px;
+    }
+    
+    .burgerMenuIcon { 
+        width: 36px;
+        height: 15.75px;        
+    }
+    .initialHeader{
+        height: 156px;
+    }
+    .dropdownItemsContainer a, .projects{
+        font-size: 82.71px;
+        font-weight: 400;
+        line-height: 80px;
+    }
+    .projects img {
+        width: 26px;
+        height: 53px;
+    }
+    .sprayDropdown1 {
+        left: 89vw;
+        width: 380px;
+        height: 400px;
+    }
+    .igIconNavbar{
+        width: 40px;
+        height: 38px;
+    }
+    .closeMenuIcon {
+        width: 32px;
+        height: 32px;
+    }
+}

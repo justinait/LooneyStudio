@@ -12,3 +12,9 @@
     font-weight: 100;
     margin: 0;
 }
+
+@media(min-width:700px){
+    .heroText{
+        font-size: 26px;
+    }
+}
