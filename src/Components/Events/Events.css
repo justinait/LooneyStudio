@@ -27,3 +27,8 @@
 .eventsImagesContainer .eventsLeftAligned {
     margin-right: 2%;
 }
+@media(min-width:700px){
+    .headerProjects{
+        padding: 40px 0 40px;
+    }
+}
