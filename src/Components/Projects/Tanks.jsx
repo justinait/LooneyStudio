@@ -12,19 +12,25 @@ import { Link } from 'react-router-dom'
 function Tanks() {
   return (
     <div>
-        <img src={xSpray} className='xSprayTv' alt="" />
-        <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
+      <img src={xSpray} className='xSprayTv' alt="" />
+      <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
       <div className='videoTvContainer'>
         <iframe
-            title='YouTube Video'
-            className='tvHero'
-            src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&controls=0&loop=1'
-            frameborder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowfullscreen
+          title='YouTube Video'
+          className='tvHero'
+          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&controls=0&loop=1'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen
         />
       </div>
+      {/* <div className='youtube-player-overlay'>
+        <div className='youtube-player-popup'>
+          <iframe src="https://www.youtube.com/embed/fBMrZ-GjMgQ" title="Vinnie Jones joins World of Tanks for Holiday Ops!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div> */}
+
       <div className='stackContainer stackContainerTv'>
         <div className='stackItemPink1'>
           <img className='stackCircleImg circleImg16' src={circle2} alt="" />

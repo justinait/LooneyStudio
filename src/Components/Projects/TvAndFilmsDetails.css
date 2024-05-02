@@ -36,3 +36,32 @@
 .stackContainerTv {
     width: 60vw;
 }
+.youtube-player-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events:none;
+}
+
+.youtube-player-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.youtube-player-popup {
+    position: fixed;
+    width: 80%;
+    transform: translate(-50%, 100%);
+    left: 50%;
+    transition: all 400ms ease-in-out;
+}
+
+.youtube-player-overlay.active .youtube-player-popup {
+    transform: translate(-50%, 0);
+}
+
+.youtube-player-popup iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
