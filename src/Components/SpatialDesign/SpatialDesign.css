@@ -103,4 +103,7 @@
         font-weight: 400;
         line-height: 21px;
     }
+    .breakSpatialTextUnset {
+        width: 100%;
+    }
 }
