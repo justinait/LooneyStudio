@@ -21,5 +21,12 @@
     margin-right: 2%;
 }
 @media(min-width:700px){
-    
+    .sprayEvents{
+        width: 488.5px;
+        height: 156.41px;
+        top: -8px;
+    }
+    .eventsImagesContainer{
+        padding: 15% 0 0 0;
+    }
 }
