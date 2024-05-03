@@ -158,13 +158,14 @@
 }
 @media(min-width: 700px){
     .xSprayEvent {
-        width: 190px;
+        width: 160px;
+        top: 90px;
     }
     .xEventDetail {
-        top: 183px;
-        left: 89px;
         font-size: 29px;
         font-weight: 600;
+        top: 180px;
+        left: 75px;
     }
     .eventsDetailImagesText {
         font-size: 24.7px;
