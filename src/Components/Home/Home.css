@@ -12,9 +12,25 @@
     font-weight: 100;
     margin: 0;
 }
-
+.heroVideoDesktop {
+    display: none;
+}
 @media(min-width:700px){
     .heroText{
         font-size: 26px;
+    }
+}
+@media(min-width:1200px){
+    .heroText{
+        font-size: 20px;
+    }
+    .heroVideo{
+        display: none;
+    }
+    .heroVideoDesktop{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
     }
 }

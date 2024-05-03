@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
-import heroMobile from '/public/home/mobileHero.mp4'
+import heroMobile from '/home/mobileHero.mp4'
+import heroDesktop from '/home/desktopHero.mp4'
 
 function Home() {
   return (
@@ -8,6 +9,11 @@ function Home() {
       <video 
         className='heroVideo' 
         src={heroMobile}
+        muted loop autoPlay >
+      </video>
+      <video 
+        className='heroVideoDesktop' 
+        src={heroDesktop}
         muted loop autoPlay >
       </video>
       <p className='heroText'>DESIGN & BUILD</p>
