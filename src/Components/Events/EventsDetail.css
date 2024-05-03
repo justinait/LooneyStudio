@@ -156,3 +156,49 @@
     height: 150px;
     width: 71.5%;
 }
+@media(min-width: 700px){
+    .xSprayEvent {
+        width: 190px;
+    }
+    .xEventDetail {
+        top: 183px;
+        left: 89px;
+        font-size: 29px;
+        font-weight: 600;
+    }
+    .eventsDetailImagesText {
+        font-size: 24.7px;
+    }
+    .spatialDetailImageWarner {
+        height: 323px;
+    }
+    .wweImage1 {
+        height: 404px;
+    }
+    .wweImages{
+        height: 390px;
+    }
+    .circleImg16{
+        height: 30px;
+    }
+    .bigCircleItemEvents .stackCircleImgBig {
+        height: 50px;
+        margin-top: 0;
+    }
+    .bigCircleItemEvents .stackText {
+        margin-top: -18px;
+    }
+    .placesImage1 {
+        height: 336px;
+    }
+    .placesImages {
+        height: 500px;
+    }
+    .eltonDetailImage {
+        height: 335px;
+    }
+    .eltonDetailImage2, .eltonDetailImage1 {
+        height: 330px;
+        object-fit: cover;
+    }
+}
