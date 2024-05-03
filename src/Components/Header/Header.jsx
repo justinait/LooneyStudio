@@ -71,9 +71,8 @@ function Header() {
       <div className='initialHeader'>
         <Link to='/' className='navbarLooney' onClick={handleClose}>THE LOONEY STUDIO</Link>
         {openMenu ?
-        <img src={CloseIcon}  onClick={handleClose} className='closeMenuIcon' alt="Menu" />:
-        <img src={MenuIcon}  onClick={handleOpen} className='burgerMenuIcon' alt="Menu" />
-        
+          <img src={CloseIcon}  onClick={handleClose} className='closeMenuIcon' alt="Menu" />:
+          <img src={MenuIcon}  onClick={handleOpen} className='burgerMenuIcon' alt="Menu" />
         }
       </div>
 

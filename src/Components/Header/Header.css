@@ -46,6 +46,9 @@
     width: 17px;
     height: 17px;
 }
+.burgerMenuIcon:hover, .closeMenuIcon:hover {
+    cursor: pointer;
+}
 .dropdownHeader {
     position: absolute;
     background-color: #E33600;
@@ -165,10 +168,12 @@ a:hover {
         width: 36px;
         height: 15.75px;        
     }
-    .initialHeader{
+    .headerContainer{
         height: 170px;
+    }
+    .initialHeader{
         padding: 2vw;
-        align-items: baseline;
+        height: 120px;
     }
 }
 @media(min-width:1400px){
@@ -176,7 +181,7 @@ a:hover {
     .navbarLooney{
         font-size: 84px;
     }
-    .initialHeader{
+    .headerContainer{
         height: 202px;
     }
 }
