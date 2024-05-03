@@ -283,6 +283,10 @@
     object-position: unset !important;
     height: 200px;
 }
+
+.blancHeroDesktop{
+    display: none;
+}
 @media (min-width: 376px) {
     .infoSpatialDetailTextContainer p {
         font-size: 7.8px;
@@ -405,6 +409,12 @@
     .blancHero {
         height: 93vh;
     }
+    .mobileOnly {
+        display: none;
+    }
+    .desktopOnly{
+        display: block;
+    }
     .xSpraySpatial {
         width: 100px;
         height: 137px;
@@ -423,6 +433,13 @@
         width: 98vw;
         bottom: 110px;
     }
+    .stackContainerDestree {
+        width: 65vw;
+        bottom: 110px;
+    }
+    .stackContainerPink {
+        width: 78vw;
+    }
     .stackItem1 {
         width: 13%;
     }
@@ -440,6 +457,31 @@
     }
     .stackItemDesktop9 {
         width: 9%;
+    }
+    .stackItemDestree1 {
+        width: 21%;
+    }
+    .stackItemDestree2 {
+        width: 25%;
+    }
+    .stackItemDestree3 {
+        width: 14%;
+    }
+    .stackItemPink2 {
+        width: 18%;
+    }
+    .stackItemPink3 {
+        width: 10%;
+    }
+    .stackItemDesktop15 {
+        width: 15%;
+    }
+    .stackItemPink4 {
+        width: 12%;
+        margin-top: unset;
+    }
+    .stackCircleImgBig{
+        width: 100%;
     }
     .stackText {
         font-size: 13px;
@@ -461,7 +503,7 @@
         line-height: 22px;
     }
     .infoContainerSpatialDetail div {
-        padding-bottom: 8%;
+        padding-bottom: 5%;
     }
     .image1SpatialDetail {
         height: 500px;
@@ -474,12 +516,41 @@
         height: 370px;
         object-fit: cover;
     }
+
     .blanc1{
         width: 33%;
     }
     .blanc2{
         width: 66%;
     }
+    .infoSpatialDetailTextContainer p {
+        padding: 0 25px 0 25px;
+    }
+    .infoSpatialDetailTextContainer {
+        margin: auto -25px;
+    }
+    .image1SpatialDetailDestree {
+        height: 500px;
+        object-position: 0 -350px;
+    }
+    .spatialDetailImages {
+        margin-top: 1%;
+    }
+    .spatialDetailImgDestree2 {
+        width: 64.5%;
+        height: 350px;
+        object-fit: cover;
+        object-position: 0 -50px;
+    }
+    .spatialDetailImgDestree {
+        height: 350px;
+        width: 34.5%;
+        object-fit: cover;
+    }
+    .transformHero {
+        transform: scaleX(-1);
+    }
+    
 }
 
 @media(min-width:1600px){

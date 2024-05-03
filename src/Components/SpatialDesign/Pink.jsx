@@ -20,7 +20,7 @@ function Pink() {
         <img src={xSpray} className='xSpraySpatial' alt="" />
         <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
-        <img src={hero} alt="PINK PANTHERESS" className='blancHero'/>
+        <img src={hero} alt="PINK PANTHERESS" className='blancHero transformHero'/>
         <div className='stackContainer stackContainerPink'>
             <div className='stackItemDestree3'>
                 <img className='stackCircleImg' src={circle1} alt="" />
@@ -34,7 +34,7 @@ function Pink() {
                 <img className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>CARPENTRY</p>
             </div>
-            <div className='stackItemDestree3'>
+            <div className='stackItemDestree3 stackItemDesktop15'>
                 <img className='stackCircleImg' src={circle4} alt="" />
                 <p className='stackText'>PROP MAKING</p>
             </div>

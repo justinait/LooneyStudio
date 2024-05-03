@@ -18,7 +18,8 @@ function Destree() {
         <img src={xSpray} className='xSpraySpatial' alt="" />
         <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
-        <img src={hero} alt="1664 Blanc" className='blancHero'/>
+        <img src={hero} alt="1664 Blanc" className='blancHero mobileOnly'/>
+        <img src={image3} alt="1664 Blanc" className='blancHero desktopOnly'/>
         <div className='stackContainer stackContainerDestree'>
             <div className='stackItemDestree1'>
                 <img className='stackCircleImg' src={circle1} alt="" />
@@ -92,7 +93,8 @@ function Destree() {
             <img src={image1} alt="Destree" className='image1SpatialDetailDestree' />
             <div className='spatialDetailImages spatialDetailImagesDestree'>
                 <img src={image2} alt="" className='spatialDetailImgDestree' />
-                <img src={image3} alt="" className='spatialDetailImgDestree'/>
+                <img src={image3} alt="" className='spatialDetailImgDestree mobileOnly'/>
+                <img src={hero} alt="" className='spatialDetailImgDestree2 desktopOnly'/>
             </div>
         </div>
     </div>
