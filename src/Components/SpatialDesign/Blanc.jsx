@@ -31,11 +31,11 @@ function Blanc() {
                 <img className='stackCircleImg' src={circle2} alt="" />
                 <p className='stackText'>PROJECT MANAGEMENT</p>
             </div>
-            <div className='stackItem3'>
+            <div className='stackItem3 stackItemDesktop10'>
                 <img className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>CARPENTRY</p>
             </div>
-            <div className='stackItem4'>
+            <div className='stackItem4 stackItemDesktop9'>
                 <img className='stackCircleImg' src={circle4} alt="" />
                 <p className='stackText'>POP UP</p>
             </div>
@@ -68,7 +68,7 @@ function Blanc() {
 
                 <div>
                     <p className='infoTitleSpatialDetail'>AGENCY</p>
-                    <p className='infoDataSpatialDetail'>GUNGA & <br />STUDIO STILTON</p>
+                    <p className='infoDataSpatialDetail'>GUNGA & <br className='breakMobileAndTablet' />STUDIO STILTON</p>
                 </div>
 
                 <div>
@@ -82,8 +82,8 @@ function Blanc() {
             <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
             <p className='spatialDetailImagesText'>Behind the scenes</p>
             <div className='spatialDetailImages'>
-                <img src={image2} alt="" className='spatialDetailImgBlanc' />
-                <img src={image3} alt="" className='spatialDetailImgBlanc'/>
+                <img src={image2} alt="" className='spatialDetailImgBlanc blanc1' />
+                <img src={image3} alt="" className='spatialDetailImgBlanc blanc2'/>
             </div>
         </div>
     </div>

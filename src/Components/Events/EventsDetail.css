@@ -203,3 +203,9 @@
         object-fit: cover;
     }
 }
+
+@media(min-width: 1200px){
+    .stackContainerEvents {
+        width: 60vw;
+    }
+}

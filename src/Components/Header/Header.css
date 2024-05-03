@@ -32,6 +32,9 @@
     justify-content: space-between;
     width: 112%;
 }
+.projects:hover {
+    cursor:pointer;
+}
 .projects img {
     width: 13px;
     height: 24px;
@@ -68,10 +71,6 @@
     top: 40%;
     left: 10%;
     font-family: 'Oswald';
-
-    /* top: 854px;
-    left: 95px; */
-    
 }
 .dropdownItemsContainer a, .projects {
     font-size: 36px;
@@ -162,6 +161,8 @@ a:hover {
 
     .navbarLooney{
         font-size: 54px;
+        font-size: calc(1.2em + 2vw);
+        font-size: clamp(55px, 4vw, 70px);
     }
     
     .burgerMenuIcon { 
@@ -178,9 +179,6 @@ a:hover {
 }
 @media(min-width:1400px){
 
-    .navbarLooney{
-        font-size: 84px;
-    }
     .headerContainer{
         height: 202px;
     }

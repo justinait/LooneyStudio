@@ -179,7 +179,7 @@
     justify-content: space-between;
     margin-top: 3%;
 }
-.spatialDetailImages img {
+.spatialDetailImagesBlanc {
     width: 48.8%;
     /* height: 200px; */
     object-fit: cover;
@@ -398,5 +398,102 @@
     }
     .spatialDetailImage4, .spatialDetailImage3{
         height: 367px;
+    }
+}
+
+@media(min-width:1200px){
+    .blancHero {
+        height: 93vh;
+    }
+    .xSpraySpatial {
+        width: 100px;
+        height: 137px;
+        top: 126px;
+        right: 5px;
+        left: unset;
+    }
+    
+    .xSpatialDetail {
+        left: unset;
+        right: 50px;
+        top: 175px;
+        font-size: 18px;
+    }
+    .stackContainer {
+        width: 98vw;
+        bottom: 110px;
+    }
+    .stackItem1 {
+        width: 13%;
+    }
+    .stackItem2 {
+        width: 16%;
+    }
+    .stackItem3 {
+        width: 10%;
+    }
+    .stackItem4 {
+        width: 10%;
+    }
+    .stackItemDesktop10 {
+        width: 10%;
+    }
+    .stackItemDesktop9 {
+        width: 9%;
+    }
+    .stackText {
+        font-size: 13px;
+    }
+    .titleSpatialDetail{
+        font-size: 40px;
+        font-size: clamp(30px, 2.1vw, 40px);
+    }
+    .colorSpace {
+        padding: 4% 2vw 0;
+    }    
+    .separatorSpatial {
+        margin: 2.5% 0;
+    }
+    .breakMobileAndTablet {
+        display: none;
+    }
+    .infoTitleSpatialDetail {
+        line-height: 22px;
+    }
+    .infoContainerSpatialDetail div {
+        padding-bottom: 8%;
+    }
+    .image1SpatialDetail {
+        height: 500px;
+    }
+    .spatialDetailImagesText {
+        padding: 0 2vw;
+        font-size: 32px;
+    }
+    .spatialDetailImgBlanc {
+        height: 370px;
+        object-fit: cover;
+    }
+    .blanc1{
+        width: 33%;
+    }
+    .blanc2{
+        width: 66%;
+    }
+}
+
+@media(min-width:1600px){
+    .blancHero {
+        height: 93vh;
+    }
+    .xSpraySpatial {
+        width: 113px;
+        height: 147px;
+        top: 172px;
+        right: 5px;
+        left: unset;
+    }
+    .stackText {
+        font-size: 18px;
     }
 }
