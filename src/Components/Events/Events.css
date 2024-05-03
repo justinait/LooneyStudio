@@ -30,3 +30,19 @@
         padding: 15% 0 0 0;
     }
 }
+@media(min-width:1200px){
+    .eventsImagesContainer {
+        justify-content:space-between;
+    }
+    .eventsImagesContainer .eventsLeftAligned {
+        margin-right: 0%;
+    }
+    .sprayEvents {
+        width: 551px;
+        height: 203px;
+        left: 47%;
+    } 
+    .eventsImagesContainer {
+        padding: 5% 0 0 0;
+    }
+}

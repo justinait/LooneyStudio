@@ -24,7 +24,6 @@
     justify-content: space-between;
     z-index: 100;
     position: relative;
-    
 }
 .projects {
     display: flex;
@@ -153,5 +152,31 @@ a:hover {
     }
     .nextSections{
         font-size: 55.14px !important;
+    }
+}
+
+@media(min-width:1200px){
+
+    .navbarLooney{
+        font-size: 54px;
+    }
+    
+    .burgerMenuIcon { 
+        width: 36px;
+        height: 15.75px;        
+    }
+    .initialHeader{
+        height: 170px;
+        padding: 2vw;
+        align-items: baseline;
+    }
+}
+@media(min-width:1400px){
+
+    .navbarLooney{
+        font-size: 84px;
+    }
+    .initialHeader{
+        height: 202px;
     }
 }

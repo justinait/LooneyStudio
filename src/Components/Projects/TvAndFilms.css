@@ -54,3 +54,22 @@
     }
     
 }
+
+@media(min-width:700px){
+    .linksProjects, .selectedProject {
+        font-size: 18.48px;
+        font-weight: 400;
+        height: 25px;
+        padding-top: unset !important;
+    }
+    .headerProjects{
+        padding: 40px 0 40px;
+    }
+
+    .sprayTv{
+        width: 284px;
+        height: 137px;
+        top: 20px;
+    }
+    
+}

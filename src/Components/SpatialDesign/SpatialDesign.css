@@ -107,3 +107,47 @@
         height: 340px;
     }
 }
+@media(min-width:1200px){
+    
+    .spatialContainer {
+        margin-top: 170px;
+    }
+    .spraySpatial{
+        left: 54%;
+        width: 440px;
+        height: 203px;
+    }
+    .linksProjects, .selectedProject {
+        font-size: 20px;
+        height: 65px;
+        padding-top: 20px !important;
+    }
+    .projectsRigthLink, .projectsLeftLink {
+        padding: 0 2%;
+    }
+    .spatialItemBox {
+        width: 33%;
+    }
+    .imageOverlay, .spatialText {
+        display: none;
+    }
+    .spatialItemBox:hover .imageOverlay{
+        display: block;
+    }
+    .spatialItemBox:hover .spatialText{
+        display: block;
+    }
+    .breakSpatialText {
+        width: 100%;
+    }
+    .spatialImagesContainer {
+        padding: 5% 0 0 0;
+    }
+}
+
+@media(min-width:1400px){
+    
+    .spatialContainer {
+        margin-top: 202px;
+    }
+}
