@@ -111,8 +111,8 @@ function Benefit() {
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImagesBenefit'>
-          <img src={image8} alt="" />
-          <img src={image9} alt="" />
+          <img src={image8} alt="" className='spatialDetailBenefitImg' />
+          <img src={image9} alt="" className='spatialDetailBenefitImg objPositionUnset'/>
         </div>
       </div>
     </div>

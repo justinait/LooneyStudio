@@ -91,8 +91,8 @@ function Destree() {
         <div>
             <img src={image1} alt="Destree" className='image1SpatialDetailDestree' />
             <div className='spatialDetailImages spatialDetailImagesDestree'>
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
+                <img src={image2} alt="" className='spatialDetailImgDestree' />
+                <img src={image3} alt="" className='spatialDetailImgDestree'/>
             </div>
         </div>
     </div>

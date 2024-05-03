@@ -82,8 +82,8 @@ function Blanc() {
             <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
             <p className='spatialDetailImagesText'>Behind the scenes</p>
             <div className='spatialDetailImages'>
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
+                <img src={image2} alt="" className='spatialDetailImgBlanc' />
+                <img src={image3} alt="" className='spatialDetailImgBlanc'/>
             </div>
         </div>
     </div>
