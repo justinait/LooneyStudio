@@ -54,19 +54,18 @@ function Dixon() {
 
         </div>
         <div className='infoSpatialDetailTextContainer'>
-            <p>
-            Touchy-smelly-feely-noisy-tasty was Tom Dixon’s theme for London 
-            Design Week, where his space became a multi-sensory lab with 
-            interactive installations, workshops, and talks inspired by the 
-            five senses and how they shape the future of design. <br />
-            </p>
-            <p>
-            In collaboration with US Pop Up Mob strategy team, we converted 
-            one of the designer’s shop arches into the Razor Bar for the 
-            entire week. 
-            Open to the public and also by-invitation grooming services 
-            along with design workshops and events were hosted at the Razor Bar.
-
+          <p>
+          Touchy-smelly-feely-noisy-tasty was Tom Dixon’s theme for London 
+          Design Week, where his space became a multi-sensory lab with 
+          interactive installations, workshops, and talks inspired by the 
+          five senses and how they shape the future of design. <br />
+          </p>
+          <p>
+          In collaboration with US Pop Up Mob strategy team, we converted 
+          one of the designer’s shop arches into the Razor Bar for the 
+          entire week. 
+          Open to the public and also by-invitation grooming services 
+          along with design workshops and events were hosted at the Razor Bar.
           </p>
         </div>
       </div>

@@ -157,7 +157,17 @@
     height: 150px;
     width: 71.5%;
 }
+.tabletAndDesktop {
+    display: none;
+}
 @media(min-width: 700px){
+    .mobileOnlyPlaces{
+        display: none;
+    }
+    
+    .tabletAndDesktop {
+        display: block;
+    }
     .xSprayEvent {
         width: 160px;
         top: 90px;

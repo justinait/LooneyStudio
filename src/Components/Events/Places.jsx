@@ -20,8 +20,8 @@ function Places() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="PLACES + FACES" className='blancHero mobileOnly'/>
-      <img src={heroDesktop} alt="PLACES + FACES" className='blancHero desktopOnly'/>
+      <img src={hero} alt="PLACES + FACES" className='blancHero mobileOnlyPlaces'/>
+      <img src={heroDesktop} alt="PLACES + FACES" className='blancHero tabletAndDesktop'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall2'>
         <div className='stackItemEventsLarger2'>
