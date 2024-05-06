@@ -70,7 +70,7 @@ function Molecules() {
           </p>
           <p>
             Bespoke white pillars were filled into the space, appearing
-            architecturally original.
+            architecturally original. <br />
             Inside the pillars, we discreetly
             inserted perfume dispensers,
             dispensing the new fragrances. A
@@ -83,12 +83,12 @@ function Molecules() {
 
         
         <div>
-          <div className='spatialDetailImagesBoxPink'>
-            <img src={image1} alt="Molecules" className='spatialDetailImage2'/>
-            <img src={image2} alt="Molecules" className='spatialDetailImage1'/>
+          <div className='spatialDetailImagesBoxPink moleculesDesktopBoxes'>
+            <img src={image1} alt="Molecules" className='spatialDetailImage2 moleculesDesktopImg1'/>
+            <img src={image2} alt="Molecules" className='spatialDetailImage1 moleculesDesktopImg2'/>
           </div>
-          <div className='spatialDetailImagesBoxPink'>
-            <img src={image3} alt="Molecules" className='spatialDetailImage1'/>
+          <div className='spatialDetailImagesBoxPink moleculesDesktopBoxes'>
+            <img src={image3} alt="Molecules" className='spatialDetailImage1 moleculesDesktopImg3'/>
             <img src={image4} alt="Molecules" className='spatialDetailImage2'/>
           </div>
         </div>

@@ -19,11 +19,11 @@ function Dixon() {
       
       <img src={hero} alt="BENEFIT" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmaller'>
-        <div className='stackItemDestree1'>
+        <div className='stackItemDestree1 stackItemDesktop40'>
           <img className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>PROJECT MANAGEMENT</p>
         </div>
-        <div className='stackItem1'>
+        <div className='stackItem1 stackItemDesktop25'>
           <img className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
@@ -40,7 +40,7 @@ function Dixon() {
         <div className='infoContainerSpatialDetail'>
           <div>
             <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>HARRY’S X <br /> TOM DIXON</p>
+            <p className='infoDataSpatialDetail'>HARRY’S X <br className='breakMobileAndTablet'  /> TOM DIXON</p>
           </div>
 
           <div>
@@ -59,11 +59,11 @@ function Dixon() {
             Design Week, where his space became a multi-sensory lab with 
             interactive installations, workshops, and talks inspired by the 
             five senses and how they shape the future of design. <br />
+            </p>
+            <p>
             In collaboration with US Pop Up Mob strategy team, we converted 
             one of the designer’s shop arches into the Razor Bar for the 
             entire week. 
-            </p>
-            <p>
             Open to the public and also by-invitation grooming services 
             along with design workshops and events were hosted at the Razor Bar.
 
@@ -72,7 +72,6 @@ function Dixon() {
       </div>
       <div>
 
-        
         <div className='spatialDetailImagesBoxBenefit1'>
           <img src={image1} alt="benefit" className='' />
           <img src={image2} alt="benefit" className='' />

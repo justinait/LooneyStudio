@@ -267,4 +267,26 @@
     .stackItemDesktop25 {
         width: 25%;
     }
+    .stackItemDesktop40 {
+        width: 40%;
+    }
+    .moleculesDesktopBoxes {
+        height: 500px;
+        margin-bottom: 0.7%;
+    }
+    .moleculesDesktopImg1 {
+        width: 69%;
+    }
+    .moleculesDesktopImg2 {
+        width: 30.5%;
+    }
+    .moleculesDesktopImg3 {
+        width: 35%;
+    }
+    
+    .dazedImagesDesktop {
+        width: 32.8%;
+        height: 550px;
+        object-fit: cover;
+    }
 }

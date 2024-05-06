@@ -19,7 +19,9 @@ function Dazed() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="dazed" className='blancHero mobileOnly'/>
+      <img src={image4} alt="dazed" className='blancHero desktopOnly'/>
+
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItemPink3'>
           <img className='stackCircleImg circleImg16' src={circle2} alt="" />
@@ -87,16 +89,21 @@ function Dazed() {
       </div>
       <div>
 
+        <div className='mobileOnly'>
+          <div className='spatialDetailImagesBoxPink'>
+            <img src={image2} alt="dazed" className='spatialDetailImage2'/>
+            <img src={image1} alt="dazed" className='spatialDetailImage1'/>
+          </div>
+          <div className='spatialDetailImagesBoxPink'>
+            <img src={image3} alt="dazed" className='spatialDetailImage1'/>
+            <img src={image4} alt="dazed" className='spatialDetailImage2'/>
+          </div>
+        </div>
         
-        <div>
-          <div className='spatialDetailImagesBoxPink'>
-            <img src={image2} alt="" className='spatialDetailImage2'/>
-            <img src={image1} alt="" className='spatialDetailImage1'/>
-          </div>
-          <div className='spatialDetailImagesBoxPink'>
-            <img src={image3} alt="" className='spatialDetailImage1'/>
-            <img src={image4} alt="" className='spatialDetailImage2'/>
-          </div>
+        <div className='eventDetailImagesBoxSezane desktopOnly'>
+          <img src={image1} alt="dazed" className='dazedImagesDesktop' />
+          <img src={image2} alt="dazed" className='dazedImagesDesktop' />
+          <img src={image3} alt="dazed" className='dazedImagesDesktop' />
         </div>
 
       </div>
