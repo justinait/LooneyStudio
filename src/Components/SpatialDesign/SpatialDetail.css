@@ -189,6 +189,8 @@
 } */
 .spatialDetailImgDestree{
     height: 140px;
+    width: 49%;
+    object-fit: cover;
 }
 .spatialDetailImagesText{
     text-transform: uppercase;
@@ -285,6 +287,15 @@
 }
 
 .blancHeroDesktop{
+    display: none;
+}
+.blanc1, 
+.blanc2{
+    width: 48.9%;
+    object-fit: cover;
+}
+
+.desktopOnly{
     display: none;
 }
 @media (min-width: 376px) {
