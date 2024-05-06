@@ -45,33 +45,50 @@ function Elton() {
       <div className='colorSpaceEvents'>
         <p className='titleSpatialDetail'>02 - Elton John Farewell Tour</p>
         <div className='separatorEvents'></div>
-        <div className='infoContainerSpatialDetail'>
-          <div>
-            <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>O2 Arena</p>
-          </div>
+        <div className='colorSpaceInformationElton'>
 
-          <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
-            <p className='infoDataSpatialDetail'>O2 Arena</p>
-          </div>
+          <div className='infoContainerSpatialDetail'>
+            <div>
+              <p className='infoTitleSpatialDetail'>CLIENT</p>
+              <p className='infoDataSpatialDetail'>O2 Arena</p>
+            </div>
 
-        </div>
-        <div className='infoSpatialDetailTextContainer'>
-          <p>The O2 Arena’s marketing team sought
-            our expertise to bring to life a
-            captivating sculptural installation for
-            Elton John’s highly anticipated farewell
-            tour concert at the O2. Inspired by a pair
-            of iconic glasses 
-          </p>
-          <p>
-            provided by Elton
-            John’s team, we embarked on crafting a
-            remarkable 23ft wide metal frame,
-            strategically rigged and installed at the
-            entrance of the O2 Arena.
-          </p>
+            <div>
+              <p className='infoTitleSpatialDetail'>AGENCY</p>
+              <p className='infoDataSpatialDetail'>O2 Arena</p>
+            </div>
+
+          </div>
+          <div className='infoSpatialDetailTextContainer mobileOnly'>
+            <p>The O2 Arena’s marketing team sought
+              our expertise to bring to life a
+              captivating sculptural installation for
+              Elton John’s highly anticipated farewell
+              tour concert at the O2. Inspired by a pair
+              of iconic glasses 
+            </p>
+            <p>
+              provided by Elton
+              John’s team, we embarked on crafting a
+              remarkable 23ft wide metal frame,
+              strategically rigged and installed at the
+              entrance of the O2 Arena.
+            </p>
+          </div>
+          <div className='infoSpatialDetailTextContainer desktopOnly'>
+            <p>The O2 Arena’s marketing team sought
+              our expertise to bring to life a
+              captivating sculptural installation for
+              Elton John’s highly anticipated farewell
+              tour concert at the O2. Inspired by a pair
+              of iconic glasses
+              provided by Elton
+              John’s team, we embarked on crafting a
+              remarkable 23ft wide metal frame,
+              strategically rigged and installed at the
+              entrance of the O2 Arena.
+            </p>
+          </div>
         </div>
       </div>
       <div>

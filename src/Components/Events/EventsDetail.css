@@ -213,6 +213,19 @@
         height: 330px;
         object-fit: cover;
     }
+    .colorSpaceInformation {
+        display: flex;
+        padding-bottom: 2.5%;
+    }
+    .colorSpaceInformation .infoContainerSpatialDetail {
+        flex-wrap: nowrap;
+    }
+    .colorSpaceInformation .infoSpatialDetailTextContainer{
+        margin-left: 1%;
+    }
+    .colorSpaceInformation .infoSpatialDetailTextContainer p{
+        margin: 0;
+    }
 }
 
 @media(min-width: 1200px){
@@ -298,5 +311,16 @@
         width: 32.8%;
         height: 550px;
         object-fit: cover;
+    }
+    .colorSpaceInformationElton .infoSpatialDetailTextContainer{
+        margin-left: 0%;
+    }
+    
+    .colorSpaceInformationElton {
+        display: flex;
+        padding-bottom: 2.5%;
+    }
+    .colorSpaceInformationElton .infoContainerSpatialDetail {
+        flex-wrap: nowrap;
     }
 }

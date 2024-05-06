@@ -49,28 +49,39 @@ function Places() {
       <div className='colorSpaceEvents'>
         <p className='titleSpatialDetail'>PLACES + FACES - 10TH YEAR ANNIVERSARY EVENT</p>
         <div className='separatorEvents'></div>
-        <div className='infoContainerSpatialDetail'>
-          <div>
-            <p className='infoTitleSpatialDetail'>CLIENT</p>
-            <p className='infoDataSpatialDetail'>PLACES + FACES</p>
-          </div>
+        <div className='colorSpaceInformation'>
+          <div className='infoContainerSpatialDetail'>
+            <div>
+              <p className='infoTitleSpatialDetail'>CLIENT</p>
+              <p className='infoDataSpatialDetail'>PLACES + FACES</p>
+            </div>
 
-          <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
-            <p className='infoDataSpatialDetail'>Shakespeare Globe</p>
-          </div>
+            <div>
+              <p className='infoTitleSpatialDetail'>AGENCY</p>
+              <p className='infoDataSpatialDetail'>Shakespeare Globe</p>
+            </div>
 
-        </div>
-        <div className='infoSpatialDetailTextContainer'>
-          <p>As the London-based streetwear brand Places+Faces 
-            approachedits 10th anniversary in the fashion industry, we
-          </p>
-          <p>
-            began our partnership
-            with Guess Jeans to design
-            photoshoot backdrops for the
-            occasion.
-          </p>
+          </div>
+          <div className='infoSpatialDetailTextContainer mobileOnlyPlaces'>
+            <p>As the London-based streetwear brand Places+Faces 
+              approachedits 10th anniversary in the fashion industry, we
+            </p>
+            <p>
+              began our partnership
+              with Guess Jeans to design
+              photoshoot backdrops for the
+              occasion.
+            </p>
+          </div>
+          <div className='infoSpatialDetailTextContainer tabletAndDesktop'>
+            <p>As the London-based streetwear brand Places+Faces 
+              approachedits 10th anniversary in the fashion industry, we
+              began our partnership
+              with Guess Jeans to design
+              photoshoot backdrops for the
+              occasion.
+            </p>
+          </div>
         </div>
       </div>
       <div>
