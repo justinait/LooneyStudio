@@ -79,7 +79,7 @@ function Sezane() {
         <div>
           <p className='eventsDetailImagesText'>Behind the scenes</p>
           <div className='eventDetailImagesBoxSezane'>
-            <img src={image2} alt="" className='sezaneImages'/>
+            <img src={image2} alt="" className='sezaneImages transformHero'/>
             <img src={image3} alt="" className='sezaneImages'/>
           </div>
         </div>

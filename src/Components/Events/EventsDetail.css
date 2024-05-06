@@ -110,6 +110,7 @@
     margin: 0;
     position: absolute;
     transform: translateY(100%);
+    z-index: 2;
 }
 .threeImages {
     transform: translateY(30%);
@@ -205,7 +206,45 @@
 }
 
 @media(min-width: 1200px){
+    .xSprayEvent {
+        width: 140px;
+        top: 90px;
+        right: 0px;
+        left: unset;
+    }
+    .xEventDetail {
+        left: unset;
+        right: 63px;
+        top: 175px;
+        font-size: 18px;
+    }
     .stackContainerEvents {
         width: 60vw;
+        bottom: 110px;
+    }    
+    .stackContainerEventsSmaller{
+        width: 45vw;
+    }
+    .stackContainerEventsSmall {
+        width: 50vw;
+    }
+    .colorSpaceEvents {
+        padding: 4% 2vw 0;
+    }
+    .separatorEvents {
+        margin: 2.5% 0;
+    }
+    .spatialDetailImageWarner {
+        height: 450px;
+    }
+    .sezaneImages{
+        height: 700px;
+        object-fit: cover;
+    }
+    .wweImage1 {
+        height: 550px;
+    }
+    .wweImages {
+        height: 700px;
     }
 }
