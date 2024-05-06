@@ -77,10 +77,10 @@ function Gisou() {
             the enchanting glow theme throughout the entire project. 
             Despite the time constraints and the bustling holiday season, 
             we undertook a remarkable transformation of the Victorian 
-            building at 189 Piccadilly. With meticulous 
+            building at 189 Piccadilly.  
           </p>
           <p>
-            attention to detail, we incorporated organic shapes and curated a 
+            With meticulous attention to detail, we incorporated organic shapes and curated a 
             bespoke color palette that harmoniously reflected the brand's 
             honey-inspired identity. Every aspect of the pop-up was thoughtfully 
             crafted to immerse visitors in an unforgettable Gisou experience.
@@ -94,11 +94,10 @@ function Gisou() {
           <img src={image3} alt="benefit" className='' />
         </div>
 
-
         <p className='spatialDetailImagesText'>Behind the scenes</p>
-        <div className='spatialDetailImagesBenefit spatialDetailImagesGisou'>
-          <img src={image4} alt="" className='spatialDetailGisouImg' />
-          <img src={image5} alt="" className='spatialDetailGisouImg' />
+        <div className='spatialDetailImagesBenefit'>
+          <img src={image4} alt="" className='spatialDetailGisouImg blanc2 transformHero gisouFixedImg' />
+          <img src={image5} alt="" className='spatialDetailGisouImg blanc1' />
         </div>
       </div>
     </div>

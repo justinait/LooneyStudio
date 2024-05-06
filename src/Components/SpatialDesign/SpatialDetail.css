@@ -184,9 +184,6 @@
     /* height: 200px; */
     object-fit: cover;
 }
-/* .spatialDetailImagesDestree img {
-    height: 140px;
-} */
 .spatialDetailImgDestree{
     height: 140px;
     width: 49%;
@@ -283,7 +280,7 @@
 }
 .spatialDetailGisouImg{
     object-position: unset !important;
-    height: 200px;
+    height: 180px;
 }
 
 .blancHeroDesktop{
@@ -434,6 +431,9 @@
         left: unset;
     }
     
+    .gisouFixedImg{
+        object-position: 0 -405px !important;
+    }
     .xSpatialDetail {
         left: unset;
         right: 50px;
@@ -524,6 +524,7 @@
     }
     .spatialDetailImagesText {
         padding: 0 2vw;
+        z-index: 2;
         font-size: 32px;
     }
     .spatialDetailImgBlanc {
@@ -578,7 +579,25 @@
     .spatialDetailBenefitImg {
         height: 450px;
     }
+    .spatialDetailGisouImg{
+        height: 450px;
+    }
     
+    .spatialDetailImage3{
+        width: 64.5%;
+        height: 450px;
+    }
+    .spatialDetailImage4{
+        width: 34.5%;
+        height: 450px;
+    }
+    .image1SpatialDetail {
+        height: 700px;
+    }
+    .spatialDetailImagesBoxHuda {
+        height: 450px;
+        margin: 2% 0 2% 0;
+    }
 }
 
 @media(min-width:1600px){

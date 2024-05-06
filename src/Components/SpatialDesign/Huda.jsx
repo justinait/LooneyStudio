@@ -1,5 +1,6 @@
 import React from 'react'
 import hero from '/spatial/hudaheromobile.jpg'
+import heroDesktop from '/spatial/Huda.jpeg'
 import './SpatialDesign.css'
 import circle1 from '/spatial/circle1.png'
 import circle2 from '/spatial/circle2.png'
@@ -21,7 +22,8 @@ function Huda() {
         <img src={xSpray} className='xSpraySpatial' alt="" />
         <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
-        <img src={hero} alt="BENEFIT" className='blancHero'/>
+        <img src={hero} alt="BENEFIT" className='blancHero mobileOnly'/>
+        <img src={heroDesktop} alt="BENEFIT" className='blancHero desktopOnly'/>
         <div className='stackContainer stackContainerPink'>
             <div className='stackItem2'>
                 <img className='stackCircleImg' src={circle2} alt="" />
@@ -74,10 +76,10 @@ function Huda() {
                 we crafted an 18 x 10ft pop-up from scratch that transported visitors to 
                 outer space. Drawing inspiration from the intricate facets of diamonds and 
                 reimagining life on Mercury, we curated a metallic palette and incorporated 
-                a mirror tunnel entrance, alongside a hidden mirror room that left
+                a mirror tunnel entrance, alongside a hidden mirror room that left visitors awe-struck.
             </p>
             <p>
-            visitors awe-struck. This ambitious design project featured a stunning crystal 
+            This ambitious design project featured a stunning crystal 
             facade constructed with bespoke welded metal frames, cutting-edge sound technology, 
             and a vibrant interior. It became a must-visit destination during the Christmas period, 
             offering passersby an immersive glimpse into the essence of Huda Beauty.
@@ -85,16 +87,15 @@ function Huda() {
             </div>
         </div>
         <div>
-
-            <img src={image1} alt="benefit" className='image1SpatialDetail' />
+            <img src={image1} alt="benefit" className='image1SpatialDetail transformHero' />
 
             <div className='spatialDetailImagesBoxHuda'>
-                <img className='spatialDetailImage2' src={image2} alt="" />
+                <img className='spatialDetailImage2 transformHero' src={image2} alt="" />
                 <img className='spatialDetailImage1' src={image3} alt="" />
             </div>
 
             <p className='spatialDetailImagesText'>Behind the scenes</p>
-            <div className='infoSpatialDetailTextContainer'>
+            <div className='spatialDetailImages'>
                 <img className='spatialDetailImage3' src={image4} alt="" />
                 <img className='spatialDetailImage4' src={image5} alt="" />
             </div>
