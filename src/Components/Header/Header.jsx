@@ -66,21 +66,27 @@ function Header() {
     { name: 'EVENTS & INSTALLATIONS', id: 'events', className: ''},
     { name: 'SPATIAL DESIGN', id: 'spatialDesign', className: ''}
   ]
+  
+  const windowWidth = window.innerWidth;
+  const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
+
   return (
     <div className='headerContainer'>
       <div className='initialHeader'>
         <Link to='/' className='navbarLooney' onClick={handleClose}>THE LOONEY STUDIO</Link>
-        {openMenu ?
+        {
+          !desktop && (
+          openMenu ?
           <img src={CloseIcon}  onClick={handleClose} className='closeMenuIcon' alt="Menu" />:
-          <img src={MenuIcon}  onClick={handleOpen} className='burgerMenuIcon' alt="Menu" />
+          <img src={MenuIcon}  onClick={handleOpen} className='burgerMenuIcon' alt="Menu" />)
         }
       </div>
 
-      {openMenu &&
+      {(openMenu || desktop) &&
         <div className='dropdownHeader'>
           
           <div className='dropdownItemsContainer'>
-            <p  onClick={()=>handleNextMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}>PROJECTS              <img src={arrow} alt=">" />            </p>
+            <p onClick={()=>handleNextMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}>PROJECTS              <img src={arrow} alt=">" />            </p>
           
             {sections.map((e, i)=> {
               return (
@@ -88,7 +94,7 @@ function Header() {
                 key={i} 
                 to={`/${e.id}`} 
                 onClick={()=>handleClose(e.id)} 
-                className={selectedCategory == e.id? 'activeNavbar': ''}>
+                className={selectedCategory == e.id? 'dropdownItems activeNavbar': 'dropdownItems'}>
                 {e.name}
               </Link>)
             })}
@@ -101,8 +107,8 @@ function Header() {
       {openNextMenu &&
         <div className='dropdownHeader nextDropdown'>
           
-          <div className='dropdownItemsContainer'>
-            <p  onClick={()=>handlePrevMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}> <img src={arrowback} alt="<" />            </p>
+          <div className='dropdownItemsContainer nextDropdownItemsContainer'>
+            <p onClick={()=>handlePrevMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}> <img src={arrowback} alt="<" />            </p>
             <img src={spray2} alt="" className='sprayDropdown2' />
             
             {nextSections.map((e, i)=> {
@@ -115,7 +121,7 @@ function Header() {
               </Link>)
             })}
             
-          <img src={ig} alt="Instagram" className='igIconNavbar'/>
+            <img src={ig} alt="Instagram" className='igIconNavbar'/>
             
           </div>
         </div>
