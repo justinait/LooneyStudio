@@ -36,7 +36,7 @@ function Benefit() {
           <img className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>PROJECT MANAGEMENT</p>
         </div>
-        <div className='stackItemPink3'>
+        <div className='stackItemPink3 stackItemDesktop10'>
           <img className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>

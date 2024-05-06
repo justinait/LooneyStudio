@@ -469,6 +469,9 @@
     .stackItemDesktop9 {
         width: 9%;
     }
+    .stackItemDesktop15 {
+        width: 15%;
+    }
     .stackItemDestree1 {
         width: 21%;
     }
@@ -480,12 +483,6 @@
     }
     .stackItemPink2 {
         width: 18%;
-    }
-    .stackItemPink3 {
-        width: 10%;
-    }
-    .stackItemDesktop15 {
-        width: 15%;
     }
     .stackItemPink4 {
         width: 12%;
@@ -525,7 +522,7 @@
     .spatialDetailImagesText {
         padding: 0 2vw;
         z-index: 2;
-        font-size: 32px;
+        font-size: 26px;
     }
     .spatialDetailImgBlanc {
         height: 370px;
@@ -617,5 +614,9 @@
     }
     .spatialDetailImagesBoxBenefit1 img {
         height: 704px;
+    }
+    
+    .eventsDetailImagesText, .spatialDetailImagesText {
+        font-size: 32px;
     }
 }

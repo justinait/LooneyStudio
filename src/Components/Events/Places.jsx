@@ -1,20 +1,16 @@
 import React from 'react'
 import hero from '/events/placesHero.png'
+import heroDesktop from '/events/places.png'
 import './EventsDetail.css'
 import circle1 from '/events/circle1.png'
 import circle2 from '/events/circle2.png'
 import circle3 from '/events/circle3.png'
-import circle4 from '/events/circle4.png'
 import circle5 from '/events/circle5.png'
 import circle6 from '/events/circle6.png'
 import xSpray from '/events/xSpray.png'
-import image1 from '/events/places1.jpg'
+import image1 from '/events/placesEditada.png'
 import image2 from '/events/places2.png'
 import image3 from '/events/places3.png'
-import image5 from '/events/Warner23-5.jpg'
-import image6 from '/events/Warner23-6.jpg'
-import image7 from '/events/Warner23-7.jpg'
-import image8 from '/events/Warner23-8.jpg'
 import { Link } from 'react-router-dom'
 
 
@@ -24,7 +20,9 @@ function Places() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="PLACES + FACES" className='blancHero mobileOnly'/>
+      <img src={heroDesktop} alt="PLACES + FACES" className='blancHero desktopOnly'/>
+
       <div className='stackContainerEvents stackContainerEventsSmall2'>
         <div className='stackItemEventsLarger2'>
           <img className='stackCircleImg circleImg16' src={circle1} alt="" />

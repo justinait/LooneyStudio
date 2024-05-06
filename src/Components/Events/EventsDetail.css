@@ -234,6 +234,10 @@
     .separatorEvents {
         margin: 2.5% 0;
     }
+    .eventsDetailImagesText {
+        padding: 0 2vw;
+        font-size: 26px;
+    }
     .spatialDetailImageWarner {
         height: 450px;
     }
@@ -246,5 +250,21 @@
     }
     .wweImages {
         height: 700px;
+    }
+    .placesImage1 {
+        height: 500px;
+    }
+    .warner22Images {
+        height: 700px;
+    }
+    .eltonDetailImage2, .eltonDetailImage1 {
+        height: 450px;
+        object-fit: cover;
+    }
+    .eltonDetailImagesBox {
+        margin-top: 0;
+    }
+    .stackItemDesktop25 {
+        width: 25%;
     }
 }

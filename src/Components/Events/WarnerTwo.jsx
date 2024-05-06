@@ -1,5 +1,6 @@
 import React from 'react'
 import hero from '/events/Warner22Hero.png'
+import heroDesktop from '/events/warner22HeroDesktop.jpg'
 import './EventsDetail.css'
 import circle1 from '/events/circle1.png'
 import circle2 from '/events/circle2.png'
@@ -21,7 +22,8 @@ function WarnerTwo() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="WARNER 22" className='blancHero mobileOnly'/>
+      <img src={heroDesktop} alt="WARNER 22" className='blancHero desktopOnly'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall2'>
         <div className='stackItemEventsLarger2'>
@@ -47,7 +49,7 @@ function WarnerTwo() {
       </div>
 
       <div className='colorSpaceEvents'>
-        <p className='titleSpatialDetail'>PLACES + FACES - 10TH YEAR ANNIVERSARY EVENT</p>
+        <p className='titleSpatialDetail'>WARNER MUSIC- CHRISTMAS PARTY 22</p>
         <div className='separatorEvents'></div>
         <div className='infoContainerSpatialDetail'>
           <div>
@@ -83,15 +85,15 @@ function WarnerTwo() {
       </div>
       <div>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="benefit" className='' />
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
+          <img src={image1} alt="warner 22 decoration" className='' />
+          <img src={image2} alt="warner 22 decoration" className='' />
+          <img src={image3} alt="warner 22 decoration" className='' />
         </div>
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
         <div className='eventPlacesDetailImages'>
-            <img src={image4} alt="" />
-            <img src={image5} alt="" />
+          <img src={image4} alt="" className='warner22Images' />
+          <img src={image5} alt="" className='warner22Images' />
         </div>
 
       </div>

@@ -16,25 +16,25 @@ import { Link } from 'react-router-dom'
 function Molecules() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="" />
+      <img src={xSpray} className='xSprayEvent' alt="Molecules" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="Molecules" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmall'>
-        <div className='stackItem1'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
+        <div className='stackItem1 stackItemDesktop25'>
+          <img className='stackCircleImg circleImg16' src={circle2} alt="Molecules" />
           <p className='stackText'>CONCEPT DESIGN</p>
         </div>
         <div className='stackItemPink3'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <img className='stackCircleImg' src={circle3} alt="Molecules" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg' src={circle1} alt="" />
+          <img className='stackCircleImg' src={circle1} alt="Molecules" />
           <p className='stackText'>CARPENTRY</p>
         </div>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg' src={circle6} alt="" />
+          <img className='stackCircleImg' src={circle6} alt="Molecules" />
           <p className='stackText'>PROP MAKING</p>
         </div>
 
@@ -84,12 +84,12 @@ function Molecules() {
         
         <div>
           <div className='spatialDetailImagesBoxPink'>
-            <img src={image1} alt="" className='spatialDetailImage2'/>
-            <img src={image2} alt="" className='spatialDetailImage1'/>
+            <img src={image1} alt="Molecules" className='spatialDetailImage2'/>
+            <img src={image2} alt="Molecules" className='spatialDetailImage1'/>
           </div>
           <div className='spatialDetailImagesBoxPink'>
-            <img src={image3} alt="" className='spatialDetailImage1'/>
-            <img src={image4} alt="" className='spatialDetailImage2'/>
+            <img src={image3} alt="Molecules" className='spatialDetailImage1'/>
+            <img src={image4} alt="Molecules" className='spatialDetailImage2'/>
           </div>
         </div>
 

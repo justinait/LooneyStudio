@@ -33,7 +33,7 @@ function Huda() {
                 <img className='stackCircleImg' src={circle1} alt="" />
                 <p className='stackText'>PROJECT MANAGEMENT</p>
             </div>
-            <div className='stackItemPink3'>
+            <div className='stackItemPink3 stackItemDesktop10'>
                 <img className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>METALWORK</p>
             </div>
@@ -46,7 +46,7 @@ function Huda() {
                 <img className='stackCircleImg' src={circle4} alt="" />
                 <p className='stackText'>POP UP</p>
             </div>
-            <div className='stackItemPink3'>
+            <div className='stackItemPink3 stackItemDesktop10'>
                 <img className='stackCircleImg' src={circle6} alt="" />
                 <p className='stackText'>CARPENTRY</p>
             </div>

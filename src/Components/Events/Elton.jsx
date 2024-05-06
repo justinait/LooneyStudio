@@ -31,7 +31,7 @@ function Elton() {
           <img className='stackCircleImg' src={circle4} alt="" />
           <p className='stackText'>EVENT</p>
         </div>
-        <div className='stackItem3'>
+        <div className='stackItemDesktop15'>
           <img className='stackCircleImg' src={circle5} alt="" />
           <p className='stackText'>SET BUILDING</p>
         </div>
@@ -43,7 +43,7 @@ function Elton() {
           
       </div>
       <div className='colorSpaceEvents'>
-        <p className='titleSpatialDetail'>WARNER MUSIC CHRISTMAS PARTY 23</p>
+        <p className='titleSpatialDetail'>02 - Elton John Farewell Tour</p>
         <div className='separatorEvents'></div>
         <div className='infoContainerSpatialDetail'>
           <div>
@@ -76,7 +76,7 @@ function Elton() {
       </div>
       <div>
 
-        <img src={hero} className="eltonDetailImage" />
+        <img src={hero} className="eltonDetailImage mobileOnly" />
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
         <div className='eltonDetailImagesBox'>
