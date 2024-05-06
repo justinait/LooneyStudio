@@ -424,7 +424,7 @@
         display: none;
     }
     .desktopOnly{
-        display: block;
+        display: flex;
     }
     .xSpraySpatial {
         width: 100px;
@@ -491,6 +491,9 @@
         width: 12%;
         margin-top: unset;
     }
+    .stackItemPink1 {
+        width: 18%;
+    }
     .stackCircleImgBig{
         width: 100%;
     }
@@ -514,7 +517,7 @@
         line-height: 22px;
     }
     .infoContainerSpatialDetail div {
-        padding-bottom: 5%;
+        padding-bottom: 4.5%;
     }
     .image1SpatialDetail {
         height: 500px;
@@ -529,13 +532,16 @@
     }
 
     .blanc1{
-        width: 33%;
+        width: 33% !important;
     }
     .blanc2{
-        width: 66%;
+        width: 66% !important;
+    }
+    .objPositionUnset {
+        object-position: 0 -290px !important;
     }
     .infoSpatialDetailTextContainer p {
-        padding: 0 25px 0 25px;
+        padding: 0 30px 0 25px;
     }
     .infoSpatialDetailTextContainer {
         margin: auto -25px;
@@ -561,6 +567,17 @@
     .transformHero {
         transform: scaleX(-1);
     }
+    .spatialDetailImagesBoxBenefit1 img {
+        height: 450px;
+        width: 33%;
+    }
+    .spatialDetailImageBenefit {
+        height: 450px;
+        margin: 2% 0;    
+    }
+    .spatialDetailBenefitImg {
+        height: 450px;
+    }
     
 }
 
@@ -577,5 +594,8 @@
     }
     .stackText {
         font-size: 18px;
+    }
+    .spatialDetailImagesBoxBenefit1 img {
+        height: 704px;
     }
 }

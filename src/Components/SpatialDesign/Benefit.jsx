@@ -27,8 +27,8 @@ function Benefit() {
       <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
       
       <img src={hero} alt="BENEFIT" className='blancHero'/>
-      <div className='stackContainer stackContainerBenefit'>
-        <div className='stackItem2'>
+      <div className='stackContainer stackContainerBenefit mobileOnly'>
+        <div className='stackItem2 stackItemDesktop15'>
           <img className='stackCircleImg' src={circle2} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
         </div>
@@ -56,6 +56,38 @@ function Benefit() {
         <div className='stackItem4'>
           <img className='stackCircleImg' src={circle4} alt="" />
           <p className='stackText'>CARPENTRY</p>
+        </div>
+          
+      </div>
+      <div className='stackContainer stackContainerBenefit desktopOnly'>
+        <div className='stackItem2 stackItemDesktop15'>
+          <img className='stackCircleImg' src={circle1} alt="" />
+          <p className='stackText'>CONCEPT DESIGN</p>
+        </div>
+        <div className='stackItemPink1'>
+          <img className='stackCircleImg' src={circle4} alt="" />
+          <p className='stackText'>PROJECT MANAGEMENT</p>
+        </div>
+        <div className='stackItemDestree3'>
+          <img className='stackCircleImg' src={circle1} alt="" />
+          <p className='stackText'>LIGHTING DESIGN</p>
+        </div>
+        <div className='stackItem4'>
+          <img className='stackCircleImg' src={circle6} alt="" />
+          <p className='stackText'>INSTALLATION</p>
+        </div>
+        <div className='stackItem4'>
+          <img className='stackCircleImg' src={circle3} alt="" />
+          <p className='stackText'>CARPENTRY</p>
+        </div>
+        <div className='stackItem1'>
+          <img className='stackCircleImg' src={circle4} alt="" />
+          <p className='stackText'>PROP MAKING</p>
+        </div>
+
+        <div className='stackItemPink4'>
+          <img className='stackCircleImgBig' src={circle9} alt="" />
+          <p className='stackText stackTextBig'>FINISHING & <br />SPRYING</p>
         </div>
           
       </div>
@@ -111,8 +143,8 @@ function Benefit() {
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImagesBenefit'>
-          <img src={image8} alt="" className='spatialDetailBenefitImg' />
-          <img src={image9} alt="" className='spatialDetailBenefitImg objPositionUnset'/>
+          <img src={image8} alt="" className='spatialDetailBenefitImg blanc1' />
+          <img src={image9} alt="" className='spatialDetailBenefitImg objPositionUnset blanc2'/>
         </div>
       </div>
     </div>
