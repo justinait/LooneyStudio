@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
-import spray from '/sprays/contactSpray.png'
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 
 function Contact() {
+    const [inputFilled, setInputFilled] = useState(false);
+
+    const handleInputChange = (e) => {
+        setInputFilled(e.target.value.trim() !== '');
+    };
     
     const { isLoaded } = useJsApiLoader({
         id: '436bcb265c6ff251',
@@ -15,7 +19,6 @@ function Contact() {
     <div className='contactContainer'>
         <div className='contactUsContainer'>
             <p className='contactUs'>Contact <br /> Us</p>
-            <img src={spray} className='sprayContact' alt="" />
         </div>
         <div className='containerBox'>
             <h3>LOCATION</h3>
@@ -55,9 +58,9 @@ function Contact() {
         <div className='containerBox'>
             <h3>MAIL</h3>
             <div>
-                <input type="text" placeholder='Full Name' />
-                <input type="text" placeholder='Mail' />
-                <input type="text" placeholder='Your Message' />
+                <input type="text" placeholder='Full Name' className={`inputContact ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="text" placeholder='Mail' className={`inputContact ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="text" placeholder='Your Message' className={`inputContact ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
             </div>
             <p className='formButton'>Send</p>
         </div>
