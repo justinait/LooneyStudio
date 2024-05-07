@@ -252,8 +252,9 @@ a:hover {
         position: absolute;
         /* top: 45vw; */
         margin: 0;
-        bottom: 100px;
+        bottom: 115px;
         height: fit-content;
+        text-align: center;
         left: 50vw;
         width: 70vw;
         transform: translateX(-50%);
