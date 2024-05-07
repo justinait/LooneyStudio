@@ -166,8 +166,6 @@ a:hover {
 @media(min-width:1200px){
 
     .navbarLooney{
-        font-size: 54px;
-        font-size: calc(1.2em + 2vw);
         font-size: clamp(55px, 4vw, 70px);
     }
     
@@ -176,7 +174,7 @@ a:hover {
         height: 15.75px;        
     }
     .headerContainer{
-        height: 160px;
+        height: 130px;
     }
     .initialHeader{
         padding: 2vw;
@@ -207,15 +205,16 @@ a:hover {
     .projects {
         color: var(--V, #FFF);
         font-family: Manrope;
-        font-size: 18px;
+        font-size: 13px;
+        font-size: clamp(13px, 0.9vw, 18px);
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         line-height: normal;
         letter-spacing: 1.8px;
         text-transform: uppercase;
         width: fit-content;
         padding: 0 25px;
-        height: 133px;
+        height: 120px;
         display: flex;
         align-items: center;
         margin-bottom: 0;
@@ -250,8 +249,18 @@ a:hover {
 }
 @media(min-width:1400px){
 
-    .headerContainer{
-        height: 202px;
-    }
     
 }
+
+@media(min-width:1700px){
+
+    .headerContainer{
+        height: 200px;
+    }
+    .dropdownItems, .nextSections,
+    .projects {
+        padding: 0 35px;
+        height: 150px;
+    }    
+}
+
