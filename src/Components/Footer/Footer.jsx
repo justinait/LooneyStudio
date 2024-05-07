@@ -1,15 +1,17 @@
 import React from 'react'
 import './Footer.css'
 import ig from '/instagram.png'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
     <div className='footerContainer'>
-      <p to='/' className='footerLooney'>THE LOONEY STUDIO</p>
+      <Link to='/' className='footerLooney'>THE LOONEY STUDIO</Link>
 
-      <img src={ig} className='instagramIconFooter' alt="instagram" />
+      <a href='https://www.instagram.com/thelooneystudio/' target='blank'><img src={ig} className='instagramIconFooter' alt="instagram" /></a>
       
-      <p className='emailFooter'>hello@thelooneystudio.com</p>
+      <a href="mailto:hello@thelooneystudio.com" target='_blank' className='emailFooter'>hello@thelooneystudio.com</a>
+      
     </div>
   )
 }
