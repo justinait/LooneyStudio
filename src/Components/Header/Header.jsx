@@ -60,7 +60,7 @@ function Header() {
         return setOpenMenu(true);
     } else {
       setOpenMenu(true)
-      console.log(openMenu);
+      
     }
   }
   
@@ -73,19 +73,19 @@ function Header() {
       setSelectedCategory(id);
     }
     
-    console.log(openMenu);
+    
   }
   const handleNextMenu = ()=> {
     setOpenNextMenu(!openNextMenu);
     if(desktop){
       setOpenMenu(true)
     }
-    console.log(openMenu);
+    
   }
   const handlePrevMenu = ()=> {
     setOpenNextMenu(false);
     setOpenMenu(true);
-    console.log(openMenu);
+    
   }
   const sections = [
     { name: 'SERVICES', id: 'services', className: '' },

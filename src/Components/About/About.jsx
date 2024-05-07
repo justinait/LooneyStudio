@@ -20,36 +20,36 @@ import Benefit from '/brands/Logo-Benefit.png'
 function About() {
   return (
     <div className='aboutContainer'>
-        <p className='aboutText'>
-            A Brixton-based <br /> <strong className='designAbout'>Design</strong> <strong className='and'>&</strong><br /> <strong>Construction </strong> 
-             company
-            known for our dedication to turning our clients' ideas into reality, from start to finish.
-        </p>
-        <img src={spray} alt="" className='sprayAbout' />
+      <p className='aboutText'>
+        A Brixton-based <br /> <strong className='designAbout'>Design</strong> <strong className='and'>&</strong><br /> <strong>Construction </strong> 
+          company
+        known for our dedication to turning our clients' ideas into reality, from start to finish.
+      </p>
+      <img src={spray} alt="" className='sprayAbout' />
 
-        <div className='brandsSection'>
+      <div className='brandsSection'>
 
-            <p className='subtitleAbout'>Selected clients</p>
-            <div className='brandsAboutContainer'>
-                <img className='brandIconAbout' src={Amazon} alt="" />
-                <img className='brandIconAbout' src={Panasonic} alt="" />
-                <img className='brandIconAbout' src={Samsung} alt="" />
-                <img className='brandIconAbout' src={Sony} alt="" />
-                <img className='brandIconAbout' src={Appletv} alt="" />
+        <p className='subtitleAbout'>Selected clients</p>
+        <div className='brandsAboutContainer'>
+          <img className='brandIconAbout' src={Amazon} alt="" />
+          <img className='brandIconAbout' src={Panasonic} alt="" />
+          <img className='brandIconAbout' src={Samsung} alt="" />
+          <img className='brandIconAbout' src={Sony} alt="" />
+          <img className='brandIconAbout' src={Appletv} alt="" />
 
-                <img className='brandIconAbout' src={Dazed} alt="" />
-                <img className='brandIconAbout' src={BBC} alt="" />
-                <img className='brandIconAbout brandToBig' src={BB} alt="" />
-                <img className='brandIconAbout' src={Google} alt="" />
-                <img className='brandIconAbout' src={Essity} alt="" />
+          <img className='brandIconAbout' src={Dazed} alt="" />
+          <img className='brandIconAbout' src={BBC} alt="" />
+          <img className='brandIconAbout brandToBig' src={BB} alt="" />
+          <img className='brandIconAbout' src={Google} alt="" />
+          <img className='brandIconAbout' src={Essity} alt="" />
 
-                <img className='brandIconAbout' src={Gisou} alt="" />
-                <img className='brandIconAbout brandToBig' src={hp} alt="" />
-                <img className='brandIconAbout' src={Warner} alt="" />
-                <img className='brandIconAbout' src={o2} alt="" />
-                <img className='brandIconAbout' src={Benefit} alt="" />
-            </div>
+          <img className='brandIconAbout' src={Gisou} alt="" />
+          <img className='brandIconAbout brandToBig' src={hp} alt="" />
+          <img className='brandIconAbout' src={Warner} alt="" />
+          <img className='brandIconAbout' src={o2} alt="" />
+          <img className='brandIconAbout' src={Benefit} alt="" />
         </div>
+      </div>
     </div>
   )
 }
