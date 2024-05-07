@@ -9,6 +9,10 @@
     text-align: center;
     color: #EEEFF3;
 }
+
+.hideLogo {
+    display: none;
+}
 .headerContainer{
     background: linear-gradient(to bottom, black, transparent);
     width: 100%;
@@ -32,8 +36,9 @@
     justify-content: space-between;
     width: 112%;
 }
-.projects:hover {
+.projects:hover, .dropdownItems:hover {
     cursor:pointer;
+    font-weight: 800;
 }
 .projects img {
     width: 13px;
@@ -98,6 +103,7 @@
 }
 .nextSections:hover {
     color: var(--color-lila);
+    cursor:pointer;
 }
 a:focus {
     font-weight: 500;
@@ -208,7 +214,7 @@ a:hover {
         letter-spacing: 1.8px;
         text-transform: uppercase;
         width: fit-content;
-        padding: 0 2%;
+        padding: 0 25px;
         height: 133px;
         display: flex;
         align-items: center;
@@ -233,15 +239,38 @@ a:hover {
         display: flex;
         flex-direction: column;
     }
+    .nextDropdown {
+        width: 50vw;
+    }
     .nextDropdownItemsContainer {
         width: 40vw;
         left: 63vw;
-        top: -40px;
+        top: 90px;
+    }
+    .navbarLogoHome{
+        font-size: 100px;
+        position: absolute;
+        /* top: 45vw; */
+        margin: 0;
+        bottom: 100px;
+        height: fit-content;
+        left: 50vw;
+        width: 70vw;
+        transform: translateX(-50%);
+        color: #FFF;
+        font-family: Oswald;
+        font-weight: 666;
+        letter-spacing: -1.12px;
     }
 }
 @media(min-width:1400px){
 
     .headerContainer{
         height: 202px;
+    }
+    .navbarLogoHome {
+        font-size: 111.953px;
+        
+        top: 30vw;
     }
 }
