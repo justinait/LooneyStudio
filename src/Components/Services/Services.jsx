@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 import './Services.css'
-import spray from '/sprays/servicesSpray.png'
 
 function Services() {
     const services = [
-        { name: 'CONCEPT DESIGN', image: '/services/conceptdesign.png', className: '' },
-        { name: 'PROJECT MANAGEMENT', image: '/services/projectmanagement.jpg', className: ''},
-        { name: 'CARPENTRY', image: '/services/carpentry.jpg', className: ''},
-        { name: 'METAL WORK', image: '/services/metalwork.jpg', className: ''},
-        { name: 'CNCING', image: '/services/metalwork.jpg', className: ''},
-        { name: 'FINISHING & SPRAYING', image: '/services/spraying.jpg', className: ''},
-        { name: 'INSTALLATION', image: '/services/installation.jpg', className: ''},
-        { name: 'HIRE', image: '/services/hire.jpg', className: ''}
+        { name: 'CONCEPT DESIGN', image: '/services/conceptdesign.png', text: 'Our design team swiftly transforms ideas into reality, crafting mood boards, sketches, and 3D models that embody your vision. Emphasizing aesthetics, functionality, and meticulous attention to detail, we seamlessly merge innovation and practicality in our design process.', className: '' },
+        { name: 'PROJECT MANAGEMENT', image: '/services/projectmanagement.jpg', text: 'Our dedicated project managers oversee every aspect of the build, ensuring communication, progress monitoring, and budget adherence. Renowned for flexibility, they provide guidance and support throughout the process.', className: 'littleServicesText'},
+        { name: 'CARPENTRY', image: '/services/carpentry.jpg', text: 'Nestled in Brixton, our 3000 sqft workshop is fully equipped to handle multiple projects of any scale. Our skilled carpenters embrace collaboration and sustainability, repurposing every piece of wood to minimize waste.', className: 'littleServicesText'},
+        { name: 'METAL WORK', image: '/services/metalwork.jpg', text: 'Fortunately, our metal workers are conveniently located nearby, ready to fulfill all your fabrication needs. With expertise in intricate details and robust structures, we handle diverse metal projects efficiently. This proximity fosters seamless collaboration with our woodwork team, enabling innovative combinations and swift, quality deliveries.', className: 'bigServicesText'},
+        { name: 'CNCING', image: '/services/cncing.png', text: 'With our CNC machining capabilities, we offer rapid turnaround for intricate builds needing precise cuts. Our large format CNC machine, with a 10ft by 5ft bed size, can cut various materials, including full sheets, for the production of larger components as needed.', className: ''},
+        { name: 'FINISHING & SPRAYING', image: '/services/spraying.jpg', text: 'From scenic painting to unique custom finishes, we excel in creating any desired texture envisioned by our designers and clients. Just as we prioritize excellent wood joinery, we also prioritize top-notch finishes. With a talented roster of trained scenic painters, sprayers, and prop makers, we consistently deliver the highest quality, bringing bold aesthetic visions to life.', className: 'biggerServicesText'},
+        { name: 'INSTALLATION', image: '/services/installation.jpg', text: "We don't just create; we install too! Our skilled crew of carpenters, decorators, electricians, and scenics collaborate seamlessly to bring sets to life quickly. From film sets to events, we deliver unmatched speed and precision.", className: ''},
+        { name: 'HIRE', image: '/services/hire.jpg', text: 'Need scenic equipment urgently? Our stocked inventory includes flats, doors, windows, flooring, braces, stage weights, and more, available for same-day hire. We can even manage delivery and installation if required.', className: 'smallerServicesText'}
     ]
     const [open, setOpen] = useState(false);
     const [service, setService] = useState('');
@@ -29,7 +28,6 @@ function Services() {
     <div className='servicesContainer'>
         <div>
             <h2> Our Services</h2>
-            <img src={spray} alt="" className='sprayServices'/>
         </div>
 
         <div className='servicesItemsContainer'>
@@ -48,7 +46,10 @@ function Services() {
                             </div>
                             {
                                 (open && service == e.name) &&
-                                <img src={e.image} alt={e.name} className='imageServices'/>
+                                <div className='serviceOpenContainer'>
+                                    <img src={e.image} alt={e.name} className='imageServices'/>
+                                    <p className={`servicesText ${e.className}`}>{e.text}</p>
+                                </div>
                             }
                         </div>
                     )

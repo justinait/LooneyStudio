@@ -30,10 +30,9 @@
 .sprayAbout {
     width: 120px;
     position: absolute;
-    left: 60%;
+    left: 50%;
     transform: translateX(-50%);
-    top: 44%;
-    top: 275px;
+    top: 290px;
 } 
 .subtitleAbout {
     font-family: "Oswald";
