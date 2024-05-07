@@ -1,5 +1,5 @@
 .linksProjects {
-    font-size: 10px;
+    font-size: 9px;
     line-height: normal;
     height: 20px;
     padding-top: 5px !important;
@@ -30,7 +30,7 @@
 
 .selectedProject{
     color: black;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 0.1em;
     z-index: 10;
     margin: 0;

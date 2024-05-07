@@ -16,12 +16,16 @@ function SpatialDesign() {
   return (
     <div className='spatialContainer'>
       <div className='headerProjects'>
-        <Link to={'/events'} className='linksSpatial linksProjects projectsLeftLink'>EVENTS & INSTALL</Link>
+        <div className='headerProjectsSizing'>
+          <Link to={'/events'} className='linksSpatial linksProjects projectsLeftLink'>EVENTS & INSTALL</Link>
+        </div>
 
         <p className='selectedProject spatial'>SPATIAL DESIGN</p>
         <img src={spray} alt="" className='spraySpatial' />
         
-        <Link to={'/tvAndFilms'} className='linksSpatial linksProjects projectsRigthLink'>TV & FILMS</Link>
+        <div className='headerProjectsSizing projectsRigth'>
+          <Link to={'/tvAndFilms'} className='linksSpatial linksProjects projectsRigthLink'>TV & FILMS</Link>
+        </div>
       </div>
 
       <div className='spatialImagesContainer'>
