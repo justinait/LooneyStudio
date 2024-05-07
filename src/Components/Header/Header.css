@@ -247,31 +247,11 @@ a:hover {
         left: 63vw;
         top: 90px;
     }
-    .navbarLogoHome{
-        font-size: 100px;
-        position: absolute;
-        /* top: 45vw; */
-        margin: 0;
-        bottom: 115px;
-        height: fit-content;
-        text-align: center;
-        left: 50vw;
-        width: 70vw;
-        transform: translateX(-50%);
-        color: #FFF;
-        font-family: Oswald;
-        font-weight: 666;
-        letter-spacing: -1.12px;
-    }
 }
 @media(min-width:1400px){
 
     .headerContainer{
         height: 202px;
     }
-    .navbarLogoHome {
-        font-size: 111.953px;
-        
-        top: 30vw;
-    }
+    
 }
