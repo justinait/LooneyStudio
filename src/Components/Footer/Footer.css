@@ -45,3 +45,16 @@
         left: 49%;
     }
 }
+
+@media(min-width:1200px){
+    .footerContainer{
+        height: 91px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+    }
+    .instagramIconFooter{
+        width: 32px;
+        height: 32px;
+    }
+}
