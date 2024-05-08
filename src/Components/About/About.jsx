@@ -31,7 +31,7 @@ function About() {
 
         <p className='subtitleAbout'>Selected clients</p>
         <div className='brandsAboutContainer'>
-          <img className='brandIconAbout brandBig' src={Amazon} alt="" />
+          <img className='brandIconAbout brandBig paddingBottom0' src={Amazon} alt="" />
           <img className='brandIconAbout' src={Panasonic} alt="" />
           <img className='brandIconAbout' src={Samsung} alt="" />
           <img className='brandIconAbout brandBig' src={Sony} alt="" />

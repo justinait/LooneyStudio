@@ -32,7 +32,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 290px;
+    top: 295px;
 } 
 .subtitleAbout {
     font-family: "Oswald";
@@ -109,6 +109,9 @@
         line-height: 100%; /* 37.806px */
         letter-spacing: 2.268px;
     }
+    .paddingBottom0{
+        padding-bottom: 0;
+    }
     .sprayAbout {
         top: 490px;
         width: 220.455px;
@@ -120,12 +123,13 @@
     .subtitleAbout {
         font-size: 27.521px;
         font-weight: 700;
+        padding: 0 5%;
     }
     .brandIconAbout { 
-        width: 17%;
+        margin-bottom: 3%;
     }
     .brandsAboutContainer {
-        padding: 4% 5% 0;
+        padding: 4% 5%;
     }
     
 }
