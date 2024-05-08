@@ -34,7 +34,7 @@
 }
 .projects:hover, .dropdownItems:hover {
     cursor:pointer;
-    font-weight: 800;
+    font-weight: 500;
 }
 .projects img {
     width: 13px;
