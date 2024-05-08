@@ -13,6 +13,7 @@
 }
 .serviceItemName {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid white;
     padding: 2% 0 0 0;
@@ -58,28 +59,21 @@
     line-height: 1.2;
     letter-spacing: 1.08px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
     width: 100%;
-    bottom: 41px;
+    bottom: 20px;
     margin: 0;
     padding: 0 2% 2%;
     background: linear-gradient(to top, #131313, transparent);
 }
 .littleServicesText {
-    bottom: 32px;
-}
-.smallerServicesText {
-    bottom: 33px;
+    bottom: 16px;
 }
 .bigServicesText {
-    bottom: 49px;
+    bottom: 25px;
 }
 .biggerLetter {
     font-size: 7.3px;
-}
-.biggerServicesText {
-    bottom: 50px;
 }
 .serviceOpenContainer{
     height: 180px;
@@ -88,5 +82,34 @@
 @media(min-width:700px){
     .servicesContainer {
         margin-top: 156px;
+    }
+    .seeMore {
+        font-size: 34.833px;
+    }
+    .serviceItemTitle{
+        font-size: 23.222px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.393px;
+        text-transform: uppercase;
+    }
+    .imageServices {
+        height: 466.613px;
+    }
+    
+    .serviceOpenContainer{
+        height: 480px;
+        margin-bottom: -75px;
+    }
+    .servicesText {
+        font-size: 13.062px;
+        margin: -1% 0;
+    }
+    .serviceItemName {
+        top: 70px;
+    }
+    .servicesItemsContainer {
+        height: 1090px;
     }
 }

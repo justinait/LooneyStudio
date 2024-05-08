@@ -36,8 +36,18 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 a, a:hover {
   color: white;
   text-decoration: none;
 }
 
+@media(min-width:700px){
+  h2 {
+    font-size: 174.889px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 93%; /* 162.647px */
+    text-transform: uppercase;
+  }
+}

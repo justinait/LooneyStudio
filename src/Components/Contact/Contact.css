@@ -110,7 +110,8 @@ input {
         margin: 156px 5%;
     }
     .contactUs{
-        font-size: 182.447px;
+        font-size: clamp(170px, 3vw, 182.447px);
+        width: 90%;
         font-style: normal;
         font-weight: 700;
         line-height: 93%; /* 169.676px */
