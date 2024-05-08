@@ -74,3 +74,10 @@
         line-height: normal;
     }
 }
+
+@media(min-width:700px){
+    .aboutContainer {
+        margin-top: 156px;
+        margin-top: 170px;
+    }
+}

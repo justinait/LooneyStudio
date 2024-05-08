@@ -301,6 +301,10 @@
     }
 }
 @media (min-width: 700px) {
+    
+    .stackContainer{
+        bottom: 150px;
+    }
     .xSpraySpatial {
         width: 145px;
         height: 173.15px;
@@ -407,6 +411,9 @@
     }
     .spatialDetailImage4, .spatialDetailImage3{
         height: 367px;
+    }
+    .blancHero {
+        height: 91vh;
     }
 }
 

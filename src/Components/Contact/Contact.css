@@ -102,3 +102,61 @@ input {
 .formButton:hover {
     color: rgba(237, 7, 7, 0.7);
 }
+/* #spraySend{
+    display: none;
+} */
+@media(min-width:700px){
+    .contactContainer {
+        margin: 156px 5%;
+    }
+    .contactUs{
+        font-size: 182.447px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 93%; /* 169.676px */
+        text-transform: uppercase;
+    }
+    .contactUsContainer {
+        height: 340px;
+    }
+    .contactContainer h3 {
+        font-size: 34.791px;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+    .locationText {
+        font-size: 17.395px;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.044px;
+    }
+    .formButton {
+        font-size: 17.395px;
+        font-weight: 700;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .formButton:hover {
+        color:white;
+    }
+    .formButton:hover ~#spraySend {
+        display: block;
+    }
+    #spraySend {
+        width: 110px;
+        height: 92px;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 82vw;
+        /* bottom: -162px; */
+    }
+    .mapContainer {
+        height: 300.795px;
+    }
+}
+@media (min-width: 1000px) {
+    #spraySend {
+        left: 83.5vw;
+    }
+}

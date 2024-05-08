@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.css'
 import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+import spray from '/sprays/send.png'
 
 
 function Contact() {
@@ -58,11 +59,12 @@ function Contact() {
         <div className='containerBox'>
             <h3>MAIL</h3>
             <div>
-                <input type="text" placeholder='Full Name' className={`inputContact ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                <input type="text" placeholder='Mail' className={`inputContact ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                <input type="text" placeholder='Your Message' className={`inputContact ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="text" placeholder='Full Name' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="text" placeholder='Mail' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="text" placeholder='Your Message' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
             </div>
             <p className='formButton'>Send</p>
+            <img src={spray} id='spraySend' alt="" />
         </div>
         
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATA9w96X3FKj_idxFdo9nvd4SxaxDb43Y&callback=initMap&map_ids=436bcb265c6ff251"></script>

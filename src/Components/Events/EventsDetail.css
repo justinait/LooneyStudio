@@ -226,6 +226,9 @@
     .colorSpaceInformation .infoSpatialDetailTextContainer p{
         margin: 0;
     }
+    .stackContainerEvents{
+        bottom: 150px;
+    }
 }
 
 @media(min-width: 1200px){

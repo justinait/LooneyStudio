@@ -84,3 +84,9 @@
 .serviceOpenContainer{
     height: 180px;
 }
+
+@media(min-width:700px){
+    .servicesContainer {
+        margin-top: 156px;
+    }
+}
