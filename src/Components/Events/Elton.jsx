@@ -6,7 +6,7 @@ import circle3 from '/events/circle3.png'
 import circle4 from '/events/circle4.png'
 import circle5 from '/events/circle5.png'
 import xSpray from '/events/xSpray.png'
-import image2 from '/events/elton2.jpg'
+import image2 from '/events/elton.png'
 import image3 from '/events/elton3.jpg'
 import { Link } from 'react-router-dom'
 
