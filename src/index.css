@@ -51,3 +51,11 @@ a, a:hover {
     text-transform: uppercase;
   }
 }
+
+@media(min-width:1200px){
+  h2 {
+    font-size: 160px;
+    width: 50vw;
+    margin-top: 5vh;
+  }
+}

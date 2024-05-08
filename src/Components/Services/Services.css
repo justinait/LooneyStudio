@@ -113,3 +113,25 @@
         height: 1090px;
     }
 }
+@media (min-width: 1200px) {
+    
+    .servicesContainer {
+        flex-direction: row-reverse;
+    }
+    .servicesItemsContainer{
+        padding: 0 1% 0 2%;
+    }
+    .serviceItemName {
+        padding: 0;
+    }    
+    .serviceItemName {
+        top: 50px;
+    }
+    .imageServices {
+        height: 400px;
+    } 
+    .serviceOpenContainer{
+        height: 400px;
+        margin-bottom: -50px;
+    }
+}
