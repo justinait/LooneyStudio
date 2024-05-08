@@ -40,6 +40,9 @@
     padding-right:4% ;
     font-weight: 600;
 }
+.seeMore:hover {
+    cursor: pointer;
+}
 
 .hideService {
     display: none;
@@ -133,5 +136,31 @@
     .serviceOpenContainer{
         height: 400px;
         margin-bottom: -50px;
+    }
+    .servicesText{
+        font-size: 11px;
+        font-weight: 400;
+    }
+}
+
+@media(min-width:1400px){
+    
+    .servicesText{
+        font-size: 13px;
+    }
+}
+@media(min-width:1700px){
+    .serviceItemTitle {
+        font-size: 32px;
+    }
+    .servicesText{
+        font-size: 13px;
+    }
+    .servicesContainer {
+        margin-top: 252px;
+    }
+    .serviceItemName{
+        padding: 1% 0;
+        border-bottom: 2px solid white;
     }
 }

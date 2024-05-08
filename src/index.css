@@ -59,3 +59,15 @@ a, a:hover {
     margin-top: 5vh;
   }
 }
+@media(min-width:1400px){
+  h2 {
+    font-size: 190px;
+    margin-top: 1vh;
+  }
+}
+@media(min-width:1700px){
+  h2 {
+    font-size: 241px;
+    margin-top: 0vh;
+  }
+}
