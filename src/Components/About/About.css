@@ -52,10 +52,18 @@
 }
 .brandToBig {
     width: 12%;
-    margin: 0 3%;
+    margin: 0 3% 4%;
+}
+.brand13 {
+    width: 13%;
+    margin: 0 1% 4%;
+}
+.brandBig {
+    width: 16%;
+    margin: 0 1% 4%;
 }
 .brandsAboutContainer{
-    padding: 0 5%;
+    padding: 0 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,6 +123,9 @@
     }
     .brandIconAbout { 
         width: 17%;
+    }
+    .brandsAboutContainer {
+        padding: 4% 5% 0;
     }
     
 }

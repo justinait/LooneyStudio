@@ -31,22 +31,22 @@ function About() {
 
         <p className='subtitleAbout'>Selected clients</p>
         <div className='brandsAboutContainer'>
-          <img className='brandIconAbout' src={Amazon} alt="" />
+          <img className='brandIconAbout brandBig' src={Amazon} alt="" />
           <img className='brandIconAbout' src={Panasonic} alt="" />
           <img className='brandIconAbout' src={Samsung} alt="" />
-          <img className='brandIconAbout' src={Sony} alt="" />
-          <img className='brandIconAbout' src={Appletv} alt="" />
+          <img className='brandIconAbout brandBig' src={Sony} alt="" />
+          <img className='brandIconAbout brand13' src={Appletv} alt="" />
 
-          <img className='brandIconAbout' src={Dazed} alt="" />
-          <img className='brandIconAbout' src={BBC} alt="" />
+          <img className='brandIconAbout brandBig' src={Dazed} alt="" />
+          <img className='brandIconAbout brandBig' src={BBC} alt="" />
           <img className='brandIconAbout brandToBig' src={BB} alt="" />
-          <img className='brandIconAbout' src={Google} alt="" />
+          <img className='brandIconAbout brandBig' src={Google} alt="" />
           <img className='brandIconAbout' src={Essity} alt="" />
 
-          <img className='brandIconAbout' src={Gisou} alt="" />
+          <img className='brandIconAbout brandBig' src={Gisou} alt="" />
           <img className='brandIconAbout brandToBig' src={hp} alt="" />
           <img className='brandIconAbout' src={Warner} alt="" />
-          <img className='brandIconAbout' src={o2} alt="" />
+          <img className='brandIconAbout brandToBig' src={o2} alt="" />
           <img className='brandIconAbout' src={Benefit} alt="" />
         </div>
       </div>
