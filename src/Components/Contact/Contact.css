@@ -102,9 +102,9 @@ input {
 .formButton:hover {
     color: rgba(237, 7, 7, 0.7);
 }
-/* #spraySend{
+#spraySend{
     display: none;
-} */
+}
 @media(min-width:700px){
     .contactContainer {
         margin: 156px 5%;
@@ -159,5 +159,10 @@ input {
 @media (min-width: 1000px) {
     #spraySend {
         left: 83.5vw;
+    }
+}
+@media (min-width: 1200px) {
+    .contactUsContainer {
+        width: 50vw;
     }
 }
