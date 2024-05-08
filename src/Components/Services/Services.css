@@ -49,34 +49,35 @@
     object-fit: cover;
 }
 .servicesText {
-    color: var(--V, #FFF);
     text-align: justify;
-    font-family: Manrope;
     font-size: 8px;
+    font-size: 7.1px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    line-height: 1.2;
     letter-spacing: 1.08px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    bottom: 48px;
+    bottom: 41px;
     margin: 0;
-    padding: 0 2% 1%;
+    padding: 0 2% 2%;
     background: linear-gradient(to top, #131313, transparent);
 }
 .littleServicesText {
-    bottom: 48px;
+    bottom: 32px;
 }
 .smallerServicesText {
-    bottom: 36px;
+    bottom: 33px;
 }
 .bigServicesText {
-    bottom: 59px;
+    bottom: 49px;
+    font-size: 7.3px;
 }
 .biggerServicesText {
-    bottom: 70px;
+    bottom: 50px;
 }
 .serviceOpenContainer{
     height: 180px;
