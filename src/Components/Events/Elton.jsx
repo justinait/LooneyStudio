@@ -17,7 +17,7 @@ function Elton() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="Elton" className='blancHero'/>
       <div className='stackContainerEvents'>
         <div className='stackItemEvents'>
           <img className='stackCircleImg' src={circle3} alt="" />
@@ -97,8 +97,8 @@ function Elton() {
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
         <div className='eltonDetailImagesBox'>
-          <img src={image2} alt="warner" className='eltonDetailImage2' />
-          <img src={image3} alt="warner" className='eltonDetailImage1' />
+          <img src={image2} alt="Elton" className='eltonDetailImage2' />
+          <img src={image3} alt="Elton" className='eltonDetailImage1' />
         </div>
 
       </div>

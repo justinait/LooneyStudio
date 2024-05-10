@@ -22,19 +22,19 @@ function Molecules() {
       <img src={hero} alt="Molecules" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItem1 stackItemDesktop25'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="Molecules" />
+          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
         </div>
         <div className='stackItemPink3'>
-          <img className='stackCircleImg' src={circle3} alt="Molecules" />
+          <img className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg' src={circle1} alt="Molecules" />
+          <img className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>CARPENTRY</p>
         </div>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg' src={circle6} alt="Molecules" />
+          <img className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
 

@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom'
 function WarnerTwo() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="" />
+      <img src={xSpray} className='xSprayEvent' alt="WARNER 2022" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
       <img src={hero} alt="WARNER 22" className='blancHero mobileOnly'/>
@@ -92,8 +92,8 @@ function WarnerTwo() {
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
         <div className='eventPlacesDetailImages'>
-          <img src={image4} alt="" className='warner22Images' />
-          <img src={image5} alt="" className='warner22Images' />
+          <img src={image4} alt="warner 22" className='warner22Images' />
+          <img src={image5} alt="warner 22" className='warner22Images' />
         </div>
 
       </div>

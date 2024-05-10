@@ -20,36 +20,36 @@ import { Link } from 'react-router-dom'
 function Gisou() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <img src={xSpray} className='xSpraySpatial' alt="Gisou" />
         <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
         <img src={hero} alt="BENEFIT" className='blancHero'/>
         <div className='stackContainer stackContainerPink'>
-            <div className='stackItemPink2'>
-                <img className='stackCircleImg' src={circle2} alt="" />
-                <p className='stackText'>PROJECT MANAGEMENT</p>
-            </div>
-            <div className='stackItem1'>
-                <img className='stackCircleImg' src={circle6} alt="" />
-                <p className='stackText'>INSTALLATION</p>
-            </div>
-            <div className='stackItemPink3 stackItemDesktop10'>
-                <img className='stackCircleImg' src={circle3} alt="" />
-                <p className='stackText'>METALWORK</p>
-            </div>
+          <div className='stackItemPink2'>
+            <img className='stackCircleImg' src={circle2} alt="" />
+            <p className='stackText'>PROJECT MANAGEMENT</p>
+          </div>
+          <div className='stackItem1'>
+            <img className='stackCircleImg' src={circle6} alt="" />
+            <p className='stackText'>INSTALLATION</p>
+          </div>
+          <div className='stackItemPink3 stackItemDesktop10'>
+            <img className='stackCircleImg' src={circle3} alt="" />
+            <p className='stackText'>METALWORK</p>
+          </div>
 
-            <div className='stackItem1'>
-                <img className='stackCircleImg' src={circle4} alt="" />
-                <p className='stackText'>POP UP</p>
-            </div>
-            <div className='stackItemPink3 stackItemDesktop10'>
-                <img className='stackCircleImg' src={circle1} alt="" />
-                <p className='stackText'>CARPENTRY</p>
-            </div>
-            <div className='stackItemDestree3'>
+          <div className='stackItem1'>
+            <img className='stackCircleImg' src={circle4} alt="" />
+            <p className='stackText'>POP UP</p>
+          </div>
+          <div className='stackItemPink3 stackItemDesktop10'>
+            <img className='stackCircleImg' src={circle1} alt="" />
+            <p className='stackText'>CARPENTRY</p>
+          </div>
+          <div className='stackItemDestree3'>
             <img className='stackCircleImg' src={circle1} alt="" />
             <p className='stackText'>LIGHTING DESIGN</p>
-            </div>
+          </div>
             
         </div>
       <div className='colorSpace'>
@@ -89,15 +89,15 @@ function Gisou() {
       </div>
       <div>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="benefit" className='' />
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
+          <img src={image1} alt="Gisou" className='' />
+          <img src={image2} alt="Gisou" className='' />
+          <img src={image3} alt="Gisou" className='' />
         </div>
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImagesBenefit'>
-          <img src={image4} alt="" className='spatialDetailGisouImg blanc2 transformHero gisouFixedImg' />
-          <img src={image5} alt="" className='spatialDetailGisouImg blanc1' />
+          <img src={image4} alt="Gisou" className='spatialDetailGisouImg blanc2 transformHero gisouFixedImg' />
+          <img src={image5} alt="Gisou" className='spatialDetailGisouImg blanc1' />
         </div>
       </div>
     </div>

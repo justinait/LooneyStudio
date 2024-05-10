@@ -31,23 +31,23 @@ function About() {
 
         <p className='subtitleAbout'>Selected clients</p>
         <div className='brandsAboutContainer'>
-          <img className='brandIconAbout brandBig paddingBottom0' src={Amazon} alt="" />
-          <img className='brandIconAbout' src={Panasonic} alt="" />
-          <img className='brandIconAbout' src={Samsung} alt="" />
-          <img className='brandIconAbout brandBig' src={Sony} alt="" />
-          <img className='brandIconAbout brand13' src={Appletv} alt="" />
+          <img className='brandIconAbout brandBig paddingBottom0' src={Amazon} alt="Amazon" />
+          <img className='brandIconAbout' src={Panasonic} alt="Panasonic" />
+          <img className='brandIconAbout' src={Samsung} alt="Samsung" />
+          <img className='brandIconAbout brandBig' src={Sony} alt="Sony" />
+          <img className='brandIconAbout brand13' src={Appletv} alt="Appletv" />
 
-          <img className='brandIconAbout brandBig' src={Dazed} alt="" />
-          <img className='brandIconAbout brandBig' src={BBC} alt="" />
-          <img className='brandIconAbout brandToBig' src={BB} alt="" />
-          <img className='brandIconAbout brandBig' src={Google} alt="" />
-          <img className='brandIconAbout' src={Essity} alt="" />
+          <img className='brandIconAbout brandBig' src={Dazed} alt="Dazed" />
+          <img className='brandIconAbout brandBig' src={BBC} alt="BBC" />
+          <img className='brandIconAbout brandToBig' src={BB} alt="BB" />
+          <img className='brandIconAbout brandBig' src={Google} alt="Google" />
+          <img className='brandIconAbout' src={Essity} alt="Essity" />
 
-          <img className='brandIconAbout brandBig' src={Gisou} alt="" />
-          <img className='brandIconAbout brandToBig' src={hp} alt="" />
-          <img className='brandIconAbout' src={Warner} alt="" />
-          <img className='brandIconAbout brandToBig' src={o2} alt="" />
-          <img className='brandIconAbout' src={Benefit} alt="" />
+          <img className='brandIconAbout brandBig' src={Gisou} alt="Gisou" />
+          <img className='brandIconAbout brandToBig' src={hp} alt="hp" />
+          <img className='brandIconAbout' src={Warner} alt="Warner" />
+          <img className='brandIconAbout brandToBig' src={o2} alt="o2" />
+          <img className='brandIconAbout' src={Benefit} alt="Benefit" />
         </div>
       </div>
     </div>

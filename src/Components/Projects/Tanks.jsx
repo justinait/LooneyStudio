@@ -21,7 +21,7 @@ function Tanks() {
 
   return (
     <div>
-      <img src={xSpray} className='xSprayTv' alt="" />
+      <img src={xSpray} className='xSprayTv' alt="World of Tanks" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
       <div className='videoTvContainer youtube-link' >

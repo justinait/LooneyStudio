@@ -17,7 +17,7 @@ function Sezane() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="SEZANE" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmaller'>
         <div className='stackItemEventsLarge'>
           <img className='stackCircleImg' src={circle1} alt="" />
@@ -79,8 +79,8 @@ function Sezane() {
         <div>
           <p className='eventsDetailImagesText'>Behind the scenes</p>
           <div className='eventDetailImagesBoxSezane'>
-            <img src={image2} alt="" className='sezaneImages transformHero'/>
-            <img src={image3} alt="" className='sezaneImages'/>
+            <img src={image2} alt="SEZANE" className='sezaneImages transformHero'/>
+            <img src={image3} alt="SEZANE" className='sezaneImages'/>
           </div>
         </div>
 

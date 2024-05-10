@@ -23,7 +23,7 @@ function Warner() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="WARNER" className='blancHero'/>
       <div className='stackContainerEvents'>
         <div className='stackItemEventsLarger'>
           <img className='stackCircleImg' src={circle1} alt="" />
@@ -91,9 +91,9 @@ function Warner() {
       </div>
       <div>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
-          <img src={image4} alt="benefit" className='' />
+          <img src={image2} alt="warner" className='' />
+          <img src={image3} alt="warner" className='' />
+          <img src={image4} alt="warner" className='' />
         </div>
 
         <img src={image5} className="spatialDetailImageWarner" />

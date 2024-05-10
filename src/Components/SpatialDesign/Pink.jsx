@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom'
 function Pink() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <img src={xSpray} className='xSpraySpatial' alt="PINK PANTHERESS" />
         <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
         <img src={hero} alt="PINK PANTHERESS" className='blancHero transformHero'/>
@@ -107,12 +107,12 @@ function Pink() {
         </div>
         <div>
             <div className='spatialDetailImagesBoxPink'>
-                <img className='spatialDetailImage1' src={image1} alt="" />
-                <img className='spatialDetailImage2' src={image2} alt="" />
+                <img className='spatialDetailImage1' src={image1} alt="PINK PANTHERESS" />
+                <img className='spatialDetailImage2' src={image2} alt="PINK PANTHERESS" />
             </div>
             <div className='spatialDetailImagesBoxPink'>
-                <img className='spatialDetailImage1' src={image3} alt="" />
-                <img className='spatialDetailImage2' src={image4} alt="" />
+                <img className='spatialDetailImage1' src={image3} alt="PINK PANTHERESS" />
+                <img className='spatialDetailImage2' src={image4} alt="PINK PANTHERESS" />
             </div>
         </div>
     </div>

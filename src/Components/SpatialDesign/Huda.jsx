@@ -19,11 +19,11 @@ import { Link } from 'react-router-dom'
 function Huda() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <img src={xSpray} className='xSpraySpatial' alt="huda" />
         <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
-        <img src={hero} alt="BENEFIT" className='blancHero mobileOnly'/>
-        <img src={heroDesktop} alt="BENEFIT" className='blancHero desktopOnly'/>
+        <img src={hero} alt="huda" className='blancHero mobileOnly'/>
+        <img src={heroDesktop} alt="huda" className='blancHero desktopOnly'/>
         <div className='stackContainer stackContainerPink'>
             <div className='stackItem2'>
                 <img className='stackCircleImg' src={circle2} alt="" />
@@ -90,14 +90,14 @@ function Huda() {
             <img src={image1} alt="benefit" className='image1SpatialDetail transformHero' />
 
             <div className='spatialDetailImagesBoxHuda'>
-                <img className='spatialDetailImage2 transformHero' src={image2} alt="" />
-                <img className='spatialDetailImage1' src={image3} alt="" />
+                <img className='spatialDetailImage2 transformHero' src={image2} alt="huda" />
+                <img className='spatialDetailImage1' src={image3} alt="huda" />
             </div>
 
             <p className='spatialDetailImagesText'>Behind the scenes</p>
             <div className='spatialDetailImages'>
-                <img className='spatialDetailImage3' src={image4} alt="" />
-                <img className='spatialDetailImage4' src={image5} alt="" />
+                <img className='spatialDetailImage3' src={image4} alt="huda" />
+                <img className='spatialDetailImage4' src={image5} alt="huda" />
             </div>
         </div>
     </div>

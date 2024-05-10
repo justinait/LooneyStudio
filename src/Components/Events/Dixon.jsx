@@ -17,7 +17,7 @@ function Dixon() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <img src={hero} alt="Dixon" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmaller'>
         <div className='stackItemDestree1 stackItemDesktop40'>
           <img className='stackCircleImg circleImg16' src={circle2} alt="" />
@@ -72,9 +72,9 @@ function Dixon() {
       <div>
 
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="benefit" className='' />
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
+          <img src={image1} alt="Dixon" className='' />
+          <img src={image2} alt="Dixon" className='' />
+          <img src={image3} alt="Dixon" className='' />
         </div>
       </div>
     </div>
