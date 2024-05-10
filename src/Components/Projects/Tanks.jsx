@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import hero from '/spatial/benefitdetail.png'
 import './TvAndFilmsDetails.css'
 import circle1 from '/tvandfilms/circle1.png'
@@ -10,26 +10,45 @@ import { Link } from 'react-router-dom'
 
 
 function Tanks() {
+  const [isOverlayActive, setIsOverlayActive] = useState(false);
+
+  const handleOverlayClick = () => {
+    setIsOverlayActive(true);
+  }; 
+  const handleOverlayClose = () => {
+    setIsOverlayActive(false);
+  };
+
   return (
     <div>
       <img src={xSpray} className='xSprayTv' alt="" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
-      <div className='videoTvContainer'>
-        <iframe
+      <div className='videoTvContainer youtube-link' >
+        {/* <iframe
           title='YouTube Video'
           className='tvHero'
           src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&controls=0&loop=1'
           frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowfullscreen
-        />
+        /> */}
+        <p onClick={handleOverlayClick}>hola</p>
       </div>
-      {/* <div className='youtube-player-overlay'>
-        <div className='youtube-player-popup'>
-          <iframe src="https://www.youtube.com/embed/fBMrZ-GjMgQ" title="Vinnie Jones joins World of Tanks for Holiday Ops!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      {isOverlayActive && (
+        <div className='youtube-player-overlay' onClick={handleOverlayClose}>
+          <div className='youtube-player-popup'>
+            <iframe
+              src="https://www.youtube.com/embed/fBMrZ-GjMgQ"
+              title="Vinnie Jones joins World of Tanks for Holiday Ops!"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
         </div>
-      </div> */}
+      )}
 
       <div className='stackContainer stackContainerTv'>
         <div className='stackItemPink1'>

@@ -105,6 +105,10 @@ input {
 #spraySend{
     display: none;
 }
+.contactContainerBox {
+    display: flex;
+    flex-wrap: wrap;
+}
 @media(min-width:700px){
     .contactContainer {
         margin: 156px 5%;
@@ -164,5 +168,96 @@ input {
 @media (min-width: 1200px) {
     .contactUsContainer {
         width: 50vw;
+        margin: 2% 0 3%;
+    }
+    .contactContainer h3 {
+        margin-bottom: 0.6rem;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .contactContainer {
+        margin: 156px 0%;
+        border-left: none;
+        border-right: none;
+    }
+    .contactUs{
+        width: 50vw;
+    }
+    .biggerBoxAbout {
+        padding: 0;
+        width: 25vw;
+    }
+    .containerBox{
+        width: 25vw;
+        padding: 2%;
+        border: 1px solid white;
+        padding-left: 3%;
+        border-top: none;
+    }
+    .biggerBoxAbout {
+        padding: 0;
+    }
+    .mapContainer {
+        height: 150px;
+    }
+    .locationText {
+        font-size: 13px;
+        line-height: unset;
+    }
+    
+    .contactContainerBox{
+        width: 50vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .halfDesktop {
+        height: 150px;
+        height: 38%;
+        border-right: none;
+    }
+    .halfBigDesktop {
+        height: 240px;
+        height: 62%;
+        border-right: none;
+        border-bottom: none;
+    }
+    .biggerBoxAbout {
+        height: 360px;
+        height: 100%;
+        border-bottom: none;
+        
+    }
+    .contactContainerBox :nth-child(1) {
+        order: 1;
+    }
+    
+    .contactContainerBox :nth-child(3) {
+        order: 4;
+    }
+    
+    .contactContainerBox :nth-child(4) {
+        order: 3;
+    }
+    .inputContact {
+        padding-top: 3%;
+        padding-bottom: 4%;
+        width: 92%;
+        margin: auto;
+    }
+    .formButton {
+        padding-top: 9%;
+        padding-right: 8%;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .contactUsContainer {
+        height: auto;
+    }
+
+    .contactUs{
+        font-size: clamp(165px, 3vw, 250px);
     }
 }
