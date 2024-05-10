@@ -158,7 +158,9 @@
 }
 
 @media(min-width:1400px){
-    
+    .servicesContainer {
+        margin-top: 200px;
+    }
     .servicesText{
         font-size: 13px;
     }
@@ -168,13 +170,31 @@
         font-size: 32px;
     }
     .servicesText{
-        font-size: 13px;
+        font-size: 17px;
+        font-weight: 500;
+        height: 86px;
+        bottom: 32px;
+    }
+    .bigServicesText {
+        height: 108px;
+        bottom: 43px;
     }
     .servicesContainer {
         margin-top: 252px;
+        height: 130vh;
     }
     .serviceItemName{
         padding: 1% 0;
         border-bottom: 2px solid white;
+    }
+    .serviceItemName {
+        top: 70px;
+        height: 70px;
+    }
+    .imageServices {
+        height: 577px;
+    }
+    .serviceOpenContainer {
+        height: 570px;
     }
 }
