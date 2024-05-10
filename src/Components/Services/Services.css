@@ -115,6 +115,7 @@
     }
     .serviceItemName {
         top: 70px;
+        height: 70px;
     }
     .servicesItemsContainer {
         height: 1090px;
@@ -134,6 +135,7 @@
     }    
     .serviceItemName {
         top: 50px;
+        height: 50px;
     }
     .imageServices {
         height: 400px;
