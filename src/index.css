@@ -57,7 +57,7 @@ a, a:hover {
   h2 {
     font-size: 160px;
     width: 50vw;
-    margin-top: 5vh;
+    margin-top: 3vh;
   }
 }
 @media(min-width:1400px){

@@ -160,6 +160,7 @@
     .spraySpatial{
         width: 440px;
     }
+    
 }
 @media(min-width:1700px){
     
@@ -168,5 +169,14 @@
     }
     .spatialContainer {
         margin-top: 202px;
+    }
+    .projectsRigthLink, .projectsLeftLink {
+        padding: 2.5% 5%;
+    }
+    .spatialItemBox, .imageOverlay {
+        height: 480px;
+    }
+    .spatialImage {  
+        height: 93%;
     }
 }
