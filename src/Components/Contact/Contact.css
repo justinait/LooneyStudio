@@ -167,8 +167,9 @@ input {
 }
 @media (min-width: 1200px) {
     .contactUsContainer {
-        width: 50vw;
+        width: 50%;
         margin: 2% 0 3%;
+        height: auto;
     }
     .contactContainer h3 {
         margin-bottom: 0.6rem;
@@ -182,26 +183,22 @@ input {
         border-right: none;
         margin: 230px 0%;
         justify-content: space-between;
+        width: 100%;
     }
     .contactUs{
-        width: 50vw;
-    }
-    .biggerBoxAbout {
-        padding: 0;
-        width: 25vw;
+        font-size: clamp(165px, 3vw, 250px);
+        width: 49vw;
     }
     .containerBox{
-        width: 25vw;
+        width: 49.8%;
         padding: 2%;
         border: 1px solid white;
         padding-left: 2.5%;
         border-top: none;
     }
-    .biggerBoxAbout {
-        padding: 0;
-    }
     .mapContainer {
-        height: 150px;
+        height: 151px;
+        width: 100%;
     }
     .locationText {
         font-size: 13px;
@@ -209,7 +206,7 @@ input {
     }
     
     .contactContainerBox{
-        width: 50vw;
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -231,7 +228,9 @@ input {
         height: 360px;
         height: 100%;
         border-bottom: none;
-        
+        border-right: none;
+        width: 50%;
+        padding: 0;
     }
     .contactContainerBox :nth-child(1) {
         order: 1;
@@ -256,13 +255,11 @@ input {
         font-size: 13px;
         font-weight: 600;
     }
-    .contactUsContainer {
-        height: auto;
-    }
+    
     .instagramBox {
         padding: 4% 6%;
     }
-    .contactUs{
-        font-size: clamp(165px, 3vw, 250px);
+    .mapBoxContainer {
+        border: none;
     }
 }
