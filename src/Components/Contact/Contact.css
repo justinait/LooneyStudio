@@ -212,7 +212,6 @@ input {
         flex-direction: column;
         height: 400px;
     }
-
     .halfDesktop {
         height: 150px;
         height: 38%;
@@ -261,5 +260,30 @@ input {
     }
     .mapBoxContainer {
         border: none;
+    }
+}
+@media(min-width:1400px){
+    .contactUs{
+        font-size: 190px;
+    }
+    .contactUsContainer{
+        height: 385px;
+    }
+    .contactContainerBox{    
+        height: 462px;
+    }
+    .mapContainer {
+        height: 184px;
+    }
+    
+    .halfDesktop {
+        height: 40%;
+    }
+    .halfBigDesktop {
+        height: 60%;
+    }
+    .inputContact {
+        padding-top: 4%;
+        padding-bottom: 3%;
     }
 }
