@@ -2,7 +2,7 @@ body {
   font-family: "Manrope";
   margin: 0;
   min-width: 320px;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   background-color: black;
   color: white;
 }
