@@ -177,9 +177,11 @@ input {
     }
     .contactContainer {
         margin: 156px 0%;
+        flex-wrap: nowrap;
         border-left: none;
         border-right: none;
         margin: 230px 0%;
+        justify-content: space-between;
     }
     .contactUs{
         width: 50vw;
