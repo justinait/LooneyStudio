@@ -177,17 +177,17 @@ input {
         font-weight: 600;
     }
     .contactContainer {
-        margin: 156px 0%;
+        margin: 230px 0%;
         flex-wrap: nowrap;
         border-left: none;
         border-right: none;
-        margin: 230px 0%;
         justify-content: space-between;
         width: 100%;
     }
     .contactUs{
         font-size: clamp(165px, 3vw, 250px);
         width: 49vw;
+        justify-content: flex-end;
     }
     .containerBox{
         width: 49.8%;
@@ -264,16 +264,63 @@ input {
 }
 @media(min-width:1400px){
     .contactUs{
-        font-size: 190px;
+        font-size: 200px;
     }
     .contactUsContainer{
         height: 385px;
+        margin: 2% auto 4%;
     }
     .contactContainerBox{    
-        height: 462px;
+        height: 476px;
     }
     .mapContainer {
-        height: 184px;
+        height: 199px;
+    }
+    
+    .halfDesktop {
+        height: 42%;
+    }
+    .halfBigDesktop {
+        height: 58%;
+    }
+    .inputContact {
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+    .formButton {
+        
+        padding-top: 12%;
+    }
+    .locationText {
+        font-size: 15px;
+    }
+    .contactContainer h3 {
+        font-size: 34px;
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media(min-width:1700px){
+    
+    .contactContainer {
+        margin: 290px 0% 200px;
+    }
+    .contactContainer h3 {
+        
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .contactUs{
+        font-size: 250px;
+    }
+    .contactUsContainer{
+        height: 500px;
+    }
+    .contactContainerBox{    
+        height: 615px;
+    }
+    .mapContainer {
+        height: 245px;
     }
     
     .halfDesktop {
@@ -285,5 +332,14 @@ input {
     .inputContact {
         padding-top: 4%;
         padding-bottom: 3%;
+    }
+    .locationText {
+        font-size: 18px;
+        font-weight: 400;
+        width: 93%;
+    }
+    .formButton{
+        font-size: 18px;
+        font-weight: 700;
     }
 }

@@ -273,6 +273,9 @@ a:focus {
 
 @media(min-width:1700px){
 
+    .navbarLooney{
+        font-size: 84px;
+    }
     .headerContainer{
         height: 200px;
     }
