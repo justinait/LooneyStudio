@@ -16,9 +16,9 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid white;
-    padding: 2% 0 0 0;
     position: relative;
-    top: 30px;
+    height: 32px;
+    top: 32px;
 }
 .serviceItemName p {
     margin: 0;
@@ -68,12 +68,16 @@
     margin: 0;
     padding: 0 2% 2%;
     background: linear-gradient(to top, #131313, transparent);
+    
+    height: 35px;
+    bottom: 15px;
 }
 .littleServicesText {
     bottom: 16px;
 }
 .bigServicesText {
-    bottom: 25px;
+    bottom: 21px;
+    height: 49px;
 }
 .biggerLetter {
     font-size: 7.3px;
