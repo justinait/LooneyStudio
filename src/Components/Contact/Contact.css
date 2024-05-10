@@ -172,7 +172,7 @@ input {
     }
     .contactContainer h3 {
         margin-bottom: 0.6rem;
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 600;
     }
     .contactContainer {
@@ -191,7 +191,7 @@ input {
         width: 25vw;
         padding: 2%;
         border: 1px solid white;
-        padding-left: 3%;
+        padding-left: 2.5%;
         border-top: none;
     }
     .biggerBoxAbout {
@@ -244,19 +244,21 @@ input {
     .inputContact {
         padding-top: 3%;
         padding-bottom: 4%;
-        width: 92%;
+        width: 93%;
         margin: auto;
     }
     .formButton {
         padding-top: 9%;
-        padding-right: 8%;
+        padding-right: 7%;
         font-size: 13px;
         font-weight: 600;
     }
     .contactUsContainer {
         height: auto;
     }
-
+    .instagramBox {
+        padding: 4% 6%;
+    }
     .contactUs{
         font-size: clamp(165px, 3vw, 250px);
     }
