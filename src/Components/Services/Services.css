@@ -94,7 +94,7 @@
         font-size: 34.833px;
     }
     .serviceItemTitle{
-        font-size: 23.222px;
+        font-size: 21.222px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -112,10 +112,17 @@
     .servicesText {
         font-size: 13.062px;
         margin: -1% 0;
+        height: 60px;
+        bottom: 22px;
+        line-height: 1.3;
+    }
+    .bigServicesText {
+        height: 80px;
+        bottom: 30px;
     }
     .serviceItemName {
-        top: 70px;
-        height: 70px;
+        top: 60px;
+        height: 60px;
     }
     .servicesItemsContainer {
         height: 1090px;

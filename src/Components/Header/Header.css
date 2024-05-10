@@ -226,6 +226,7 @@ a:focus {
         letter-spacing: 1.8px;
         text-transform: uppercase;
         height: 50px;
+        font-size: clamp(13px, 0.9vw, 18px);
     }
     .nextSections:hover {
         color: var(--color-violet);
@@ -238,8 +239,8 @@ a:focus {
         width: 50vw;
     }
     .nextDropdownItemsContainer {
-        width: 40vw;
-        left: 63vw;
+        width: 25vw;
+        left: 65vw;
         top: 90px;
     }
     
@@ -258,7 +259,16 @@ a:focus {
 }
 @media(min-width:1400px){
 
-    
+    .nextSections {
+        height: 32px;
+    }
+    .nextDropdownItemsContainer{
+        left: 68.5vw;
+    }
+    .serviceItemName {
+        top: 55px;
+        height: 55px;
+    }
 }
 
 @media(min-width:1700px){
@@ -271,5 +281,11 @@ a:focus {
         padding: 0 35px;
         height: 150px;
     }    
+    .navbarLogoHome {
+        bottom: 160px;
+    }
+    .heroText {
+        bottom: 125px;
+    }
 }
 
