@@ -18,7 +18,8 @@ function WWE() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="WWE" className='blancHero'/>
+      <img src={hero} alt="WWE" className='blancHero wweHero'/>
+
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItemEventsLarger2'>
           <img className='stackCircleImg' src={circle3} alt="" />

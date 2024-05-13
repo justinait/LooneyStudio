@@ -327,3 +327,52 @@
         flex-wrap: nowrap;
     }
 }
+@media(min-width:1400px){
+    .wweHero {
+        object-position: 0 -730px;
+    }
+    .wweImage1 {
+        height: 600px;
+    }
+    
+    .placesImage1 {
+        height: 570px;
+    }
+}
+@media(min-width: 1700px){
+    .xSprayEvent {
+        width: 181px;
+        top: 100px;
+    }
+    .xEventDetail {
+        right: 83px;
+        top: 212px;
+        font-size: 18px;
+    }
+    .stackContainerEvents {    
+        bottom: 155px;
+    }
+    
+    .eventsDetailImagesText {
+        font-size: 32px;
+    }
+    
+    .sezaneImages {
+        height: 1000px;
+    }
+    .wweHero {
+        object-position: 0 -840px;
+    }
+    .wweImage1 {
+        height: 800px;
+    }
+    .wweImages {
+        height: 900px;
+    }
+    .placesImage1 {
+        height: 710px;
+    }
+    .warner22Images {
+        height: 1080px;
+    }
+}

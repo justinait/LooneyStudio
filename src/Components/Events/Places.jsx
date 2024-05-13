@@ -57,7 +57,7 @@ function Places() {
             </div>
 
             <div>
-              <p className='infoTitleSpatialDetail'>AGENCY</p>
+              <p className='infoTitleSpatialDetail'>LOCATION</p>
               <p className='infoDataSpatialDetail'>Shakespeare Globe</p>
             </div>
 
