@@ -13,7 +13,7 @@ function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   const [openNextMenu, setOpenNextMenu] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('home')
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   
   const windowWidth = window.innerWidth;
@@ -101,67 +101,68 @@ function Header() {
   
   return (
     <div>
-
-      <div className='headerContainer'>
-  
-        <div  className='initialHeader'>
-        
-          <Link to='/' className={pathname === '/' ? ( desktop ? 'navbarLooney hideLogo' : 'navbarLooney'): 'navbarLooney'} onClick={handleClose}>THE LOONEY STUDIO</Link>
-          {
+      {
+        visible &&
+        <div className='headerContainer'>
+    
+          <div  className='initialHeader'>
+          
+            <Link to='/' className={pathname === '/' ? ( desktop ? 'navbarLooney hideLogo' : 'navbarLooney'): 'navbarLooney'} onClick={handleClose}>THE LOONEY STUDIO</Link>
+            {
             !desktop && (
               openMenu ?
               <img src={CloseIcon}  onClick={handleClose} className='closeMenuIcon' alt="Menu" />:
               <img src={MenuIcon}  onClick={handleOpen} className='burgerMenuIcon' alt="Menu" />)
             }
-        </div>
-  
-        {(openMenu || desktop) &&
-          <div className='dropdownHeader'>
-            
-            <div className='dropdownItemsContainer'>
-              <p onClick={()=>handleNextMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}>PROJECTS              <img src={arrow} alt=">" />            </p>
-            
-              {sections.map((e, i)=> {
-                return (
-                <Link 
-                  key={e.id} 
-                  to={`/${e.id}`} 
-                  onClick={()=>handleClose(e.id)} 
-                  className={selectedCategory == e.id? 'dropdownItems activeNavbar': 'dropdownItems'}>
-                  {e.name}
-                </Link>)
-              })}
-              
-            </div>
-            <img src={spray} alt="" className='sprayDropdown1' />
-            <img src={ig} alt="Instagram" className='igIconNavbar'/>
           </div>
-        }
-        {openNextMenu &&
-          <div className='dropdownHeader nextDropdown'>
-            
-            <div className='dropdownItemsContainer nextDropdownItemsContainer'>
-              <p onClick={()=>handlePrevMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects mobileOnly': 'projects mobileOnly'}> <img src={arrowback} alt="<" />            </p>
-              <img src={spray2} alt="" className='sprayDropdown2' />
+    
+          {(openMenu || desktop) &&
+            <div className='dropdownHeader'>
               
-              {nextSections.map((e, i)=> {
-                return (
-                <Link 
-                  key={e.id} to={`/${e.id}`} 
-                  onClick={()=>handleClose(e.id)} 
-                  className={selectedCategory == e.id? 'activeNavbar nextSections': 'nextSections'}>
-                  {e.name}
-                </Link>)
-              })}
+              <div className='dropdownItemsContainer'>
+                <p onClick={()=>handleNextMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}>PROJECTS              <img src={arrow} alt=">" />            </p>
               
+                {sections.map((e, i)=> {
+                  return (
+                  <Link 
+                    key={e.id} 
+                    to={`/${e.id}`} 
+                    onClick={()=>handleClose(e.id)} 
+                    className={selectedCategory == e.id? 'dropdownItems activeNavbar': 'dropdownItems'}>
+                    {e.name}
+                  </Link>)
+                })}
+                
+              </div>
+              <img src={spray} alt="" className='sprayDropdown1' />
               <img src={ig} alt="Instagram" className='igIconNavbar'/>
-              
             </div>
-          </div>
-        }
-      </div>
+          }
+          {openNextMenu &&
+            <div className='dropdownHeader nextDropdown'>
+              
+              <div className='dropdownItemsContainer nextDropdownItemsContainer'>
+                <p onClick={()=>handlePrevMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects mobileOnly': 'projects mobileOnly'}> <img src={arrowback} alt="<" />            </p>
+                <img src={spray2} alt="" className='sprayDropdown2' />
+                
+                {nextSections.map((e, i)=> {
+                  return (
+                  <Link 
+                    key={e.id} to={`/${e.id}`} 
+                    onClick={()=>handleClose(e.id)} 
+                    className={selectedCategory == e.id? 'activeNavbar nextSections': 'nextSections'}>
+                    {e.name}
+                  </Link>)
+                })}
+                
+                <img src={ig} alt="Instagram" className='igIconNavbar'/>
+                
+              </div>
+            </div>
+          }
+        </div>
+      }
       
-      {/* <p className={pathname === '/' ?  ( desktop ? 'navbarLogoHome' : 'hideLogo'): 'hideLogo'}>THE LOONEY STUDIO</p> */}
     </div>
 
   )
