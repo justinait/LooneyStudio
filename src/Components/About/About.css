@@ -169,7 +169,7 @@
 
 @media(min-width:1700px){
     .aboutText{
-        font-size: 96px;
+        font-size: 95px;
         font-weight: 400;
         line-height: 121%; /* 116.16px */
         letter-spacing: -0.96px;
@@ -182,5 +182,13 @@
         line-height: 100%; /* 185.575px */
         letter-spacing: -3.711px;
         text-transform: uppercase;
+    }
+    .aboutText .and {
+        font-size: 96px;
+    }
+    .sprayAbout {
+        width: 306px;
+        top: 900px;
+        height: unset;
     }
 }
