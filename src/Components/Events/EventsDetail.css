@@ -338,6 +338,21 @@
     .placesImage1 {
         height: 570px;
     }
+    .eltonDetailImage2, .eltonDetailImage1 {
+        height: 550px;
+        object-fit: cover;
+    }
+}
+
+@media(min-width: 1400px){
+
+    .moleculesDesktopBoxes {
+        height: 600px;
+    }
+    
+    .dazedImagesDesktop {
+        height: 650px;
+    }
 }
 @media(min-width: 1700px){
     .xSprayEvent {
@@ -374,5 +389,16 @@
     }
     .warner22Images {
         height: 1080px;
+    }
+    
+    .eltonDetailImage2, .eltonDetailImage1 {
+        height: 700px;
+    }
+    
+    .moleculesDesktopBoxes {
+        height: 800px;
+    }
+    .dazedImagesDesktop {
+        height: 800px;
     }
 }

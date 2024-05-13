@@ -50,7 +50,7 @@ function WWE() {
           </div>
 
           <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
+            <p className='infoTitleSpatialDetail'>LOCATION</p>
             <p className='infoDataSpatialDetail'>O2 Arena</p>
           </div>
 

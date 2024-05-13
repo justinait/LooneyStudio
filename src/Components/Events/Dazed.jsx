@@ -39,8 +39,6 @@ function Dazed() {
           <img className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
-
-          
       </div>
       <div className='colorSpaceEvents'>
         <p className='titleSpatialDetail'>Nothing x Dazed - LAUNCH EVENT</p>
@@ -52,7 +50,7 @@ function Dazed() {
           </div>
 
           <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
+            <p className='infoTitleSpatialDetail'>LOCATION</p>
             <p className='infoDataSpatialDetail'>SHOREDITCH</p>
           </div>
 

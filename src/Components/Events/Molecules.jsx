@@ -50,7 +50,7 @@ function Molecules() {
           </div>
 
           <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
+            <p className='infoTitleSpatialDetail'>LOCATION</p>
             <p className='infoDataSpatialDetail'>FITZRROVIA</p>
           </div>
 

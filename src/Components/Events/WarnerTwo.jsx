@@ -58,7 +58,7 @@ function WarnerTwo() {
           </div>
 
           <div>
-            <p className='infoTitleSpatialDetail'>AGENCY</p>
+            <p className='infoTitleSpatialDetail'>LOCATION</p>
             <p className='infoDataSpatialDetail'>The Standard Hotel</p>
           </div>
 
