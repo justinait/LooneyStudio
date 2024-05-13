@@ -49,7 +49,7 @@ function TvAndFilms() {
   ]
   return (
     <div className='spatialContainer'>
-      <div className='headerProjects'>
+      <div className='headerProjects headerProjectsEvents'>
         <Link to={'/spatialDesign'} className='linksTv linksProjects projectsLeftLink'>SPATIAL DESIGN</Link>
         <p className='selectedProject'>TV & FILMS</p>
         <img src={spray} alt="" className='sprayTv' />

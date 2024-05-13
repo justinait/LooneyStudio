@@ -17,7 +17,7 @@ function Events() {
   ]
   return (
     <div className='spatialContainer'>
-      <div className='headerProjects'>
+      <div className='headerProjects headerProjectsEvents'>
         <Link to={'/tvAndFilms'} className='linksEvents linksProjects projectsLeftLink'>TV & FILMS</Link>
         <p className='selectedProject'>EVENTS & INSTALLATIONS</p>
         <img src={spray} alt="" className='sprayEvents' />

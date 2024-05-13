@@ -76,11 +76,18 @@
     .headerProjects{
         padding: 40px 0 40px;
     }
-
+    .headerProjectsEvents .linksProjects, .headerProjectsEvents .selectedProject{
+        /* padding-top: unset !important; */
+        height: 55px;
+    }
+    .headerProjectsEvents .projectsRigthLink, .headerProjectsEvents .projectsLeftLink {
+        padding: 2%;
+    }
     .sprayTv{
         width: 284px;
         height: 137px;
         top: 20px;
+        left: 47%;
     }
     
 }

@@ -171,7 +171,7 @@
     .aboutText{
         font-size: 95px;
         font-weight: 400;
-        line-height: 121%; /* 116.16px */
+        line-height: 121%;
         letter-spacing: -0.96px;
         text-transform: uppercase;
     }
@@ -179,7 +179,7 @@
         font-size: 185.575px;
         font-style: normal;
         font-weight: 500;
-        line-height: 100%; /* 185.575px */
+        line-height: 100%;
         letter-spacing: -3.711px;
         text-transform: uppercase;
     }
