@@ -7,7 +7,7 @@ import circle3 from '/tvandfilms/circle3.png'
 import circle4 from '/tvandfilms/circle4.png'
 import xSpray from '/tvandfilms/xSpray.png'
 import { Link } from 'react-router-dom'
-
+import Ratio from 'react-bootstrap/Ratio';
 
 function Tanks() {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
@@ -24,18 +24,33 @@ function Tanks() {
       <img src={xSpray} className='xSprayTv' alt="World of Tanks" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
-      <div className='videoTvContainer youtube-link' >
-        {/* <iframe
+      <div>
+        <Ratio aspectRatio="1x1">
+        <iframe
+          // style={{ width: 'unset !important', height: '100vh !important', top: '0 !important' }}
+          title='YouTube Video'
+          className='tvHero'
+          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowfullscreen
+        />
+        </Ratio>
+      </div>
+
+      {/* <div className='videoTvContainer youtube-link' >
+        <iframe
+          style={{ width: 'unset !important', height: '100vh !important', top: '0 !important' }}
           title='YouTube Video'
           className='tvHero'
           src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&controls=0&loop=1'
           frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowfullscreen
-        /> */}
-        <p onClick={handleOverlayClick}>hola</p>
-      </div>
-      {isOverlayActive && (
+        />
+      </div> */}
+        {/* <p onClick={handleOverlayClick}>hola</p> */}
+      {/* {isOverlayActive && (
         <div className='youtube-player-overlay' onClick={handleOverlayClose}>
           <div className='youtube-player-popup'>
             <iframe
@@ -48,7 +63,7 @@ function Tanks() {
             />
           </div>
         </div>
-      )}
+      )} */}
 
       <div className='stackContainer stackContainerTv'>
         <div className='stackItemPink1'>
