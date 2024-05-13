@@ -15,12 +15,12 @@ function Home() {
       <video 
         className='heroVideo' 
         src={heroMobile}
-        muted loop autoPlay >
+        muted loop autoPlay playsInline >
       </video>
       <video 
         className='heroVideoDesktop' 
         src={heroDesktop}
-        muted loop autoPlay >
+        muted loop autoPlay playsInline>
       </video>
       <p className={pathname === '/' ?  ( desktop ? 'navbarLogoHome' : 'hideLogo'): 'hideLogo'}>THE LOONEY STUDIO</p>
       <p className='heroText'>DESIGN & BUILD</p>
