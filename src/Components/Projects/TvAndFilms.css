@@ -116,10 +116,4 @@
     .projectsRigthLink, .projectsLeftLink {
         padding: 2%;
     }
-    .spatialItemBox, .imageOverlay {
-        height: 480px;
-    }
-    .spatialImage {  
-        height: 93%;
-    }
 }

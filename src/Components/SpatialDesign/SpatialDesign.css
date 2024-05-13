@@ -120,6 +120,9 @@
     .imageOverlay, .spatialText {
         display: none;
     }
+    .spatialText {
+        font-size: 18px;
+    }
     .spatialItemBox:hover .imageOverlay{
         display: block;
     }
@@ -131,5 +134,16 @@
     }
     .spatialImagesContainer {
         padding: 5% 0 0 0;
+    }
+}
+@media(min-width:1700px){
+    .spatialText {
+        font-size: 24px;
+    }
+    .spatialItemBox, .imageOverlay {
+        height: 480px;
+    }
+    .spatialImage {  
+        height: 93%;
     }
 }
