@@ -103,11 +103,9 @@
     .spraySpatial{
         width: 440px;
     }
-    .projectsLeftLink{
-        padding: 0 1.5vw 0 1.5vw;
-    }
+    .projectsLeftLink,
     .projectsRigthLink{
-        padding: 0 1.5vw 0 1.5vw;
+        padding: 0 1.5vw 10px 1.5vw;
     }
     
 }
