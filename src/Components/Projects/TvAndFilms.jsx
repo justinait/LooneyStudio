@@ -53,7 +53,8 @@ function TvAndFilms() {
         <Link to={'/spatialDesign'} className='linksTv linksProjects projectsLeftLink'>SPATIAL DESIGN</Link>
         <p className='selectedProject'>TV & FILMS</p>
         <img src={spray} alt="" className='sprayTv' />
-        <Link to={'/events'} className='linksTv linksProjects projectsRigthLink'>EVENTS & INSTALL</Link>
+        <Link to={'/events'} className='linksTv linksProjects projectsRigthLink mobileOnly'>EVENTS & INSTALL</Link>
+        <Link to={'/events'} className='linksTv linksProjects projectsLeftLink desktopOnlyInline'>EVENTS & INSTALLATIONS</Link>
       </div>
 
       <div className='spatialImagesContainer'>
