@@ -160,6 +160,9 @@
 .tabletAndDesktop {
     display: none;
 }
+.placesImage1, .wweImage1{
+    width: 100%;
+}
 @media(min-width: 700px){
     .mobileOnlyPlaces{
         display: none;

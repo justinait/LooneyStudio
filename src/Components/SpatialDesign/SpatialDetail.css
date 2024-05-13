@@ -171,8 +171,6 @@
 .image1SpatialDetailDestree{
     width: 100%;
     height: 190px;
-    object-fit: cover;
-    object-position: 0 -75px;
 }
 .spatialDetailImages {
     display: flex;
@@ -360,7 +358,7 @@
         margin: 5% 0;
     }
     .image1SpatialDetailDestree {
-        height: 460px;
+        height: 400px;
     }
     .spatialDetailImages {
         margin-top: 2%;
@@ -520,9 +518,6 @@
     .infoContainerSpatialDetail div {
         padding-bottom: 3.5%;
     }
-    .image1SpatialDetail {
-        height: 500px;
-    }
     .spatialDetailImagesText {
         padding: 0 2vw;
         z-index: 2;
@@ -551,7 +546,7 @@
     }
     .image1SpatialDetailDestree {
         height: 500px;
-        object-position: 0 -350px;
+        object-fit: cover;
     }
     .spatialDetailImages {
         margin-top: 1%;
@@ -594,7 +589,7 @@
         height: 450px;
     }
     .image1SpatialDetail {
-        height: 700px;
+        height: 600px;
     }
     .spatialDetailImagesBoxHuda {
         height: 450px;
@@ -602,12 +597,32 @@
     }
 }
 @media(min-width:1400px){
-    /* .spatialDetailImagesBoxBenefit1 img .objPositionUnset{
-        object-fit: cover !important;
-    } */
+    
     .spatialDetailImagesBoxBenefit1 img {
         height: 530px;
         width: 33%;
+    }
+    .spatialDetailImgDestree2, .spatialDetailImgDestree {
+        height: 450px;
+    }
+    .image1SpatialDetailDestree {
+        height: 750px;
+    }
+    .spatialDetailImageBenefit {
+        height: 540px;
+        margin: 1.5% 0;
+    }
+    .spatialDetailBenefitImg {
+        height: 540px;
+    }    
+    .gisouFixedImg {
+        object-position: 0 -485px !important;
+    }
+    .spatialDetailGisouImg {
+        height: 550px;
+    }
+    .spatialDetailImagesBoxHuda, .spatialDetailImage3, .spatialDetailImage4 {
+        height: 550px;
     }
 }
 @media(min-width:1700px){
@@ -631,9 +646,11 @@
     .spatialDetailImagesBoxBenefit1 img {
         height: 704px;
     }
-    
+    .spatialDetailImagesBenefit img {
+        height: 704px;
+        object-position: unset;
+    }
     .stackContainer{
-        
         bottom: 155px;
     }
     .spatialDetailImagesText {
@@ -651,5 +668,26 @@
     }
     .infoSpatialDetailTextContainer p {
         font-size: 20px;
+    }
+    
+    .image1SpatialDetail {
+        height: 750px;
+    }
+    .spatialDetailImgBlanc {
+        height: 450px;
+    }
+    
+    .spatialDetailImgDestree2, .spatialDetailImgDestree {
+        height: 550px;
+    }
+    .spatialDetailImagesBoxPink {
+        height: 435px;
+    }
+    .gisouFixedImg {
+        object-position: 0 -631px !important;
+    }
+    
+    .spatialDetailImagesBoxHuda, .spatialDetailImage3, .spatialDetailImage4 {
+        height: 700px;
     }
 }

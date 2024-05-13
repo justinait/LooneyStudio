@@ -85,7 +85,7 @@ function Places() {
         </div>
       </div>
       <div>
-        <img src={image1} className="image1SpatialDetail placesImage1" />
+        <img src={image1} className="placesImage1" />
         <div className='eventPlacesDetailImages'>
           <img src={image2} alt="Places + faces" className='sezaneImages placesImages'/>
           <img src={image3} alt="Places + faces" className='sezaneImages placesImages'/>

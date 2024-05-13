@@ -78,7 +78,7 @@ function WWE() {
       <div>
 
         <div>
-          <img src={image1} alt="WWE" className='image1SpatialDetail wweImage1' />
+          <img src={image1} alt="WWE" className='wweImage1' />
           <p className='eventsDetailImagesText'>Behind the scenes</p>
           <div className='spatialDetailImagesBenefit'>
             <img src={image2} alt="WWE" className='spatialDetailBenefitImg wweImages'/>
