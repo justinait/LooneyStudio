@@ -30,9 +30,10 @@ function Tanks() {
           // style={{ width: 'unset !important', height: '100vh !important', top: '0 !important' }}
           title='YouTube Video'
           className='tvHero'
-          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0'
+          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0'
+          // <iframe width="1519" height="526" src="https://www.youtube.com/embed/fBMrZ-GjMgQ" title="Vinnie Jones joins World of Tanks for Holiday Ops!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop'
           allowfullscreen
         />
         </Ratio>

@@ -98,7 +98,7 @@
 }
 .ratio>*{
     padding-top: 0;
-    width: 400%;
+    width: 500%;
     height: 100vh !important;
 }
 .html5-video-container {
@@ -113,4 +113,28 @@
     align-content: center;
     flex-direction: column;
     overflow: hidden;
+}
+
+@media(min-width:700px){
+    .xSprayTv {
+        width: 151px;
+        top: 156px;
+        left: 5px;
+    }
+    .xTvDetail{
+        font-size: 28px;
+        font-weight: 600;
+        top: 206px;
+        left: 77px;
+    }
+}
+@media(min-width:1200px){
+    .xSprayTv {
+        left: unset;
+        right: 5px;
+    }
+    .xTvDetail{
+        left: unset;
+        right: 68px;
+    }
 }
