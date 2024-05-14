@@ -17,25 +17,37 @@ function Tanks() {
     event.stopPropagation();
     setIsOverlayActive(true);
     console.log('overlay active');
-  }; 
-  // const handleOverlayClick = () => {
-  //   // Abrir el video de YouTube en una nueva ventana o popup en pantalla completa
-  //   window.open('https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0', 'fullscreen=yes');
-  // };
+  };
   
   const handleOverlayClose = () => {
     setIsOverlayActive(false);
   };
-
+  // const handleFullScreenClick = () => {
+  //   const videoElement = videoRef.current;
+  //   if (videoElement.requestFullscreen) {
+  //     videoElement.requestFullscreen();
+  //   } else if (videoElement.mozRequestFullScreen) { /* Firefox */
+  //     videoElement.mozRequestFullScreen();
+  //   } else if (videoElement.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+  //     videoElement.webkitRequestFullscreen();
+  //   } else if (videoElement.msRequestFullscreen) { /* IE/Edge */
+  //     videoElement.msRequestFullscreen();
+  //   }
+  // };
+  const handleBackgroundVideoClick = (event) => {
+    event.preventDefault(); // Evita que el clic detenga la reproducción del video de fondo
+    event.stopPropagation(); // Evita que el clic se propague al video de fondo
+  };
   return (
     <div>
       <img src={xSpray} className='xSprayTv' alt="World of Tanks" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
-      <div className='videoTvContainer' >
+      <div className='videoTvContainer' onClick={handleOverlayClick} >
         <div onClick={handleOverlayClick} className='videoSimulationBox'>
         </div>
         <iframe
+        onClick={handleBackgroundVideoClick}
           title='YouTube Video'
           className='tvHero'
           src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0'
