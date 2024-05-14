@@ -13,9 +13,16 @@ import Ratio from 'react-bootstrap/Ratio';
 function Tanks() {
   const [isOverlayActive, setIsOverlayActive] = useState(false);
 
-  const handleOverlayClick = () => {
+  const handleOverlayClick = (event) => {
+    event.stopPropagation();
     setIsOverlayActive(true);
+    console.log('overlay active');
   }; 
+  // const handleOverlayClick = () => {
+  //   // Abrir el video de YouTube en una nueva ventana o popup en pantalla completa
+  //   window.open('https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0', 'fullscreen=yes');
+  // };
+  
   const handleOverlayClose = () => {
     setIsOverlayActive(false);
   };
@@ -25,43 +32,35 @@ function Tanks() {
       <img src={xSpray} className='xSprayTv' alt="World of Tanks" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
-      <div className='videoTvContainer'>
+      <div className='videoTvContainer' >
+        <div onClick={handleOverlayClick} className='videoSimulationBox'>
+        </div>
         <iframe
           title='YouTube Video'
           className='tvHero'
-          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0'
+          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0'
           frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop'
-          allowfullscreen
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop; web-share'
+          // <iframe width="300" height="300" src={videoUrl} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='videoItem' ></iframe>
+          allowFullScreen
         />
+      
       </div>
-
-      {/* <div className='videoTvContainer youtube-link' >
-        <iframe
-          style={{ width: 'unset !important', height: '100vh !important', top: '0 !important' }}
-          title='YouTube Video'
-          className='tvHero'
-          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&controls=0&loop=1'
-          frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowfullscreen
-        />
-      </div> */}
-        {/* <p onClick={handleOverlayClick}>hola</p> */}
-      {/* {isOverlayActive && (
+      
+      {isOverlayActive && (
         <div className='youtube-player-overlay' onClick={handleOverlayClose}>
           <div className='youtube-player-popup'>
+            {console.log('golaaaaaa')}
             <iframe
               src="https://www.youtube.com/embed/fBMrZ-GjMgQ"
               title="Vinnie Jones joins World of Tanks for Holiday Ops!"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             />
           </div>
         </div>
-      )} */}
+      )}
 
       <div className='stackContainer stackContainerTv'>
         <div className='stackItemPink1'>

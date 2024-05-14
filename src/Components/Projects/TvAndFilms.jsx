@@ -59,9 +59,9 @@ function TvAndFilms() {
 
       <div className='spatialImagesContainer'>
         {
-        tvandfilms.map(e=>{
+        tvandfilms.map((e, i)=>{
           return(
-            <Link to={e.detail} className='spatialItemBox' >
+            <Link to={e.detail} className='spatialItemBox' key={i}>
               <img src={e.image} alt={e.name} className='spatialImage'/>
               <div className='imageOverlay'></div>
               <p className={`spatialText ${e.className}`}>{e.name}</p>

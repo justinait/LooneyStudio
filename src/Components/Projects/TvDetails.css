@@ -4,6 +4,7 @@
     width: 100%; 
     overflow: hidden;
     margin-top: 10vh;
+    position: relative;
 }
 .tvHero {
     width: 100%;
@@ -37,6 +38,15 @@
 .stackContainerTv {
     width: 60vw;
     bottom: 200px;
+}
+.videoSimulationBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: none;
+    width: 100%;
+    height: 65vh;
 }
 
 @media(min-width:700px){
