@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import hero from '/spatial/benefitdetail.png'
-import './TvAndFilmsDetails.css'
+// import './TvAndFilmsDetails.css'
+import './TvDetails.css'
 import circle1 from '/tvandfilms/circle1.png'
 import circle2 from '/tvandfilms/circle2.png'
 import circle3 from '/tvandfilms/circle3.png'
@@ -24,19 +25,15 @@ function Tanks() {
       <img src={xSpray} className='xSprayTv' alt="World of Tanks" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
-      <div>
-        <Ratio aspectRatio="1x1">
+      <div className='videoTvContainer'>
         <iframe
-          // style={{ width: 'unset !important', height: '100vh !important', top: '0 !important' }}
           title='YouTube Video'
           className='tvHero'
-          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0'
-          // <iframe width="1519" height="526" src="https://www.youtube.com/embed/fBMrZ-GjMgQ" title="Vinnie Jones joins World of Tanks for Holiday Ops!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          src='https://www.youtube.com/embed/fBMrZ-GjMgQ?start=271&autoplay=1&mute=1&loop=1&cc_load_policy=0&controls=0'
           frameborder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop'
           allowfullscreen
         />
-        </Ratio>
       </div>
 
       {/* <div className='videoTvContainer youtube-link' >
