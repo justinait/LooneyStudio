@@ -42,25 +42,27 @@ function General() {
   };
 
   const {videoLink, videoName, client, director, producer, designer, nameDetail, name} = thisItem
-
+  useEffect(() => {
+    const iframe = document.querySelector('.tvHero');
+    if (iframe) {
+      iframe.style.width = '100vw';
+    }
+  }, []);
   return (
     <div>
       <img src={xSpray} className='xSprayTv' alt="" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
       <div className='videoTvContainer' onClick={handleOverlayClick} >
-        <div onClick={handleOverlayClick} className='videoSimulationBox'>
-        </div>
+        {/* <div onClick={handleOverlayClick} className='videoSimulationBox'>        </div> */}
         <iframe
           title='YouTube Video'
           className='tvHero'
           src= {`https://www.youtube.com/embed/${videoLink}?loop=1&playlist=${videoLink}&autoplay=1&mute=1&cc_load_policy=0`}
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           allowFullScreen
-          loop
-          />
-        {console.log(videoLink)}
-      
+          style={{ width: '100%' }}
+        />
       </div>
       
       {/* {isOverlayActive && (

@@ -84,11 +84,15 @@
         right: 68px;
     }
     .videoTvContainer{
-        
-    height: 82vh;
+        height: 100vh;
+        margin-top: -10vh;
     }
     .tvHero {
-        height: 97%;
-        top: 3%;
+        height: 100%;
+        top: -10px;
+        width: 100% !important;
+    }
+    .tvHero video, .video-stream, .html5-main-video {
+        width: 100% !important;
     }
 }
