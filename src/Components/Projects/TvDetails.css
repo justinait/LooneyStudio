@@ -53,6 +53,10 @@
 .ytp-chrome-top ytp-show-cards-title {
     display: none;
 }
+
+.tvAndFilmsDetailText {
+    padding-right: 2%;
+}
 @media(min-width:700px){
     .xSprayTv {
         width: 151px;

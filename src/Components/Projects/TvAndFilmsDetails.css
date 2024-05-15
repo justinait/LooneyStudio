@@ -128,7 +128,6 @@
     flex-direction: column;
     overflow: hidden;
 }
-
 @media(min-width:700px){
     .xSprayTv {
         width: 151px;

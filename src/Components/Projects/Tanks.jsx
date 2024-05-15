@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import hero from '/spatial/benefitdetail.png'
 // import './TvAndFilmsDetails.css'
 import './TvDetails.css'
 import circle1 from '/tvandfilms/circle1.png'
@@ -40,7 +39,7 @@ function Tanks() {
   };
   return (
     <div>
-      <img src={xSpray} className='xSprayTv' alt="World of Tanks" />
+      <img src={xSpray} className='xSprayTv' alt="" />
       <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       
       <div className='videoTvContainer' onClick={handleOverlayClick} >
