@@ -69,6 +69,10 @@
         top: 206px;
         left: 77px;
     }
+    .stackContainerTv {
+        
+        bottom: 280px;
+    }
 }
 @media(min-width:1200px){
     .xSprayTv {
@@ -78,5 +82,13 @@
     .xTvDetail{
         left: unset;
         right: 68px;
+    }
+    .videoTvContainer{
+        
+    height: 82vh;
+    }
+    .tvHero {
+        height: 97%;
+        top: 3%;
     }
 }
