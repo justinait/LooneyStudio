@@ -47,6 +47,7 @@ function General() {
       iframe.style.width = '100vw';
     }
   }, []);
+  const containerWidth = stack ? `${Math.min(50 + (stack.length - 2) * 20, 80)}vw` : '50vw';
 
   return (
     <div>
@@ -79,21 +80,19 @@ function General() {
           </div>
         </div>
       )} */}
-
-      <div className='stackContainer stackContainerTv'>
-        <div className='stackItemPink1'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
-          <p className='stackText'>SET BUILDING</p>
-        </div>
-        <div className='stackItemDestree3'>
-          <img className='stackCircleImg' src={circle3} alt="" />
-          <p className='stackText'>ALBUM RELEASE</p>
-        </div>
-        <div className='stackItem1'>
-          <img className='stackCircleImg' src={circle1} alt="" />
-          <p className='stackText'>PROP</p>
-        </div>
+      <div className='stackContainer stackContainerTv'  style={{ width: containerWidth }}>
+        {
+        stack?.map((e, i)=> {
+          return(
+            <div className='stackItemTv'  key={i}>
+              <img className='stackCircleImg circleImg16' src={imageMap[i % imageMap.length]} alt="" />
+              <p className='stackText'>{e}</p>
+            </div>
+          )
+        })
+        }
       </div>
+      
       <div className='colorSpaceTv'>
         <p className='titleSpatialDetail'>{name}</p>
         <div className='separatorSpatial'></div>
