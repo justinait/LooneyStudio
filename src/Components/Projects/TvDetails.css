@@ -57,8 +57,14 @@
 }
 
 .tvAndFilmsDetailText {
-    padding-right: 2%;
+    padding-right: 4%;
 }
+
+.tvAndFilmsDetailTextSpecial {
+    padding-right: 24%;
+}
+
+
 /* .stackItemTv {
     width: 31%;
     height: 20px;
@@ -127,9 +133,13 @@
     .tvHero video, .video-stream, .html5-main-video {
         width: 100% !important;
     }
+    .stackContainerTv div {
     
+        margin: 0 2%;
+    }
     .stackContainerTv {
         top: 81vh;
+        justify-content: center;
     }
 }
 @media(min-width:1400px){

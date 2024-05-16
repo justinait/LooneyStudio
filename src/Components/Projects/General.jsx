@@ -40,7 +40,7 @@ function General() {
       setIsOverlayActive(false);
   };
 
-  const {videoLink, videoName, client, director, producer, designer, nameDetail, name, stack} = thisItem
+  const {videoLink, videoName, client, director, producer, designer, artdirector, name, stack, producer2} = thisItem
   useEffect(() => {
     const iframe = document.querySelector('.tvHero');
     if (iframe) {
@@ -126,6 +126,21 @@ function General() {
               <p className='infoDataSpatialDetail tvAndFilmsDetailText'>{designer}</p>
             </div>
           }
+          {
+            producer2 &&
+            <div>
+              <p className='infoTitleSpatialDetail'>PRODUCER</p>
+              <p className='infoDataSpatialDetail tvAndFilmsDetailTextSpecial'>{producer2}</p>
+            </div>
+          }
+          {
+            artdirector &&
+            <div>
+              <p className='infoTitleSpatialDetail'>ART DIRECTOR</p>
+              <p className='infoDataSpatialDetail tvAndFilmsDetailText'>{artdirector}</p>
+            </div>
+          }
+          
 
         </div>
       </div>
