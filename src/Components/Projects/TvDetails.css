@@ -65,12 +65,10 @@
 }
 
 
-/* .stackItemTv {
-    width: 31%;
+.stackItemTv {
+    /* width: 31%;
     height: 20px;
-    justify-content: space-between;
-
-    
+    justify-content: space-between; */    
     width: fit-content;
     height: 20px;
     display: flex;
@@ -79,10 +77,12 @@
     align-items: center;
     justify-content: center;
 }
-.stackItemTv > .stackText {
-    
-    width: fit-content;
-} */
+.Button_module_button__0563da21 {
+    display: none !important;
+}
+iframe button {
+    display: none !important;
+}
 @media(min-width:700px){
     .xSprayTv {
         width: 151px;
@@ -160,5 +160,10 @@
     }
     .tvHero video, .video-stream, .html5-main-video {
         width: 100% !important;
+    }
+}
+@media(min-width:1700px) {
+    .stackItemTv     .circleImg16 {
+        height: 33px;
     }
 }
