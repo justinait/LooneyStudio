@@ -55,7 +55,7 @@ function General() {
       videoIframe = (
         <iframe
           title='Vimeo Video'
-          className='tvHero'
+          className='tvHero tvHeroVimeo'
           src={`https://player.vimeo.com/video/${videoLink}&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1`}
           // src={`https://player.vimeo.com/video/${videoLink}?autoplay=1&loop=1&background=1&muted=1`}
           allow='autoplay; fullscreen; picture-in-picture'
@@ -66,8 +66,8 @@ function General() {
       break;
     case 'file':
       videoIframe = (
-        <video className='tvHero' controls style={{ width: '100%' }}>
-          <source src={videoLink} type='video/mp4' />
+        <video className='tvHero'  controls autoPlay loop muted  style={{ width: '100%' }}>
+          <source src={'/tvandfilms/slowburnvideo.mp4'} type='video/mp4' />
           Your browser does not support the video tag.
         </video>
       );

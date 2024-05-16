@@ -107,7 +107,12 @@ iframe button {
         top: -40px;
         width: 146% !important;
     }
-    
+    .tvHeroVimeo {
+        
+        height: 133%;
+        top: -48px;
+        width: 214% !important;
+    }
     .colorSpaceTv {
         padding: 7% 5vw 5%;
     }
@@ -141,6 +146,12 @@ iframe button {
         top: 81vh;
         justify-content: center;
     }
+    
+    .tvHeroVimeo {
+        height: 130%;
+        top: -64px;
+        width: 151% !important;
+    }
 }
 @media(min-width:1400px){
     .xSprayTv {
@@ -160,6 +171,12 @@ iframe button {
     }
     .tvHero video, .video-stream, .html5-main-video {
         width: 100% !important;
+    }
+    
+    .tvHeroVimeo {
+        height: 130%;
+        top: -64px;
+        width: 147% !important;
     }
 }
 @media(min-width:1700px) {
