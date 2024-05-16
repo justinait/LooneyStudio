@@ -25,7 +25,6 @@ import Elton from './Components/Events/Elton';
 import Molecules from './Components/Events/Molecules';
 import Dazed from './Components/Events/Dazed';
 import Dixon from './Components/Events/Dixon';
-import Tanks from './Components/Projects/Tanks';
 import General from './Components/Projects/General';
 
 function App() {
@@ -43,7 +42,6 @@ function App() {
           <Route path='/about' element={< About />} />
 
           <Route path='/tvandfilms' element={< TvAndFilms />} />
-          <Route path='/tvandfilms/tanks' element={< Tanks />} />
           <Route path='/tvandfilms/:id' element={< General />} />
           
           <Route path='/spatialDesign' element={< SpatialDesign />} />
