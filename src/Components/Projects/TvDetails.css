@@ -33,13 +33,15 @@
 }
 .colorSpaceTv {
     font-size: 10px;
-    padding: 8% 5vw 0;
+    padding: 8% 5vw 7%;
     background-color: var(--color-lila);
     color: #EEEFF3;
 }
 .stackContainerTv {
     width: 60vw;
-    bottom: 200px;
+    bottom: unset;
+    top: 66vh;
+    z-index: 3;
 }
 .videoSimulationBox {
     position: absolute;
@@ -88,8 +90,20 @@
         left: 77px;
     }
     .stackContainerTv {
-        
-        bottom: 280px;
+        top: 57vh;
+    }
+    .videoTvContainer{
+        height: 74vh;
+        margin-top: -10vh;
+    }
+    .tvHero {
+        height: 130%;
+        top: -40px;
+        width: 146% !important;
+    }
+    
+    .colorSpaceTv {
+        padding: 7% 5vw 5%;
     }
 }
 @media(min-width:1200px){
@@ -106,12 +120,16 @@
         margin-top: -10vh;
     }
     .tvHero {
-        height: 110%;
-        top: -10px;
+        height: 122%;
+        top: -30px;
         width: 100% !important;
     }
     .tvHero video, .video-stream, .html5-main-video {
         width: 100% !important;
+    }
+    
+    .stackContainerTv {
+        top: 81vh;
     }
 }
 @media(min-width:1400px){
@@ -128,8 +146,6 @@
         margin-top: -20vh;
     }
     .tvHero {
-        height: 110%;
-        top: -10px;
         width: 100% !important;
     }
     .tvHero video, .video-stream, .html5-main-video {
