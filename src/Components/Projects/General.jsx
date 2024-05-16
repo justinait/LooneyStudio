@@ -7,12 +7,12 @@ import circle4 from '/tvandfilms/circle4.png'
 import xSpray from '/tvandfilms/xSpray.png'
 import { Link, useParams } from 'react-router-dom'
 // import tvandfilmsData from './data.json';
-
 function General() {
-    
+  
   const [data, setData] = useState([]);
   const [thisItem, setThisItem] = useState({})
   const {id} = useParams();
+  const imageMap = [circle1, circle2, circle3];
   
   useEffect(() => {
       
@@ -36,18 +36,18 @@ function General() {
       setIsOverlayActive(true);
       console.log('overlay active');
   };
-
   const handleOverlayClose = () => {
       setIsOverlayActive(false);
   };
 
-  const {videoLink, videoName, client, director, producer, designer, nameDetail, name} = thisItem
+  const {videoLink, videoName, client, director, producer, designer, nameDetail, name, stack} = thisItem
   useEffect(() => {
     const iframe = document.querySelector('.tvHero');
     if (iframe) {
       iframe.style.width = '100vw';
     }
   }, []);
+
   return (
     <div>
       <img src={xSpray} className='xSprayTv' alt="" />
