@@ -112,6 +112,13 @@ iframe button {
         height: 133%;
         top: -48px;
         width: 214% !important;
+
+        
+        height: 139%;
+        top: -115px;
+        width: 151% !important;
+        margin-left: -22%;
+        
     }
     .colorSpaceTv {
         padding: 7% 5vw 5%;
@@ -177,6 +184,10 @@ iframe button {
         height: 130%;
         top: -64px;
         width: 147% !important;
+        
+        /* height: 130%;
+        top: -64px; */
+        width: 150% !important;
     }
 }
 @media(min-width:1700px) {
