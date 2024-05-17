@@ -21,7 +21,7 @@ function About() {
   return (
     <div className='aboutContainer'>
       <p className='aboutText'>
-        A Brixton-based <br /> <strong className='designAbout'>Design</strong> <strong className='and'>&</strong><br /> <strong>Construction </strong> 
+        A Brixton-based <br /> <strong className='designAbout'>Design</strong> <strong className='and'>&</strong><br /> <strong className='constructionAbout'>Construction </strong> 
           company
         known for our dedication to turning our clients' ideas into reality, from start to finish.
       </p>
