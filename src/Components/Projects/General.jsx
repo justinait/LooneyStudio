@@ -40,7 +40,7 @@ function General() {
       setIsOverlayActive(false);
   };
 
-  const {videoLink, videoName, client, director, producer, designer, artdirector, name, stack, producer2, videoType} = thisItem
+  const {videoLink, videoName, client, director, producer, designer, artdirector, name, stack, producer2, videoType, behind} = thisItem
   useEffect(() => {
     const iframe = document.querySelector('.tvHero');
     if (iframe) {
@@ -83,14 +83,6 @@ function General() {
           allowFullScreen
           style={{ width: '100%' }}
         />
-        // <iframe 
-        //   id="embedPlayer" 
-        //   height="175px" frameborder="0" 
-        //   sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
-        //   allow="autoplay *; encrypted-media *; clipboard-write" 
-        //   style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);">
-
-        // </iframe>
       );
       break;
     case 'youtube':
@@ -115,24 +107,6 @@ function General() {
         {/* <div onClick={handleOverlayClick} className='videoSimulationBox'>        </div> */}
         {videoIframe}
       </div>
-      {/* <iframe 
-        title="vimeo-player" 
-        src="https://player.vimeo.com/video/694833724?h=5f86f42661" 
-        frameborder="0"    
-        allowfullscreen>
-      </iframe> */}
-      
-      {/* <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe 
-        src="https://player.vimeo.com/video/694833724?h=5f86f42661&autoplay=1&title=0&byline=0&portrait=0" 
-        style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-        frameborder="0" 
-        allow="autoplay; fullscreen; picture-in-picture" 
-        allowfullscreen>
-        </iframe>
-      </div>
-      <script src="https://player.vimeo.com/api/player.js"></script> */}
-      
       
       {/* {isOverlayActive && (
         <div className='youtube-player-overlay' onClick={handleOverlayClose}>
@@ -213,6 +187,15 @@ function General() {
 
         </div>
       </div>
+      {
+        behind &&
+        <div>
+          <p className='tvDetailImagesText'>Behind the scenes</p>
+          <div className=''>
+            <img src={behind} alt="SEZANE" className='willBehindImage'/>
+          </div>
+        </div>
+      }
     </div>
   )
 }
