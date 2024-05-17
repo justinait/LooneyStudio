@@ -87,10 +87,10 @@ function Huda() {
             </div>
         </div>
         <div>
-            <img src={image1} alt="benefit" className='image1SpatialDetail transformHero' />
+            <img src={image1} alt="benefit" className='image1SpatialDetail' />
 
             <div className='spatialDetailImagesBoxHuda'>
-                <img className='spatialDetailImage2 transformHero' src={image2} alt="huda" />
+                <img className='spatialDetailImage2' src={image2} alt="huda" />
                 <img className='spatialDetailImage1' src={image3} alt="huda" />
             </div>
 

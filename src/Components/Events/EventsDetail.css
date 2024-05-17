@@ -249,7 +249,7 @@
     }
     .stackContainerEvents {
         width: 60vw;
-        bottom: 110px;
+        bottom: 100px;
     }    
     .stackContainerEventsSmaller{
         width: 45vw;
@@ -368,7 +368,7 @@
         font-size: 18px;
     }
     .stackContainerEvents {    
-        bottom: 155px;
+        bottom: 135px;
     }
     
     .eventsDetailImagesText {

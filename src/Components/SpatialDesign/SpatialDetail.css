@@ -445,7 +445,7 @@
     }
     .stackContainer {
         width: 98vw;
-        bottom: 110px;
+        bottom: 100px;
     }
     .stackContainerDestree {
         width: 65vw;
@@ -652,7 +652,7 @@
         object-position: unset;
     }
     .stackContainer{
-        bottom: 155px;
+        bottom: 135px;
     }
     .spatialDetailImagesText {
         font-size: 32px;
