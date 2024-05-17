@@ -58,12 +58,12 @@ a, a:hover {
     font-size: 160px;
     width: 50vw;
     margin-top: 3vh;
+    margin-top: 6vh;
   }
 }
 @media(min-width:1400px){
   h2 {
     font-size: 190px;
-    margin-top: 1vh;
   }
 }
 @media(min-width:1700px){
