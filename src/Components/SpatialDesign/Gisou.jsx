@@ -96,7 +96,7 @@ function Gisou() {
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImagesBenefit'>
-          <img src={image4} alt="Gisou" className='spatialDetailGisouImg blanc2 transformHero gisouFixedImg' />
+          <img src={image4} alt="Gisou" className='spatialDetailGisouImg blanc2' />
           <img src={image5} alt="Gisou" className='spatialDetailGisouImg blanc1' />
         </div>
       </div>
