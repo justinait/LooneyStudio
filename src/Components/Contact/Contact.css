@@ -259,6 +259,12 @@ input {
     .mapBoxContainer {
         border: none;
     }
+    
+    #spraySend {
+        left: 67vw;
+        width: 95px;
+        height: 75px;
+    }
 }
 @media(min-width:1400px){
     .contactUs{
@@ -339,5 +345,8 @@ input {
     .formButton{
         font-size: 18px;
         font-weight: 700;
+    }
+    #spraySend {
+        left: 68.5vw;
     }
 }
