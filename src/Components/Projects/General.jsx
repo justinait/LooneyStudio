@@ -5,14 +5,14 @@ import circle2 from '/tvandfilms/circle2.png'
 import circle3 from '/tvandfilms/circle3.png'
 import circle4 from '/tvandfilms/circle4.png'
 import xSpray from '/tvandfilms/xSpray.png'
-import { Link, useParams } from 'react-router-dom'
-// import tvandfilmsData from './data.json';
+import { Link, useParams, useNavigate } from 'react-router-dom'
 function General() {
   
   const [data, setData] = useState([]);
   const [thisItem, setThisItem] = useState({})
   const {id} = useParams();
   const imageMap = [circle1, circle2, circle3];
+  const navigate = useNavigate();
   
   useEffect(() => {
       
@@ -21,7 +21,6 @@ function General() {
     .then((responseData) => {
         
       setData(responseData.tvandfilms);
-
       const item = responseData.tvandfilms.find(e => e.detail === id);
       if (item) {
         setThisItem(item);
@@ -30,6 +29,14 @@ function General() {
     });
   }, [id]);
 
+  const navigateToItem = (direction) => {
+    const currentIndex = data.findIndex(item => item.detail === id);
+    const newIndex = (currentIndex + direction + data.length) % data.length;
+    const newItem = data[newIndex];
+    if (newItem) {
+      navigate(`/tvandfilms/${newItem.detail}`);
+    }
+  };
   const [isOverlayActive, setIsOverlayActive] = useState(false);
   const handleOverlayClick = (event) => {
       event.stopPropagation();
@@ -72,19 +79,6 @@ function General() {
         </video>
       );
       break;
-    case 'appleMusic':
-      videoIframe = (
-        <iframe
-          title='Apple Music Video'
-          className='tvHero'
-          src={videoLink}
-          // src="https://embed.music.apple.com/us/album/cry/1586148559?i=1586148889&amp;app=music&amp;itsct=music_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" 
-          allow='autoplay; fullscreen; picture-in-picture'
-          allowFullScreen
-          style={{ width: '100%' }}
-        />
-      );
-      break;
     case 'youtube':
     default:
       videoIframe = (
@@ -100,12 +94,20 @@ function General() {
   }
   return (
     <div>
-      <img src={xSpray} className='xSprayTv' alt="" />
-      <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
-      
+
+      <div>
+
+        <button onClick={() => navigateToItem(-1)}> previous </button>
+        
+        <img src={xSpray} className='xSprayTv' alt="" />
+        <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
+        
+        <button onClick={() => navigateToItem(1)}>Next</button>
+      </div>
+
       <div className='videoTvContainer' onClick={handleOverlayClick} >
-        {/* <div onClick={handleOverlayClick} className='videoSimulationBox'>        </div> */}
         {videoIframe}
+        {/* <div onClick={handleOverlayClick} className='videoSimulationBox'>        </div> */}
       </div>
       
       {/* {isOverlayActive && (

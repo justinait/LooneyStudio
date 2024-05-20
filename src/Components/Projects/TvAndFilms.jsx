@@ -17,7 +17,6 @@ function TvAndFilms() {
     });
   }, []);
 
-  // const {image, detail, className, name} = thisItem
   
   return (
     <div className='spatialContainer'>
