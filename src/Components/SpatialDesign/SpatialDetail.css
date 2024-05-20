@@ -294,6 +294,10 @@
 .desktopOnly{
     display: none;
 }
+.marginBottom {
+    margin-bottom: 1%;
+    object-fit: cover;
+}
 @media (min-width: 376px) {
     .infoSpatialDetailTextContainer p {
         font-size: 7.8px;

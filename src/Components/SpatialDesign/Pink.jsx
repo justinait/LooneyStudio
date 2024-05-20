@@ -12,6 +12,8 @@ import image1 from '/spatial/pink1.png'
 import image2 from '/spatial/pink2.png'
 import image3 from '/spatial/pink3.png'
 import image4 from '/spatial/pink4.png'
+import image0 from '/spatial/pink0.png'
+import image5 from '/spatial/pinkmedio.jpg'
 import { Link } from 'react-router-dom'
 
 function Pink() {
@@ -106,10 +108,13 @@ function Pink() {
             </div>
         </div>
         <div>
+            <img src={image0} className='image1SpatialDetailDestree marginBottom' alt="" />
             <div className='spatialDetailImagesBoxPink'>
                 <img className='spatialDetailImage1' src={image1} alt="PINK PANTHERESS" />
                 <img className='spatialDetailImage2' src={image2} alt="PINK PANTHERESS" />
             </div>
+
+            <img src={image5} className='placesImage1 marginBottom' alt="" />
             <div className='spatialDetailImagesBoxPink'>
                 <img className='spatialDetailImage1' src={image3} alt="PINK PANTHERESS" />
                 <img className='spatialDetailImage2' src={image4} alt="PINK PANTHERESS" />

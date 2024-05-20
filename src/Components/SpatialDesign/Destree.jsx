@@ -8,7 +8,7 @@ import circle4 from '/spatial/circle4.png'
 import circle6 from '/spatial/circle6.png'
 import xSpray from '/spatial/xSpray.png'
 import image1 from '/spatial/destree4.jpg'
-import image2 from '/spatial/destree2.jpg'
+import image2 from '/spatial/destree2cut.jpg'
 import image3 from '/spatial/Destree.jpg'
 import { Link } from 'react-router-dom'
 
