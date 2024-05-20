@@ -1,5 +1,6 @@
 import React from 'react'
 import hero from '/events/WWEHero.jpg'
+import heroDesktop from '/events/wwedesktop.jpg'
 import './EventsDetail.css'
 import circle1 from '/events/circle1.png'
 import circle2 from '/events/circle2.png'
@@ -18,7 +19,8 @@ function WWE() {
       <img src={xSpray} className='xSprayEvent' alt="" />
       <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
-      <img src={hero} alt="WWE" className='blancHero wweHero'/>
+      <img src={hero} alt="WWE" className='blancHero mobileOnly'/>
+      <img src={heroDesktop} alt="WWE" className='blancHero desktopOnly wweHeroDesktop'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItemEventsLarger2'>

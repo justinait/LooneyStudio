@@ -163,6 +163,12 @@
 .placesImage1, .wweImage1{
     width: 100%;
 }
+/* .warner22Image1 {
+    width: 32%;
+}
+.warner22Image2 {
+    width: 68%;
+} */
 @media(min-width: 700px){
     .mobileOnlyPlaces{
         display: none;
@@ -280,6 +286,10 @@
     .wweImages {
         height: 700px;
     }
+    .wweHeroDesktop {
+        
+        object-position: top;
+    }
     .placesImage1 {
         height: 500px;
     }
@@ -331,9 +341,7 @@
     }
 }
 @media(min-width:1400px){
-    .wweHero {
-        object-position: 0 -730px;
-    }
+    
     .wweImage1 {
         height: 600px;
     }
@@ -378,9 +386,7 @@
     .sezaneImages {
         height: 1000px;
     }
-    .wweHero {
-        object-position: 0 -840px;
-    }
+    
     .wweImage1 {
         height: 800px;
     }

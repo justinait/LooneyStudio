@@ -50,12 +50,12 @@ function Elton() {
           <div className='infoContainerSpatialDetail'>
             <div>
               <p className='infoTitleSpatialDetail'>CLIENT</p>
-              <p className='infoDataSpatialDetail'>O2 Arena</p>
+              <p className='infoDataSpatialDetail'>ELTON JOHN</p>
             </div>
 
             <div>
               <p className='infoTitleSpatialDetail'>LOCATION</p>
-              <p className='infoDataSpatialDetail'>O2 Arena</p>
+              <p className='infoDataSpatialDetail'>O2</p>
             </div>
 
           </div>

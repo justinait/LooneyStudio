@@ -91,9 +91,9 @@ function WarnerTwo() {
         </div>
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
-        <div className='eventPlacesDetailImages'>
-          <img src={image4} alt="warner 22" className='warner22Images' />
-          <img src={image5} alt="warner 22" className='warner22Images' />
+        <div className='spatialDetailImages moleculesDesktopBoxes'>
+          <img src={image4} alt="warner 22" className='warner22Image1 spatialDetailImage1' />
+          <img src={image5} alt="warner 22" className='warner22Image2 spatialDetailImage2' />
         </div>
 
       </div>
