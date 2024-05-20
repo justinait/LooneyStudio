@@ -31,9 +31,10 @@
     font-size: 14px;
     font-weight: 600;
 }
+
 .colorSpaceTv {
     font-size: 10px;
-    padding: 8% 5vw 7%;
+    padding: 8% 5vw 0;
     background-color: var(--color-lila);
     color: #EEEFF3;
 }
@@ -163,6 +164,9 @@ iframe button {
         margin-top: -10vh;
     }
     
+    .colorSpaceTv {
+        padding: 3% 2vw 0%;
+    }
     .willBehindImage{
         height: 600px;
     }

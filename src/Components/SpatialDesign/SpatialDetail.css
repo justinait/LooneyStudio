@@ -522,6 +522,7 @@
     }
     .infoContainerSpatialDetail div {
         padding-bottom: 3.5%;
+        width: 22vw;
     }
     .spatialDetailImagesText {
         padding: 0 2vw;

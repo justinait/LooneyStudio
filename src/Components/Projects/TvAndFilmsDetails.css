@@ -27,12 +27,6 @@
     font-size: 14px;
     font-weight: 600;
 }
-.colorSpaceTv {
-    font-size: 10px;
-    padding: 8% 5vw 0;
-    background-color: var(--color-lila);
-    color: #EEEFF3;
-}
 .stackContainerTv {
     width: 60vw;
 }
