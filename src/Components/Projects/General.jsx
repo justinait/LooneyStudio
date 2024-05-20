@@ -95,14 +95,14 @@ function General() {
   return (
     <div>
 
-      <div>
+      <div className='arrowsContainer'>
 
-        <button onClick={() => navigateToItem(-1)}> previous </button>
+        <button onClick={() => navigateToItem(-1)} className='arrowsTv'> {"<"} </button>
         
         <img src={xSpray} className='xSprayTv' alt="" />
         <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
         
-        <button onClick={() => navigateToItem(1)}>Next</button>
+        <button onClick={() => navigateToItem(1)} className='arrowsTv'>{">"}</button>
       </div>
 
       <div className='videoTvContainer' onClick={handleOverlayClick} >
