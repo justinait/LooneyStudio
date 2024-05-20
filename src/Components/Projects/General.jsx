@@ -67,7 +67,7 @@ function General() {
     case 'file':
       videoIframe = (
         <video className='tvHero'  controls autoPlay loop muted  style={{ width: '100%' }}>
-          <source src={'/tvandfilms/slowburnvideo.mp4'} type='video/mp4' />
+          <source src={videoLink} type='video/mp4' />
           Your browser does not support the video tag.
         </video>
       );
