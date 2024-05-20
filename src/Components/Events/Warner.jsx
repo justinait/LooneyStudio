@@ -11,7 +11,7 @@ import image2 from '/events/Warner23-2.jpg'
 import image3 from '/events/Warner23-3.jpg'
 import image4 from '/events/Warner23-4.jpg'
 import image5 from '/events/Warner23-5.jpg'
-import image6 from '/events/Warner23-6.jpg'
+import image6 from '/events/Warner23-10.jpg'
 import image7 from '/events/Warner23-7.jpg'
 import image8 from '/events/Warner23-8.jpg'
 import { Link } from 'react-router-dom'
@@ -100,7 +100,7 @@ function Warner() {
 
         <p className='eventsDetailImagesText threeImages'>Behind the scenes</p>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image6} alt="warner" className='objectFitUnset' />
+          <img src={image6} alt="warner" className='' />
           <img src={image7} alt="warner" className='' />
           <img src={image8} alt="warner" className='' />
         </div>

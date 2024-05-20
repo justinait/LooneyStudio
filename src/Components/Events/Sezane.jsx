@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '/events/sezane.jpg'
+import hero from '/events/sezaneHero.jpg'
 import './EventsDetail.css'
 import circle1 from '/events/circle1.png'
 import circle3 from '/events/circle3.png'
