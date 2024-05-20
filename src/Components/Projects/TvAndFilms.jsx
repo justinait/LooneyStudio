@@ -37,6 +37,7 @@ function TvAndFilms() {
               <img src={e.image} alt={e.name} className='spatialImage'/>
               <div className='imageOverlay'></div>
               <p className={`spatialText ${e.className}`}>{e.name}</p>
+              <p className={`spatialText tvAndFilmsExtraInfo${e.className}`}>{e.data}</p>
             </Link>
           )
         })

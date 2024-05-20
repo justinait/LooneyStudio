@@ -66,6 +66,12 @@
     margin: 0;
     text-transform: uppercase;
 }
+
+.tvAndFilmsExtraInfo {
+    color: var(--color-lila);
+    font-size: 5.7px;
+    margin-top: 1%;
+}
 .breakSpatialText {
     width: 54%;
     margin: auto;
