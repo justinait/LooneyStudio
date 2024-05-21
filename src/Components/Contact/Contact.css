@@ -190,7 +190,7 @@ input::placeholder {
     }
     .contactUs{
         font-size: clamp(165px, 3vw, 250px);
-        width: 49vw;
+        width: 48.5vw;
         justify-content: flex-end;
     }
     .containerBox{
