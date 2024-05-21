@@ -12,7 +12,6 @@ function Contact() {
     const { isLoaded } = useJsApiLoader({
         id: 'dc395694d3c4c44',
         googleMapsApiKey: "AIzaSyATA9w96X3FKj_idxFdo9nvd4SxaxDb43Y",
-        // libraries: ['places', 'marker']
     })
     const mapRef = useRef(null);
     const mapStyles = [
@@ -162,47 +161,12 @@ function Contact() {
     const handleInputChange = (e) =>{
         setInputFilled(e.target.value.trim() !== '');
     }
-    // useEffect(() => {
-    //     if (isLoaded && mapRef.current) {
-    //         const {AdvancedMarkerView } = google.maps.importLibrary("marker");
-    //         // const { AdvancedMarkerElement } = google.maps.marker.AdvancedMarkerElement;
-    //         const position = { lat: 51.466214348028984, lng: -0.10306554686605598 };
-    //         const map = mapRef.current.state.map;
-    //         const marker = new AdvancedMarkerView ({
-    //             map,
-    //             position,
-    //             content: `<img src="${markerIcon}" style="width: 40px; height: 40px;" />`
-    //         });
-    //     }
-    // }, [isLoaded]);
-    // useEffect(() => {
-    //     let map;
     
-    //     const initMap = async () => {
-    //       // La ubicación de Uluru
-    //       const position = { lat: 51.466214348028984, lng: -0.10306554686605598 };
-          
-    //       // Solicitar las bibliotecas necesarias.
-    //       // @ts-ignore
-    //       const { Map } = await google.maps.importLibrary('maps');
-    //       const { AdvancedMarkerView } = await google.maps.importLibrary('marker');
-    
-    //       // El mapa, centrado en Uluru
-    //       map = new Map(document.getElementById('map'), {
-    //         zoom: 4,
-    //         center: position,
-    //         mapId: 'dc395694d3c4c44',
-    //       });
-    
-    //       // El marcador, posicionado en Uluru
-    //       const marker = new AdvancedMarkerView({
-    //         map: map,
-    //         position: position,
-    //       });
-    //     };
-    
-    //     initMap();
-    //   }, []);
+    const markerPosition = {
+        lat: 51.466214348028984,
+        lng: -0.10306554686605598,
+    };
+
     const mapContainerRef = useRef(null);
     useEffect(() => {
         if (isLoaded && mapContainerRef.current) {
@@ -239,13 +203,12 @@ function Contact() {
                             zoom={12}
                             center={{ lat: 51.466214348028984, lng: -0.10306554686605598 }}
                             mapContainerClassName='mapContainer'
-                            // mapId='dc395694d3c4c44'
-                            // className='mapContainer'
                             options={{ styles: mapStyles }}
                             ref={mapRef}
-                        />
+                        >
+                        <Marker position={markerPosition}/>
+                        </GoogleMap>
                     }
-                    {/* </GoogleMap> */}
                 </div>
 
                 <div className='instagramBox'>
