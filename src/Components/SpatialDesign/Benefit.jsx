@@ -21,6 +21,17 @@ import { Link } from 'react-router-dom'
 
 
 function Benefit() {
+  const downloadPDF = () => {
+    const pdfPath = 'https://drive.google.com/file/d/1GFXSvEgasJ8hQkK-lL0HCxJbYplJHhk6/view';
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.target = '_blank';
+    link.download = 'CaseStudyBenefit.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div>
       
@@ -99,7 +110,11 @@ function Benefit() {
           
       </div>
       <div className='colorSpace'>
-        <p className='titleSpatialDetail'>BENEFIT - Pore Wash Pop Up</p>
+        <div className='benefitBoxForPDF'>
+          <p className='titleSpatialDetail'>BENEFIT - Pore Wash Pop Up</p>
+          <p className='downloadPDF' onClick={downloadPDF} style={{cursor: 'pointer' }}>download case study</p>
+        </div>
+        
         <div className='separatorSpatial'></div>
         <div className='infoContainerSpatialDetail'>
           <div>

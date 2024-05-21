@@ -298,6 +298,20 @@
     margin-bottom: 1%;
     object-fit: cover;
 }
+.benefitBoxForPDF {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.downloadPDF {
+    color: #FC0;
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    margin: 0;
+}
 @media (min-width: 376px) {
     .infoSpatialDetailTextContainer p {
         font-size: 7.8px;
