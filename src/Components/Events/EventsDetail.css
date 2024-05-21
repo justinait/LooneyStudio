@@ -186,7 +186,10 @@
     }
     .xSprayEvent {
         width: 160px;
-        top: 90px;
+        top: -109px;
+    }
+    .arrowsEvents {
+        font-size: 35px;
     }
     .xEventDetail {
         font-size: 29px;
@@ -250,9 +253,8 @@
 @media(min-width: 1200px){
     .xSprayEvent {
         width: 140px;
-        top: 90px;
-        right: 0px;
-        left: unset;
+        top: -98px;
+        left: 49.8%;
     }
     .xEventDetail {
         left: unset;
@@ -375,7 +377,7 @@
 @media(min-width: 1700px){
     .xSprayEvent {
         width: 181px;
-        top: 100px;
+        top: -123px;
     }
     .xEventDetail {
         right: 83px;
@@ -386,6 +388,9 @@
         bottom: 135px;
     }
     
+    .arrowsEvents{
+        font-size: 45px;
+    }
     .eventsDetailImagesText {
         font-size: 32px;
     }

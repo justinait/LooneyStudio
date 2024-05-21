@@ -17,9 +17,16 @@ import { Link } from 'react-router-dom'
 function Places() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="" />
-      <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
+      <div className='arrowsContainer'>
+        <Link to={'/wwe'} className='arrowsEvents'>{"<"}</Link>
+        
+        <img src={xSpray} className='xSprayEvent' alt="" />
+        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+        
+        <Link to={'/warner22'} className='arrowsEvents'>{">"}</Link>
+      </div>
+
       <img src={hero} alt="PLACES + FACES" className='blancHero mobileOnlyPlaces'/>
       <img src={heroDesktop} alt="PLACES + FACES" className='blancHero tabletAndDesktop'/>
 

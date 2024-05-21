@@ -16,9 +16,16 @@ import { Link } from 'react-router-dom'
 function Molecules() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="Molecules" />
-      <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
       
+      <div className='arrowsContainer'>
+        <Link to={'/elton'} className='arrowsEvents'>{"<"}</Link>
+        
+        <img src={xSpray} className='xSprayEvent' alt="" />
+        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+        
+        <Link to={'/dazed'} className='arrowsEvents'>{">"}</Link>
+      </div>
+
       <img src={hero} alt="Molecules" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItem1 stackItemDesktop25'>

@@ -16,8 +16,16 @@ import { Link } from 'react-router-dom'
 function WWE() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="" />
-      <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
+      
+      <div className='arrowsContainer'>
+        <Link to={'/sezane'} className='arrowsEvents'>{"<"}</Link>
+        
+        <img src={xSpray} className='xSprayEvent' alt="" />
+        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+        
+        <Link to={'/places'} className='arrowsEvents'>{">"}</Link>
+      </div>
+
       
       <img src={hero} alt="WWE" className='blancHero mobileOnly'/>
       <img src={heroDesktop} alt="WWE" className='blancHero desktopOnly wweHeroDesktop'/>

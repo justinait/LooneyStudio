@@ -14,8 +14,15 @@ import { Link } from 'react-router-dom'
 function Dixon() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="" />
-      <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
+      
+      <div className='arrowsContainer'>
+        <Link to={'/dazed'} className='arrowsEvents'>{"<"}</Link>
+        
+        <img src={xSpray} className='xSprayEvent' alt="" />
+        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+        
+        <Link to={'/warner23'} className='arrowsEvents'>{">"}</Link>
+      </div>
       
       <img src={hero} alt="Dixon" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmaller'>
