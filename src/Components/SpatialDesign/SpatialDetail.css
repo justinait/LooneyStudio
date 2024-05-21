@@ -17,7 +17,7 @@
     font-weight: 600;
 }
 .xSpraySpatial {
-    width: 60px;
+    width: 70px;
     z-index: 5;
     position: absolute;
     left: 50%;
@@ -310,9 +310,6 @@
     }
     .xSpraySpatial {
         width: 145px;
-        height: 173.15px;
-        top: 156px;
-        left: 5px;
     }
     .xSpatialDetail{
         font-size: 30.19px;
@@ -433,9 +430,6 @@
     .xSpraySpatial {
         width: 100px;
         height: 137px;
-        top: 126px;
-        right: 5px;
-        left: unset;
     }
     
     .gisouFixedImg{
@@ -637,10 +631,6 @@
     }
     .xSpraySpatial {
         width: 113px;
-        height: 147px;
-        top: 172px;
-        right: 5px;
-        left: unset;
     }
     .xSpatialDetail {
         right: 56px;

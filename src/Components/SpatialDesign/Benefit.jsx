@@ -23,9 +23,16 @@ import { Link } from 'react-router-dom'
 function Benefit() {
   return (
     <div>
-      <img src={xSpray} className='xSpraySpatial' alt="BENEFIT" />
-      <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
       
+      <div className='arrowsContainer'>
+        <Link to={'/pink'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
+        
+        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+        
+        <Link to={'/gisou'} className='arrowsEvents arrowSpatial'>{">"}</Link>
+      </div>
+
       <img src={hero} alt="BENEFIT" className='blancHero'/>
       <div className='stackContainer stackContainerBenefit mobileOnly'>
         <div className='stackItem2 stackItemDesktop15'>

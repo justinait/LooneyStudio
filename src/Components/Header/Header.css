@@ -280,8 +280,8 @@ a:focus {
     .navbarLooney{
         font-size: 84px;
     }
-    .headerContainer{
-        height: 200px;
+    .headerContainer{        
+        height: 180px;
     }
     .dropdownItems,
     .projects {

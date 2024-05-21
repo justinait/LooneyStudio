@@ -19,9 +19,16 @@ import { Link } from 'react-router-dom'
 function Huda() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="huda" />
-        <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
+        <div className='arrowsContainer'>
+            <Link to={'/gisou'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
+            
+            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+            
+            <Link to={'/blanc'} className='arrowsEvents arrowSpatial'>{">"}</Link>
+        </div>
+
         <img src={hero} alt="huda" className='blancHero mobileOnly'/>
         <img src={heroDesktop} alt="huda" className='blancHero desktopOnly'/>
         <div className='stackContainer stackContainerPink'>

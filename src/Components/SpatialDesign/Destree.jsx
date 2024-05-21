@@ -15,8 +15,15 @@ import { Link } from 'react-router-dom'
 function Destree() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="" />
-        <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
+        
+        <div className='arrowsContainer'>
+            <Link to={'/blanc'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
+            
+            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+            
+            <Link to={'/pink'} className='arrowsEvents arrowSpatial'>{">"}</Link>
+        </div>
         
         <img src={hero} alt="DESTREE" className='blancHero mobileOnly'/>
         <img src={image3} alt="DESTREE" className='blancHero desktopOnly'/>

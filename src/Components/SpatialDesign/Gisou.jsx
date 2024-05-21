@@ -20,38 +20,44 @@ import { Link } from 'react-router-dom'
 function Gisou() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="Gisou" />
-        <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
+      
+      <div className='arrowsContainer'>
+        <Link to={'/benefit'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
         
-        <img src={hero} alt="BENEFIT" className='blancHero'/>
-        <div className='stackContainer stackContainerPink'>
-          <div className='stackItemPink2'>
-            <img className='stackCircleImg' src={circle2} alt="" />
-            <p className='stackText'>PROJECT MANAGEMENT</p>
-          </div>
-          <div className='stackItem1'>
-            <img className='stackCircleImg' src={circle6} alt="" />
-            <p className='stackText'>INSTALLATION</p>
-          </div>
-          <div className='stackItemPink3 stackItemDesktop10'>
-            <img className='stackCircleImg' src={circle3} alt="" />
-            <p className='stackText'>METALWORK</p>
-          </div>
-
-          <div className='stackItem1'>
-            <img className='stackCircleImg' src={circle4} alt="" />
-            <p className='stackText'>POP UP</p>
-          </div>
-          <div className='stackItemPink3 stackItemDesktop10'>
-            <img className='stackCircleImg' src={circle1} alt="" />
-            <p className='stackText'>CARPENTRY</p>
-          </div>
-          <div className='stackItemDestree3'>
-            <img className='stackCircleImg' src={circle1} alt="" />
-            <p className='stackText'>LIGHTING DESIGN</p>
-          </div>
-            
+        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+        
+        <Link to={'/huda'} className='arrowsEvents arrowSpatial'>{">"}</Link>
+      </div>
+      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <div className='stackContainer stackContainerPink'>
+        <div className='stackItemPink2'>
+          <img className='stackCircleImg' src={circle2} alt="" />
+          <p className='stackText'>PROJECT MANAGEMENT</p>
         </div>
+        <div className='stackItem1'>
+          <img className='stackCircleImg' src={circle6} alt="" />
+          <p className='stackText'>INSTALLATION</p>
+        </div>
+        <div className='stackItemPink3 stackItemDesktop10'>
+          <img className='stackCircleImg' src={circle3} alt="" />
+          <p className='stackText'>METALWORK</p>
+        </div>
+
+        <div className='stackItem1'>
+          <img className='stackCircleImg' src={circle4} alt="" />
+          <p className='stackText'>POP UP</p>
+        </div>
+        <div className='stackItemPink3 stackItemDesktop10'>
+          <img className='stackCircleImg' src={circle1} alt="" />
+          <p className='stackText'>CARPENTRY</p>
+        </div>
+        <div className='stackItemDestree3'>
+          <img className='stackCircleImg' src={circle1} alt="" />
+          <p className='stackText'>LIGHTING DESIGN</p>
+        </div>
+          
+      </div>
       <div className='colorSpace'>
         <p className='titleSpatialDetail'>Gisou Holiday Pop Up</p>
         <div className='separatorSpatial'></div>
