@@ -176,6 +176,10 @@
     border: none;
     z-index: 6;
 }
+
+.arrowSpatial {
+    color: var(--color-violet);
+}
 @media(min-width: 700px){
     .mobileOnlyPlaces{
         display: none;

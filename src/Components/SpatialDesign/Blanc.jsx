@@ -18,9 +18,16 @@ import { Link } from 'react-router-dom'
 function Blanc() {
   return (
     <div>
-        <img src={xSpray} className='xSpraySpatial' alt="" />
-        <Link to={'/spatialDesign'}><p className='xSpatialDetail'>X</p></Link>
         
+        <div className='arrowsContainer'>
+            <Link to={'/huda'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
+            
+            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+            
+            <Link to={'/destree'} className='arrowsEvents arrowSpatial'>{">"}</Link>
+        </div>
+
         <img src={hero} alt="1664 Blanc" className='blancHero'/>
         <div className='stackContainer'>
             <div className='stackItem1'>

@@ -18,11 +18,10 @@
 }
 .xSpraySpatial {
     width: 60px;
-    top: 143px;
-    top: 100px;
-    top: 100px;
     z-index: 5;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .stackContainer{
