@@ -94,9 +94,7 @@ function General() {
   }
   return (
     <div>
-
       <div className='arrowsContainer'>
-
         <button onClick={() => navigateToItem(-1)} className='arrowsTv'> {"<"} </button>
         
         <img src={xSpray} className='xSprayTv' alt="" />

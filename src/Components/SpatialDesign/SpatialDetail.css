@@ -37,6 +37,7 @@
     justify-content: space-between;
     justify-content: space-evenly;
     bottom: 100px;
+    bottom: 15vh;
     font-weight: 500;
 }
 .stackContainerDestree {
@@ -647,7 +648,8 @@
         top: 224px;
     }
     .stackText {
-        font-size: 18px;
+        font-size: 16px;
+        font-weight: 500;
     }
     .spatialDetailImagesBoxBenefit1 img {
         height: 704px;

@@ -1,8 +1,10 @@
 .xSprayEvent {
     width: 90px;
-    top: 75px;
+    top: -61px;
     z-index: 5;
     position: absolute;
+    left: 49.5%;
+    transform: translateX(-50%);
 }
 .xEventDetail {
     font-family: 'oswald';
@@ -44,6 +46,7 @@
     text-align: center;
     justify-content: space-between;
     bottom: 100px;
+    bottom: 15vh;
     font-weight: 500;
 } 
 .stackContainerEventsSmaller{
@@ -163,12 +166,16 @@
 .placesImage1, .wweImage1{
     width: 100%;
 }
-/* .warner22Image1 {
-    width: 32%;
+
+.arrowsEvents {
+    color: var(--color-orange);
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    z-index: 6;
 }
-.warner22Image2 {
-    width: 68%;
-} */
 @media(min-width: 700px){
     .mobileOnlyPlaces{
         display: none;

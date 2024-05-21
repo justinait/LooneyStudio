@@ -1,5 +1,5 @@
 .videoTvContainer{
-    height: 60vh;
+    height: 72vh;
     object-fit: cover;
     width: 100%; 
     overflow: hidden;
@@ -40,7 +40,7 @@
 .stackContainerTv {
     width: 60vw;
     bottom: unset;
-    top: 66vh;
+    top: 62vh;
     z-index: 3;
 }
 .videoSimulationBox {
@@ -69,10 +69,7 @@
     object-fit: cover;
 }
 
-.stackItemTv {
-    /* width: 31%;
-    height: 20px;
-    justify-content: space-between; */    
+.stackItemTv {  
     width: fit-content;
     height: 20px;
     display: flex;
@@ -107,10 +104,13 @@ iframe button {
     display: flex;
     position: relative;
     justify-content: space-between;
-    top: 80px;
+    top: 95px;
+    top: 14vh;
+    height: 0;
+
 }
 .arrowsTv {
-    color: var(--l, #DAA6DA);
+    color: var(--color-lila);
     font-family: Oswald;
     font-size: 20px;
     font-weight: 500;
@@ -139,7 +139,7 @@ iframe button {
         font-size: 24.7px;
     }
     .stackContainerTv {
-        top: 57vh;
+        top: 62vh;
     }
     .videoTvContainer{
         height: 74vh;
@@ -166,8 +166,9 @@ iframe button {
 @media(min-width:1200px){
     
     .videoTvContainer{
-        height: 104vh;
+        height: 105vh;
         margin-top: -10vh;
+        margin-top: -20vh;
     }
     
     .colorSpaceTv {
@@ -192,7 +193,7 @@ iframe button {
         margin: 0 2%;
     }
     .stackContainerTv {
-        top: 81vh;
+        top: 76vh;
         justify-content: center;
     }
     
@@ -208,7 +209,7 @@ iframe button {
     }
     .videoTvContainer{
         height: 114vh;
-        margin-top: -20vh;
+        margin-top: -28vh;
     }
     .tvHero {
         width: 100% !important;
@@ -240,5 +241,8 @@ iframe button {
     
     .willBehindImage{
         height: 770px;
+    }
+    .colorSpaceTv {
+        padding: 4% 2vw 0%;
     }
 }

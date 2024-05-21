@@ -20,9 +20,21 @@ import { Link } from 'react-router-dom'
 function Warner() {
   return (
     <div>
-      <img src={xSpray} className='xSprayEvent' alt="" />
-      <Link to={'/events'}><p className='xEventDetail'>X</p></Link>
+      {/* <img src={xSpray} className='xSprayEvent' alt="" />
+      <Link to={'/events'}><p className='xEventDetail'>X</p></Link> */}
       
+      <div className='arrowsContainer'>
+        <Link to={'/dixon'} className='arrowsEvents'>{"<"}</Link>
+        
+        <img src={xSpray} className='xSprayEvent' alt="" />
+        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+        
+        {/* <button onClick={() => navigateToItem(1)} className='arrowsTv'>{">"}</button> */}
+        <Link to={'/sezane'} className='arrowsEvents'>{">"}</Link>
+      </div>
+
+
+
       <img src={hero} alt="WARNER" className='blancHero'/>
       <div className='stackContainerEvents'>
         <div className='stackItemEventsLarger'>
