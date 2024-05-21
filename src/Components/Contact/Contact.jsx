@@ -221,7 +221,7 @@ function Contact() {
                 <h3>MAIL</h3>
                 <div>
                     <input type="text" placeholder='Full Name' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                    <input type="text" placeholder='Mail' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    <input type="email" placeholder='Mail' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
                     <input type="text" placeholder='Your Message' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
                 </div>
                 <p className='formButton'>Send</p>

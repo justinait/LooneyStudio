@@ -85,6 +85,47 @@
 .serviceOpenContainer{
     height: 180px;
 }
+.inputContactServices:hover {
+    background: rgba(255, 204, 0, 0.60);
+}
+.inputContactServices.color-activo {
+    background: rgba(255, 204, 0, 0.60);
+}
+.formButtonServices{
+    
+    background: rgba(255, 204, 0, 0.60);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+.formButtonServices:hover {
+    background: rgba(255, 204, 0, 0.60);
+}
+.servicesFormContainer {
+    /* background: rgba(255, 204, 0, 0.60); */
+    margin-top: 10vh;
+    background: rgba(255, 204, 0, 0.60);
+    
+}
+.servicesFormContainer input {
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    padding-top: 5%;
+    padding-left: 4%;
+    letter-spacing: 1px;
+}
+
 #enquireHere {
 }
 @media(min-width:700px){

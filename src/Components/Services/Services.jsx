@@ -5,6 +5,7 @@ function Services() {
     const [open, setOpen] = useState(false);
     const [openServicesForm, setOpenServicesForm] = useState(false);
     const [service, setService] = useState('');
+    const [inputFilled, setInputFilled] = useState(false);
     const services = [
         { name: 'CONCEPT DESIGN', image: '/services/conceptdesign.png', text: 'Our design team swiftly transforms ideas into reality, crafting mood boards, sketches, and 3D models that embody your vision. Emphasizing aesthetics, functionality, and meticulous attention to detail, we seamlessly merge innovation and practicality in our design process.', className: '' },
         { name: 'PROJECT MANAGEMENT', image: '/services/projectmanagement.png', text: 'Our dedicated project managers oversee every aspect of the build, ensuring communication, progress monitoring, and budget adherence. Renowned for flexibility, they provide guidance and support throughout the process.', className: 'littleServicesText'},
@@ -30,6 +31,9 @@ function Services() {
         console.log(openServicesForm);
     };
 
+    const handleInputChange = (e) =>{
+        setInputFilled(e.target.value.trim() !== '');
+    }
     useEffect(() => {
         const enquireHere = document.getElementById('enquireHere');
         if (enquireHere) {
@@ -78,6 +82,15 @@ function Services() {
                     )
                 })
             }
+            <div className='servicesFormContainer'>
+                <div>
+                    <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                </div>
+                <p className='formButtonServices'>Send</p>
+                {/* <img src={spray} id='spraySend' alt="" /> */}
+            </div>
 
         </div>
     </div>
