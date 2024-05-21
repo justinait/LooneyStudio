@@ -318,7 +318,9 @@
     }
 }
 @media (min-width: 700px) {
-    
+    .downloadPDF {
+        font-size: 13px;
+    }
     .stackContainer{
         bottom: 150px;
     }
@@ -445,7 +447,9 @@
         width: 100px;
         height: 137px;
     }
-    
+    .downloadPDF {
+        font-size: 16px;
+    }
     .gisouFixedImg{
         object-position: 0 -405px !important;
     }
@@ -697,7 +701,9 @@
     .gisouFixedImg {
         object-position: 0 -631px !important;
     }
-    
+    .downloadPDF {
+        font-size: 20px;
+    }
     .spatialDetailImagesBoxHuda, .spatialDetailImage3, .spatialDetailImage4 {
         height: 700px;
     }
