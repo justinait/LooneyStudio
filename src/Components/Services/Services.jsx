@@ -20,7 +20,8 @@ function Services() {
     
     const handleOpen = (e) => {
         setOpen(true);
-        setService(e.name)
+        setService(e.name);
+        setOpenServicesForm(false);
     }
     const handleClose =(e)=>{
         setOpen(false)
@@ -29,7 +30,7 @@ function Services() {
     
     const handleClick = () => {
         setOpenServicesForm(true);
-        console.log(openServicesForm);
+        handleClose();
     };
 
     const handleInputChange = (e) =>{
@@ -88,15 +89,18 @@ function Services() {
 
             </div>
         </div>
-        <div className='servicesFormContainer'>
-            <div>
-                <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+        {
+            openServicesForm &&
+            <div className='servicesFormContainer'>
+                <div>
+                    <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                </div>
+                <p className='formButtonServices'>Send</p>
+                {/* <img src={spray} id='spraySend' alt="" /> */}
             </div>
-            <p className='formButtonServices'>Send</p>
-            {/* <img src={spray} id='spraySend' alt="" /> */}
-        </div>
+        }
     </div>
   )
 }
