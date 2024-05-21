@@ -136,6 +136,9 @@ input::placeholder {
         line-height: normal;
         letter-spacing: 1.044px;
     }
+    .containerBox input{
+        font-size: 17.395px;
+    }
     .formButton {
         font-size: 17.395px;
         font-weight: 700;
@@ -207,6 +210,9 @@ input::placeholder {
         line-height: unset;
     }
     
+    .containerBox input{
+        font-size: 13px;
+    }
     .contactContainerBox{
         width: 50%;
         display: flex;
@@ -302,6 +308,9 @@ input::placeholder {
     .locationText {
         font-size: 15px;
     }
+    .containerBox input{
+        font-size: 15px;
+    }
     .contactContainer h3 {
         font-size: 34px;
         margin-bottom: 0.8rem;
@@ -345,6 +354,9 @@ input::placeholder {
         font-size: 18px;
         font-weight: 400;
         width: 93%;
+    }
+    .containerBox input{
+        font-size: 18px;
     }
     .formButton{
         font-size: 18px;

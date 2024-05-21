@@ -1,15 +1,18 @@
 .servicesContainer{
     display: flex;
     flex-direction: column;
+}
+.servicesFirstContainer {
     min-height: 95vh;
     margin-top: 10vh;
+
 }
 .servicesItemsContainer {
     display: flex;
     flex-direction: column;
     width: 100%;    
-    padding: 5% 3% 0;
-    height: 490px;
+    padding: 5% 3% 15%;
+    /* height: 490px; */
 }
 .serviceItemName {
     display: flex;
@@ -34,10 +37,10 @@
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.06em;
-    padding-left: 2%;
+    padding-left: 3%;
 }
 .seeMore {
-    padding-right:4% ;
+    padding-right:6% ;
     font-weight: 600;
 }
 .seeMore:hover {
@@ -86,31 +89,26 @@
     height: 180px;
 }
 .inputContactServices:hover {
-    background: rgba(255, 204, 0, 0.60);
+    /* background: rgba(255, 204, 0, 0.60); */
 }
 .inputContactServices.color-activo {
-    background: rgba(255, 204, 0, 0.60);
+    /* background: rgba(255, 204, 0, 0.60); */
+}
+.formButtonServices:hover {
+    /* background: rgba(255, 204, 0, 0.60); */
 }
 .formButtonServices{
-    
-    background: rgba(255, 204, 0, 0.60);
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.06em;
-    background: none;
-    border: none;
-    padding: 0;
+    padding: 3% 6% 2% 0;
     margin: 0;
     text-align: right;
 }
-.formButtonServices:hover {
-    background: rgba(255, 204, 0, 0.60);
-}
+
 .servicesFormContainer {
-    /* background: rgba(255, 204, 0, 0.60); */
-    margin-top: 10vh;
     background: rgba(255, 204, 0, 0.60);
-    
+    margin: 0 3%;
 }
 .servicesFormContainer input {
     color: white;
@@ -121,9 +119,8 @@
     font-size: 11px;
     font-weight: 300;
     letter-spacing: 0.06em;
-    padding-top: 5%;
-    padding-left: 4%;
     letter-spacing: 1px;
+    padding: 5% 0 1% 3%;
 }
 
 #enquireHere {
@@ -166,18 +163,20 @@
         top: 60px;
         height: 60px;
     }
-    .servicesItemsContainer {
-        height: 1090px;
+    .servicesFormContainer input, .formButtonServices {
+        font-size: 19.5px;
     }
 }
 @media (min-width: 1200px) {
     
+    .servicesFormContainer input, .formButtonServices{
+        font-size: 16px;
+    }
     .servicesContainer {
         flex-direction: row-reverse;
     }
     .servicesItemsContainer{
         padding: 0 1% 0 2%;
-        height: 830px;
     }
     .serviceItemName {
         padding: 0;
@@ -197,6 +196,10 @@
         font-size: 11px;
         font-weight: 400;
     }
+    .servicesFormContainer {
+        width: 47.4%;
+        margin-left: 51%;
+    }
 }
 
 @media(min-width:1400px){
@@ -206,10 +209,31 @@
     .servicesText{
         font-size: 13px;
     }
+    .servicesFormContainer input{
+        font-size: 19px;
+        padding: 3.5% 0 0.2% 3%;
+    }
+    .formButtonServices {
+
+        padding: 2% 3% 0.5% 0;
+        font-size: 19px;
+    }
+    .servicesFormContainer {
+        margin-top: 3%;
+    }
 }
 @media(min-width:1700px){
     .serviceItemTitle {
         font-size: 32px;
+    }
+    .servicesFormContainer input, .formButtonServices{
+        font-size: 24px;
+    }
+    
+    .servicesFormContainer {
+        margin-top: 0%;
+        width: 48%;
+        margin-left: 50.5%;
     }
     .servicesText{
         font-size: 17px;
@@ -223,7 +247,6 @@
     }
     .servicesContainer {
         margin-top: 252px;
-        height: 120vh;
     }
     .serviceItemName{
         padding: 1% 0;

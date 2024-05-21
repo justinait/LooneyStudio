@@ -52,47 +52,50 @@ function Services() {
 
     
   return (
-    <div className='servicesContainer'>
-        <div>
-            <h2> Our Services</h2>
-        </div>
+    <div className='servicesFirstContainer'>
 
-        <div className='servicesItemsContainer'>
-            {
-                services.map((e, i)=>{
-                    return (
-                        <div className='serviceItem' key={i}>
-                            <div className='serviceItemName'>
-                                <p className='serviceItemTitle'>{e.name}</p>
-
-                                {(open && service == e.name) ?
-                                <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
-                                <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
-                                }
-                                
-                            </div>
-                            {
-                                (open && service == e.name) &&
-                                <div className='serviceOpenContainer'>
-                                    <img src={e.image} alt={e.name} className='imageServices'/>
-                                    <p dangerouslySetInnerHTML={{ __html: e.text }} className={`servicesText ${e.className}`}></p>
-                                </div>
-                            }
-                        </div>
-                    )
-                })
-            }
-            <div className='servicesFormContainer'>
-                <div>
-                    <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                    <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                    <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                </div>
-                <p className='formButtonServices'>Send</p>
-                {/* <img src={spray} id='spraySend' alt="" /> */}
+        <div className='servicesContainer'>
+            <div>
+                <h2> Our Services</h2>
             </div>
 
+            <div className='servicesItemsContainer'>
+                {
+                    services.map((e, i)=>{
+                        return (
+                            <div className='serviceItem' key={i}>
+                                <div className='serviceItemName'>
+                                    <p className='serviceItemTitle'>{e.name}</p>
+
+                                    {(open && service == e.name) ?
+                                    <p className='seeMore' onClick={()=>handleClose(e)}>-</p>:
+                                    <p className='seeMore' onClick={()=>handleOpen(e)}>+</p>
+                                    }
+                                    
+                                </div>
+                                {
+                                    (open && service == e.name) &&
+                                    <div className='serviceOpenContainer'>
+                                        <img src={e.image} alt={e.name} className='imageServices'/>
+                                        <p dangerouslySetInnerHTML={{ __html: e.text }} className={`servicesText ${e.className}`}></p>
+                                    </div>
+                                }
+                            </div>
+                        )
+                    })
+                }
+
+            </div>
         </div>
+                <div className='servicesFormContainer'>
+                    <div>
+                        <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                        <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                        <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    </div>
+                    <p className='formButtonServices'>Send</p>
+                    {/* <img src={spray} id='spraySend' alt="" /> */}
+                </div>
     </div>
   )
 }
