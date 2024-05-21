@@ -15,6 +15,8 @@ function Header() {
   const [selectedCategory, setSelectedCategory] = useState('home')
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [projectsActive, setProjectsActive] = useState(false);
+  
   
   const windowWidth = window.innerWidth;
   const [desktop, setDesktop] = (windowWidth <= 1200) ? useState(false): useState(true)
@@ -68,13 +70,18 @@ function Header() {
     if(!desktop){
       setOpenMenu(false);
     }
+    setProjectsActive(false);
     setOpenNextMenu(false);
     if(id){
       setSelectedCategory(id);
+      if(id == 'tvandfilms' ||id == 'events' || id == 'spatialDesign'   )
+        setProjectsActive(true);
+      else
+        setProjectsActive(false);
     }
     
-    
   }
+
   const handleNextMenu = ()=> {
     setOpenNextMenu(!openNextMenu);
     if(desktop){
@@ -85,7 +92,7 @@ function Header() {
   const handlePrevMenu = ()=> {
     setOpenNextMenu(false);
     setOpenMenu(true);
-    
+    setProjectsActive(false)
   }
   const sections = [
     { name: 'SERVICES', id: 'services', className: '' },
@@ -120,7 +127,7 @@ function Header() {
             <div className='dropdownHeader'>
               
               <div className='dropdownItemsContainer'>
-                <p onClick={()=>handleNextMenu()} className={selectedCategory == 'projects'? 'activeNavbar projects': 'projects'}>PROJECTS              <img src={arrow} alt=">" />            </p>
+                <p onClick={()=>handleNextMenu()} className={ projectsActive ? 'activeNavbar projects': 'projects'}>PROJECTS              <img src={arrow} alt=">" />            </p>
               
                 {sections.map((e, i)=> {
                   return (
