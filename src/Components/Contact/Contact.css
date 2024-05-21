@@ -250,15 +250,17 @@ input::placeholder {
     .contactContainerBox :nth-child(4) {
         order: 3;
     }
-    .inputContact {
+    .containerBox input{
+        padding-top: 4%;
+
         padding-top: 3%;
-        padding-bottom: 4%;
+        padding-bottom: 3%;
         width: 93%;
         margin: auto;
     }
     .formButton {
         padding-top: 9%;
-        padding-right: 7%;
+        /* padding-right: 7%; */
         font-size: 13px;
         font-weight: 600;
     }
@@ -271,7 +273,7 @@ input::placeholder {
     }
     
     #spraySend {
-        left: 67vw;
+        left: 68.5vw;
         width: 95px;
         height: 75px;
     }
@@ -297,12 +299,11 @@ input::placeholder {
     .halfBigDesktop {
         height: 58%;
     }
-    .inputContact {
+    .containerBox input{ 
         padding-top: 3%;
         padding-bottom: 2%;
     }
     .formButton {
-        
         padding-top: 12%;
     }
     .locationText {
@@ -314,6 +315,9 @@ input::placeholder {
     .contactContainer h3 {
         font-size: 34px;
         margin-bottom: 0.8rem;
+    }
+    #spraySend {
+        left: 69.5vw;
     }
 }
 
@@ -346,7 +350,8 @@ input::placeholder {
     .halfBigDesktop {
         height: 60%;
     }
-    .inputContact {
+    
+    .containerBox input{
         padding-top: 4%;
         padding-bottom: 3%;
     }
@@ -363,6 +368,6 @@ input::placeholder {
         font-weight: 700;
     }
     #spraySend {
-        left: 68.5vw;
+        left: 70vw;
     }
 }
