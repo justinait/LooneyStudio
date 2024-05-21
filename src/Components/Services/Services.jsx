@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Services.css'
+import spray from '/sprays/AssetsHero.png'
 
 function Services() {
     const [open, setOpen] = useState(false);
@@ -87,15 +88,15 @@ function Services() {
 
             </div>
         </div>
-                <div className='servicesFormContainer'>
-                    <div>
-                        <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                        <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                        <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                    </div>
-                    <p className='formButtonServices'>Send</p>
-                    {/* <img src={spray} id='spraySend' alt="" /> */}
-                </div>
+        <div className='servicesFormContainer'>
+            <div>
+                <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+            </div>
+            <p className='formButtonServices'>Send</p>
+            {/* <img src={spray} id='spraySend' alt="" /> */}
+        </div>
     </div>
   )
 }
