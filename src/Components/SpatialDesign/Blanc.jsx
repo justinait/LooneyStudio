@@ -83,7 +83,16 @@ function Blanc() {
                     <p className='infoDataSpatialDetail'>SELFRIDGES</p>
                 </div>
             </div>
-
+            <div className='infoSpatialDetailTextContainer'>
+            <p>As part of London Fashion Week, we worked alongside 1664 Blanc to create this 
+                fantastic French-inspired kiosque. We built this popup at Selfridges, where 
+                people came to stake a sit, relax, and soak up the atmosphere with a bottle of 1664 Blanc.
+            </p>
+            <p>
+            In collaboration with the agencies Gunga & Studio Stilton, we 
+            created this great blue spot, from conceptual design and lighting to its installation.
+            </p>
+            </div>
         </div>
         <div>
             <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
