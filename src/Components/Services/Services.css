@@ -95,20 +95,24 @@
     background: rgba(255, 204, 0, 0.90);
 }
 .formButtonServices:hover {
-    background: rgba(255, 204, 0, 0.90);
+    color: white;
 }
 .formButtonServices{
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.06em;
-    padding: 3% 6% 2% 0;
+    padding: 3% 5% 2% 0;
     margin: 0;
     text-align: right;
+    color: rgba(255, 204, 0, 0.90);
 }
 
 .servicesFormContainer {
-    background: rgba(255, 204, 0, 0.60);
     margin: 0 3%;
+}
+.servicesFormContainer div {
+    background: rgba(255, 204, 0, 0.60);
+
 }
 .servicesFormContainer input {
     color: white;
@@ -122,8 +126,12 @@
     letter-spacing: 1px;
     padding: 5% 0 1% 3%;
 }
-
-
+.messageSent {
+    display: none;
+}
+#enquireHere {
+    cursor: pointer;
+}
 #spraySendServices{
     display: none;
 }

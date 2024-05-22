@@ -98,7 +98,8 @@ function Services() {
                     <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
                 </div>
                 <p className='formButtonServices'>Send</p>
-                {/* <img src={spray} id='spraySendServices' alt="" /> */}
+                <img src={spray} id='spraySendServices' alt="" />
+                <p className='messageSent'>Message Sent</p>
             </div>
         }
     </div>
