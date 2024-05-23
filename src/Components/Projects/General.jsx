@@ -10,7 +10,7 @@ import Spinner from 'react-bootstrap/Spinner';
 function General() {
   const [data, setData] = useState([]);
   const [thisItem, setThisItem] = useState({});
-  const [isLoading, setIsLoading] = useState(true); // Estado para manejar la carga del video
+  const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
   const imageMap = [circle1, circle2, circle3];
   const navigate = useNavigate();
@@ -153,7 +153,7 @@ function General() {
           {designer && (
             <div>
               <p className='infoTitleSpatialDetail'>DESIGNER</p>
-              <p className='infoDataSpatialDetail tvAndFilmsDetailText'>{designer}</p>
+              <p className='infoDataSpatialDetail'>{designer}</p>
             </div>
           )}
           {producer2 && (

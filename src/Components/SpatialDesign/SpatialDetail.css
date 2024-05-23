@@ -433,6 +433,11 @@
     }
 }
 
+@media(min-width:1000px){
+    .infoContainerSpatialDetail div {
+        width: 22vw;
+    }
+}
 @media(min-width:1200px){
     .blancHero {
         height: 93vh;
