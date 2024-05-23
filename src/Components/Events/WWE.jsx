@@ -61,7 +61,7 @@ function WWE() {
 
           <div>
             <p className='infoTitleSpatialDetail'>LOCATION</p>
-            <p className='infoDataSpatialDetail'>GALLERY DIFFEREN - FITZRROVIA</p>
+            <p className='infoDataSpatialDetail'>O2 Arena</p>
           </div>
 
         </div>
