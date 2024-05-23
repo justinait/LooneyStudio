@@ -68,7 +68,7 @@ function Pink() {
 
                 <div>
                     <p className='infoTitleSpatialDetail'>LOCATION</p>
-                    <p className='infoDataSpatialDetail'>Soho</p>
+                    <p className='infoDataSpatialDetail'>19 GREEK STREET, Soho</p>
                 </div>
             </div>
             <div className='infoSpatialDetailTextContainer'>

@@ -58,7 +58,7 @@ function Molecules() {
 
           <div>
             <p className='infoTitleSpatialDetail'>LOCATION</p>
-            <p className='infoDataSpatialDetail'>FITZRROVIA</p>
+            <p className='infoDataSpatialDetail'>GALLERY DIFFEREN - FITZRROVIA</p>
           </div>
 
         </div>
