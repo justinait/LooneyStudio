@@ -59,7 +59,7 @@ function Sezane() {
 
           <div>
             <p className='infoTitleSpatialDetail'>AGENCY</p>
-            <p className='infoDataSpatialDetail'>Blacklash</p>
+            <p className='infoDataSpatialDetail'>Backlash</p>
           </div>
           <div>
             <p className='infoTitleSpatialDetail'>LOCATION</p>
