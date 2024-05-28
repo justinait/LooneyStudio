@@ -79,15 +79,14 @@ function Warner() {
             entire space, a captivating ceiling
             installation stretched across the venue,
             seeing the stage for an evening of
-            unparalleled excitement.
+            unparalleled excitement. <br />
             A striking 50-foot suspended
             installation guided guests into the heart
             of the dance 
           </p>
           <p>
           floor, where our bespoke DJ booth awaited, graced by acclaimed
-          artists like Mike Skinner from The
-          Streets.
+          artists like Mike Skinner from The Streets. <br />
           Dominating the scene, a colossal floating W logo
           served as a beacon of attention, adding a touch of
           grandeur to the ambiance. Stealing the spotlight, a

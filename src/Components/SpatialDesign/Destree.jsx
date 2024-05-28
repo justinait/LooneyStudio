@@ -72,27 +72,26 @@ function Destree() {
             <div className='infoSpatialDetailTextContainer'>
                 <p>Up and coming French brand, Destree, enlisted our expertise for
                     the realization of their inaugural
-                    pop-up at Harrods in London. <br />
+                    pop up at Harrods in London. <br />
                     Guided by the clear vision of
                     Destree’s creative team, we
                     seamlessly brought their concept to
                     fruition. Overcoming spatial
                     constraints, we meticulously
-                    reimagined the pop-up space,
+                    reimagined the pop up space,
                     ensuring timely delivery 
                 </p>
                 <p>
-                    and budget
-                    adherence, paramount to the
-                    project’s success. <br />
-
-                    Embracing organic forms inspired by
-                    the realm of their iconic handbags,
-                    we meticulously crafted bespoke
-                    rails, table tops, and a captivating
-                    display wall, seamlessly blending
-                    elegance and functionality to
-                    showcase Destree’s exquisite collection.
+                and budget
+                adherence, paramount to the
+                project’s success. <br />
+                Embracing organic forms inspired by
+                the realm of their iconic handbags,
+                we meticulously crafted bespoke
+                rails, table tops, and a captivating
+                display wall, seamlessly blending
+                elegance and functionality to
+                showcase Destree’s exquisite collection.
                 </p>
             </div>
         </div>

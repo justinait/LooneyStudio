@@ -93,7 +93,7 @@ function Places() {
               began our partnership
               with Guess Jeans to design
               photoshoot backdrops for the
-              occasion. 
+              occasion. <br />
               The two stages, one prom-picture-perfect, and the
               other including a love-seat of
               recycled jeans from the Guess
