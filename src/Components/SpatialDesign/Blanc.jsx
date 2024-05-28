@@ -65,7 +65,7 @@ function Blanc() {
             
         </div>
         <div className='colorSpace'>
-            <p className='titleSpatialDetail'>1664 BLANC - LND FASHION WEEK POP UP</p>
+            <p className='titleSpatialDetail'>1664 BLANC - LDN FASHION WEEK POP UP</p>
             <div className='separatorSpatial'></div>
             <div className='infoContainerSpatialDetail'>
                 <div>
@@ -84,13 +84,13 @@ function Blanc() {
                 </div>
             </div>
             <div className='infoSpatialDetailTextContainer'>
-            <p>As part of London Fashion Week, we worked alongside 1664 Blanc to create this 
-                fantastic French-inspired kiosque. We built this popup at Selfridges, where 
-                people came to stake a sit, relax, and soak up the atmosphere with a bottle of 1664 Blanc.
+            <p>As part of London Fashion Week, we worked alongside 1664 Blanc to create this fantastic 
+                French-inspired kiosque. We built this pop up at Selfridges, where people came to stake 
+                a sit, relax, and soak up the atmosphere with a bottle of 1664 Blanc. 
             </p>
             <p>
-            In collaboration with the agencies Gunga & Studio Stilton, we 
-            created this great blue spot, from conceptual design and lighting to its installation.
+            In collaboration with the agencies Gunga & Studio Stilton, we created this great blue spot, 
+            from conceptual design and lighting to its installation.
             </p>
             </div>
         </div>

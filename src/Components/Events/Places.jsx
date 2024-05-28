@@ -70,14 +70,21 @@ function Places() {
 
           </div>
           <div className='infoSpatialDetailTextContainer mobileOnlyPlaces'>
-            <p>As the London-based streetwear brand Places+Faces 
-              approachedits 10th anniversary in the fashion industry, we
-            </p>
-            <p>
-              began our partnership
+            <p>As the London-based streetwear
+              brand Places+Faces approached
+              its 10th anniversary in the fashion
+              industry, we began our partnership
               with Guess Jeans to design
               photoshoot backdrops for the
               occasion.
+            </p>
+            <p>
+              The two stages, one prom-picture-perfect, and the
+              other including a love-seat of
+              recycled jeans from the Guess
+              archives, were displayed at
+              Shakespeare’s Globe Theatre in
+              2023.
             </p>
           </div>
           <div className='infoSpatialDetailTextContainer tabletAndDesktop'>
@@ -86,7 +93,13 @@ function Places() {
               began our partnership
               with Guess Jeans to design
               photoshoot backdrops for the
-              occasion.
+              occasion. 
+              The two stages, one prom-picture-perfect, and the
+              other including a love-seat of
+              recycled jeans from the Guess
+              archives, were displayed at
+              Shakespeare’s Globe Theatre in
+              2023.
             </p>
           </div>
         </div>

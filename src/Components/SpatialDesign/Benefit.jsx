@@ -105,7 +105,7 @@ function Benefit() {
 
         <div className='stackItemPink4'>
           <img className='stackCircleImgBig' src={circle9} alt="" />
-          <p className='stackText stackTextBig'>FINISHING & <br />SPRYING</p>
+          <p className='stackText stackTextBig'>FINISHING & <br />SPRAYING</p>
         </div>
           
       </div>
@@ -133,18 +133,15 @@ function Benefit() {
           </div>
         </div>
         <div className='infoSpatialDetailTextContainer'>
-          <p>Building upon Benefit’s successful pop-up in New York, 
-            which employed the same theme, we had just a month to 
-            meticulously craft all the necessary elements and a mere 
-            five days to bring the installation to life on site. 
-            With ingenuity and creativity at the forefront, we 
-            fashioned a fully functional car wash setup complete 
-            with spinning brushes, 
+          <p>Building upon Benefit’s successful pop up in New York, which employed the same theme, 
+            we had just a month to meticulously craft all the necessary elements and a mere five days 
+            to bring the installation to life on site. With ingenuity and creativity at the forefront, 
+            we fashioned a fully functional car wash setup complete with spinning brushes, 
           </p>
           <p>
-          mesmerizing floating bubbles, and fuel pumps that playfully 
-          dispensed foam. The result was an interactive and experiential 
-          journey that left a lasting impression on all who engaged with it.
+            mesmerizing floating bubbles, and fuel pumps that playfully dispensed foam. 
+            The result was an interactive and experiential journey that left a lasting impression on 
+            all who engaged with it.
           </p>
         </div>
       </div>

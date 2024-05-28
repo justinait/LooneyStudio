@@ -57,7 +57,7 @@ function Warner() {
           
       </div>
       <div className='colorSpaceEvents'>
-        <p className='titleSpatialDetail'>WARNER MUSIC CHRISTMAS PARTY 23</p>
+        <p className='titleSpatialDetail'>WARNER MUSIC - CHRISTMAS PARTY 23</p>
         <div className='separatorEvents'></div>
         <div className='infoContainerSpatialDetail'>
           <div>
@@ -78,22 +78,22 @@ function Warner() {
             unforgeable experience. Spanning the
             entire space, a captivating ceiling
             installation stretched across the venue,
-            seing the stage for an evening of
-            unparalleled excitement. <br />
+            seeing the stage for an evening of
+            unparalleled excitement.
             A striking 50-foot suspended
             installation guided guests into the heart
             of the dance 
           </p>
           <p>
-            floor, where our bespoke DJ booth awaited, graced by acclaimed
-            artists like Mike Skinner from The
-            Streets. <br />
-            Dominating the scene, a colossal floating W logo
-            served as a beacon of aention, adding a touch of
-            grandeur to the ambiance. Stealing the spotlight, a
-            magnificent 6-foot robot, meticulously crafted from
-            fiberglass, took center stage, captivating guests with its extraterrestrial allure, ensuring a night to
-            remember.
+          floor, where our bespoke DJ booth awaited, graced by acclaimed
+          artists like Mike Skinner from The
+          Streets.
+          Dominating the scene, a colossal floating W logo
+          served as a beacon of attention, adding a touch of
+          grandeur to the ambiance. Stealing the spotlight, a
+          magnificent 6-foot robot, meticulously crafted from
+          fiberglass, took center stage, captivating guests with its extraterrestrial allure, ensuring a night to
+          remember.
           </p>
         </div>
       </div>

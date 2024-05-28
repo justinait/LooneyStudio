@@ -58,7 +58,7 @@ function Pink() {
             
         </div>
         <div className='colorSpace'>
-            <p className='titleSpatialDetail'>PINK PANTHERESS - Heaven Knos Album Launch Pop Up</p>
+            <p className='titleSpatialDetail'>PINK PANTHERESS - Heaven Knows Album</p>
             <div className='separatorSpatial'></div>
             <div className='infoContainerSpatialDetail'>
                 <div>
@@ -80,34 +80,34 @@ function Pink() {
                     album cover, we embarked on a celestial
                     journey within a three-floor Victorian
                     building in the heart of Soho. Crafting
-                    an impactful ntrance was paramount
-                    to capturing aention. Upon entering,
+                    an impactful entrance was paramount
+                    to capturing attention. Upon entering,
                     guests were greeted by a transparent
                     purple installation on the first floor,
-                    oering a unique and artistic approach
+                    offering a unique and artistic approach
                     to merchandise display reminiscent of
                     an art gallery exhibition. <br />
                     The second floor enticed visitors to explore Starface products playfully,
                     with samples elegantly showcased on
                     plinths and a bustling beauty corner
-                    where technicians pampered guests'
+                    where technicians 
+                </p>
+                <p>
+                    pampered guests'
                     nails. Ascending to the third floor, fans
                     were invited to step into the surreal
                     world of Pink Pantheress’s album cover,
-                </p>
-                <p>
                     with mirror paper adorned surroundings
-                    and cameras ready to capture
-                    moments in this dreamlike seing.
+                    and cameras ready to capture moments in this dreamlike seeing. <br />
                     Meanwhile, the fourth floor was
-                    transformed into a cozy haven by NTS
+                    transformed into a cozy heaven by NTS
                     radio, streaming live during the event.
                     Our bespoke tables and bean bags
                     provided a comfortable retreat for
                     guests to relax and enjoy the ambiance. <br />
                     The entire experience was a resounding
                     success, from setup in just a day to a
-                    swift dismantling in a maer of hours,
+                    swift dismantling in a matter of hours,
                     transforming the entire building into a
                     gallery space reminiscent of Dover
                     Street Market’s innovative ethos.

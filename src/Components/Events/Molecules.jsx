@@ -27,20 +27,17 @@ function Molecules() {
       </div>
 
       <img src={hero} alt="Molecules" className='blancHero'/>
-      <div className='stackContainerEvents stackContainerEventsSmall'>
-        <div className='stackItem1 stackItemDesktop25'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
-          <p className='stackText'>CONCEPT DESIGN</p>
-        </div>
-        <div className='stackItemPink3'>
+      <div className='stackContainer stackContainerDestree'>
+        
+        <div className='stackItemPink3 stackItemDesktop15'>
           <img className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
-        <div className='stackItemEvents'>
+        <div className='stackItem1'>
           <img className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>CARPENTRY</p>
         </div>
-        <div className='stackItemEvents'>
+        <div className='stackItem1'>
           <img className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
@@ -58,7 +55,7 @@ function Molecules() {
 
           <div>
             <p className='infoTitleSpatialDetail'>LOCATION</p>
-            <p className='infoDataSpatialDetail'>GALLERY DIFFEREN - FITZRROVIA</p>
+            <p className='infoDataSpatialDetail'>GALLERY DIFFERENT - FITZROVIA</p>
           </div>
 
         </div>

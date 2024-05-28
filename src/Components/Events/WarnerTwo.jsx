@@ -57,7 +57,7 @@ function WarnerTwo() {
       </div>
 
       <div className='colorSpaceEvents'>
-        <p className='titleSpatialDetail'>WARNER MUSIC- CHRISTMAS PARTY 22</p>
+        <p className='titleSpatialDetail'>WARNER MUSIC - CHRISTMAS PARTY 22</p>
         <div className='separatorEvents'></div>
         <div className='infoContainerSpatialDetail'>
           <div>
@@ -72,22 +72,18 @@ function WarnerTwo() {
 
         </div>
         <div className='infoSpatialDetailTextContainer'>
-          <p>We embarked on creating a surreal 12ft Christmas tree 
-            sculpture using bespoke oversized Christmas baubles, 
-            along with a customized photo booth featuring a whimsical 
-            optical room. The event took place at Decimo, the hotel's 
-            Michelin-starred restaurant. Drawing inspiration from the 
-            restaurant's distinctive Mexican and Brazilian Mid Century 
-            design, we carefully selected a color palette that 
-            complemented 
+          <p>We embarked on creating a surreal 12ft Christmas tree sculpture 
+            using bespoke oversized Christmas baubles, along with a customized 
+            photo booth featuring a whimsical optical room. The event took 
+            place at Decimo, the hotel's Michelin-starred restaurant. Drawing 
+            inspiration from the restaurant's distinctive Mexican Mid Century 
+            design, we carefully selected a color palette that complemented 
           </p>
           <p>
-          the existing ambiance, evoking a warm, earthy atmosphere 
-          while infusing vibrant and funky metallic tones to 
-          establish a festive party environment. To further enhance 
-          the space, we introduced bamboo curtains adorned with the 
-          iconic Warner's logo, seamlessly blending with the existing 
-          macrame curtains.
+            the existing ambiance, evoking a warm, earthy atmosphere while infusing 
+            vibrant and funky metallic tones to establish a festive party environment. 
+            To further enhance the space, we introduced bamboo curtains adorned with 
+            the iconic Warner's logo, seamlessly blending with the existing macrame curtains.
           </p>
         </div>
       </div>
