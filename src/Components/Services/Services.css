@@ -90,9 +90,13 @@
 }
 .inputContactServices:hover {
     background: rgba(255, 204, 0, 0.90);
+    background: #E3A2DC4D;
+    background: rgba(218, 166, 218);
 }
 .inputContactServices.color-activo {
     background: rgba(255, 204, 0, 0.90);
+    background: #E3A2DC4D;
+    background: rgba(218, 166, 218);
 }
 .formButtonServices:hover {
     color: white;
@@ -104,7 +108,8 @@
     padding: 3% 5% 2% 0;
     margin: 0;
     text-align: right;
-    color: rgba(255, 204, 0, 0.90);
+    
+    
 }
 
 .servicesFormContainer {
@@ -112,7 +117,8 @@
 }
 .servicesFormContainer div {
     background: rgba(255, 204, 0, 0.60);
-
+    background: #E3A2DC4D;
+    background: rgba(218, 166, 218, 0.80);
 }
 .servicesFormContainer input {
     color: white;
