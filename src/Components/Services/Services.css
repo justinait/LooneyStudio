@@ -201,7 +201,7 @@
 @media (min-width: 1200px) {
     
     .servicesFirstContainer {
-        background-image: none;
+        background-image: url('/public/ServicesBackgroundDesktop.png');
     }
     .servicesFormContainer input, .formButtonServices{
         font-size: 16px;

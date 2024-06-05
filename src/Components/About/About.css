@@ -169,7 +169,7 @@
 @media(min-width:1200px){
 
     .aboutContainer{ 
-        background-image: none;
+        background-image: url('/public/AboutBackgroundDesktop.png');
     }    
     .aboutText{
         font-size: 62.5px;
