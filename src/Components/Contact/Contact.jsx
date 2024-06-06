@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import spray from '/sprays/sprayPink2.png'
+import spray from '/sprays/tvSpray.png'
 import emailjs from '@emailjs/browser';
 import markerIcon from '/marker.png';
 

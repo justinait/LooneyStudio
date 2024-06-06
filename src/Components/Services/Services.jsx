@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Services.css'
-import spray from '/sprays/AssetsHero.png'
+import spray from '/sprays/tvSpray.png'
 
 function Services() {
     const [open, setOpen] = useState(false);
