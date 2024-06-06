@@ -222,7 +222,7 @@ function Contact() {
 
                     <div className='containerBox halfBigDesktop'>
                         <h3>MAIL</h3>
-                        <div>
+                        <div className='contactFormContainer'>
                             <input type="text" placeholder='Full Name' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
                             <input type="email" placeholder='Mail' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
                             <input type="text" placeholder='Your Message' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
