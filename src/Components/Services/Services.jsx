@@ -6,7 +6,19 @@ function Services() {
     const [open, setOpen] = useState(false);
     const [openServicesForm, setOpenServicesForm] = useState(false);
     const [service, setService] = useState('');
-    const [inputFilled, setInputFilled] = useState(false);
+    const [inputValues, setInputValues] = useState({
+        companyName: '',
+        email: '',
+        message: ''
+    });
+    const [inputFilled, setInputFilled] = useState({
+        companyName: false,
+        email: false,
+        message: false
+    });
+    const [formSent, setFormSent] = useState(false);
+    const [showErrors, setShowErrors] = useState(false);
+
     const services = [
         { name: 'CONCEPT DESIGN', image: '/services/conceptdesign.png', text: 'Our design team swiftly transforms ideas into reality, crafting mood boards, sketches, and 3D models that embody your vision. Emphasizing aesthetics, functionality, and meticulous attention to detail, we seamlessly merge innovation and practicality in our design process.', className: '' },
         { name: 'PROJECT MANAGEMENT', image: '/services/projectmanagement.png', text: 'Our dedicated project managers oversee every aspect of the build, ensuring communication, progress monitoring, and budget adherence. Renowned for flexibility, they provide guidance and support throughout the process.', className: 'littleServicesText'},
@@ -32,10 +44,41 @@ function Services() {
         setOpenServicesForm(true);
         handleClose();
     };
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setInputValues({
+            ...inputValues,
+            [name]: value
+        });
+        setInputFilled({
+            ...inputFilled,
+            [name]: value.trim() !== ''
+        });
+    };
 
-    const handleInputChange = (e) =>{
-        setInputFilled(e.target.value.trim() !== '');
-    }
+    const handleSubmit = () => {
+        const isFormComplete = Object.values(inputValues).every(value => value.trim() !== '');
+        if (isFormComplete) {
+            setFormSent(true);
+            setShowErrors(false);
+            setTimeout(() => {
+                setFormSent(false);
+                setInputValues({
+                    companyName: '',
+                    email: '',
+                    message: ''
+                });
+                setInputFilled({
+                    companyName: false,
+                    email: false,
+                    message: false
+                });
+            }, 2000); // Reset after 2 seconds
+        } else {
+            setShowErrors(true);
+        }
+    };
+
     useEffect(() => {
         const enquireHere = document.getElementById('enquireHere');
         if (enquireHere) {
@@ -50,10 +93,8 @@ function Services() {
         };
     }, [service]);
 
-    // const enquireHere = document.getElementById('enquireHere');
-
     
-  return (
+    return (
     <div className='servicesFirstContainer'>
 
         <div className='servicesContainer'>
@@ -92,15 +133,37 @@ function Services() {
         {
             openServicesForm &&
             <div className='servicesFormContainer'>
-                <div>
-                    <input type="text" placeholder='Production Company Name' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                    <input type="email" placeholder='Mail' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
-                    <input type="text" placeholder='Your Message' className={`inputContactServices locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
+                    <div>
+                        <input
+                            type="text"
+                            name="companyName"
+                            placeholder='Production Company Name'
+                            className={`inputContactServices locationText ${showErrors && !inputFilled.companyName ? 'input-error' : ''} ${inputValues.companyName.trim() !== '' ? 'color-activo' : ''}`}
+                            onChange={handleInputChange}
+                            value={inputValues.companyName}
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder='Mail'
+                            className={`inputContactServices locationText ${showErrors && !inputFilled.email ? 'input-error' : ''} ${inputValues.email.trim() !== '' ? 'color-activo' : ''}`}
+                            onChange={handleInputChange}
+                            value={inputValues.email}
+                        />
+                        <input
+                            type="text"
+                            name="message"
+                            placeholder='Your Message'
+                            className={`inputContactServices locationText ${showErrors && !inputFilled.message ? 'input-error' : ''} ${inputValues.message.trim() !== '' ? 'color-activo' : ''}`}
+                            onChange={handleInputChange}
+                            value={inputValues.message}
+                        />
+                    </div>
+                    <p className='formButtonServices' onClick={handleSubmit}>
+                        {formSent ? 'Message sent' : 'Send'}
+                    </p>
+                    {/* <img src={spray} id='spraySendServices' alt="" /> */}
                 </div>
-                <p className='formButtonServices'>Send</p>
-                <img src={spray} id='spraySendServices' alt="" />
-                <p className='messageSent'>Message Sent</p>
-            </div>
         }
     </div>
   )
