@@ -127,7 +127,7 @@
 }
 
 .inputContactServices.input-error {
-    background: red;
+    background: #ED0707B2;
 }
 .inputContactServices.color-activo {
     background: rgba(218, 166, 218);
