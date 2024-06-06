@@ -1,7 +1,8 @@
 .aboutContainer {
     min-height: 90vh;
-    /* margin-top: 120px; */
     padding-top: 120px;
+    background-image: url('/public/sprayAbout.jpg');
+    background-size: cover;
 }
 
 .aboutText {
