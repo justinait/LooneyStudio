@@ -100,17 +100,20 @@ input::placeholder {
     width: 100%;
     height: 160px;
 }
-/* .inputContact:hover {
-    background-color: rgba(237, 7, 7, 0.7);
-}
-.inputContact.color-activo {
-    background-color: rgba(237, 7, 7, 0.7); 
-}
-.formButton:hover {
-    color: rgba(237, 7, 7, 0.7);
-} */
+
 #spraySend{
     display: none;
+}
+
+.formButton:hover ~#spraySend {
+    display: block;
+}
+#spraySend {
+    width: 50px;
+    /* height: 20px; */
+    position: absolute;
+    transform: translateY(-50%);
+    left: 83%;
 }
 .contactContainerBox {
     display: flex;
@@ -118,13 +121,9 @@ input::placeholder {
 }
 
 .inputContact:hover {
-    background: rgba(255, 204, 0, 0.90);
-    background: #E3A2DC4D;
     background: rgba(218, 166, 218);
 }
 .inputContact.color-activo {
-    background: rgba(255, 204, 0, 0.90);
-    background: #E3A2DC4D;
     background: rgba(218, 166, 218);
 }
 .formButton:hover {
@@ -205,11 +204,11 @@ input::placeholder {
         display: block;
     }
     #spraySend {
-        width: 110px;
-        height: 92px;
+        width: 80px;
+        /* height: 92px; */
         position: absolute;
         transform: translateY(-50%);
-        left: 82vw;
+        left: 82.5%;
         /* bottom: -162px; */
     }
     .mapContainer {
@@ -218,7 +217,7 @@ input::placeholder {
 }
 @media (min-width: 1000px) {
     #spraySend {
-        left: 83.5vw;
+        left: 84.5%;
     }
 }
 @media (min-width: 1200px) {
@@ -331,9 +330,8 @@ input::placeholder {
     }
     
     #spraySend {
-        left: 68.5vw;
-        width: 95px;
-        height: 75px;
+        left: 69%;
+        width: 65px;
     }
 }
 @media(min-width:1400px){
@@ -373,7 +371,7 @@ input::placeholder {
         margin-bottom: 0.8rem;
     }
     #spraySend {
-        left: 69.5vw;
+        left: 69.5%;
     }
 }
 
@@ -422,6 +420,6 @@ input::placeholder {
         font-weight: 700;
     }
     #spraySend {
-        left: 70vw;
+        width: 80px;
     }
 }
