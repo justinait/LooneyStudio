@@ -130,6 +130,8 @@
 }
 #enquireHere {
     cursor: pointer;
+    font-weight: 800;
+    color: rgba(218, 166, 218, 0.80);
 }
 #spraySendServices{
     display: none;

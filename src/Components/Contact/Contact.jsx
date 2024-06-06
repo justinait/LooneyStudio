@@ -228,7 +228,7 @@ function Contact() {
                             <input type="text" placeholder='Your Message' className={`inputContact locationText ${inputFilled ? 'color-activo' : ''}`} onChange={handleInputChange}/>
                         </div>
                         <p className='formButton'>Send</p>
-                        <img src={spray} id='spraySend' alt="" />
+                        {/* <img src={spray} id='spraySend' alt="" /> */}
                     </div>
                 </div>
                 
