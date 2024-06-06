@@ -144,7 +144,7 @@ input::placeholder {
     background: rgba(218, 166, 218);
 }
 .inputContact.input-error {
-    background: red;
+    background: #ED0707B2;
 }
 
 .messageSent {
