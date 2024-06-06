@@ -162,7 +162,7 @@ function Services() {
                     <p className='formButtonServices' onClick={handleSubmit}>
                         {formSent ? 'Message sent' : 'Send'}
                     </p>
-                    {/* <img src={spray} id='spraySendServices' alt="" /> */}
+                    {formSent && <img src={spray} id='spraySendServices' className='show' alt="spray" />}
                 </div>
         }
     </div>

@@ -132,6 +132,17 @@
 .inputContactServices.color-activo {
     background: rgba(218, 166, 218);
 }
+
+#spraySendServices {
+    display: none;
+    width: 60px;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 76%;
+}
+#spraySendServices.show {
+    display: block;
+}
 .formButtonServices {
     font-size: 10px;
     font-weight: 600;
@@ -165,20 +176,7 @@
     font-weight: 800;
     color: rgba(218, 166, 218, 0.80);
 }
-#spraySendServices{
-    display: none;
-}
 
-.formButtonServices:hover ~#spraySendServices {
-    display: block;
-}
-#spraySendServices {
-    width: 50px;
-    /* height: 20px; */
-    position: absolute;
-    transform: translateY(-50%);
-    left: 83%;
-}
 @media(min-width:700px){
     .servicesContainer {
         margin-top: 156px;
@@ -223,23 +221,22 @@
     }
     
     #spraySendServices {
-        width: 80px;
-        left: 84%;
-
+        width: 90px;
+        left: 78%;
     }
 }
 
 @media (min-width: 1000px) {
     
     #spraySendServices {
-        left: 86%;
+        left: 81%;
 
     }
 }
 @media (min-width: 1200px) {
     
     #spraySendServices {
-        left: 91%;
+        left: 88%;
 
     }
     .servicesFirstContainer {
@@ -283,7 +280,10 @@
 
 @media(min-width:1400px){
     #spraySendServices {
-        left: 92.5%;
+        left: 89%;
+    }
+    .servicesFirstContainer {
+        min-height: 105vh;
     }
     .servicesText{
         font-size: 13px;
@@ -294,7 +294,7 @@
     }
     .formButtonServices {
 
-        padding: 2% 3% 0.5% 0;
+        padding: 2% 3% 1.5% 0;
         font-size: 19px;
     }
     .servicesFormContainer {
@@ -342,7 +342,7 @@
         height: 570px;
     }
     #spraySendServices {
-        left: 93%;
-        width: 90px;
+        left: 90%;
+        width: 95px;
     }
 }
