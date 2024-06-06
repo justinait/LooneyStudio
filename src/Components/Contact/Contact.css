@@ -3,13 +3,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     border: 1px white solid;
-    
-    margin: 10vh 3%;
-    /* padding: 10vh 3%; */
+
+    margin: 0 3%;
 }
 .contactSprayContainer{
+}
+.contactAuxContainer {
+    min-height: 90vh;   
     background-image: url('/public/sprayContact.png');
     background-size: cover;
+
+    padding: 10vh 0;
 }
 .contactUsContainer {
     width: 100%;
@@ -164,7 +168,11 @@ input::placeholder {
 }
 @media(min-width:700px){
     .contactContainer {
-        margin: 156px 5%;
+        margin: 0 5%;
+    }
+    
+    .contactAuxContainer {
+        padding: 156px 0;
     }
     .contactUs{
         font-size: clamp(170px, 3vw, 182.447px);
