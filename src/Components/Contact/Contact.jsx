@@ -7,7 +7,11 @@ import markerIcon from '/marker.png';
 
 
 function Contact() {
-
+    const form = useRef();
+    const service_id = import.meta.env.VITE_API_SERVICEID;
+    const template_id = import.meta.env.VITE_API_TEMPLATEID;
+    const public_id = import.meta.env.VITE_API_PUBLICID;
+  
     const [inputValues, setInputValues] = useState({
         fullName: '',
         email: '',
@@ -32,41 +36,48 @@ function Contact() {
             [name]: value.trim() !== ''
         });
     };
+    const sendEmailForm = (e) => {
+        e.preventDefault();
+        let stop = false;
+        Object.keys(inputValues).forEach(key => {
+            if (inputValues[key].trim().length === 0) {
+                stop = true;
+                setInputFilled(prev => ({
+                    ...prev,
+                    [key]: false
+                }));
+                setShowErrors(true);
+            }
+        });
+        if (stop) return;
 
-    // const handleFocus = (field) => {
-    //     setInputFilled({
-    //         ...inputFilled,
-    //         [field]: true
-    //     });
-    // };
-
-    // const handleBlur = (field) => {
-    //     if (inputValues[field].trim() === '') {
-    //         setInputFilled({
-    //             ...inputFilled,
-    //             [field]: false
-    //         });
-    //     }
-    // };
-
+        setFormSent(true);
+        handleSubmit()
+    };
     const handleSubmit = () => {
         const isFormComplete = Object.values(inputValues).every(value => value.trim() !== '');
         if (isFormComplete) {
             setFormSent(true);
             setShowErrors(false);
-            setTimeout(() => {
-                setFormSent(false);
-                setInputValues({
-                    fullName: '',
-                    email: '',
-                    message: ''
-                });
-                setInputFilled({
-                    fullName: false,
-                    email: false,
-                    message: false
-                });
-            }, 2000); // Reset after 2 seconds
+            emailjs.sendForm(service_id, template_id, form.current, public_id)
+            .then((result) => {
+                console.log(result.text);
+                setTimeout(() => {
+                    setFormSent(false);
+                    setInputValues({
+                        companyName: '',
+                        email: '',
+                        message: ''
+                    });
+                    setInputFilled({
+                        companyName: false,
+                        email: false,
+                        message: false
+                    });
+                }, 2000); // Reset after 2 seconds
+            }, (error) => {
+                console.log(error.text);
+            });
         } else {
             setShowErrors(true);
         }
@@ -285,35 +296,38 @@ function Contact() {
 
                     <div className='containerBox halfBigDesktop'>
                         <h3>MAIL</h3>
-                        <div className='contactFormContainer'>
-                        <input
-                            type="text"
-                            name="fullName"
-                            placeholder='Full Name'
-                            className={`inputContact locationText ${showErrors && !inputFilled.fullName ? 'input-error' : ''} ${inputValues.fullName.trim() !== '' ? 'color-activo' : ''}`}
-                            onChange={handleInputChange}
-                            value={inputValues.fullName}
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder='Mail'
-                            className={`inputContact locationText ${showErrors && !inputFilled.email ? 'input-error' : ''} ${inputValues.email.trim() !== '' ? 'color-activo' : ''}`}
-                            onChange={handleInputChange}
-                            value={inputValues.email}
-                        />
-                        <input
-                            type="text"
-                            name="message"
-                            placeholder='Your Message'
-                            className={`inputContact locationText ${showErrors && !inputFilled.message ? 'input-error' : ''} ${inputValues.message.trim() !== '' ? 'color-activo' : ''}`}
-                            onChange={handleInputChange}
-                            value={inputValues.message}
-                        />
-                        </div>
-                        <p className='formButton' onClick={handleSubmit}>
-                            {formSent ? 'Message sent' : 'Send'}
-                        </p>
+                        <form ref={form} onSubmit={sendEmailForm} >
+
+                            <div className='contactFormContainer'>
+                                <input
+                                    type="text"
+                                    name="fullName"
+                                    placeholder='Full Name'
+                                    className={`inputContact locationText ${showErrors && !inputFilled.fullName ? 'input-error' : ''} ${inputValues.fullName.trim() !== '' ? 'color-activo' : ''}`}
+                                    onChange={handleInputChange}
+                                    value={inputValues.fullName}
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder='Mail'
+                                    className={`inputContact locationText ${showErrors && !inputFilled.email ? 'input-error' : ''} ${inputValues.email.trim() !== '' ? 'color-activo' : ''}`}
+                                    onChange={handleInputChange}
+                                    value={inputValues.email}
+                                />
+                                <input
+                                    type="text"
+                                    name="message"
+                                    placeholder='Your Message'
+                                    className={`inputContact locationText ${showErrors && !inputFilled.message ? 'input-error' : ''} ${inputValues.message.trim() !== '' ? 'color-activo' : ''}`}
+                                    onChange={handleInputChange}
+                                    value={inputValues.message}
+                                />
+                            </div>
+                            <p className='formButton' type='submit' onClick={handleSubmit}>
+                                {formSent ? 'Message sent' : 'Send'}
+                            </p>
+                        </form>
                         {/* <img src={spray} id='spraySend' alt="" /> */}
                     </div>
                 </div>

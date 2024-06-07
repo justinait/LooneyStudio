@@ -79,25 +79,6 @@ function Services() {
 
         setFormSent(true);
         handleSubmit()
-        // emailjs.sendForm(service_id, template_id, form.current, public_id)
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         setTimeout(() => {
-        //             setFormSent(false);
-        //             setInputValues({
-        //                 companyName: '',
-        //                 email: '',
-        //                 message: ''
-        //             });
-        //             setInputFilled({
-        //                 companyName: false,
-        //                 email: false,
-        //                 message: false
-        //             });
-        //         }, 2000); // Reset after 2 seconds
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
     };
     const handleSubmit = () => {
         const isFormComplete = Object.values(inputValues).every(value => value.trim() !== '');
@@ -123,19 +104,6 @@ function Services() {
             }, (error) => {
                 console.log(error.text);
             });
-            // setTimeout(() => {
-            //     setFormSent(false);
-            //     setInputValues({
-            //         companyName: '',
-            //         email: '',
-            //         message: ''
-            //     });
-            //     setInputFilled({
-            //         companyName: false,
-            //         email: false,
-            //         message: false
-            //     });
-            // }, 2000);
         } else {
             setShowErrors(true);
         }
