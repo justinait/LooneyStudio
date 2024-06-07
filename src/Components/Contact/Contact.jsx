@@ -13,12 +13,12 @@ function Contact() {
     const public_id = import.meta.env.VITE_API_PUBLICID;
   
     const [inputValues, setInputValues] = useState({
-        fullName: '',
+        companyName: '',
         email: '',
         message: ''
     });
     const [inputFilled, setInputFilled] = useState({
-        fullName: false,
+        companyName: false,
         email: false,
         message: false
     });
@@ -301,11 +301,11 @@ function Contact() {
                             <div className='contactFormContainer'>
                                 <input
                                     type="text"
-                                    name="fullName"
+                                    name="companyName"
                                     placeholder='Full Name'
-                                    className={`inputContact locationText ${showErrors && !inputFilled.fullName ? 'input-error' : ''} ${inputValues.fullName.trim() !== '' ? 'color-activo' : ''}`}
+                                    className={`inputContact locationText ${showErrors && !inputFilled.companyName ? 'input-error' : ''} ${inputValues.companyName.trim() !== '' ? 'color-activo' : ''}`}
                                     onChange={handleInputChange}
-                                    value={inputValues.fullName}
+                                    value={inputValues.companyName}
                                 />
                                 <input
                                     type="email"
