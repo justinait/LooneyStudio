@@ -1,8 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Services.css'
 import spray from '/sprays/tvSpray.png'
+import emailjs from '@emailjs/browser';
 
 function Services() {
+
+    const form = useRef();
+    const service_id = import.meta.env.VITE_API_SERVICEID;
+    const template_id = import.meta.env.VITE_API_TEMPLATEID;
+    const public_id = import.meta.env.VITE_API_PUBLICID;
+  
     const [open, setOpen] = useState(false);
     const [openServicesForm, setOpenServicesForm] = useState(false);
     const [service, setService] = useState('');
@@ -55,25 +62,80 @@ function Services() {
             [name]: value.trim() !== ''
         });
     };
+    const sendEmailForm = (e) => {
+        e.preventDefault();
+        let stop = false;
+        Object.keys(inputValues).forEach(key => {
+            if (inputValues[key].trim().length === 0) {
+                stop = true;
+                setInputFilled(prev => ({
+                    ...prev,
+                    [key]: false
+                }));
+                setShowErrors(true);
+            }
+        });
+        if (stop) return;
 
+        setFormSent(true);
+        handleSubmit()
+        // emailjs.sendForm(service_id, template_id, form.current, public_id)
+        //     .then((result) => {
+        //         console.log(result.text);
+        //         setTimeout(() => {
+        //             setFormSent(false);
+        //             setInputValues({
+        //                 companyName: '',
+        //                 email: '',
+        //                 message: ''
+        //             });
+        //             setInputFilled({
+        //                 companyName: false,
+        //                 email: false,
+        //                 message: false
+        //             });
+        //         }, 2000); // Reset after 2 seconds
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
+    };
     const handleSubmit = () => {
         const isFormComplete = Object.values(inputValues).every(value => value.trim() !== '');
         if (isFormComplete) {
             setFormSent(true);
             setShowErrors(false);
-            setTimeout(() => {
-                setFormSent(false);
-                setInputValues({
-                    companyName: '',
-                    email: '',
-                    message: ''
-                });
-                setInputFilled({
-                    companyName: false,
-                    email: false,
-                    message: false
-                });
-            }, 2000); // Reset after 2 seconds
+            emailjs.sendForm(service_id, template_id, form.current, public_id)
+            .then((result) => {
+                console.log(result.text);
+                setTimeout(() => {
+                    setFormSent(false);
+                    setInputValues({
+                        companyName: '',
+                        email: '',
+                        message: ''
+                    });
+                    setInputFilled({
+                        companyName: false,
+                        email: false,
+                        message: false
+                    });
+                }, 2000); // Reset after 2 seconds
+            }, (error) => {
+                console.log(error.text);
+            });
+            // setTimeout(() => {
+            //     setFormSent(false);
+            //     setInputValues({
+            //         companyName: '',
+            //         email: '',
+            //         message: ''
+            //     });
+            //     setInputFilled({
+            //         companyName: false,
+            //         email: false,
+            //         message: false
+            //     });
+            // }, 2000);
         } else {
             setShowErrors(true);
         }
@@ -132,38 +194,38 @@ function Services() {
         </div>
         {
             openServicesForm &&
-            <div className='servicesFormContainer'>
-                    <div>
-                        <input
-                            type="text"
-                            name="companyName"
-                            placeholder='Production Company Name'
-                            className={`inputContactServices locationText ${showErrors && !inputFilled.companyName ? 'input-error' : ''} ${inputValues.companyName.trim() !== '' ? 'color-activo' : ''}`}
-                            onChange={handleInputChange}
-                            value={inputValues.companyName}
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder='Mail'
-                            className={`inputContactServices locationText ${showErrors && !inputFilled.email ? 'input-error' : ''} ${inputValues.email.trim() !== '' ? 'color-activo' : ''}`}
-                            onChange={handleInputChange}
-                            value={inputValues.email}
-                        />
-                        <input
-                            type="text"
-                            name="message"
-                            placeholder='Your Message'
-                            className={`inputContactServices locationText ${showErrors && !inputFilled.message ? 'input-error' : ''} ${inputValues.message.trim() !== '' ? 'color-activo' : ''}`}
-                            onChange={handleInputChange}
-                            value={inputValues.message}
-                        />
-                    </div>
-                    <p className='formButtonServices' onClick={handleSubmit}>
-                        {formSent ? 'Message sent' : 'Send'}
-                    </p>
-                    {formSent && <img src={spray} id='spraySendServices' className='show' alt="spray" />}
+            <form className='servicesFormContainer' ref={form} onSubmit={sendEmailForm} >
+                <div>
+                    <input
+                        type="text"
+                        name="companyName"
+                        placeholder='Production Company Name'
+                        className={`inputContactServices locationText ${showErrors && !inputFilled.companyName ? 'input-error' : ''} ${inputValues.companyName.trim() !== '' ? 'color-activo' : ''}`}
+                        onChange={handleInputChange}
+                        value={inputValues.companyName}
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder='Mail'
+                        className={`inputContactServices locationText ${showErrors && !inputFilled.email ? 'input-error' : ''} ${inputValues.email.trim() !== '' ? 'color-activo' : ''}`}
+                        onChange={handleInputChange}
+                        value={inputValues.email}
+                    />
+                    <input
+                        type="text"
+                        name="message"
+                        placeholder='Your Message'
+                        className={`inputContactServices locationText ${showErrors && !inputFilled.message ? 'input-error' : ''} ${inputValues.message.trim() !== '' ? 'color-activo' : ''}`}
+                        onChange={handleInputChange}
+                        value={inputValues.message}
+                    />
                 </div>
+                <p className='formButtonServices' type='submit' onClick={handleSubmit}>
+                    {formSent ? 'Message sent' : 'Send'}
+                </p>
+                {formSent && <img src={spray} id='spraySendServices' className='show' alt="spray" />}
+            </form>
         }
     </div>
   )
