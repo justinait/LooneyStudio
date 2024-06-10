@@ -70,7 +70,7 @@
 }
 
 .stackItemTv {  
-    width: fit-content;
+    width: fit-content !important;
     height: 20px;
     display: flex;
     text-align: center;
