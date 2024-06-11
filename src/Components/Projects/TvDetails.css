@@ -39,6 +39,7 @@
 }
 .stackContainerTv {
     /* width: 60vw; */
+    width: max-content !important;
     bottom: unset;
     top: 62vh;
     z-index: 3;
