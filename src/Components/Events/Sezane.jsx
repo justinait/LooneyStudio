@@ -26,8 +26,8 @@ function Sezane() {
         <Link to={'/wwe'} className='arrowsEvents'>{">"}</Link>
       </div>
 
-      
       <img src={hero} alt="SEZANE" className='blancHero'/>
+
       <div className='stackContainerEvents stackContainerEventsSmaller'>
         <div className='stackItemEventsLarge'>
           <img className='stackCircleImg' src={circle1} alt="" />
