@@ -116,6 +116,7 @@
     margin: 0;
     position: relative;
     text-transform: uppercase;
+    white-space: nowrap;
     /* margin: auto;
     width: fit-content; */
 }

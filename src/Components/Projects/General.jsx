@@ -124,7 +124,7 @@ function General() {
         {videoIframe}
       </div>
 
-      <div className='stackContainer stackContainerTv'>
+      <div className='stackContainerTv'>
         {stack?.map((e, i) => (
           <div className='stackItemTv' key={i}>
             <img className='stackCircleImg circleImg16' src={imageMap[i % imageMap.length]} alt="" />
