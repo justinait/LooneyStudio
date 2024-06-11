@@ -38,7 +38,7 @@
     color: #EEEFF3;
 }
 .stackContainerTv {
-    width: 60vw;
+    /* width: 60vw; */
     bottom: unset;
     top: 62vh;
     z-index: 3;
@@ -48,10 +48,10 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex !important;
-    flex-wrap: wrap;
-    width: 87vw;
+    flex-wrap: nowrap;
+    /* width: 87vw; */
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: center;
     font-weight: 500;
 }
 .videoSimulationBox {
@@ -84,6 +84,7 @@
     /* width: fit-content !important; */
     width: unset !important;
     height: 20px;
+    margin: 0 5px;
     /* display: flex;
     text-align: center;
     flex-direction: column;

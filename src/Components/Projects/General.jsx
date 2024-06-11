@@ -55,13 +55,13 @@ function General() {
     }
   }, []);
 
-  const containerWidth = stack ? `${Math.min(50 + (stack.length - 2) * 20, 80)}vw` : '50vw';
-  useEffect(() => {
-    const stackContainer = document.querySelector('.stackContainerTv');
-    if (stackContainer) {
-      stackContainer.style.setProperty('--dynamic-width', containerWidth);
-    }
-  }, [containerWidth]);
+  // const containerWidth = stack ? `${Math.min(50 + (stack.length - 2) * 20, 80)}vw` : '50vw';
+  // useEffect(() => {
+  //   const stackContainer = document.querySelector('.stackContainerTv');
+  //   if (stackContainer) {
+  //     stackContainer.style.setProperty('--dynamic-width', containerWidth);
+  //   }
+  // }, [containerWidth]);
   const handleIframeLoad = () => {
     setIsLoading(false);
   };
@@ -124,7 +124,7 @@ function General() {
         {videoIframe}
       </div>
 
-      <div className='stackContainer stackContainerTv stackContainerTvDynamic'>
+      <div className='stackContainer stackContainerTv'>
         {stack?.map((e, i) => (
           <div className='stackItemTv' key={i}>
             <img className='stackCircleImg circleImg16' src={imageMap[i % imageMap.length]} alt="" />
