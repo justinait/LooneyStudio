@@ -42,6 +42,17 @@
     bottom: unset;
     top: 62vh;
     z-index: 3;
+    
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 87vw;
+    text-align: center;
+    justify-content: space-evenly;
+    font-weight: 500;
 }
 .videoSimulationBox {
     position: absolute;
@@ -72,11 +83,11 @@
 .stackItemTv {  
     width: fit-content !important;
     height: 20px;
-    display: flex;
+    /* display: flex;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .Button_module_button__0563da21 {
     display: none !important;

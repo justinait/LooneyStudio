@@ -33,9 +33,7 @@
     flex-wrap: wrap;
     width: 87vw;
     text-align: center;
-    justify-content: space-between;
     justify-content: space-evenly;
-    bottom: 100px;
     bottom: 15vh;
     font-weight: 500;
 }
