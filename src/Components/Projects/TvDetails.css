@@ -118,12 +118,6 @@ iframe button {
     border: none;
     z-index: 6;
 }
-/* TvDetails.css */
-
-.stackContainerTv {
-    /* El valor de width se sobrescribirá dinámicamente en el componente React */
-    width: 50vw;
-}
   
 .stackContainerTvDynamic {
     width: var(--dynamic-width, 50vw) !important;

@@ -120,11 +120,11 @@ function General() {
               <span className="visually-hidden">Loading...</span>
             </Spinner>
           </div>
-        )} {/* Mostrar spinner de carga */}
+        )} 
         {videoIframe}
       </div>
 
-      <div className='stackContainer stackContainerTv stackContainerTvDynamic' style={{ width: containerWidth }}>
+      <div className='stackContainer stackContainerTv stackContainerTvDynamic'>
         {stack?.map((e, i) => (
           <div className='stackItemTv' key={i}>
             <img className='stackCircleImg circleImg16' src={imageMap[i % imageMap.length]} alt="" />
