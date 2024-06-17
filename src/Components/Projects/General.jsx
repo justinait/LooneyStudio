@@ -55,13 +55,6 @@ function General() {
     }
   }, []);
 
-  // const containerWidth = stack ? `${Math.min(50 + (stack.length - 2) * 20, 80)}vw` : '50vw';
-  // useEffect(() => {
-  //   const stackContainer = document.querySelector('.stackContainerTv');
-  //   if (stackContainer) {
-  //     stackContainer.style.setProperty('--dynamic-width', containerWidth);
-  //   }
-  // }, [containerWidth]);
   const handleIframeLoad = () => {
     setIsLoading(false);
   };

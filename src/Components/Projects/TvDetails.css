@@ -3,7 +3,6 @@
     object-fit: cover;
     width: 100%; 
     overflow: hidden;
-    /* margin-top: 10vh; */
     position: relative;
 }
 .tvHero {
@@ -38,7 +37,6 @@
     color: #EEEFF3;
 }
 .stackContainerTv {
-    /* width: 60vw; */
     max-width: 100%;
     bottom: unset;
     top: 62vh;
@@ -50,7 +48,6 @@
     transform: translateX(-50%);
     display: flex !important;
     flex-wrap: nowrap;
-    /* width: 87vw; */
     text-align: center;
     justify-content: center;
     font-weight: 500;
@@ -238,10 +235,6 @@ iframe button {
     .tvHeroVimeo {
         height: 130%;
         top: -64px;
-        width: 147% !important;
-        
-        /* height: 130%;
-        top: -64px; */
         width: 150% !important;
     }
 }

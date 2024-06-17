@@ -113,7 +113,6 @@ function Services() {
         const enquireHere = document.getElementById('enquireHere');
         if (enquireHere) {
             enquireHere.addEventListener('click', handleClick);
-            // handleClose();
         }
         
         return () => {

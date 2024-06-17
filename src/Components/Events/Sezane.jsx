@@ -22,7 +22,6 @@ function Sezane() {
         <img src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
-        {/* <button onClick={() => navigateToItem(1)} className='arrowsTv'>{">"}</button> */}
         <Link to={'/wwe'} className='arrowsEvents'>{">"}</Link>
       </div>
 

@@ -291,7 +291,6 @@ input::placeholder {
     }
     .formButton {
         padding-top: 9%;
-        /* padding-right: 7%; */
         font-size: 13px;
         font-weight: 600;
     }

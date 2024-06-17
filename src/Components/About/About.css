@@ -137,7 +137,6 @@
 }
 @media(min-width: 800px){
     .aboutText{
-        /* width: 800px; */
         font-size: 38px;
     }
     .aboutText strong{
@@ -146,26 +145,12 @@
 }
 @media(min-width: 1000px){
     .aboutText{
-        /* width: 800px; */
         font-size: 46px;
     }
     .aboutText strong{
         font-size: 92px;
     }
 }
-/*     
-    .designAbout {
-        left: unset;
-    }
-    .aboutText .and {
-        position: relative;
-        left: unset;
-        
-    }
-    .constructionAbout {
-        position: relative;
-        left: 13.5%;
-    } */
 
 @media(min-width:1200px){
 

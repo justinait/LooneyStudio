@@ -77,7 +77,6 @@
         padding: 40px 0 40px;
     }
     .headerProjectsEvents .linksProjects, .headerProjectsEvents .selectedProject{
-        /* padding-top: unset !important; */
         height: 55px;
     }
     .headerProjectsEvents .projectsRigthLink, .headerProjectsEvents .projectsLeftLink {

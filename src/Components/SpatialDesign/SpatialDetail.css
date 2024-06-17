@@ -117,8 +117,6 @@
     position: relative;
     text-transform: uppercase;
     white-space: nowrap;
-    /* margin: auto;
-    width: fit-content; */
 }
 
 .stackItemPink4 .stackText, .stackTextBig {
@@ -179,7 +177,6 @@
 }
 .spatialDetailImagesBlanc {
     width: 48.8%;
-    /* height: 200px; */
     object-fit: cover;
 }
 .spatialDetailImgDestree{
