@@ -34,7 +34,7 @@ function TvAndFilms() {
         tvandfilms.map((e, i)=>{
           return(
             <Link to={e.detail} className='spatialItemBox' key={i}>
-              <LazyLoadImage src={e.image} alt={e.name} className='spatialImage'/>
+              <LazyLoadImage src={e.image} alt={e.name} className='spatialImage' threshold={200}/>
               <div className='imageOverlay'></div>
               <p className={`spatialText ${e.className}`}>{e.name}</p>
               <p className={`spatialText tvAndFilmsExtraInfo`}>{e.data}</p>
