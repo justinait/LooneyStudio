@@ -9,6 +9,7 @@ import image1 from '/events/dixon1.jpg'
 import image2 from '/events/dixon2.jpg'
 import image3 from '/events/dixon3.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Dixon() {
@@ -18,24 +19,24 @@ function Dixon() {
       <div className='arrowsContainer'>
         <Link to={'/dazed'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/warner23'} className='arrowsEvents'>{">"}</Link>
       </div>
       
-      <img src={hero} alt="Dixon" className='blancHero'/>
+      <LazyLoadImage src={hero} alt="Dixon" className='blancHero'/>
       <div className='stackContainerEvents stackContainerEventsSmaller'>
         <div className='stackItemDestree1 stackItemDesktop40'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
+          <LazyLoadImage className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>PROJECT MANAGEMENT</p>
         </div>
         <div className='stackItem1 stackItemDesktop25'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItemEventsLarger'>
-          <img className='stackCircleImg' src={circle4} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle4} alt="" />
           <p className='stackText'>POP UP</p>
         </div>
 
@@ -79,9 +80,9 @@ function Dixon() {
       <div>
 
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="Dixon" className='' />
-          <img src={image2} alt="Dixon" className='' />
-          <img src={image3} alt="Dixon" className='' />
+          <LazyLoadImage src={image1} alt="Dixon" className='' />
+          <LazyLoadImage src={image2} alt="Dixon" className='' />
+          <LazyLoadImage src={image3} alt="Dixon" className='' />
         </div>
       </div>
     </div>

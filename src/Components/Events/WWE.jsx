@@ -10,6 +10,7 @@ import xSpray from '/events/xSpray.png'
 import image1 from '/events/wwe1.jpg'
 import image2 from '/events/wwe2.jpg'
 import image3 from '/events/wwe3.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
 
 
@@ -20,31 +21,31 @@ function WWE() {
       <div className='arrowsContainer'>
         <Link to={'/sezane'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/places'} className='arrowsEvents'>{">"}</Link>
       </div>
 
       
-      <img src={hero} alt="WWE" className='blancHero mobileOnly'/>
-      <img src={heroDesktop} alt="WWE" className='blancHero desktopOnly wweHeroDesktop'/>
+      <LazyLoadImage src={hero} alt="WWE" className='blancHero mobileOnly'/>
+      <LazyLoadImage src={heroDesktop} alt="WWE" className='blancHero desktopOnly wweHeroDesktop'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItemEventsLarger2'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
         </div>
         <div className='stackItemEventsLarger'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
+          <LazyLoadImage className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
         <div className='stackItemEventsLarger'>
-          <img className='stackCircleImg circleImg16' src={circle1} alt="" />
+          <LazyLoadImage className='stackCircleImg circleImg16' src={circle1} alt="" />
           <p className='stackText'>METALWORK</p>
         </div>
         <div className='stackItemEventsLarger2 bigCircleItemEvents'>
-          <img className='stackCircleImgBig' src={circle6} alt="" />
+          <LazyLoadImage className='stackCircleImgBig' src={circle6} alt="" />
           <p className='stackText'>FINISHING & <br /> SPRAYING</p>
         </div>
 
@@ -88,11 +89,11 @@ function WWE() {
       <div>
 
         <div>
-          <img src={image1} alt="WWE" className='wweImage1' />
+          <LazyLoadImage src={image1} alt="WWE" className='wweImage1' />
           <p className='eventsDetailImagesText'>Behind the scenes</p>
           <div className='spatialDetailImagesBenefit'>
-            <img src={image2} alt="WWE" className='spatialDetailBenefitImg wweImages'/>
-            <img src={image3} alt="WWE" className='spatialDetailBenefitImg wweImages'/>
+            <LazyLoadImage src={image2} alt="WWE" className='spatialDetailBenefitImg wweImages'/>
+            <LazyLoadImage src={image3} alt="WWE" className='spatialDetailBenefitImg wweImages'/>
           </div>
         </div>
 

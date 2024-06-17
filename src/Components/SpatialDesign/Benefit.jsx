@@ -18,6 +18,7 @@ import image7 from '/spatial/benefit6.jpeg'
 import image8 from '/spatial/benefit7.jpg'
 import image9 from '/spatial/benefit8.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Benefit() {

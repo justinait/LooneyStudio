@@ -15,6 +15,7 @@ import image3 from '/spatial/Gisou3.jpg'
 import image4 from '/spatial/Gisou4.jpg'
 import image5 from '/spatial/Gisou5.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Gisou() {
@@ -24,12 +25,12 @@ function Gisou() {
       <div className='arrowsContainer'>
         <Link to={'/benefit'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
         
-        <img src={xSpray} className='xSpraySpatial' alt="" />
+        <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
         <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/huda'} className='arrowsEvents arrowSpatial'>{">"}</Link>
       </div>
-      <img src={hero} alt="BENEFIT" className='blancHero'/>
+      <LazyLoadImage src={hero} alt="BENEFIT" className='blancHero'/>
       <div className='stackContainer stackContainerPink'>
         <div className='stackItemPink2'>
           <img className='stackCircleImg' src={circle2} alt="" />
@@ -95,15 +96,15 @@ function Gisou() {
       </div>
       <div>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="Gisou" className='' />
-          <img src={image2} alt="Gisou" className='' />
-          <img src={image3} alt="Gisou" className='' />
+          <LazyLoadImage src={image1} alt="Gisou" className='' />
+          <LazyLoadImage src={image2} alt="Gisou" className='' />
+          <LazyLoadImage src={image3} alt="Gisou" className='' />
         </div>
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImagesBenefit'>
-          <img src={image4} alt="Gisou" className='spatialDetailGisouImg blanc2' />
-          <img src={image5} alt="Gisou" className='spatialDetailGisouImg blanc1' />
+          <LazyLoadImage src={image4} alt="Gisou" className='spatialDetailGisouImg blanc2' />
+          <LazyLoadImage src={image5} alt="Gisou" className='spatialDetailGisouImg blanc1' />
         </div>
       </div>
     </div>

@@ -11,6 +11,7 @@ import image2 from '/events/dazed2.jpg'
 import image3 from '/events/dazed3.jpeg'
 import image4 from '/events/dazed4.jpeg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Dazed() {
@@ -20,14 +21,14 @@ function Dazed() {
       <div className='arrowsContainer'>
         <Link to={'/molecules'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/dixon'} className='arrowsEvents'>{">"}</Link>
       </div>
 
-      <img src={hero} alt="dazed" className='blancHero mobileOnly'/>
-      <img src={image4} alt="dazed" className='blancHero desktopOnly'/>
+      <LazyLoadImage src={hero} alt="dazed" className='blancHero mobileOnly'/>
+      <LazyLoadImage src={image4} alt="dazed" className='blancHero desktopOnly'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall'>
         <div className='stackItemPink3'>
@@ -96,19 +97,19 @@ function Dazed() {
 
         <div className='mobileOnly'>
           <div className='spatialDetailImagesBoxPink'>
-            <img src={image2} alt="dazed" className='spatialDetailImage2'/>
-            <img src={image1} alt="dazed" className='spatialDetailImage1'/>
+            <LazyLoadImage src={image2} alt="dazed" className='spatialDetailImage2'/>
+            <LazyLoadImage src={image1} alt="dazed" className='spatialDetailImage1'/>
           </div>
           <div className='spatialDetailImagesBoxPink'>
-            <img src={image3} alt="dazed" className='spatialDetailImage1'/>
-            <img src={image4} alt="dazed" className='spatialDetailImage2'/>
+            <LazyLoadImage src={image3} alt="dazed" className='spatialDetailImage1'/>
+            <LazyLoadImage src={image4} alt="dazed" className='spatialDetailImage2'/>
           </div>
         </div>
         
         <div className='eventDetailImagesBoxSezane desktopOnly'>
-          <img src={image1} alt="dazed" className='dazedImagesDesktop' />
-          <img src={image2} alt="dazed" className='dazedImagesDesktop' />
-          <img src={image3} alt="dazed" className='dazedImagesDesktop' />
+          <LazyLoadImage src={image1} alt="dazed" className='dazedImagesDesktop' />
+          <LazyLoadImage src={image2} alt="dazed" className='dazedImagesDesktop' />
+          <LazyLoadImage src={image3} alt="dazed" className='dazedImagesDesktop' />
         </div>
 
       </div>

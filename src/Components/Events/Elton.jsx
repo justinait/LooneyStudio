@@ -9,6 +9,7 @@ import xSpray from '/events/xSpray.png'
 import image2 from '/events/elton.png'
 import image3 from '/events/elton3.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Elton() {
@@ -18,32 +19,32 @@ function Elton() {
       <div className='arrowsContainer'>
         <Link to={'/warner22'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/molecules'} className='arrowsEvents'>{">"}</Link>
       </div>
 
-      <img src={hero} alt="Elton" className='blancHero'/>
+      <LazyLoadImage src={hero} alt="Elton" className='blancHero'/>
       <div className='stackContainerEvents'>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItemEvents16'>
-          <img className='stackCircleImg' src={circle1} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>METALWORK</p>
         </div>
         <div className='stackItemEventsSmall2'>
-          <img className='stackCircleImg' src={circle4} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle4} alt="" />
           <p className='stackText'>EVENT</p>
         </div>
         <div className='stackItemDesktop15'>
-          <img className='stackCircleImg' src={circle5} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle5} alt="" />
           <p className='stackText'>SET BUILDING</p>
         </div>
         <div className='stackItemEventsLarge'>
-          <img className='stackCircleImg' src={circle5} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle5} alt="" />
           <p className='stackText'>SPRAYING & FINISHING</p>
         </div>
 
@@ -100,12 +101,12 @@ function Elton() {
       </div>
       <div>
 
-        <img src={hero} className="eltonDetailImage mobileOnly" />
+        <LazyLoadImage src={hero} className="eltonDetailImage mobileOnly" />
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
         <div className='eltonDetailImagesBox'>
-          <img src={image2} alt="Elton" className='eltonDetailImage2' />
-          <img src={image3} alt="Elton" className='eltonDetailImage1' />
+          <LazyLoadImage src={image2} alt="Elton" className='eltonDetailImage2' />
+          <LazyLoadImage src={image3} alt="Elton" className='eltonDetailImage1' />
         </div>
 
       </div>

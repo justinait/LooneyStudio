@@ -11,6 +11,7 @@ import image2 from '/events/molecules2.jpg'
 import image3 from '/events/molecules3.jpg'
 import image4 from '/events/molecules4.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Molecules() {
@@ -20,25 +21,25 @@ function Molecules() {
       <div className='arrowsContainer'>
         <Link to={'/elton'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/dazed'} className='arrowsEvents'>{">"}</Link>
       </div>
 
-      <img src={hero} alt="Molecules" className='blancHero'/>
+      <LazyLoadImage src={hero} alt="Molecules" className='blancHero'/>
       <div className='stackContainer stackContainerDestree'>
         
         <div className='stackItemPink3 stackItemDesktop15'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItem1'>
-          <img className='stackCircleImg' src={circle1} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>CARPENTRY</p>
         </div>
         <div className='stackItem1'>
-          <img className='stackCircleImg' src={circle6} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
 
@@ -88,12 +89,12 @@ function Molecules() {
         
         <div>
           <div className='spatialDetailImagesBoxPink moleculesDesktopBoxes'>
-            <img src={image1} alt="Molecules" className='spatialDetailImage2 moleculesDesktopImg1'/>
-            <img src={image2} alt="Molecules" className='spatialDetailImage1 moleculesDesktopImg2'/>
+            <LazyLoadImage src={image1} alt="Molecules" className='spatialDetailImage2 moleculesDesktopImg1'/>
+            <LazyLoadImage src={image2} alt="Molecules" className='spatialDetailImage1 moleculesDesktopImg2'/>
           </div>
           <div className='spatialDetailImagesBoxPink moleculesDesktopBoxes'>
-            <img src={image3} alt="Molecules" className='spatialDetailImage1 moleculesDesktopImg3'/>
-            <img src={image4} alt="Molecules" className='spatialDetailImage2'/>
+            <LazyLoadImage src={image3} alt="Molecules" className='spatialDetailImage1 moleculesDesktopImg3'/>
+            <LazyLoadImage src={image4} alt="Molecules" className='spatialDetailImage2'/>
           </div>
         </div>
 

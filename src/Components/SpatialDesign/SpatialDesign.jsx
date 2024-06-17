@@ -2,6 +2,7 @@ import React from 'react'
 import './SpatialDesign.css'
 import { Link } from 'react-router-dom'
 import spray from '/sprays/spatialSpray.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function SpatialDesign() {
   const spatial = [
@@ -22,7 +23,7 @@ function SpatialDesign() {
         </div>
 
         <p className='selectedProject spatial'>SPATIAL DESIGN</p>
-        <img src={spray} alt="" className='spraySpatial' />
+        <LazyLoadImage src={spray} alt="" className='spraySpatial' />
         
         <div className='headerProjectsSizing projectsRigth'>
           <Link to={'/tvAndFilms'} className='linksSpatial linksProjects projectsRigthLink'>TV & FILMS</Link>
@@ -34,7 +35,7 @@ function SpatialDesign() {
         spatial.map(e=>{
           return(
             <Link to={e.detail} className='spatialItemBox' >
-              <img src={e.image} alt={e.name} className='spatialImage'/>
+              <LazyLoadImage src={e.image} alt={e.name} className='spatialImage' threshold={50}/>
               <div className='imageOverlay'></div>
               <p className={`spatialText ${e.className}`}>{e.name}</p>
             </Link>

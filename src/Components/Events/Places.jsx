@@ -12,7 +12,7 @@ import image1 from '/events/placesEditada.png'
 import image2 from '/events/places2.png'
 import image3 from '/events/places3.png'
 import { Link } from 'react-router-dom'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Places() {
   return (
@@ -21,34 +21,34 @@ function Places() {
       <div className='arrowsContainer'>
         <Link to={'/wwe'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/warner22'} className='arrowsEvents'>{">"}</Link>
       </div>
 
-      <img src={hero} alt="PLACES + FACES" className='blancHero mobileOnlyPlaces'/>
-      <img src={heroDesktop} alt="PLACES + FACES" className='blancHero tabletAndDesktop'/>
+      <LazyLoadImage src={hero} alt="PLACES + FACES" className='blancHero mobileOnlyPlaces'/>
+      <LazyLoadImage src={heroDesktop} alt="PLACES + FACES" className='blancHero tabletAndDesktop'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall2'>
         <div className='stackItemEventsLarger2'>
-          <img className='stackCircleImg circleImg16' src={circle1} alt="" />
+          <LazyLoadImage className='stackCircleImg circleImg16' src={circle1} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
         </div>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg circleImg16' src={circle2} alt="" />
+          <LazyLoadImage className='stackCircleImg circleImg16' src={circle2} alt="" />
           <p className='stackText'>CARPENTRY</p>
         </div>
         <div className='stackItemEventsLarger'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItemEvents11'>
-          <img className='stackCircleImg' src={circle6} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle6} alt="" />
           <p className='stackText'>EVENT</p>
         </div>
         <div className='stackItemEvents'>
-          <img className='stackCircleImg circleImg16' src={circle5} alt="" />
+          <LazyLoadImage className='stackCircleImg circleImg16' src={circle5} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
       </div>
@@ -105,10 +105,10 @@ function Places() {
         </div>
       </div>
       <div>
-        <img src={image1} className="placesImage1" />
+        <LazyLoadImage src={image1} className="placesImage1" />
         <div className='eventPlacesDetailImages'>
-          <img src={image2} alt="Places + faces" className='sezaneImages placesImages'/>
-          <img src={image3} alt="Places + faces" className='sezaneImages placesImages'/>
+          <LazyLoadImage src={image2} alt="Places + faces" className='sezaneImages placesImages'/>
+          <LazyLoadImage src={image3} alt="Places + faces" className='sezaneImages placesImages'/>
         </div>
 
       </div>

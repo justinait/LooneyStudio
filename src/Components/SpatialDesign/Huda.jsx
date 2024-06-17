@@ -14,6 +14,7 @@ import image3 from '/spatial/huda3.jpeg'
 import image4 from '/spatial/huda4.jpg'
 import image5 from '/spatial/huda5.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Huda() {
@@ -23,14 +24,14 @@ function Huda() {
         <div className='arrowsContainer'>
             <Link to={'/gisou'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
             
-            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
             <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
             
             <Link to={'/blanc'} className='arrowsEvents arrowSpatial'>{">"}</Link>
         </div>
 
-        <img src={hero} alt="huda" className='blancHero mobileOnly'/>
-        <img src={heroDesktop} alt="huda" className='blancHero desktopOnly'/>
+        <LazyLoadImage src={hero} alt="huda" className='blancHero mobileOnly'/>
+        <LazyLoadImage src={heroDesktop} alt="huda" className='blancHero desktopOnly'/>
         <div className='stackContainer stackContainerPink'>
             <div className='stackItem2'>
                 <img className='stackCircleImg' src={circle2} alt="" />
@@ -94,17 +95,17 @@ function Huda() {
             </div>
         </div>
         <div>
-            <img src={image1} alt="benefit" className='image1SpatialDetail' />
+            <LazyLoadImage src={image1} alt="benefit" className='image1SpatialDetail' />
 
             <div className='spatialDetailImagesBoxHuda'>
-                <img className='spatialDetailImage2' src={image2} alt="huda" />
-                <img className='spatialDetailImage1' src={image3} alt="huda" />
+                <LazyLoadImage className='spatialDetailImage2' src={image2} alt="huda" />
+                <LazyLoadImage className='spatialDetailImage1' src={image3} alt="huda" />
             </div>
 
             <p className='spatialDetailImagesText'>Behind the scenes</p>
             <div className='spatialDetailImages'>
-                <img className='spatialDetailImage3' src={image4} alt="huda" />
-                <img className='spatialDetailImage4' src={image5} alt="huda" />
+                <LazyLoadImage className='spatialDetailImage3' src={image4} alt="huda" />
+                <LazyLoadImage className='spatialDetailImage4' src={image5} alt="huda" />
             </div>
         </div>
     </div>

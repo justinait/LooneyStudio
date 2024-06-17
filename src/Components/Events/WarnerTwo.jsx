@@ -14,7 +14,7 @@ import image3 from '/events/Warner22-3.png'
 import image4 from '/events/Warner22-4.jpg'
 import image5 from '/events/Warner22-5.jpg'
 import { Link } from 'react-router-dom'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function WarnerTwo() {
   return (
@@ -23,15 +23,15 @@ function WarnerTwo() {
       <div className='arrowsContainer'>
         <Link to={'/places'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/elton'} className='arrowsEvents'>{">"}</Link>
       </div>
 
 
-      <img src={hero} alt="WARNER 22" className='blancHero mobileOnly'/>
-      <img src={heroDesktop} alt="WARNER 22" className='blancHero desktopOnly'/>
+      <LazyLoadImage src={hero} alt="WARNER 22" className='blancHero mobileOnly'/>
+      <LazyLoadImage src={heroDesktop} alt="WARNER 22" className='blancHero desktopOnly'/>
 
       <div className='stackContainerEvents stackContainerEventsSmall2'>
         <div className='stackItemEventsLarger2'>
@@ -89,15 +89,15 @@ function WarnerTwo() {
       </div>
       <div>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="warner 22 decoration" className='' />
-          <img src={image2} alt="warner 22 decoration" className='' />
-          <img src={image3} alt="warner 22 decoration" className='' />
+          <LazyLoadImage src={image1} alt="warner 22 decoration" className='' />
+          <LazyLoadImage src={image2} alt="warner 22 decoration" className='' />
+          <LazyLoadImage src={image3} alt="warner 22 decoration" className='' />
         </div>
 
         <p className='eventsDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImages moleculesDesktopBoxes'>
-          <img src={image4} alt="warner 22" className='warner22Image1 spatialDetailImage1' />
-          <img src={image5} alt="warner 22" className='warner22Image2 spatialDetailImage2' />
+          <LazyLoadImage src={image4} alt="warner 22" className='warner22Image1 spatialDetailImage1' />
+          <LazyLoadImage src={image5} alt="warner 22" className='warner22Image2 spatialDetailImage2' />
         </div>
 
       </div>

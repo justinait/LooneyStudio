@@ -9,39 +9,38 @@ import xSpray from '/events/xSpray.png'
 import image2 from '/events/sezane1.jpg'
 import image3 from '/events/sezane2.jpg'
 import { Link } from 'react-router-dom'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Sezane() {
   return (
     <div>
 
-      
       <div className='arrowsContainer'>
         <Link to={'/warner23'} className='arrowsEvents'>{"<"}</Link>
         
-        <img src={xSpray} className='xSprayEvent' alt="" />
+        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
         
         <Link to={'/wwe'} className='arrowsEvents'>{">"}</Link>
       </div>
 
-      <img src={hero} alt="SEZANE" className='blancHero'/>
+      <LazyLoadImage src={hero} alt="SEZANE" className='blancHero'/>
 
       <div className='stackContainerEvents stackContainerEventsSmaller'>
         <div className='stackItemEventsLarge'>
-          <img className='stackCircleImg' src={circle1} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
         </div>
         <div className='stackItemEventsLarger2'>
-          <img className='stackCircleImg' src={circle3} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
           <p className='stackText'>INSTALLATION</p>
         </div>
         <div className='stackItemEventsSmall2'>
-          <img className='stackCircleImg' src={circle4} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle4} alt="" />
           <p className='stackText'>EVENT</p>
         </div>
         <div className='stackItemEventsLarger2'>
-          <img className='stackCircleImg' src={circle5} alt="" />
+          <LazyLoadImage className='stackCircleImg' src={circle5} alt="" />
           <p className='stackText'>PROP MAKING</p>
         </div>
 
@@ -88,8 +87,8 @@ function Sezane() {
         <div>
           <p className='eventsDetailImagesText'>Behind the scenes</p>
           <div className='eventDetailImagesBoxSezane'>
-            <img src={image2} alt="SEZANE" className='sezaneImages transformHero'/>
-            <img src={image3} alt="SEZANE" className='sezaneImages'/>
+            <LazyLoadImage src={image2} alt="SEZANE" className='sezaneImages transformHero'/>
+            <LazyLoadImage src={image3} alt="SEZANE" className='sezaneImages'/>
           </div>
         </div>
 

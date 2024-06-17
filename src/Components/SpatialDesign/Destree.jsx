@@ -11,6 +11,7 @@ import image1 from '/spatial/destree4.jpg'
 import image2 from '/spatial/destree2cut.jpg'
 import image3 from '/spatial/Destree.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Destree() {
   return (
@@ -19,33 +20,33 @@ function Destree() {
         <div className='arrowsContainer'>
             <Link to={'/blanc'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
             
-            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
             <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
             
             <Link to={'/pink'} className='arrowsEvents arrowSpatial'>{">"}</Link>
         </div>
         
-        <img src={hero} alt="DESTREE" className='blancHero mobileOnly'/>
-        <img src={image3} alt="DESTREE" className='blancHero desktopOnly'/>
+        <LazyLoadImage src={hero} alt="DESTREE" className='blancHero mobileOnly'/>
+        <LazyLoadImage src={image3} alt="DESTREE" className='blancHero desktopOnly'/>
         <div className='stackContainer stackContainerDestree'>
             <div className='stackItemDestree1'>
-                <img className='stackCircleImg' src={circle1} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle1} alt="" />
                 <p className='stackText'>CONCEPT DESIGN</p>
             </div>
             <div className='stackItemDestree2'>
-                <img className='stackCircleImg' src={circle2} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle2} alt="" />
                 <p className='stackText'>PROJECT MANAGEMENT</p>
             </div>
             <div className='stackItemDestree3'>
-                <img className='stackCircleImg' src={circle4} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle4} alt="" />
                 <p className='stackText'>POP UP</p>
             </div>
             <div className='stackItemDestree3'>
-                <img className='stackCircleImg' src={circle6} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle6} alt="" />
                 <p className='stackText'>INSTALLATION</p>
             </div>
             <div className='stackItemDestree3'>
-                <img className='stackCircleImg' src={circle3} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>CARPENTRY</p>
             </div>
             
@@ -96,11 +97,11 @@ function Destree() {
             </div>
         </div>
         <div>
-            <img src={image1} alt="Destree" className='image1SpatialDetailDestree' />
+            <LazyLoadImage src={image1} alt="Destree" className='image1SpatialDetailDestree' />
             <div className='spatialDetailImages'>
-                <img src={image2} alt="1664 Blanc" className='spatialDetailImgDestree' />
-                <img src={image3} alt="1664 Blanc" className='spatialDetailImgDestree mobileOnly'/>
-                <img src={hero} alt="1664 Blanc" className='spatialDetailImgDestree2 desktopOnly'/>
+                <LazyLoadImage src={image2} alt="1664 Blanc" className='spatialDetailImgDestree' />
+                <LazyLoadImage src={image3} alt="1664 Blanc" className='spatialDetailImgDestree mobileOnly'/>
+                <LazyLoadImage src={hero} alt="1664 Blanc" className='spatialDetailImgDestree2 desktopOnly'/>
             </div>
         </div>
     </div>

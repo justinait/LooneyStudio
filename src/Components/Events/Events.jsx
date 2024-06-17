@@ -2,6 +2,8 @@ import React from 'react'
 import './Events.css'
 import { Link } from 'react-router-dom'
 import spray from '/sprays/eventsSpray.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+// import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function Events() {
   const events = [
@@ -29,7 +31,7 @@ function Events() {
         events.map(e=>{
           return(
             <Link to={e.detail} className={`spatialItemBox ${e.className}`} >
-              <img src={e.image} alt={e.name} className='spatialImage'/>
+              <LazyLoadImage src={e.image} alt={e.name} className='spatialImage' threshold={50}/>
               <div className='imageOverlay'></div>
               <p className='spatialText'>{e.name}</p>
               

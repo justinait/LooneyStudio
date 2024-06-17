@@ -15,6 +15,7 @@ import image4 from '/spatial/pink4.png'
 import image0 from '/spatial/pink0.png'
 import image5 from '/spatial/pinkmedio.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Pink() {
   return (
@@ -23,13 +24,13 @@ function Pink() {
         <div className='arrowsContainer'>
             <Link to={'/destree'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
             
-            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
             <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
             
             <Link to={'/benefit'} className='arrowsEvents arrowSpatial'>{">"}</Link>
         </div>
 
-        <img src={hero} alt="PINK PANTHERESS" className='blancHero transformHero'/>
+        <LazyLoadImage src={hero} alt="PINK PANTHERESS" className='blancHero transformHero'/>
         <div className='stackContainer stackContainerPink'>
             <div className='stackItemDestree3'>
                 <img className='stackCircleImg' src={circle1} alt="" />
@@ -115,16 +116,16 @@ function Pink() {
             </div>
         </div>
         <div>
-            <img src={image0} className='image1SpatialDetailDestree marginBottom' alt="" />
+            <LazyLoadImage src={image0} className='image1SpatialDetailDestree marginBottom' alt="" />
             <div className='spatialDetailImagesBoxPink'>
-                <img className='spatialDetailImage1' src={image1} alt="PINK PANTHERESS" />
-                <img className='spatialDetailImage2' src={image2} alt="PINK PANTHERESS" />
+                <LazyLoadImage className='spatialDetailImage1' src={image1} alt="PINK PANTHERESS" />
+                <LazyLoadImage className='spatialDetailImage2' src={image2} alt="PINK PANTHERESS" />
             </div>
 
-            <img src={image5} className='placesImage1 marginBottom' alt="" />
+            <LazyLoadImage src={image5} className='placesImage1 marginBottom' alt="" />
             <div className='spatialDetailImagesBoxPink'>
-                <img className='spatialDetailImage1' src={image3} alt="PINK PANTHERESS" />
-                <img className='spatialDetailImage2' src={image4} alt="PINK PANTHERESS" />
+                <LazyLoadImage className='spatialDetailImage1' src={image3} alt="PINK PANTHERESS" />
+                <LazyLoadImage className='spatialDetailImage2' src={image4} alt="PINK PANTHERESS" />
             </div>
         </div>
     </div>

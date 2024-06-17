@@ -13,6 +13,7 @@ import image1 from '/spatial/16641.jpg'
 import image2 from '/spatial/1664-2.jpg'
 import image3 from '/spatial/1664-3.jpg'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 function Blanc() {
@@ -22,44 +23,44 @@ function Blanc() {
         <div className='arrowsContainer'>
             <Link to={'/huda'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
             
-            <img src={xSpray} className='xSpraySpatial' alt="" />
+            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
             <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
             
             <Link to={'/destree'} className='arrowsEvents arrowSpatial'>{">"}</Link>
         </div>
 
-        <img src={hero} alt="1664 Blanc" className='blancHero'/>
+        <LazyLoadImage src={hero} alt="1664 Blanc" className='blancHero'/>
         <div className='stackContainer'>
             <div className='stackItem1'>
-                <img className='stackCircleImg' src={circle1} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle1} alt="" />
                 <p className='stackText'>CONCEPT DESIGN</p>
             </div>
             <div className='stackItem2'>
-                <img className='stackCircleImg' src={circle2} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle2} alt="" />
                 <p className='stackText'>PROJECT MANAGEMENT</p>
             </div>
             <div className='stackItem3 stackItemDesktop10'>
-                <img className='stackCircleImg' src={circle3} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>CARPENTRY</p>
             </div>
             <div className='stackItem4 stackItemDesktop9'>
-                <img className='stackCircleImg' src={circle4} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle4} alt="" />
                 <p className='stackText'>POP UP</p>
             </div>
             <div className='stackItem1'>
-                <img className='stackCircleImg' src={circle5} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle5} alt="" />
                 <p className='stackText'>LIGHTING DESIGN</p>
             </div>
             <div className='stackItem4'>
-                <img className='stackCircleImg' src={circle6} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle6} alt="" />
                 <p className='stackText'>INSTALLATION</p>
             </div>
             <div className='stackItem3'>
-                <img className='stackCircleImg' src={circle3} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle3} alt="" />
                 <p className='stackText'>METAL WORK</p>
             </div>
             <div className='stackItem2'>
-                <img className='stackCircleImg' src={circle7} alt="" />
+                <LazyLoadImage className='stackCircleImg' src={circle7} alt="" />
                 <p className='stackText'>SPRYING & FINISHING</p>
             </div>
             
@@ -95,11 +96,11 @@ function Blanc() {
             </div>
         </div>
         <div>
-            <img src={image1} alt="stand 1664" className='image1SpatialDetail' />
+            <LazyLoadImage src={image1} alt="stand 1664" className='image1SpatialDetail' />
             <p className='spatialDetailImagesText'>Behind the scenes</p>
             <div className='spatialDetailImages'>
-                <img src={image2} alt="1664 Blanc" className='spatialDetailImgBlanc blanc1' />
-                <img src={image3} alt="1664 Blanc" className='spatialDetailImgBlanc blanc2'/>
+                <LazyLoadImage src={image2} alt="1664 Blanc" className='spatialDetailImgBlanc blanc1' />
+                <LazyLoadImage src={image3} alt="1664 Blanc" className='spatialDetailImgBlanc blanc2'/>
             </div>
         </div>
     </div>
