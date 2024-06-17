@@ -82,16 +82,9 @@
 }
 
 .stackItemTv {  
-    /* width: fit-content !important; */
     width: unset !important;
     height: 20px;
     margin: 0 5px;
-    /* display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    ju
-    stify-content: center; */
 }
 .stackItemTv .stackText {
     
