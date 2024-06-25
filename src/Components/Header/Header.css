@@ -1,5 +1,5 @@
 .navbarLooney{
-    font-family: "Oswald";
+     font-family: 'Oswald Variable', sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -71,7 +71,7 @@
     position: absolute;
     top: 40%;
     left: 10%;
-    font-family: 'Oswald';
+     font-family: 'Oswald Variable', sans-serif;
 }
 .dropdownItems, .nextSections, .projects {
     font-size: 36px;
@@ -201,7 +201,7 @@ a:focus {
     .dropdownItems, .nextSections,
     .projects {
         color: var(--V, #FFF);
-        font-family: Manrope;
+        font-family: 'Manrope Variable', sans-serif;;
         font-size: 13px;
         font-size: clamp(13px, 0.9vw, 18px);
         font-style: normal;
@@ -219,7 +219,7 @@ a:focus {
     }
     .nextSections{
         color: var(--color-lila);
-        font-family: Manrope;
+        font-family: 'Manrope Variable', sans-serif;;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;

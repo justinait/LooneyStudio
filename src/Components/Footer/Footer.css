@@ -11,7 +11,7 @@
     position: relative;
 }
 .footerLooney {
-    font-family: "Oswald";
+     font-family: 'Oswald Variable', sans-serif;
     font-weight: 500;
     letter-spacing: -0.01em;
     margin: 0;
@@ -22,7 +22,7 @@
     height: 20px;
 }
 .emailFooter {
-    font-family: "Oswald";
+     font-family: 'Oswald Variable', sans-serif;
     font-weight: 500;
     line-height: 36px;
     letter-spacing: -0.01em;

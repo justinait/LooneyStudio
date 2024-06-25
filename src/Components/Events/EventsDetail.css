@@ -7,7 +7,7 @@
     transform: translateX(-50%);
 }
 .xEventDetail {
-    font-family: 'oswald';
+     font-family: 'Oswald Variable', sans-serif;
     position: absolute;
     top: 126px;
     left: 42px;
@@ -105,7 +105,7 @@
 .eventsDetailImagesText {
     text-transform: uppercase;
     color: var(--color-orange);
-    font-family: 'Oswald';
+     font-family: 'Oswald Variable', sans-serif;
     font-size: 12px;
     font-weight: 600;
     position: relative;
@@ -169,7 +169,7 @@
 
 .arrowsEvents {
     color: var(--color-orange);
-    font-family: Oswald;
+     font-family: 'Oswald Variable', sans-serif;
     font-size: 20px;
     font-weight: 500;
     background: none;

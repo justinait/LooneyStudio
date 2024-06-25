@@ -21,7 +21,7 @@
     transform: translateX(-50%);
 }
 .xTvDetail {
-    font-family: 'oswald';
+     font-family: 'Oswald Variable', sans-serif;
     position: relative;
     z-index: 5;
     margin: 0;
@@ -97,7 +97,7 @@ iframe button {
 .tvDetailImagesText {
     text-transform: uppercase;
     color: var(--color-lila);
-    font-family: 'Oswald';
+     font-family: 'Oswald Variable', sans-serif;
     font-size: 12px;
     font-weight: 600;
     position: relative;
@@ -120,7 +120,7 @@ iframe button {
 }
 .arrowsTv {
     color: var(--color-lila);
-    font-family: Oswald;
+     font-family: 'Oswald Variable', sans-serif;
     font-size: 20px;
     font-weight: 500;
     background: none;

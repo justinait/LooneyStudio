@@ -26,6 +26,8 @@ import Molecules from './Components/Events/Molecules';
 import Dazed from './Components/Events/Dazed';
 import Dixon from './Components/Events/Dixon';
 import General from './Components/Projects/General';
+import '@fontsource-variable/oswald';
+import '@fontsource-variable/manrope';
 
 function App() {
 
