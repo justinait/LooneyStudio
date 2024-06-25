@@ -1,10 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import spray from '/sprays/tvSpray.png'
-import emailjs from '@emailjs/browser';
 import markerIcon from '/marker.png';
-
 
 function Contact() {
     const form = useRef();
@@ -54,30 +51,36 @@ function Contact() {
         setFormSent(true);
         handleSubmit()
     };
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         const isFormComplete = Object.values(inputValues).every(value => value.trim() !== '');
         if (isFormComplete) {
             setFormSent(true);
             setShowErrors(false);
-            emailjs.sendForm(service_id, template_id, form.current, public_id)
-            .then((result) => {
-                console.log(result.text);
-                setTimeout(() => {
-                    setFormSent(false);
-                    setInputValues({
-                        companyName: '',
-                        email: '',
-                        message: ''
-                    });
-                    setInputFilled({
-                        companyName: false,
-                        email: false,
-                        message: false
-                    });
-                }, 2000); // Reset after 2 seconds
-            }, (error) => {
-                console.log(error.text);
-            });
+
+            try {
+                const emailjs = await import('@emailjs/browser');
+                emailjs.sendForm(service_id, template_id, form.current, public_id)
+                .then((result) => {
+                    console.log(result.text);
+                    setTimeout(() => {
+                        setFormSent(false);
+                        setInputValues({
+                            companyName: '',
+                            email: '',
+                            message: ''
+                        });
+                        setInputFilled({
+                            companyName: false,
+                            email: false,
+                            message: false
+                        });
+                    }, 2000); // Reset after 2 seconds
+                }, (error) => {
+                    console.log(error.text);
+                });
+            } catch (error) {
+                console.error('Error al cargar la biblioteca emailjs-com:', error);
+            }
         } else {
             setShowErrors(true);
         }
