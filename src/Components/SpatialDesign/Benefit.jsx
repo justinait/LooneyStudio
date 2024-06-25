@@ -46,7 +46,7 @@ function Benefit() {
       </div>
 
       <img src={hero} alt="BENEFIT" className='blancHero'/>
-      <div className='stackContainer stackContainerBenefit mobileOnly'>
+      <div className='stackContainer stackContainerBenefit'>
         <div className='stackItem2 stackItemDesktop15'>
           <img className='stackCircleImg' src={circle2} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
@@ -78,7 +78,7 @@ function Benefit() {
         </div>
           
       </div>
-      <div className='stackContainer stackContainerBenefit desktopOnly'>
+      {/* <div className='stackContainer stackContainerBenefit desktopOnly'>
         <div className='stackItem2 stackItemDesktop15'>
           <img className='stackCircleImg' src={circle1} alt="" />
           <p className='stackText'>CONCEPT DESIGN</p>
@@ -109,7 +109,7 @@ function Benefit() {
           <p className='stackText stackTextBig'>FINISHING & <br />SPRAYING</p>
         </div>
           
-      </div>
+      </div> */}
       <div className='colorSpace'>
         <div className='benefitBoxForPDF'>
           <p className='titleSpatialDetail'>BENEFIT - Pore Wash Pop Up</p>
@@ -148,23 +148,23 @@ function Benefit() {
       </div>
       <div>
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image1} alt="benefit" className='' />
-          <img src={image2} alt="benefit" className='' />
-          <img src={image3} alt="benefit" className='' />
+          <LazyLoadImage src={image1} alt="benefit" className='' />
+          <LazyLoadImage src={image2} alt="benefit" className='' />
+          <LazyLoadImage src={image3} alt="benefit" className='' />
         </div>
 
-        <img src={image4} className="spatialDetailImageBenefit" />
+        <LazyLoadImage src={image4} className="spatialDetailImageBenefit" />
 
         <div className='spatialDetailImagesBoxBenefit1'>
-          <img src={image5} alt="benefit" className='' />
-          <img src={image6} alt="benefit" className='' />
-          <img src={image7} alt="benefit" className='' />
+          <LazyLoadImage src={image5} alt="benefit" className='' />
+          <LazyLoadImage src={image6} alt="benefit" className='' />
+          <LazyLoadImage src={image7} alt="benefit" className='' />
         </div>
 
         <p className='spatialDetailImagesText'>Behind the scenes</p>
         <div className='spatialDetailImagesBenefit'>
-          <img src={image8} alt="benefit" className='spatialDetailBenefitImg blanc1' />
-          <img src={image9} alt="benefit" className='spatialDetailBenefitImg objPositionUnset blanc2'/>
+          <LazyLoadImage src={image8} alt="benefit" className='spatialDetailBenefitImg blanc1' />
+          <LazyLoadImage src={image9} alt="benefit" className='spatialDetailBenefitImg objPositionUnset blanc2'/>
         </div>
       </div>
     </div>
