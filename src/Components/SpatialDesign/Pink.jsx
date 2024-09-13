@@ -16,19 +16,13 @@ import image0 from '/spatial/pink0.png'
 import image5 from '/spatial/pinkmedio.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProjectsHeaderSpatial from '/src/Components/ProjectsHeader/ProjectsHeaderSpatial';
 
 function Pink() {
   return (
     <div>
         
-        <div className='arrowsContainer'>
-            <Link to={'/destree'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
-            
-            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
-            
-            <Link to={'/benefit'} className='arrowsEvents arrowSpatial'>{">"}</Link>
-        </div>
+        <ProjectsHeaderSpatial/>
 
         <LazyLoadImage src={hero} alt="PINK PANTHERESS" className='blancHero transformHero'/>
         <div className='stackContainer stackContainerPink'>

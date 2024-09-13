@@ -14,20 +14,13 @@ import image2 from '/spatial/1664-2.jpg'
 import image3 from '/spatial/1664-3.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import ProjectsHeaderSpatial from '/src/Components/ProjectsHeader/ProjectsHeaderSpatial';
 
 function Blanc() {
   return (
     <div>
         
-        <div className='arrowsContainer'>
-            <Link to={'/huda'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
-            
-            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
-            
-            <Link to={'/destree'} className='arrowsEvents arrowSpatial'>{">"}</Link>
-        </div>
+        <ProjectsHeaderSpatial />
 
         <LazyLoadImage src={hero} alt="1664 Blanc" className='blancHero'/>
         <div className='stackContainer'>

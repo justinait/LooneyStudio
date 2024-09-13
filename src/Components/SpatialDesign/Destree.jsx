@@ -12,19 +12,13 @@ import image2 from '/spatial/destree2cut.jpg'
 import image3 from '/spatial/Destree.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProjectsHeaderSpatial from '/src/Components/ProjectsHeader/ProjectsHeaderSpatial';
 
 function Destree() {
   return (
     <div>
         
-        <div className='arrowsContainer'>
-            <Link to={'/blanc'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
-            
-            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
-            
-            <Link to={'/pink'} className='arrowsEvents arrowSpatial'>{">"}</Link>
-        </div>
+        <ProjectsHeaderSpatial/>
         
         <LazyLoadImage src={hero} alt="DESTREE" className='blancHero mobileOnly'/>
         <LazyLoadImage src={image3} alt="DESTREE" className='blancHero desktopOnly'/>

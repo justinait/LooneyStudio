@@ -15,20 +15,13 @@ import image4 from '/spatial/huda4.jpg'
 import image5 from '/spatial/huda5.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import ProjectsHeaderSpatial from '/src/Components/ProjectsHeader/ProjectsHeaderSpatial';
 
 function Huda() {
   return (
     <div>
         
-        <div className='arrowsContainer'>
-            <Link to={'/gisou'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
-            
-            <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-            <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
-            
-            <Link to={'/blanc'} className='arrowsEvents arrowSpatial'>{">"}</Link>
-        </div>
+        <ProjectsHeaderSpatial/>
 
         <LazyLoadImage src={hero} alt="huda" className='blancHero mobileOnly'/>
         <LazyLoadImage src={heroDesktop} alt="huda" className='blancHero desktopOnly'/>

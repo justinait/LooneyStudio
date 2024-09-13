@@ -16,20 +16,14 @@ import image4 from '/spatial/Gisou4.jpg'
 import image5 from '/spatial/Gisou5.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import ProjectsHeaderSpatial from '/src/Components/ProjectsHeader/ProjectsHeaderSpatial';
 
 function Gisou() {
   return (
     <div>
       
-      <div className='arrowsContainer'>
-        <Link to={'/benefit'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
-        
-        <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/huda'} className='arrowsEvents arrowSpatial'>{">"}</Link>
-      </div>
+      <ProjectsHeaderSpatial/>
+     
       <LazyLoadImage src={hero} alt="BENEFIT" className='blancHero'/>
       <div className='stackContainer stackContainerPink'>
         <div className='stackItemPink2'>

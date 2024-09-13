@@ -34,7 +34,7 @@ function projectsHeader() {
     <div>
       <div className='xOnlyForDesktop'>
         <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-        <Link to={'/spatial'}><p className='xTvDetail'>X</p></Link>
+        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
       </div>
       
       <div className='arrowsContainer'>
@@ -43,7 +43,7 @@ function projectsHeader() {
       
         <div className='xNotForDesktop'>
           <LazyLoadImage src={xSpray} className='xSpraySpatial' alt="" />
-          <Link to={'/spatial'}><p className='xTvDetail'>X</p></Link>
+          <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
         </div>
         
         <button onClick={() => navigateToItem(1)} className='arrowSpatial'>{">"}</button>
