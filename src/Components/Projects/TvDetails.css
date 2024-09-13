@@ -19,6 +19,7 @@
     position: absolute;
     left: 49.5%;
     transform: translateX(-50%);
+    margin-top: -25px;
 }
 .xTvDetail {
      font-family: 'Oswald Variable', sans-serif;
@@ -135,6 +136,7 @@ iframe button {
 @media(min-width:700px){
     .xSprayTv {
         width: 151px;
+        margin-top: -50px;
     }
     .xTvDetail{
         font-size: 28px;
@@ -219,6 +221,9 @@ iframe button {
     .arrowsContainer {
         top: 88.5vh;
         z-index: 5;
+    }
+    .xSprayTv {
+        margin-top: -68px;
     }
    
 }

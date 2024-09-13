@@ -99,10 +99,18 @@ function General() {
 
   return (
     <div>
-      <div className='arrowsContainer'>
-        <button onClick={() => navigateToItem(-1)} className='arrowsTv'>{"<"}</button>
+      
+      <div className='xOnlyForDesktop'>
         <img src={xSpray} className='xSprayTv' alt="" />
-        <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
+        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+      </div>
+
+      <div className='arrowsContainer tvAndFilmsArrowContainer'>
+        <button onClick={() => navigateToItem(-1)} className='arrowsTv'>{"<"}</button>
+        <div className='xNotForDesktop'>
+          <img src={xSpray} className='xSprayTv' alt="" />
+          <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
+        </div>
         <button onClick={() => navigateToItem(1)} className='arrowsTv'>{">"}</button>
       </div>
 

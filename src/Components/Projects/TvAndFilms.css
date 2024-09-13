@@ -88,6 +88,9 @@
         top: 20px;
         left: 47%;
     }
+    .tvAndFilmsArrowContainer {
+        top: 77.5vh;
+    }
     
 }
 @media(min-width:1400px){
