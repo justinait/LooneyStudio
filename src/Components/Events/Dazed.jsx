@@ -12,24 +12,12 @@ import image3 from '/events/dazed3.jpeg'
 import image4 from '/events/dazed4.jpeg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import ProjectsHeader from '/src/Components/ProjectsHeader/ProjectsHeader';
 
 function Dazed() {
   return (
     <div>
-      <div className='xOnlyForDesktop'>
-        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-      </div>
-      <div className='arrowsContainer'>
-        <Link to={'/molecules'} className='arrowsEvents'>{"<"}</Link>
-        <div className='xNotForDesktop'>
-          <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-          <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-        </div>
-        
-        <Link to={'/dixon'} className='arrowsEvents'>{">"}</Link>
-      </div>
+      <ProjectsHeader />
 
       <LazyLoadImage src={hero} alt="dazed" className='blancHero mobileOnly'/>
       <LazyLoadImage src={image4} alt="dazed" className='blancHero desktopOnly'/>

@@ -15,20 +15,13 @@ import image4 from '/events/Warner22-4.jpg'
 import image5 from '/events/Warner22-5.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProjectsHeader from '/src/Components/ProjectsHeader/ProjectsHeader';
 
 function WarnerTwo() {
   return (
     <div>
       
-      <div className='arrowsContainer'>
-        <Link to={'/places'} className='arrowsEvents'>{"<"}</Link>
-        
-        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/elton'} className='arrowsEvents'>{">"}</Link>
-      </div>
-
+      <ProjectsHeader/>
 
       <LazyLoadImage src={hero} alt="WARNER 22" className='blancHero mobileOnly'/>
       <LazyLoadImage src={heroDesktop} alt="WARNER 22" className='blancHero desktopOnly'/>

@@ -10,20 +10,13 @@ import image2 from '/events/elton.png'
 import image3 from '/events/elton3.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProjectsHeader from '/src/Components/ProjectsHeader/ProjectsHeader';
 
 
 function Elton() {
   return (
     <div>
-      
-      <div className='arrowsContainer'>
-        <Link to={'/warner22'} className='arrowsEvents'>{"<"}</Link>
-        
-        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/molecules'} className='arrowsEvents'>{">"}</Link>
-      </div>
+      <ProjectsHeader />
 
       <LazyLoadImage src={hero} alt="Elton" className='blancHero'/>
       <div className='stackContainerEvents'>

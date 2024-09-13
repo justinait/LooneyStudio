@@ -10,19 +10,13 @@ import image2 from '/events/sezane1.jpg'
 import image3 from '/events/sezane2.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProjectsHeader from '/src/Components/ProjectsHeader/ProjectsHeader';
 
 function Sezane() {
   return (
     <div>
 
-      <div className='arrowsContainer'>
-        <Link to={'/warner23'} className='arrowsEvents'>{"<"}</Link>
-        
-        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/wwe'} className='arrowsEvents'>{">"}</Link>
-      </div>
+      <ProjectsHeader />
 
       <LazyLoadImage src={hero} alt="SEZANE" className='blancHero'/>
 

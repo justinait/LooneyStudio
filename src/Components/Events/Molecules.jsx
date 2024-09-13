@@ -12,20 +12,13 @@ import image3 from '/events/molecules3.jpg'
 import image4 from '/events/molecules4.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import ProjectsHeader from '/src/Components/ProjectsHeader/ProjectsHeader';
 
 function Molecules() {
   return (
     <div>
       
-      <div className='arrowsContainer'>
-        <Link to={'/elton'} className='arrowsEvents'>{"<"}</Link>
-        
-        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/dazed'} className='arrowsEvents'>{">"}</Link>
-      </div>
+      <ProjectsHeader/>
 
       <LazyLoadImage src={hero} alt="Molecules" className='blancHero'/>
       <div className='stackContainer stackContainerDestree'>

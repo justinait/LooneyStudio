@@ -12,21 +12,14 @@ import image2 from '/events/wwe2.jpg'
 import image3 from '/events/wwe3.jpg'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Link } from 'react-router-dom'
+import ProjectsHeader from '/src/Components/ProjectsHeader/ProjectsHeader';
 
 
 function WWE() {
   return (
     <div>
       
-      <div className='arrowsContainer'>
-        <Link to={'/sezane'} className='arrowsEvents'>{"<"}</Link>
-        
-        <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
-        <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/places'} className='arrowsEvents'>{">"}</Link>
-      </div>
-
+      <ProjectsHeader />
       
       <LazyLoadImage src={hero} alt="WWE" className='blancHero mobileOnly'/>
       <LazyLoadImage src={heroDesktop} alt="WWE" className='blancHero desktopOnly wweHeroDesktop'/>

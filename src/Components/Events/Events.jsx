@@ -28,9 +28,9 @@ function Events() {
 
       <div className='spatialImagesContainer eventsImagesContainer'>
       {
-        events.map(e=>{
+        events.map((e, i)=>{
           return(
-            <Link to={e.detail} className={`spatialItemBox ${e.className}`} >
+            <Link to={e.detail} className={`spatialItemBox ${e.className}`} key={i} >
               <LazyLoadImage src={e.image} alt={e.name} className='spatialImage' threshold={50}/>
               <div className='imageOverlay'></div>
               <p className='spatialText'>{e.name}</p>
