@@ -102,7 +102,7 @@ function General() {
       
       <div className='xOnlyForDesktop'>
         <img src={xSpray} className='xSprayTv' alt="" />
-        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
+        <Link to={'/tvandfilms'}><p className='xTvDetail'>X</p></Link>
       </div>
 
       <div className='arrowsContainer tvAndFilmsArrowContainer'>
