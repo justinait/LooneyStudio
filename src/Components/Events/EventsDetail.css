@@ -169,7 +169,7 @@
 
 .arrowsEvents {
     color: var(--color-orange);
-     font-family: 'Oswald Variable', sans-serif;
+    font-family: 'Oswald Variable', sans-serif;
     font-size: 20px;
     font-weight: 500;
     background: none;
@@ -177,9 +177,6 @@
     z-index: 6;
 }
 
-.arrowSpatial {
-    color: var(--color-violet);
-}
 @media(min-width: 700px){
     .mobileOnlyPlaces{
         display: none;

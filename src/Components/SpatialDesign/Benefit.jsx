@@ -19,7 +19,7 @@ import image8 from '/spatial/benefit7.jpg'
 import image9 from '/spatial/benefit8.jpg'
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-
+import ProjectsHeaderSpatial from '/src/Components/ProjectsHeader/ProjectsHeaderSpatial';
 
 function Benefit() {
   const downloadPDF = () => {
@@ -36,14 +36,7 @@ function Benefit() {
   return (
     <div>
       
-      <div className='arrowsContainer'>
-        <Link to={'/pink'} className='arrowsEvents arrowSpatial'>{"<"}</Link>
-        
-        <img src={xSpray} className='xSpraySpatial' alt="" />
-        <Link to={'/spatialDesign'}><p className='xTvDetail'>X</p></Link>
-        
-        <Link to={'/gisou'} className='arrowsEvents arrowSpatial'>{">"}</Link>
-      </div>
+      <ProjectsHeaderSpatial />
 
       <img src={hero} alt="BENEFIT" className='blancHero'/>
       <div className='stackContainer stackContainerBenefit'>

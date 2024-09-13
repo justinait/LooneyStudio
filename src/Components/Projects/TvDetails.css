@@ -217,7 +217,8 @@ iframe button {
         width: 151% !important;
     }
     .arrowsContainer {
-        top: 82.5vh;
+        top: 88.5vh;
+        z-index: 5;
     }
    
 }

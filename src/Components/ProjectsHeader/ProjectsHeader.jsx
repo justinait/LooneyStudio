@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import xSpray from '/events/xSpray.png'
-import { Link, useNavigate, useParams, useLocation } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import './ProjectsHeader.css'
 
-function projectsHeader() {
-  
+function ProjectsHeader() {
+  //PARA EVENTS
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname;
@@ -56,4 +55,4 @@ function projectsHeader() {
   )
 }
 
-export default projectsHeader
+export default ProjectsHeader
