@@ -17,12 +17,16 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 function Dazed() {
   return (
     <div>
-      
-      <div className='arrowsContainer'>
-        <Link to={'/molecules'} className='arrowsEvents'>{"<"}</Link>
-        
+      <div className='xOnlyForDesktop'>
         <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
         <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+      </div>
+      <div className='arrowsContainer'>
+        <Link to={'/molecules'} className='arrowsEvents'>{"<"}</Link>
+        <div className='xNotForDesktop'>
+          <LazyLoadImage src={xSpray} className='xSprayEvent' alt="" />
+          <Link to={'/events'}><p className='xTvDetail'>X</p></Link>
+        </div>
         
         <Link to={'/dixon'} className='arrowsEvents'>{">"}</Link>
       </div>
