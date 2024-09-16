@@ -228,6 +228,10 @@ iframe button {
    
 }
 @media(min-width:1400px){
+    
+    .arrowsContainer {
+        top: 73vh;
+    }
     .xSprayTv {
         left: 49.7%;
     }
