@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import spray from '/sprays/tvSpray.png'
+import spray from '../../assets/sprays/tvSpray.png'
 import './TvAndFilms.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 

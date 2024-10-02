@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './TvDetails.css';
-import circle1 from '/tvandfilms/circle1.png';
-import circle2 from '/tvandfilms/circle2.png';
-import circle3 from '/tvandfilms/circle3.png';
-import xSpray from '/tvandfilms/xSpray.png';
+import circle1 from '../../assets/tvandfilms/circle1.png';
+import circle2 from '../../assets/tvandfilms/circle2.png';
+import circle3 from '../../assets/tvandfilms/circle3.png';
+import xSpray from '../../assets/tvandfilms/xSpray.png';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import Spinner from 'react-bootstrap/Spinner';
 
