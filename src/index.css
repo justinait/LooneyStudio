@@ -13,7 +13,7 @@ body {
 
 h2 {
   color: white;
-   font-family: 'Oswald Variable', sans-serif;
+  font-family: 'Oswald Variable', sans-serif;
   position: relative;
   font-size: 82px;
   font-weight: 700;
@@ -35,6 +35,10 @@ a, a:hover {
 .xOnlyForDesktop {
   display: none;
 }
+
+.desktopOnly{
+  display: none;
+}
 @media(min-width:700px){
   h2 {
     font-size: 174.889px;
@@ -54,6 +58,9 @@ a, a:hover {
     margin-top: 6vh;
   }
   
+  .desktopOnly{
+    display: flex;
+  }
   .xOnlyForDesktop {
     display: block;
     position: absolute;

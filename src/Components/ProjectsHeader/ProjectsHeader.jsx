@@ -1,5 +1,5 @@
 import React from 'react'
-import xSpray from '/events/xSpray.png'
+import xSpray from '../../assets/events/xSpray.png'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
@@ -11,15 +11,15 @@ function ProjectsHeader() {
   const currentEvent = currentPath.split('/').pop();
 
   const events = [
-    { name: 'WARNER MUSIC CHRISTMAS PARTY 23', image: '/events/Warner23.jpg', detail: 'warner23', className: 'eventsLeftAligned'},
-    { name: 'SEZANE', image: '/events/sezane.jpg', detail: 'sezane', className: ''},
-    { name: 'WWE', image: '/events/WWE.jpg', detail: 'wwe', className: 'eventsLeftAligned'},
-    { name: 'PLACES + FACES', image: '/events/places.png', detail: 'places', className: ''},
-    { name: 'WARNER MUSIC CHRISTMAS PARTY 22', image: '/events/Warner22.png', detail: 'warner22', className: 'eventsLeftAligned' },
-    { name: 'ELTON JHON', image: '/events/elton.jpeg', detail: 'elton', className: ''},
-    { name: 'MOLECULES', image: '/events/molecules.jpg', detail: 'molecules', className: 'eventsLeftAligned'},
-    { name: 'NOTHING X DAZED', image: '/events/dazed.jpeg', detail: 'dazed', className: ''},
-    { name: 'TOM DIXON', image: '/events/TOMDIXON.jpg', detail: 'dixon', className: ''},
+    { name: 'WARNER MUSIC CHRISTMAS PARTY 23', detail: 'warner23'},
+    { name: 'SEZANE', detail: 'sezane'},
+    { name: 'WWE', detail: 'wwe'},
+    { name: 'PLACES + FACES', detail: 'places'},
+    { name: 'WARNER MUSIC CHRISTMAS PARTY 22', detail: 'warner22' },
+    { name: 'ELTON JHON', detail: 'elton'},
+    { name: 'MOLECULES', detail: 'molecules'},
+    { name: 'NOTHING X DAZED', detail: 'dazed'},
+    { name: 'TOM DIXON', detail: 'dixon'},
   ]
 
   const navigateToItem = (direction) => {
