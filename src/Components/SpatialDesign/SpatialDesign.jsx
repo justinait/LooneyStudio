@@ -1,17 +1,24 @@
 import React from 'react'
 import './SpatialDesign.css'
 import { Link } from 'react-router-dom'
-import spray from '/sprays/spatialSpray.png'
+import spray from '../../assets/sprays/spatialSpray.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+import blanc from '../../assets/spatial/1664.jpg'
+import Destree from '../../assets/spatial/Destree.jpg'
+import pink from '../../assets/spatial/pink.png'
+import Benefit from '../../assets/spatial/Benefit.png'
+import Gisou from '../../assets/spatial/Gisou.jpg'
+import Huda from '../../assets/spatial/Huda.jpeg'
 
 function SpatialDesign() {
   const spatial = [
-    { name: '1664 Blanc - LDN FASHION WEEK', image: '/spatial/1664.jpg', detail: '/blanc', className: ''},
-    { name: 'DESTREE', image: '/spatial/Destree.jpg', detail: '/destree', className: ''},
-    { name: 'PINK PANTHERESS - Heaven Knows Album', image: '/spatial/pink.png', detail: '/pink', className: 'breakSpatialText'},
-    { name: 'BENEFIT - PORE WASH POP UP', image: '/spatial/Benefit.png', detail: '/benefit', className: '' },
-    { name: 'GISOU - HOLIDAY POP UP', image: '/spatial/Gisou.jpg', detail: '/gisou', className: ''},
-    { name: 'HUDA BEAUTY - MERCURY RETROGADE', image: '/spatial/Huda.jpeg', detail: '/huda', className: 'breakSpatialText breakSpatialTextUnset'},
+    { name: '1664 Blanc - LDN FASHION WEEK', image: blanc, detail: '/blanc', className: ''},
+    { name: 'DESTREE', image: Destree, detail: '/destree', className: ''},
+    { name: 'PINK PANTHERESS - Heaven Knows Album', image: pink, detail: '/pink', className: 'breakSpatialText'},
+    { name: 'BENEFIT - PORE WASH POP UP', image: Benefit, detail: '/benefit', className: '' },
+    { name: 'GISOU - HOLIDAY POP UP', image: Gisou, detail: '/gisou', className: ''},
+    { name: 'HUDA BEAUTY - MERCURY RETROGADE', image: Huda, detail: '/huda', className: 'breakSpatialText breakSpatialTextUnset'},
   ]
 
   return (

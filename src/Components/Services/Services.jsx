@@ -11,6 +11,7 @@ import installation from '../../assets/services/installation.png'
 import hire from '../../assets/services/hire.png'
 
 function Services() {
+    
     const form = useRef();
     const service_id = import.meta.env.VITE_API_SERVICEID;
     const template_id = import.meta.env.VITE_API_TEMPLATEID;
@@ -30,6 +31,7 @@ function Services() {
     });
     const [formSent, setFormSent] = useState(false);
     const [showErrors, setShowErrors] = useState(false);
+    
     const services = [
         { name: 'CONCEPT DESIGN', image: conceptdesign, text: 'Our design team swiftly transforms ideas into reality, crafting mood boards, sketches, and 3D models that embody your vision. Emphasizing aesthetics, functionality, and meticulous attention to detail, we seamlessly merge innovation and practicality in our design process.', className: '' },
         { name: 'PROJECT MANAGEMENT', image: projectmanagement, text: 'Our dedicated project managers oversee every aspect of the build, ensuring communication, progress monitoring, and budget adherence. Renowned for flexibility, they provide guidance and support throughout the process.', className: 'littleServicesText'},

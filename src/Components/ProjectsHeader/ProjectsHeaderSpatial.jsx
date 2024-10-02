@@ -1,5 +1,5 @@
 import React from 'react'
-import xSpray from '/spatial/xSpray.png'
+import xSpray from '../../assets/spatial/xSpray.png'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './ProjectsHeader.css'
