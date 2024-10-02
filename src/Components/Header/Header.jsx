@@ -6,8 +6,8 @@ import CloseIcon from '/closeIcon.png'
 import arrow from '/arrow.png'
 import arrowback from '/arrowback.png'
 import ig from '/instagram.png'
-import spray from '/sprays/aboutSpray.png'
-import spray2 from '/sprays/AssetsHero.png'
+import spray from '../../assets/sprays/aboutSpray.png'
+import spray2 from '../../assets/sprays/AssetsHero.png'
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
